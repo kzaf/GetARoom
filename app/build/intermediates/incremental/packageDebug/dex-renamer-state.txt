@@ -1,0 +1,7 @@
+#Wed Apr 26 00:39:39 EEST 2017
+base.0=C\:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_8079b8ac54a2cf608c80991e439053ae659320e8
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_6b6ed807b43a1172cfd2c62434693006d0d98d02\\classes.dex
+base.1=C\:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_6b6ed807b43a1172cfd2c62434693006d0d98d02
+file.0=C\:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_8079b8ac54a2cf608c80991e439053ae659320e8\\classes.dex

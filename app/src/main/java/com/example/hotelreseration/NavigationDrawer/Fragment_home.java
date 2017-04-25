@@ -1,0 +1,41 @@
+package com.example.hotelreseration.NavigationDrawer;
+
+//import android.R;
+import java.text.DateFormat;
+import java.util.Date;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.example.hotelreseration.LoginActivity;
+import com.example.hotelreseration.R;
+import com.example.hotelreseration.SelectUserActivity;
+
+public class Fragment_home extends Fragment {
+	TextView date;
+	TextView UserWelcomeLabel;
+    
+    public View onCreateView(
+            LayoutInflater inflater, 
+            ViewGroup container, 
+            Bundle savedInstanceState){
+        View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+        
+        UserWelcomeLabel=(TextView) rootView.findViewById(R.id.user_label);
+        if(LoginActivity.flagkzaf==true){
+        	UserWelcomeLabel.setText("Welcome, Kzaf!");
+        }
+        
+        String currentDateString = DateFormat.getDateInstance().format(new Date());
+        
+        date=(TextView) rootView.findViewById(R.id.DateTextView);      
+        date.setText(currentDateString);
+        
+        
+        return rootView;
+    }   
+}

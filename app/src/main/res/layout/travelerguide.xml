@@ -1,0 +1,107 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    	
+	<LinearLayout
+	    android:id="@+id/LinearLayout2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="center"
+	    android:background="@drawable/simpleb"
+	    android:orientation="vertical" >
+	
+	    <TextView
+	        android:id="@+id/textView8"
+	        android:layout_width="255dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal|center|top"
+	        android:text="Hello, new to our app? Here some things to get to know about the app better." />
+	
+	    <TextView
+	        android:id="@+id/edithoteltitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="As a traveler you can select a hotel to make a reservation. You can search best offers and you also can pay via credit card or by cash (depends on the hotel)." />
+	
+	    <TextView
+	        android:id="@+id/reportaproblem"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="Yoh can search hotels around you in the tab map. You can also pin your favourites on the map by long tap on the place you like." />
+	
+	    <TextView
+	        android:id="@+id/textView9"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="__________"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	    <TextView
+	        android:id="@+id/date"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="There are 3 tabs in the Manage Booking section:" />
+	
+	    <TextView
+	        android:id="@+id/textView6"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Favorite:"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	    <TextView
+	        android:id="@+id/textView7"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="Here you can save your favorite hotel so you can access them easyly the next time you want to visit them." />
+	
+	    <TextView
+	        android:id="@+id/textView10"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Booked:"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	    <TextView
+	        android:id="@+id/textView11"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="Here you can see all the booked hotels you have and the date." />
+	
+	    <TextView
+	        android:id="@+id/textView12"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Cancelled:"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	    <TextView
+	        android:id="@+id/textView13"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="here you can see all the cancelled reservation you have done." />
+
+	    <TextView
+	        android:id="@+id/todaysdate"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Check the map"
+	        android:textStyle="bold" />
+
+	    <TextView
+	        android:id="@+id/pickeddate"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="By selecting the map from the sidebar you can see all the hotels near you. You can track yourself by turning on GPS on your phone." />
+	
+	</LinearLayout>
+</ScrollView>

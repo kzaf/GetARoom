@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/simpleb"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/changeinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="Select hotel to edit"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/pickeddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changeinfo"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="___________________________________________" />
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edithoteltitle" />
+
+    <TextView
+        android:id="@+id/edithoteltitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pickeddate"
+        android:layout_centerHorizontal="true"
+        android:text="Check the hotel you want to edit" />
+
+    <CheckBox
+        android:id="@+id/checkHotel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pickeddate"
+        android:layout_below="@+id/results"
+        android:text="Hotel1" />
+
+    <CheckBox
+        android:id="@+id/checkHotel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkHotel1"
+        android:layout_below="@+id/checkHotel1"
+        android:text="Hotel2" />
+
+    <CheckBox
+        android:id="@+id/checkHotel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkHotel2"
+        android:layout_below="@+id/checkHotel2"
+        android:text="Hotel3" />
+
+</RelativeLayout>

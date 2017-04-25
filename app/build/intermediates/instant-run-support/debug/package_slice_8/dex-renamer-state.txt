@@ -1,0 +1,4 @@
+#Mon Apr 24 00:27:24 EEST 2017
+base.0=C\:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_8
+renamed.0=classes.dex
+file.0=C\:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_8\\classes.dex

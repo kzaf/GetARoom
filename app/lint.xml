@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res/layout/fragment_add_hotel.xml" />
+        <ignore path="res/layout/fragment_info.xml" />
+        <ignore path="res/layout/fragment_settings.xml" />
+        <ignore path="res/layout/hotelinfo.xml" />
+    </issue>
+    <issue id="HardcodedText">
+        <ignore path="res/layout/aboutus.xml" />
+        <ignore path="res/layout/activity_create_account.xml" />
+        <ignore path="res/layout/activity_forgot_pass.xml" />
+        <ignore path="res/layout/activity_login.xml" />
+        <ignore path="res/layout/activity_select_user.xml" />
+        <ignore path="res/layout/contactus.xml" />
+        <ignore path="res/layout/fragment_add_hotel.xml" />
+        <ignore path="res/layout/fragment_add_room.xml" />
+        <ignore path="res/layout/fragment_hotels.xml" />
+        <ignore path="res/layout/hotelinfo.xml" />
+        <ignore path="res/layout/ownerinfo.xml" />
+        <ignore path="res/layout/reportproblem.xml" />
+    </issue>
+    <issue id="LabelFor">
+        <ignore path="res/layout/reportproblem.xml" />
+    </issue>
+    <issue id="ObsoleteLayoutParam">
+        <ignore path="res/layout/fragment_add_hotel.xml" />
+    </issue>
+    <issue id="RtlHardcoded">
+        <ignore path="res/layout/activity_create_account.xml" />
+        <ignore path="res/layout/activity_forgot_pass.xml" />
+        <ignore path="res/layout/activity_login.xml" />
+        <ignore path="res/layout/activity_select_user.xml" />
+        <ignore path="res/layout/fragment_add_hotel.xml" />
+        <ignore path="res/layout/fragment_add_room.xml" />
+        <ignore path="res/layout/fragment_info.xml" />
+        <ignore path="res/layout/fragment_settings.xml" />
+        <ignore path="res/layout/hotelinfo.xml" />
+    </issue>
+    <issue id="ScrollViewSize">
+        <ignore path="res/layout/fragment_add_hotel.xml" />
+    </issue>
+    <issue id="TextFields">
+        <ignore path="res/layout/fragment_add_hotel.xml" />
+        <ignore path="res/layout/reportproblem.xml" />
+    </issue>
+</lint>

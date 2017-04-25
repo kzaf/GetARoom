@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluenav"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/AppBaseTheme"
+    tools:context="com.example.hotelreseration.MainScreenActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/user_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome, User!"
+        android:textColor="#042c83"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/user_label"
+        android:layout_alignRight="@+id/user_label"
+        android:layout_below="@+id/user_label"
+        android:background="@android:color/darker_gray"
+        android:visibility="visible"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/onoma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/separator"
+        android:layout_centerHorizontal="true"
+        android:text="and"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onoma"
+        android:layout_centerHorizontal="true"
+        android:text="Get A Room"
+        android:textColor="#088304"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/TextView01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/getaroom"
+        tools:ignore="ContentDescription" />
+
+    <View
+        android:id="@+id/View01"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/darker_gray"
+        android:visibility="visible"
+        tools:ignore="RtlHardcoded" />
+
+    <View
+        android:id="@+id/View02"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/View01"
+        android:background="@android:color/darker_gray"
+        android:visibility="visible"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/TodayIstextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/View02"
+        android:layout_below="@+id/View02"
+        android:text="Today is:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TodayIstextView2"
+        android:layout_below="@+id/TodayIstextView2"
+        android:layout_marginTop="20dp"
+        android:text="Time:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <AnalogClock
+        android:id="@+id/analogClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/digitalClock1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/slideformenutextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/analogClock1"
+        android:layout_marginTop="33dp"
+        android:text="Slide to see menu --->"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/DateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignRight="@+id/View02"
+        android:text="TextView"
+        android:textColor="#042c83"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <DigitalClock
+        android:id="@+id/digitalClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignRight="@+id/DateTextView"
+        android:text="DigitalClock"
+        android:textColor="#042c83"
+        android:textSize="17sp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+</RelativeLayout>

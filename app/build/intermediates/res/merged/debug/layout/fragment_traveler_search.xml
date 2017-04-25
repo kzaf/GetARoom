@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:background="@drawable/bluenav"
+    android:layout_height="fill_parent" >
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/list1"
+        android:layout_alignRight="@+id/list1"
+        android:layout_below="@+id/selectdate"
+        android:background="#000000"
+        android:visibility="visible"
+        app:ignore="RtlHardcoded" />
+
+    <ListView
+        android:id="@+id/list1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/edithotels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/separator"
+        android:layout_below="@+id/separator"
+        android:text="Selected date:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        app:ignore="HardcodedText,RtlHardcoded" />
+
+    <View
+        android:id="@+id/View01"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/edithotels"
+        android:layout_alignRight="@+id/separator"
+        android:layout_below="@+id/edithotels"
+        android:background="#000000"
+        android:visibility="visible"
+        app:ignore="RtlHardcoded" />
+
+    <View
+        android:id="@+id/View03"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_above="@+id/todaysdate"
+        android:layout_alignLeft="@+id/onoma"
+        android:layout_alignRight="@+id/View02"
+        android:background="#000000"
+        android:visibility="visible"
+        app:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/selectdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/onoma"
+        android:layout_alignRight="@+id/separator"
+        android:layout_below="@+id/View02"
+        android:text="Select Date"
+        app:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/onoma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/separator"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:text="Today is:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        app:ignore="HardcodedText,RtlHardcoded" />
+
+    <View
+        android:id="@+id/View02"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/onoma"
+        android:layout_alignRight="@+id/selectdate"
+        android:layout_below="@+id/onoma"
+        android:background="#000000"
+        android:visibility="visible"
+        app:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/pickeddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edithotels"
+        android:layout_alignBottom="@+id/edithotels"
+        android:layout_centerHorizontal="true"
+        android:text="--/--/----"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ba2525"
+        app:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/todaysdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/onoma"
+        android:layout_alignBottom="@+id/onoma"
+        android:layout_centerHorizontal="true"
+        android:text="TodaysDate"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#011f60"
+        app:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/ascending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/descending"
+        android:layout_alignBottom="@+id/descending"
+        android:layout_alignRight="@+id/onoma"
+        android:text="ascending ⇑"
+        app:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/descending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/View01"
+        android:layout_below="@+id/View01"
+        android:text="⇓ descending"
+        app:ignore="HardcodedText,RtlHardcoded" />
+
+    <View
+        android:id="@+id/View04"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/ascending"
+        android:background="#000000"
+        android:visibility="visible"
+        app:ignore="RtlHardcoded" />
+
+</RelativeLayout>

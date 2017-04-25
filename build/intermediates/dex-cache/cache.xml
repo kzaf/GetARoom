@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\9a031445cf32eb209ea67aac8ad234d191e59f91\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ab8343c3aadefce37313ceadd8bc4db1993f2ff0">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ef5e9cc7d8cc710f1e1a3da5a074ca7c6686fbc2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\d83e995ec74218d0ef09e630ec4befa544d1228a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4e684205744f814a73b7752545e0661330415c9e">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_34769a0aaa191c28228d7d2e8a9e3d669585a337\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\b45d3b64ce1ce3b9bac848fe8e9821b923971ab0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7d67042688d34474a82fe4ef4c6514ef471377ef">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0f5c64caa7022c7948a3ad3ef2b72c977aff5ae5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\7a27befcff21369084bb4d66f972f760e7f00644\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a3826817a4de1daa170c33bbc04db24ab6826bd5">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6f0f448ac082e0f0f22f082c2be78f85094a0069\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_51c7c6e00d5bdc5c017c08dca728895107bb99f1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\1e58e0deee80376b5ce76c2030288feaf4ead01b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da5c606c36276a12a356e351882044c6b4b9e8d4">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_83811b282f2cbeb2e6eee72d4ebc455ee0b2272f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\e8361eba3c50ce68ec6ad9adecc321031aabf57d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e4851331b3944beb6e7f77316a7661f53781da62">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ce4f3c09c2446f1935352f6283337b682577f751\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\875f4486e15579b92e6861dbae4e867c09976c85\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1a86ca540e0f54ff2c063eab35ce6ec2f88e7b62\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\f224e5d932364ee097d18434dff10e1a2d90948e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="825c2e97a00df4df5b0f3081faa4fd6280cd7c72">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7d096d76bdfd3d4f3c7bc8f00ed73255d900c04d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\e72b1751153af8c674bec4e9ae28b63caeb0b9bc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d0a843615f3b5fa3a080497709f5436696149a09">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_efce2bfa5cac1bcaae2f2952492b630bfb50d49d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\ccc81e3556358888ea0cf6b7e2ed994589fc0a89\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6f233cb35a6ea92364130d2d48791c461ec65983">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b151adbc55bc43f17e1da2becb25d55f0bbb8c01\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\200321b6dc8d928e1b97f494fbcfb92503fdce68\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b136ac09f209c1d91fec7db8518e33d4373c8f39">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_751f85e99e90b425a8647a83ab7dfc780eb250fa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\5b9f6546aa3e35a318a2d72d062bdbca3ad9f679\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="536fd6afd6e1280607c5d70306eb32d385db7964">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bc8ee5bd585098303fe9a2cb719434cff6aa3fb5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\503ac2ffc42b26330a4a2157cab7a2116d7bc3f3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cce5792fa30ee8520620f298bf920309423b180f">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_029722413389c2461e01ee8eec259fc8cbb4b4da\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\da33d57dc6934db1612a0eec98b703e6e55966d3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_45ff4c588694649dd2fe20796edb3028e8b33122\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\d2a5f4e16aca20bfd40cd7d4ad9102b9f6addaf5\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_b8ed6c614febb7107f986666a3a224adea6cc52b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\24805df2eae3e8e5dedd61890bb6a7b842a45763\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5ee29abfc804ebd51d65a4bde424c0ee74363939">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cacf9bb6f811b1ab391c8b7a764e7dbcd7adca2d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\6e43f3343d901af29f6c8dea98552d4bf85b2a1f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b2349ddfe04831042844cbf055e5a072da37ddf8">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d935da1873f3ef38bba81c0c8c5b2ca424e5fbcc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\5befc25b5f219616e875256e7aca6493b8a4415f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bb004ea36f8802bad30000e286c177691740a322">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_41dc34444a366372f40314616c5c297786266a5e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\9cd3e6f2c343b404d3f7993ad824c6d96d653951\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0cd661634c473877a6212a171c794f13dc3bf3b6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\c0293fd2732b65fec814821dc1bd0bce0655d85e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25f55515117e14a658120a7b01a9ea5170409db4">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_807eb0d2dc97ac83e9978845d98a2452f1beb112\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\9cd3e6f2c343b404d3f7993ad824c6d96d653951\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_38c95b0925af0af93d069db7c3349bd7ec427b9f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="950dcf5e336f52e239a964024359f9099312a1d6">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_6b6ed807b43a1172cfd2c62434693006d0d98d02\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\0c3d1117e91107b6ffd8ec4c91775d7828307dad\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8e6f9200dc640ea7a59c85e37a07fccd9992b2dc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\dba13bc920531090371b253048c301f0f84e8092\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_77e684a3fcb44ca8d4c9a596fd7d6b5ff807b3e3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\91ae85beeaabaa1d60556fb99443f0312a8fb624\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44098e691b36776973374ac03afe0225b17f8a74">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b44746753bc3cb21c02399dc7b30b36326e89a7f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\f5bd82d0b309768ffa869445e2d2bd0a9758e534\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ce915513e360152d3748b4d5cc4525990c8b2896\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\67e799e1931259ad7f2f59506c41e322ec4424ab\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="125bce1fb2d481b964fabf75f0949957ebe9ecd1">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d55dbc90984a16bc265856ae6005a06264706c20\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\3a12955db1894dd0d0f01edecf2655779c5cc1df\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c7ba26433d9e9f4429d83ff65ad79bfc801dc00a">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3b98d8aecddf17a694f31fdd8f67518ad0e6bd2a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\586d91f67fa5c5f42d33490dc6e6bfcb45455930\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efae381df589f3d4977c346c8a980f030315bb8b">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f2146d1f76fd927b91c18fed7513d1d904702a85\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\android-sdks\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_31d8da317d540694bf47997eaf73884b95a57fe2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\8b0acf895cd76d681f9138b08cc42fea383ec952\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bb115a110992b254f767f337da233071f6f940b8">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_aaafe0fb142ae438903841dbfdf1ab61572e7e8d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\e66fe72e28997ea5fad5a87da0c740364f813747\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1f9df8b2bfff203397548ee400789154968adfe8">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2bcd90396f94d41145ef825e57c3b7dc783438cb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\4dad2a3bec01c69364a50a721d3f515c8511d0cd\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d395c5142f474891c7750f13b6a85d14682f166b">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ca3a8d31beaff83ef765ac234b15c0623fba93b9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\e19838cffdecd025cf93c55eff538c8e5e4dd78e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bdcc2a9572f18b8c90a3a157cab6cdfc97c6c736">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_592679570574dc19938d2f4ec7922e18accc46a5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_8079b8ac54a2cf608c80991e439053ae659320e8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\a47de50049f43c452547f4839a631fe980d14d76\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0bb2f0934fa55799508ba58ffc9ba579b35744b8">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_086dbfff7baf5aca91ab0685a702dcc402ef4822\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\21faf8e698e2b1b9343c67432185654fc625176a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="abf7c64e0bbaaa931738856734f76646ae62d9a5">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_91d4a84c7bdba217fbb5b3cd0ab1200ebbe944d3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\9b11ab58ce97e5d506ddcf151ad2b8f0e6b2febb\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dbae35d7fc3427d30bef0037bdf61ad0d8d984f8">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4e02412ef8d5ed49aa318085279a9c2ec970a6db\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\956a77fe68194a049977577b4cfa981329827195\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b215e312bdc1ee7bfda31674eab5df8bad45c014">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8b6987cdb533abfb6d612c3716ea7e7cddbad27d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\7b4d305772fd9207c8593a921b2bf473c5811f36\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6c74dab42788b458960618238f338d324b6f0656">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bd7b022fda8dd3709262403c8ecd3f4e77d32c4c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\ad6bd3ac7ce36cef2058b6553edb031ea9de5de7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_148e98bccc497c833b5fb5a503a9a96ccebcd0b7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\a4dcfcd039ea5821f45a799fda5f717e9313ff0a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d81a3b0a16f48b4456f442552b62f4b1a472ce24">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c986e78136425551f8cf506d80b110e244ea74bd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\875f4486e15579b92e6861dbae4e867c09976c85\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_59b7c5a6ea37e7cb839b6f52fc0249777fcd6126\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\d48783f3e7c21e20fce81ca72b99c435ebdbe480\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a7ffe939ffd830b5d4052f3c1c4c235923790ce">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_318533419541fa8d65951673f10dd509d4e9f1b1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\499c843d430889ff09d46a484a9cf505df8ecc19\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a1aa1dd9917e887bfe732cc5e561ae6ae8f9a84a">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d0b74996f172ce32fb52e524c8bcdee985b48ed9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\ed23b547b318fe1e698ee915eba192bf92eaa375\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_3b8320be96372b59df4248bfc1dc3ea929db623f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\de1734ae83e4e37793a27f9e9405f77fc5834a97\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b6818f5804ca0b5eb089d902458faea4179eca1d">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cc89c1dc96b51923eb260dfa040f26299dac9908\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\f58a7a12fbe3299e9bd9479a2bd7d05370e4acc5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b32372f6821e003ae24cd3389bdd7925247f100">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_32af228746ff04485e3ddc4a9a63f19abf6ebe0e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\c771bbc7533941cf7a1672dd00ff6216ac8ac281\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8dfe54fbaf4f2a27d395ddf806d0c011170999e0">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_743e637908b7558f4d08e1d1f6c197997de81e17\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\9e27825174dc2d112ccfad46bf9e985ee6fa4693\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c7626a9aa507bbbdc16188bc9a9f9bf3370c1ddd">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_42164355e203ef42a442cd69981d9e610fe1b45d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\d2a5f4e16aca20bfd40cd7d4ad9102b9f6addaf5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_993001174159abf865e12cae7a12522792b26f3b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\794bb7b869ec527a54b4041cace7b0e837375027\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9e87b8266170faf50eeb9b14001562f94d99c5fe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\dba13bc920531090371b253048c301f0f84e8092\output\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_d71abb251d2839919d8670c26636bdd3e7bb82bc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\dbcdf355a8254910dcc8c98337814ef2f3c2151b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cfa47e1b140562d47bc670629d07e209cd8b02c4">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bb2118b9ca96ed660125ecb0ebf3dd67a3728808\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\0c3d1117e91107b6ffd8ec4c91775d7828307dad\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_6c418f6669a571578008a9a1993a3ba29a1c9e83\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\2c6ecf1883935a61fa673e54adba8bdd99630d5f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a5d5553c308643a9022f15513ebdd59e9c78d82">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_46cfeb052b6da6f5bf808ffe3bea52cf2bc74a89\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\ed23b547b318fe1e698ee915eba192bf92eaa375\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d09a77e1bc2f44cb1d7cd2dabdb1f9f38d18d438\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\d2328a39cac2df1a382c1ff84f8b1b04fdce562a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b42a61cd5924f28e95894e859e6abe57847e2f3">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8459a78157e18fa30218b529fb82e59e08843d3d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\58bbde5d97d19d8f936d1fd4a5def64dd7faf6ae\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bfd85a88cf976eb2c54507cc914d8e8914c2f71e">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_786420b476e7fe744bd54401fe4bf1f281daf5e9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\8d3ff4daf69bb05a491635316ab339b290a96729\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="888983f51cf34f57a93ff16832552f2f15937212">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1fd12b89d7ea66fbfca2f68aba01e29a95652e28\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\27a64a07aacd9e385a92dbb97963ceef66335833\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c3c7f923e1df76640acb3a24823600f034a5d226">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d2f82a99f3a5d002b8863c7d08be653d6d493c5e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\b5c9ff275ef59a15e1b3c99c715f8826e19458cd\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3683531139103cc263b71d8b5ac6062832a8fd30">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_432f89fb0b9853d6126ab703ec5842ac54b60cf8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\1cca47c4e67b5cdd5416af8f62f00315520736cc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="399f75732ff1ac159f9e73611536f1508bf18d3b">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8692ded091fea984d95e8b2a72f06689ef98a774\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\13bf5f9caaa1d69b584dc743bfd320bc5c146fee\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="12032271e6be735e811ad529cb08ff066c381640">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_17aacec602311f666fffa0208a712cdff1794688\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\47f02f578d2d109428f37bd54a93434710d34257\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_25be6c0c0ace1354ce6f1c25ad79d85cfc50ef9d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\c6227b39b526c82cfd6cda9159191b3b5760d3dd\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="19696dc358ac668e341f28c41e3387d61ccdb81d">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4fa797a1f3b81d92e5fff86a7adfa05446326a7e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\kazaf\.android\build-cache\2656e033e5f7bdcbb37630ecccad92dc6e161e4e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ec7d3099b4e3cf23230c78acaae438f3371e1c19">
+        <dex dex="C:\Users\kazaf\StudioProjects\HotelReseration\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_472e5ee2ea8f6434df5e06f6e1ed50eaaecfd491\classes.dex" />
+    </item>
+
+</items>
