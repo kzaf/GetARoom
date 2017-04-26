@@ -15,7 +15,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -90,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
         hotels=new Fragment_hotels();
         
         // Get the icons from the drawables folder
-        if (SelectUserActivity.flagOwner==true){
+        if (SelectUserActivity.flagOwner){
         	iconsOwner = new int[]{
             		R.drawable.action_home,
             		R.drawable.action_user,
@@ -126,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Pass the string arrays to the MenuListAdapter, set the drawer
         // list adapter to it and set up its click listener
-        if (SelectUserActivity.flagOwner==true){
+        if (SelectUserActivity.flagOwner){
         	menuAdapter = new MenuListAdapter(MainActivity.this, titlesowner, iconsOwner);
             drawerList.setAdapter(menuAdapter);
             drawerList.setOnItemClickListener(new DrawerItemClickListener());
@@ -268,7 +267,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             }
             case 3:{
-            	if (SelectUserActivity.flagOwner==false){
+            	if (!SelectUserActivity.flagOwner){
             		//startActivity(new Intent(MainActivity.this, Fragment_maps.class));
             		fragTran.replace(R.id.content_frame, maps);
             		//setContentView(R.layout.fragment_maps); 
@@ -574,9 +573,9 @@ public class MainActivity extends AppCompatActivity {
     	   		fragTran = getSupportFragmentManager().beginTransaction();
      			fragTran.replace(R.id.content_frame, maps);
      			fragTran.commit();
-     			if(hotel1.isChecked()==true){
+     			if(hotel1.isChecked()){
      				onomaxarth=(String) hotel1.getText();
-     			}else if (hotel2.isChecked()==true){
+     			}else if (hotel2.isChecked()){
      				onomaxarth=(String) hotel2.getText();
      			}else{
      				onomaxarth=(String) hotel3.getText();
