@@ -1,18 +1,13 @@
 package com.example.hotelreseration.NavigationDrawer;
 
-//import android.R;
 import com.example.hotelreseration.R;
 import com.example.hotelreseration.SelectUserActivity;
-import com.example.hotelreseration.R.layout;
-
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class Fragment_info extends Fragment {
     
@@ -23,7 +18,7 @@ public class Fragment_info extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_info, container, false);
         
         final TextView OwnerGuide = (TextView)rootView.findViewById(R.id.guide);
-        if (SelectUserActivity.flagOwner==true){
+        if (SelectUserActivity.flagOwner){
 	    			OwnerGuide.setText("Owner Guide");
         }else{      	
         	    	OwnerGuide.setText("Traveler Guide");

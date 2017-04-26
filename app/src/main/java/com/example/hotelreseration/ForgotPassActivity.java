@@ -46,10 +46,8 @@ public class ForgotPassActivity extends ActionBarActivity {
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
+
+		return id == R.id.action_settings || super.onOptionsItemSelected(item);
 	}
 	//Edw orizw ta mail sta opoia tha steilei email o xrhsths se periptwsh pou ksexasei to password tou
 	String subject="Forgot Password!";

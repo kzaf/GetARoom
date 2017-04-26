@@ -1,6 +1,5 @@
 package com.example.hotelreseration.NavigationDrawer;
 
-//import android.R;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
@@ -15,8 +14,6 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.RadioButton;
-
 import com.example.hotelreseration.LoginActivity;
 import com.example.hotelreseration.R;
 
@@ -42,15 +39,14 @@ public class Fragment_user extends Fragment {
     	EditText ChangeMail=(EditText)rootView.findViewById(R.id.ChangeMail);
     	EditText ChangeCountry=(EditText)rootView.findViewById(R.id.ChangeCountry);
     	
-    	if(LoginActivity.flagkzaf==true){
+    	if(LoginActivity.flagkzaf){
     		ChangeName.setText(new StringBuilder().append("Konstantinos"));
     		ChangeSurname.setText(new StringBuilder().append("Zafeiropoulos"));
     		ChangeTelephone.setText(new StringBuilder().append("+30 6984794915"));
     		ChangeMail.setText(new StringBuilder().append("kzaf@it.teithe.gr"));
     		ChangeCountry.setText(new StringBuilder().append("Greece"));
     	}
-    	
-    	
+
     		//Apo edw kai katw einai gia tin eikona pou tha epilegei o xrhsths na emfanizetai
     		img = (ImageView)rootView.findViewById(R.id.userImage);
     		if (mSelectedImageUri != null) {

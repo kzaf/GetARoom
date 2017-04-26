@@ -22,10 +22,7 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
- 
-/** 
- * A fragment that launches other parts of the demo application. 
- */ 
+
 public class Fragment_maps extends android.support.v4.app.Fragment
 	implements OnMapLongClickListener, OnMapClickListener, OnMapReadyCallback  {
  

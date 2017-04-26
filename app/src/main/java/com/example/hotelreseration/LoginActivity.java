@@ -1,6 +1,5 @@
 package com.example.hotelreseration;
 
-//import android.R;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -12,7 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.hotelreseration.NavigationDrawer.MainActivity;
 
 public class LoginActivity extends ActionBarActivity {
@@ -39,7 +37,7 @@ public class LoginActivity extends ActionBarActivity {
 		     {
 		         public void onClick(View arg0)
 		         {
-		        	 if (SelectUserActivity.flagOwner==true){//ginetai elegxos an exeis syndethei ws Owner wste to email na einai owner
+		        	 if (SelectUserActivity.flagOwner){//ginetai elegxos an exeis syndethei ws Owner wste to email na einai owner
 		        		 if (Email.getText().toString().contains("owner") && Pass.getText().toString().contains("0000")){
 		        			 startActivity(new Intent(LoginActivity.this, MainActivity.class));
 		        		 }
@@ -78,7 +76,7 @@ public class LoginActivity extends ActionBarActivity {
 		 
 		 //Edw orizw to TextView Login as "Owner h Traveler" analoga ti exw epileksei.
 		 final TextView LoginText = (TextView)findViewById(R.id.LoginAs);
-		 if (SelectUserActivity.flagOwner==true){
+		 if (SelectUserActivity.flagOwner){
 			LoginText.setText("Login as " +" "+"Owner");
 		 }
 		 else{
@@ -99,10 +97,8 @@ public class LoginActivity extends ActionBarActivity {
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
+
+		return id == R.id.action_settings || super.onOptionsItemSelected(item);
 	}
 	
 	

@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-//Activity for splash screen
+
 public class SplashScreen extends Activity {
 
 	/** Duration of wait **/

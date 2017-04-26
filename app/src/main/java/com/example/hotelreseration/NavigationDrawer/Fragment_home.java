@@ -1,19 +1,15 @@
 package com.example.hotelreseration.NavigationDrawer;
 
-//import android.R;
 import java.text.DateFormat;
 import java.util.Date;
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import com.example.hotelreseration.LoginActivity;
 import com.example.hotelreseration.R;
-import com.example.hotelreseration.SelectUserActivity;
 
 public class Fragment_home extends Fragment {
 	TextView date;
@@ -26,7 +22,7 @@ public class Fragment_home extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_home, container, false);
         
         UserWelcomeLabel=(TextView) rootView.findViewById(R.id.user_label);
-        if(LoginActivity.flagkzaf==true){
+        if(LoginActivity.flagkzaf){
         	UserWelcomeLabel.setText("Welcome, Kzaf!");
         }
         

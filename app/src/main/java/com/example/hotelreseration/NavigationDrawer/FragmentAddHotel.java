@@ -5,12 +5,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
-
 import com.example.hotelreseration.R;
 
 public class FragmentAddHotel extends Fragment {
+
 	OnFragmentChangedListener mCallback;
     // Container Activity must implement this interface
     public interface OnFragmentChangedListener {

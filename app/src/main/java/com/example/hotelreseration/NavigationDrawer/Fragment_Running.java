@@ -17,8 +17,10 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class Fragment_Running extends Fragment {
-	ArrayList<String> Target = new ArrayList<String>();
-public void a(){
+
+	ArrayList<String> Target = new ArrayList<>();
+
+	public void a(){
 	Target.add("hi");
     Target.add("hello");
     Target.add("wrum");
@@ -36,7 +38,7 @@ public void a(){
 	    txt=(TextView) view.findViewById(R.id.nobookingtxt);
 	    
 	    
-	    ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity().getApplicationContext(),
+	    ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity().getApplicationContext(),
 	    		R.layout.mytextview,R.id.tv, Target);
 	    adapter.setNotifyOnChange(true);
 	    

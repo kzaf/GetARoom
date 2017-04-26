@@ -2,7 +2,6 @@ package com.example.hotelreseration.NavigationDrawer;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -15,7 +14,6 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.hotelreseration.R;
 
 public class Fragment_hotels extends Fragment {
@@ -23,7 +21,7 @@ public class Fragment_hotels extends Fragment {
 	static ListView listView;
 	SimpleAdapter adapter;
 	//Dhmiourgw HashMap gia na mporw na valw polla String na fainontai se kathe stoixeio ths listas
-	ArrayList<HashMap<String,String>> Target = new ArrayList<HashMap<String,String>>();
+	ArrayList<HashMap<String,String>> Target = new ArrayList<>(); //HashMap<String,String>
 	TextView txt;
 	
 	@Override

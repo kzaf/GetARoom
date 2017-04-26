@@ -1,10 +1,7 @@
 package com.example.hotelreseration.NavigationDrawer;
 
-//import android.R;
 import com.example.hotelreseration.R;
 import com.example.hotelreseration.SelectUserActivity;
-import com.example.hotelreseration.R.layout;
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -25,7 +22,7 @@ public class Fragment_settings extends Fragment {
         final TextView EditHotels = (TextView)rootView.findViewById(R.id.edithotels);
         final ImageView HotelImage=(ImageView)rootView.findViewById(R.id.hotelimage);
         View View = (View)rootView.findViewById(R.id.View03);
-        if(SelectUserActivity.flagOwner==false){	
+        if(!SelectUserActivity.flagOwner){
         	EditHotels.setVisibility(rootView.INVISIBLE);
         	HotelImage.setVisibility(rootView.INVISIBLE);
         	View.setVisibility(rootView.INVISIBLE);
@@ -54,7 +51,7 @@ public class Fragment_settings extends Fragment {
     	    public void onClick(View v) {   	
                 ((MainActivity) getActivity()).ChangeInfo();            
             }  
-    	    });
+        });
         
         return rootView;
     }

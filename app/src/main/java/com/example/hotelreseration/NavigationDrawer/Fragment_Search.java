@@ -1,8 +1,6 @@
 package com.example.hotelreseration.NavigationDrawer;
 
-//import android.R;
 import java.util.Calendar;
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-
 import com.example.hotelreseration.R;
 
 public class Fragment_Search extends Fragment {
@@ -24,7 +21,7 @@ public class Fragment_Search extends Fragment {
             Bundle savedInstanceState){
         View rootView = inflater.inflate(R.layout.fragment_traveler_search, container, false);
         
-        if (flag==false){
+        if (!flag){
        		final TextView Ascending = (TextView) rootView.findViewById(R.id.ascending);
        		final TextView Descending = (TextView) rootView.findViewById(R.id.descending);
        		

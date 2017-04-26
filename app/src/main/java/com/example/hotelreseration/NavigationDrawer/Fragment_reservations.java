@@ -1,9 +1,7 @@
 package com.example.hotelreseration.NavigationDrawer;
 
 import com.example.hotelreseration.R;
-import com.example.hotelreseration.R.layout;
 import com.example.hotelreseration.SelectUserActivity;
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTabHost;
@@ -12,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class Fragment_reservations extends Fragment {
+
 	private FragmentTabHost mTabHost;
 
     //Mandatory Constructor
@@ -20,7 +19,6 @@ public class Fragment_reservations extends Fragment {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -32,7 +30,7 @@ public class Fragment_reservations extends Fragment {
         mTabHost = (FragmentTabHost)rootView.findViewById(android.R.id.tabhost);
         mTabHost.setup(getActivity(), getChildFragmentManager(), R.id.realtabcontent);
         
-        if(SelectUserActivity.flagOwner==true){
+        if(SelectUserActivity.flagOwner){
         	mTabHost.addTab(mTabHost.newTabSpec("fragmentb").setIndicator("Running"),
                     Fragment_Running.class, null);
             mTabHost.addTab(mTabHost.newTabSpec("fragmentc").setIndicator("Upcoming"),

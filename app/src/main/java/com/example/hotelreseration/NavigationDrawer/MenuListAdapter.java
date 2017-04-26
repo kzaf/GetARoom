@@ -1,10 +1,6 @@
 package com.example.hotelreseration.NavigationDrawer;
 
-//import android.R;
 import com.example.hotelreseration.R;
-import com.example.hotelreseration.R.id;
-import com.example.hotelreseration.R.layout;
-
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;

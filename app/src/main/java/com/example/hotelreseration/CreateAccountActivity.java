@@ -1,7 +1,5 @@
 package com.example.hotelreseration;
 
-//import android.R;
-//import android.R;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -65,7 +63,7 @@ public class CreateAccountActivity extends ActionBarActivity {
 		 reg.setTypeface(regface);
 		 
 		 final TextView Register = (TextView)findViewById(R.id.LoginAs);
-		 if (SelectUserActivity.flagOwner==true){
+		 if (SelectUserActivity.flagOwner){
 				Register.setText("Register as " +" "+"Owner");
 			 }
 			 else{
@@ -86,10 +84,8 @@ public class CreateAccountActivity extends ActionBarActivity {
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
+
+		return id == R.id.action_settings || super.onOptionsItemSelected(item);
 	}
 
 }

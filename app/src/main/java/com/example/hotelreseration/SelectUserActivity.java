@@ -13,8 +13,6 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.hotelreseration.NavigationDrawer.Fragment_hotels;
-
 public class SelectUserActivity extends ActionBarActivity {
 
 	@Override
@@ -78,6 +76,7 @@ public class SelectUserActivity extends ActionBarActivity {
 	 * Kanei elegxo gia na kanei eksodo apo to programma
 	 */
 	private int backButtonCount=0;
+
 	@Override
 	public void onBackPressed()
 	{
@@ -113,9 +112,11 @@ public class SelectUserActivity extends ActionBarActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
 	//change to: login activity
 	//ksanakanw to flagOwner = false se periptwsh pou epistrepsw sthn othonh epiloghs xrhsth ksana
 	//na mhn exei meinei to flag = true giati tha deixnei panta Owner
+
 	public void changeToLoginScreen(View v)
 	{
 		backButtonCount=0;//midenizw ton counter gia na pataw 2 fores to plhktro pisw gia na termatistei h efarmogh. Vrisketai parapanw

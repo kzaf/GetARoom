@@ -1,6 +1,5 @@
 package com.example.hotelreseration;
 
-//import android.R;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -58,7 +57,7 @@ public class MainScreenActivity extends ActionBarActivity implements
 	public void onSectionAttached(int number) {
 		switch (number) {
 		case 1:
-			if (SelectUserActivity.flagOwner==true){
+			if (SelectUserActivity.flagOwner){
 				mTitle = "Owner";
 			}else{
 				mTitle= "Traveler";
@@ -75,7 +74,7 @@ public class MainScreenActivity extends ActionBarActivity implements
 			test= getString(R.string.Settings);
 			break;
 		case 4:
-			if (SelectUserActivity.flagOwner==true){
+			if (SelectUserActivity.flagOwner){
 				mTitle =  getString(R.string.ManageReservations);
 			}else{
 				mTitle=  getString(R.string.Reservations);
@@ -84,7 +83,7 @@ public class MainScreenActivity extends ActionBarActivity implements
 			test= mTitle;
 			break;
 		case 5:
-			if (SelectUserActivity.flagOwner==true){
+			if (SelectUserActivity.flagOwner){
 				mTitle =  getString(R.string.ManageHotels);
 			}else{
 				mTitle=  "";
@@ -135,7 +134,7 @@ public class MainScreenActivity extends ActionBarActivity implements
 					//petaw kai ena toast
 					Toast.makeText(getApplicationContext(), "You Have Successfully Logged Out",Toast.LENGTH_LONG).show();
 		        }
-		     })
+			})
 		    .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
 		        public void onClick(DialogInterface dialog, int which) { 
 		            // do nothing

@@ -1,12 +1,7 @@
 package com.example.hotelreseration.NavigationDrawer;
 
-//import android.R;
 import java.util.ArrayList;
-
 import com.example.hotelreseration.R;
-import com.example.hotelreseration.R.layout;
-
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -17,12 +12,12 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class Fragment_Booked extends Fragment {
-	ArrayList<String> Target = new ArrayList<String>();
-public void a(){
-	Target.add("hi");
-    Target.add("hello");
-    Target.add("wrum");
-	}
+	ArrayList<String> Target = new ArrayList<>();
+//public void a(){
+//	Target.add("hi");
+//    Target.add("hello");
+//    Target.add("wrum");
+//	}
 	TextView txt;
 
 	@Override
@@ -36,7 +31,7 @@ public void a(){
 	    txt=(TextView) view.findViewById(R.id.nobookingtxt);
 	    
 	    
-	    ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity().getApplicationContext(),
+	    ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity().getApplicationContext(),
 	    		R.layout.mytextview,R.id.tv, Target);
 	    adapter.setNotifyOnChange(true);
 	    
