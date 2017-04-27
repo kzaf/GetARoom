@@ -21,8 +21,7 @@
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="19dp" >
+        android:layout_centerHorizontal="true">
     </ListView>
 
     <TextView
@@ -72,13 +71,13 @@
         android:id="@+id/onoma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/separator"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="60dp"
         android:text="Today is:"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textStyle="bold"
-        app:ignore="HardcodedText,RtlHardcoded" />
+        app:ignore="HardcodedText,RtlHardcoded"
+        android:layout_marginTop="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/separator" />
 
     <View
         android:id="@+id/View02"
@@ -95,44 +94,42 @@
         android:id="@+id/pickeddate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/edithotels"
-        android:layout_alignBottom="@+id/edithotels"
-        android:layout_centerHorizontal="true"
         android:text="--/--/----"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#ba2525"
-        app:ignore="HardcodedText" />
+        app:ignore="HardcodedText"
+        android:layout_alignBottom="@+id/View01"
+        android:layout_alignEnd="@+id/View01" />
 
     <TextView
         android:id="@+id/todaysdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/onoma"
-        android:layout_alignBottom="@+id/onoma"
-        android:layout_centerHorizontal="true"
         android:text="TodaysDate"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#011f60"
-        app:ignore="HardcodedText" />
+        app:ignore="HardcodedText"
+        android:layout_above="@+id/selectdate"
+        android:layout_alignEnd="@+id/selectdate" />
 
     <TextView
         android:id="@+id/ascending"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/descending"
-        android:layout_alignBottom="@+id/descending"
-        android:layout_alignRight="@+id/onoma"
         android:text="ascending ⇑"
-        app:ignore="HardcodedText,RtlHardcoded" />
+        app:ignore="HardcodedText,RtlHardcoded"
+        android:layout_marginBottom="9dp"
+        android:layout_above="@+id/list1"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/descending"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/View01"
-        android:layout_below="@+id/View01"
         android:text="⇓ descending"
-        app:ignore="HardcodedText,RtlHardcoded" />
+        app:ignore="HardcodedText,RtlHardcoded"
+        android:layout_alignTop="@+id/View04"
+        android:layout_alignParentEnd="true" />
 
     <View
         android:id="@+id/View04"
