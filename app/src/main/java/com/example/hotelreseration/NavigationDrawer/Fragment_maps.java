@@ -35,11 +35,10 @@ public class Fragment_maps extends android.support.v4.app.Fragment
     }
 
     @Override 
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, 
-                             Bundle savedInstanceState) { 
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         // inflate and return the layout 
-        View v = inflater.inflate(R.layout.fragment_maps, container, 
-                false); 
+        View v = inflater.inflate(R.layout.fragment_maps, container, false);
         mMapView = (MapView) v.findViewById(R.id.map); 
         mMapView.onCreate(savedInstanceState);
         //activate menu button
@@ -48,7 +47,7 @@ public class Fragment_maps extends android.support.v4.app.Fragment
         mMapView.onResume();// needed to get the map to display immediately 
  
         try { 
-            MapsInitializer.initialize(getActivity().getApplicationContext()); 
+            MapsInitializer.initialize(getActivity().getApplicationContext());
         } catch (Exception e) { 
             e.printStackTrace(); 
         }

@@ -1,5 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/RelativeLayout1"
     android:layout_width="fill_parent"
     android:background="@drawable/bluenav"
@@ -14,7 +14,7 @@
         android:layout_below="@+id/selectdate"
         android:background="#000000"
         android:visibility="visible"
-        app:ignore="RtlHardcoded" />
+        tools:ignore="RtlHardcoded" />
 
     <ListView
         android:id="@+id/list1"
@@ -33,7 +33,7 @@
         android:text="Selected date:"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textStyle="bold"
-        app:ignore="HardcodedText,RtlHardcoded" />
+        tools:ignore="HardcodedText,RtlHardcoded" />
 
     <View
         android:id="@+id/View01"
@@ -44,7 +44,7 @@
         android:layout_below="@+id/edithotels"
         android:background="#000000"
         android:visibility="visible"
-        app:ignore="RtlHardcoded" />
+        tools:ignore="RtlHardcoded" />
 
     <View
         android:id="@+id/View03"
@@ -55,7 +55,7 @@
         android:layout_alignRight="@+id/View02"
         android:background="#000000"
         android:visibility="visible"
-        app:ignore="RtlHardcoded" />
+        tools:ignore="RtlHardcoded" />
 
     <Button
         android:id="@+id/selectdate"
@@ -65,7 +65,7 @@
         android:layout_alignRight="@+id/separator"
         android:layout_below="@+id/View02"
         android:text="Select Date"
-        app:ignore="HardcodedText,RtlHardcoded" />
+        tools:ignore="HardcodedText,RtlHardcoded" />
 
     <TextView
         android:id="@+id/onoma"
@@ -74,10 +74,10 @@
         android:text="Today is:"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textStyle="bold"
-        app:ignore="HardcodedText,RtlHardcoded"
-        android:layout_marginTop="75dp"
+        tools:ignore="HardcodedText,RtlHardcoded"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/separator" />
+        android:layout_alignStart="@+id/separator"
+        android:layout_marginTop="70dp" />
 
     <View
         android:id="@+id/View02"
@@ -88,7 +88,7 @@
         android:layout_below="@+id/onoma"
         android:background="#000000"
         android:visibility="visible"
-        app:ignore="RtlHardcoded" />
+        tools:ignore="RtlHardcoded" />
 
     <TextView
         android:id="@+id/pickeddate"
@@ -97,7 +97,7 @@
         android:text="--/--/----"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#ba2525"
-        app:ignore="HardcodedText"
+        tools:ignore="HardcodedText"
         android:layout_alignBottom="@+id/View01"
         android:layout_alignEnd="@+id/View01" />
 
@@ -108,7 +108,7 @@
         android:text="TodaysDate"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#011f60"
-        app:ignore="HardcodedText"
+        tools:ignore="HardcodedText"
         android:layout_above="@+id/selectdate"
         android:layout_alignEnd="@+id/selectdate" />
 
@@ -117,7 +117,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ascending ⇑"
-        app:ignore="HardcodedText,RtlHardcoded"
+        tools:ignore="HardcodedText,RtlHardcoded"
         android:layout_marginBottom="9dp"
         android:layout_above="@+id/list1"
         android:layout_alignParentStart="true" />
@@ -127,7 +127,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="⇓ descending"
-        app:ignore="HardcodedText,RtlHardcoded"
+        tools:ignore="HardcodedText,RtlHardcoded"
         android:layout_alignTop="@+id/View04"
         android:layout_alignParentEnd="true" />
 
@@ -139,6 +139,6 @@
         android:layout_alignTop="@+id/ascending"
         android:background="#000000"
         android:visibility="visible"
-        app:ignore="RtlHardcoded" />
+        tools:ignore="RtlHardcoded" />
 
 </RelativeLayout>

@@ -1,7 +1,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/scrollView1"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/tools">
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools">
     
 <RelativeLayout
     android:layout_width="match_parent"
@@ -11,7 +12,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    app:ignore="ScrollViewSize" >
+    tools:ignore="ScrollViewSize" >
 
     <DatePicker
         android:id="@+id/datePicker1"
@@ -21,7 +22,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:headerYearTextAppearance="@array/pref_example_list_titles"
-        app:ignore="UnusedAttribute,RtlHardcoded" />
+        tools:ignore="UnusedAttribute,RtlHardcoded" />
 
 </RelativeLayout>
 
