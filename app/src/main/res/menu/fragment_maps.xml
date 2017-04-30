@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
-    
+
     <item
         android:id="@+id/HYBRID"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="HYBRID"></item>
+        android:title="HYBRID"/>
     <item
         android:id="@+id/SATELLITE"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="SATELLITE"></item>
+        android:title="SATELLITE"/>
     <item
         android:id="@+id/TERRAIN"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="TERRAIN"></item>
+        android:title="TERRAIN"/>
     <item
         android:id="@+id/NORMAL"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="NORMAL"></item>
+        android:title="NORMAL"/>
 
 </menu>

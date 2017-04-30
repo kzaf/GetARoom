@@ -1,6 +1,11 @@
 package com.example.hotelreseration.NavigationDrawer;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -9,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
+
 import com.example.hotelreseration.R;
 import com.example.hotelreseration.SelectUserActivity;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -23,58 +29,46 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class Fragment_maps extends android.support.v4.app.Fragment
-	implements OnMapLongClickListener, OnMapClickListener, OnMapReadyCallback  {
- 
-    MapView mMapView; 
+public class Fragment_maps extends android.support.v4.app.Fragment implements OnMapLongClickListener, OnMapClickListener, OnMapReadyCallback {
+
+    MapView mMapView;
     private GoogleMap googleMap;
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        //This is added now, along with OnMapReadyCallback. In any case remove them
-    }
 
-    @Override 
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
-        // inflate and return the layout 
-        View v = inflater.inflate(R.layout.fragment_maps, container, false);
-        mMapView = (MapView) v.findViewById(R.id.map); 
-        mMapView.onCreate(savedInstanceState);
-        //activate menu button
-        setHasOptionsMenu(true);
- 
-        mMapView.onResume();// needed to get the map to display immediately 
- 
-        try { 
-            MapsInitializer.initialize(getActivity().getApplicationContext());
-        } catch (Exception e) { 
-            e.printStackTrace(); 
-        }
-
-        //get the map
-        mMapView.getMapAsync(this);
+        this.googleMap = googleMap;
+        
         // Detect location
-        googleMap.setMyLocationEnabled(true);
+        if(checkPermission())
+            googleMap.setMyLocationEnabled(true);
+        else askPermission();
+
+        googleMap.getUiSettings().setMyLocationButtonEnabled(true);
         //googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+
         // Turns traffic layer on
         googleMap.setTrafficEnabled(true);
+
         // Enables indoor maps
         googleMap.setIndoorEnabled(true);
+
         // Enables indoor maps
         googleMap.setIndoorEnabled(true);
+
         // Turns on 3D buildings
         googleMap.setBuildingsEnabled(true);
+
         // Show Zoom buttons
         googleMap.getUiSettings().setZoomControlsEnabled(true);
+        
         // latitude and longitude
         double latitude = 40.639350;
         double longitude = 22.944607;
 
         googleMap.setOnMapLongClickListener(this);
         googleMap.setOnMapClickListener(this);
-
-
+        
         // create marker
         MarkerOptions thessaloniki = new MarkerOptions().position(new LatLng(latitude, longitude)).title("Thessaloniki");
         //----------------
@@ -93,7 +87,63 @@ public class Fragment_maps extends android.support.v4.app.Fragment
         googleMap.addMarker(LeykosPyrgos);
         CameraPosition cameraPositionLeykosPyrgos = new CameraPosition.Builder() .target(new LatLng(40.626401, 22.948352)).zoom(12).build();
         googleMap.animateCamera(CameraUpdateFactory .newCameraPosition(cameraPositionLeykosPyrgos));
+    }
 
+    // Check for permission to access Location
+    private boolean checkPermission() {
+        // Ask for permission if it wasn't granted yet
+        return (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION)
+                == PackageManager.PERMISSION_GRANTED );
+    }
+    // Asks for permission
+    private void askPermission() {
+        ActivityCompat.requestPermissions(
+                getActivity(),
+                new String[] { Manifest.permission.ACCESS_FINE_LOCATION },
+                1
+        );
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        switch ( requestCode ) {
+            case 1: {
+                if ( grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED ){
+                    // Permission granted
+                    if(checkPermission())
+                        googleMap.setMyLocationEnabled(true);
+
+                } else {
+                    // Permission denied
+
+                }
+                break;
+            }
+        }
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        // inflate and return the layout 
+        View v = inflater.inflate(R.layout.fragment_maps, container, false);
+        mMapView = (MapView) v.findViewById(R.id.map);
+        mMapView.onCreate(savedInstanceState);
+        //activate menu button
+        setHasOptionsMenu(true);
+
+        mMapView.onResume();// needed to get the map to display immediately 
+
+        try {
+            MapsInitializer.initialize(getActivity().getApplicationContext());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        //get the map
+        mMapView.getMapAsync(this);
 
         // Perform any camera updates here
         return v;
@@ -109,7 +159,7 @@ public class Fragment_maps extends android.support.v4.app.Fragment
         Log.d("onOptionsItemSelected","yes");
         switch (item.getItemId()) {
         case R.id.HYBRID:
-        	googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);;
+        	googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
             return true;
         case R.id.SATELLITE:
         	googleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
@@ -134,7 +184,7 @@ public class Fragment_maps extends android.support.v4.app.Fragment
     
     @Override 
     public void onMapLongClick(LatLng point) {
-    	 if (SelectUserActivity.flagOwner==true){
+    	 if (SelectUserActivity.flagOwner){
     		 googleMap.addMarker(new MarkerOptions()
              .position(point)
              .title(MainActivity.onomaxarth)           
@@ -167,5 +217,5 @@ public class Fragment_maps extends android.support.v4.app.Fragment
     public void onLowMemory() { 
         super.onLowMemory(); 
         mMapView.onLowMemory(); 
-    } 
-} 
+    }
+}

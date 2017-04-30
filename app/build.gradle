@@ -8,6 +8,7 @@ android {
         applicationId "com.example.hotelreseration"
         minSdkVersion 17
         targetSdkVersion 23
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -23,5 +24,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.google.android.gms:play-services:+'
 //    compile 'com.google.android.mgs:play-services-location:10.2.0'
-//    compile 'com.google.android.mgs:play-services-maps:10.2.0'
+//    compileSdkVersion 'com.google.android.mgs:play-services-maps:10.2.0'
 }

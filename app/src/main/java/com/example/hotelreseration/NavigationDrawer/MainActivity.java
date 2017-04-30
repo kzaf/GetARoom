@@ -10,6 +10,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -27,7 +28,6 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.hotelreseration.LoginActivity;
 import com.example.hotelreseration.R;
 import com.example.hotelreseration.SelectUserActivity;
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     private Fragment_reservations reservations;
     private Fragment_maps maps;
     private Fragment_hotels hotels;
-    private CharSequence drawerTitle;
+//    private CharSequence drawerTitle;
     private final String[] titlesowner = new String[]{
     		"Home",
     		 LoginActivity.mail,
@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
         }
         //Set the name of the ActionBar on open
         	getSupportActionBar().setTitle(LoginActivity.mail);//to onoma pou tha deixnei to actionbar tha einai tou logariasmou tou xrhsth
-        
+
         // Enable the action bar to have up navigation
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -393,7 +393,7 @@ public class MainActivity extends AppCompatActivity {
     }
     @SuppressWarnings("deprecation")
 	public void OwnerGuide(){
-    	if (SelectUserActivity.flagOwner==true){
+    	if (SelectUserActivity.flagOwner){
     		AlertDialog alertDialog = new AlertDialog.Builder(context).create();
         	alertDialog.setTitle("Owner Guide");
         	alertDialog.setIcon(R.drawable.guide);
