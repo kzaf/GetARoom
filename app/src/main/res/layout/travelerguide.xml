@@ -30,7 +30,7 @@
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:gravity="center"
-	        android:text="Yoh can search hotels around you in the tab map. You can also pin your favourites on the map by long tap on the place you like." />
+	        android:text="Yoy can search hotels around you in the tab map. You can also pin your favourites on the map by long tap on the place you like." />
 	
 	    <TextView
 	        android:id="@+id/textView9"
@@ -59,7 +59,7 @@
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:gravity="center"
-	        android:text="Here you can save your favorite hotel so you can access them easyly the next time you want to visit them." />
+	        android:text="Here you can save your favorite hotel so you can access them easily the next time you want to visit them." />
 	
 	    <TextView
 	        android:id="@+id/textView10"
@@ -73,7 +73,7 @@
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:gravity="center"
-	        android:text="Here you can see all the booked hotels you have and the date." />
+	        android:text="Here you can see all the booked hotels along with the booking dates." />
 	
 	    <TextView
 	        android:id="@+id/textView12"
@@ -87,7 +87,7 @@
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:gravity="center"
-	        android:text="here you can see all the cancelled reservation you have done." />
+	        android:text="Here you can see all the cancelled reservations you have done." />
 
 	    <TextView
 	        android:id="@+id/todaysdate"
@@ -101,7 +101,7 @@
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:gravity="center"
-	        android:text="By selecting the map from the sidebar you can see all the hotels near you. You can track yourself by turning on GPS on your phone." />
+	        android:text="By selecting the map from the sidebar you can see all the hotels near you. You can track yourself with gsm and GPS." />
 	
 	</LinearLayout>
 </ScrollView>
