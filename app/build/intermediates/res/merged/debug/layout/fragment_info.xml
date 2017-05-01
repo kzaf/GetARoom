@@ -42,32 +42,12 @@
         tools:ignore="RtlHardcoded" />
 
     <View
-        android:id="@+id/View03"
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:layout_alignLeft="@+id/View02"
-        android:layout_alignTop="@+id/guide"
-        android:background="#000000"
-        android:visibility="visible"
-        tools:ignore="RtlHardcoded" />
-
-    <View
         android:id="@+id/View06"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:layout_alignLeft="@+id/View04"
         android:layout_alignRight="@+id/View04"
         android:layout_below="@+id/reportaproblem"
-        android:background="#000000"
-        android:visibility="visible"
-        tools:ignore="RtlHardcoded" />
-
-    <View
-        android:id="@+id/View07"
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:layout_alignLeft="@+id/View06"
-        android:layout_alignTop="@+id/reportaproblem"
         android:background="#000000"
         android:visibility="visible"
         tools:ignore="RtlHardcoded" />
@@ -83,19 +63,9 @@
         tools:ignore="RtlHardcoded" />
 
     <View
-        android:id="@+id/View04"
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/contactus"
-        android:background="#000000"
-        android:visibility="visible"
-        tools:ignore="RtlHardcoded" />
-
-    <View
         android:id="@+id/View08"
         android:layout_width="wrap_content"
-        android:layout_height="1dp"
+        android:layout_height="2dp"
         android:layout_alignBottom="@+id/user_label"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
@@ -136,60 +106,48 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         tools:ignore="HardcodedText" />
 
-    <View
-        android:id="@+id/separator"
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:layout_alignLeft="@+id/View01"
-        android:layout_below="@+id/user_label"
-        android:layout_marginTop="85dp"
-        android:background="#000000"
-        android:visibility="visible"
-        tools:ignore="RtlHardcoded" />
-
     <TextView
         android:id="@+id/changeinfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/contactus"
-        android:layout_below="@+id/separator"
         android:text="About Us"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:layout_marginTop="61dp"
+        android:layout_below="@+id/user_label"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/reportaproblem"
-        android:layout_alignLeft="@+id/reportaproblem"
-        android:layout_below="@+id/View04"
-        android:src="@android:drawable/ic_menu_call" />
+        android:src="@android:drawable/ic_menu_call"
+        android:layout_above="@+id/View05"
+        android:layout_alignStart="@+id/imageView2" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_set_as"
         android:layout_alignBottom="@+id/View06"
-        android:layout_below="@+id/View07"
-        android:layout_toLeftOf="@+id/reportaproblem"
-        android:src="@android:drawable/ic_menu_set_as" />
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp" />
 
     <ImageView
         android:id="@+id/userImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/guide"
-        android:layout_alignTop="@+id/separator"
-        android:layout_toRightOf="@+id/imageView2"
-        android:src="@android:drawable/ic_menu_info_details" />
+        android:src="@android:drawable/ic_menu_info_details"
+        android:layout_alignBottom="@+id/View01"
+        android:layout_alignStart="@+id/imageView4" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/contactus"
-        android:layout_toLeftOf="@+id/guide"
-        android:src="@android:drawable/ic_menu_crop" />
+        android:src="@android:drawable/ic_menu_crop"
+        android:layout_alignBottom="@+id/View02"
+        android:layout_alignStart="@+id/imageView3" />
 
 </RelativeLayout>

@@ -16,6 +16,14 @@
         "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\anim\\fade_in.xml"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\df8aae0bd6be45048dbfe3ac7adcfc6b4bf99964\\output\\res\\anim\\design_fab_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\df8aae0bd6be45048dbfe3ac7adcfc6b4bf99964\\output\\res\\anim\\design_snackbar_out.xml"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\anim\\abc_slide_in_bottom.xml"
     },
@@ -26,6 +34,14 @@
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\df8aae0bd6be45048dbfe3ac7adcfc6b4bf99964\\output\\res\\anim\\design_snackbar_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\df8aae0bd6be45048dbfe3ac7adcfc6b4bf99964\\output\\res\\anim\\design_fab_in.xml"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",

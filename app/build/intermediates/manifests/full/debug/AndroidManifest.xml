@@ -8,6 +8,10 @@
         android:minSdkVersion="17"
         android:targetSdkVersion="23" />
 
+    <!-- <uses-sdk -->
+    <!-- android:minSdkVersion="17" -->
+    <!-- android:targetSdkVersion="23" /> -->
+
     <permission
         android:name="com.example.hotelreseration.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
@@ -24,6 +28,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- Optional permission for Analytics to run. -->
     <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Permissions required for GCM -->
@@ -81,65 +86,15 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.example.hotelreseration.MainTestActivity"
-            android:label="@string/title_activity_main_test"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.example.hotelreseration.NavigationDrawer.Fragment_info"
-            android:label="@string/title_activity_fragment1"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
             android:name="com.example.hotelreseration.NavigationDrawer.MainActivity"
             android:label="@string/title_activity_main"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.example.hotelreseration.Fragment_reservations"
-            android:label="@string/title_activity_fragment3"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.example.hotelreseration.NavigationDrawer.Fragment_maps"
-            android:label="@string/title_activity_fragment_maps"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.example.hotelreseration.SettingsActivity"
-            android:label="@string/title_activity_settings"
             android:screenOrientation="portrait" >
         </activity>
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyCMaGYB0vEk8iiQSa29boQF2B58xu3mZjE" />
+            android:value=" AIzaSyDOXbOwjVLxfPRHVhnWK70U2wpjQQxw3SI " />
 
-        <activity
-            android:name="com.example.hotelreseration.NavigationDrawer.Fragment_hotels"
-            android:label="@string/title_activity_fragment_hotels"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.example.hotelreseration.ListBlackFontActivity"
-            android:label="@string/title_activity_list_black_font"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.example.hotelreseration.NavigationDrawer.AddHotelActivity"
-            android:label="@string/title_activity_add_hotel"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.example.hotelreseration.NavigationDrawer.FragmentAddRoom"
-            android:label="@string/title_activity_fragment_add_room"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.example.hotelreseration.FragmentAddHotel2"
-            android:label="@string/title_activity_fragment_add_hotel2"
-            android:screenOrientation="portrait" >
-        </activity>
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

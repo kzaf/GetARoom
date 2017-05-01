@@ -20,106 +20,105 @@
 
     <View
         android:id="@+id/separator"
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
+        android:layout_width="330dp"
+        android:layout_height="2dp"
         android:layout_below="@+id/BookedText"
         android:background="#000000"
         android:visibility="visible"
-        tools:ignore="RtlHardcoded" />
+        tools:ignore="RtlHardcoded"
+        android:layout_alignStart="@+id/imageView2" />
 
     <TextView
         android:id="@+id/changeinfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/separator"
-        android:layout_marginTop="36dp"
-        android:layout_toRightOf="@+id/userImage"
+        android:layout_marginTop="56dp"
         android:text="Change Your Info"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/separator"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:id="@+id/userImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/deleteaccount"
-        android:layout_alignParentLeft="true"
-        android:layout_alignTop="@+id/deleteaccount"
         android:layout_marginLeft="18dp"
-        android:src="@android:drawable/ic_delete" />
+        android:src="@android:drawable/ic_menu_delete"
+        android:layout_alignTop="@+id/deleteaccount"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/changeinfo"
-        android:layout_alignLeft="@+id/userImage"
-        android:layout_alignTop="@+id/changeinfo"
-        android:src="@android:drawable/ic_lock_lock" />
+        android:src="@android:drawable/ic_lock_idle_lock"
+        android:layout_above="@+id/View01"
+        android:layout_alignStart="@+id/userImage"
+        android:layout_alignEnd="@+id/userImage" />
 
     <TextView
         android:id="@+id/deleteaccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/changeinfo"
-        android:layout_below="@+id/changeinfo"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="37dp"
         android:text="Delete Account"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/View01"
+        android:layout_centerHorizontal="true" />
 
     <View
         android:id="@+id/View01"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
-        android:layout_alignLeft="@+id/changeinfo"
-        android:layout_alignRight="@+id/changeinfo"
         android:layout_below="@+id/changeinfo"
         android:background="#000000"
         android:visibility="visible"
-        tools:ignore="RtlHardcoded" />
+        tools:ignore="RtlHardcoded"
+        android:layout_alignEnd="@+id/separator"
+        android:layout_alignStart="@+id/imageView2" />
 
     <View
         android:id="@+id/View02"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:layout_alignBottom="@+id/userImage"
-        android:layout_alignLeft="@+id/deleteaccount"
-        android:layout_alignRight="@+id/deleteaccount"
         android:background="#000000"
         android:visibility="visible"
-        tools:ignore="RtlHardcoded" />
+        tools:ignore="RtlHardcoded"
+        android:layout_alignEnd="@+id/View01"
+        android:layout_alignStart="@+id/userImage" />
 
     <View
         android:id="@+id/View03"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
-        android:layout_alignLeft="@+id/edithotels"
-        android:layout_alignRight="@+id/edithotels"
         android:layout_below="@+id/edithotels"
         android:background="#000000"
         android:visibility="visible"
-        tools:ignore="RtlHardcoded" />
+        tools:ignore="RtlHardcoded"
+        android:layout_alignEnd="@+id/View02"
+        android:layout_alignStart="@+id/hotelimage" />
 
     <TextView
         android:id="@+id/edithotels"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/deleteaccount"
-        android:layout_below="@+id/deleteaccount"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="39dp"
         android:text="Edit Hotels"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/View02"
+        android:layout_alignStart="@+id/BookedText" />
 
     <ImageView
         android:id="@+id/hotelimage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/edithotels"
-        android:layout_alignLeft="@+id/userImage"
-        android:layout_alignRight="@+id/userImage"
-        android:layout_alignTop="@+id/edithotels"
-        android:src="@drawable/action_hotels" />
+        android:src="@android:drawable/ic_menu_edit"
+        android:layout_above="@+id/View03"
+        android:layout_alignStart="@+id/userImage" />
 
 </RelativeLayout>

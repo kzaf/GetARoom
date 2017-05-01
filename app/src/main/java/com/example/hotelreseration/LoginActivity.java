@@ -41,29 +41,32 @@ public class LoginActivity extends ActionBarActivity {
 		        		 if (Email.getText().toString().contains("owner") && Pass.getText().toString().contains("0000")){
 		        			 startActivity(new Intent(LoginActivity.this, MainActivity.class));
 		        		 }
-		        		 else
+		        		 else if (Email.getText().toString().contains("kzaf") && Pass.getText().toString().contains("251991")){
+                             startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                             flagkzaf=true;
+		        		 }
+                         else
 		        			 //Toast is the pop up message
 		        			 Toast.makeText(getApplicationContext(), "Wrong Email or Password!",
 		        					 Toast.LENGTH_LONG).show();
 		        		 
-		        	 }else{//ginetai elegxos an exeis syndethei ws Traveler wste to email na einai traveler
+		        	 }
+		        	 else
+		        	     {//ginetai elegxos an exeis syndethei ws Traveler wste to email na einai traveler
 		        		 if (Email.getText().toString().contains("traveler") && Pass.getText().toString().contains("0000")){
 		        			 startActivity(new Intent(LoginActivity.this, MainActivity.class));
 		        		 }
-		        		 else
+		        		 else if (Email.getText().toString().contains("kzaf") && Pass.getText().toString().contains("251991")) {
+                             startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                             flagkzaf = true;
+                         }
+                         else
 		        			 //Toast is the pop up message
 		        			 Toast.makeText(getApplicationContext(), "Wrong Email or Password!",
 		        					 Toast.LENGTH_LONG).show();
-		        	 }
+		        	     }
 						/////////////////////////////////////////////////
-						if (Email.getText().toString().contains("kzaf") && Pass.getText().toString().contains("251991")){
-							 startActivity(new Intent(LoginActivity.this, MainActivity.class));
-							 flagkzaf=true;
-						}
-						else
-							 //Toast is the pop up message
-							 Toast.makeText(getApplicationContext(), "Wrong Email or Password!",
-									 Toast.LENGTH_LONG).show();
+
 						/////////////////////////////////////////////////
 						mail=Email.getText().toString();
 						pass=Pass.getText().toString();
