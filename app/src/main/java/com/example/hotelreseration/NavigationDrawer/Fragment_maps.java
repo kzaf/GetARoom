@@ -38,7 +38,7 @@ public class Fragment_maps extends android.support.v4.app.Fragment implements On
     public void onMapReady(GoogleMap googleMap) {
 
         this.googleMap = googleMap;
-        
+
         // Detect location
         if(checkPermission())
             googleMap.setMyLocationEnabled(true);

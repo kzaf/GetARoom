@@ -113,7 +113,7 @@
 	        android:layout_below="@+id/hotelswimmingpool"
 	        android:layout_centerHorizontal="true"
 	        android:layout_marginTop="17dp"
-	        android:text="Room Types" />
+	        android:text="Room Type" />
 	
 	    <TextView
 	        android:id="@+id/date"
@@ -158,24 +158,24 @@
 
 	    <ImageView
 	        android:id="@+id/ImageView02"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
 	        android:layout_alignTop="@+id/ImageView01"
 	        android:layout_toRightOf="@+id/ImageView01"
 	        android:src="@drawable/person" />
 
 	    <ImageView
 	        android:id="@+id/ImageView04"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
 	        android:layout_alignLeft="@+id/ImageView02"
 	        android:layout_alignTop="@+id/ImageView03"
 	        android:src="@drawable/person" />
 
 	    <ImageView
 	        android:id="@+id/ImageView05"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
 	        android:layout_alignTop="@+id/ImageView04"
 	        android:layout_toRightOf="@+id/ImageView04"
 	        android:src="@drawable/person" />
@@ -298,6 +298,14 @@
 	        android:layout_alignLeft="@+id/hotelregularno"
 	        android:text="Regular:" />
 
+		<TextView
+            android:id="@+id/textViewNoOfRooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No.:"
+            android:layout_toEndOf="@+id/Space1"
+            android:layout_alignBottom="@+id/View03"/>
+
 	    <EditText
 	        android:id="@+id/suite3"
 	        android:layout_width="80dp"
@@ -349,8 +357,8 @@
 
 	    <ImageView
 	        android:id="@+id/userImage"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
+	        android:layout_width="20dp"
+	        android:layout_height="25dp"
 	        android:layout_alignParentLeft="true"
 	        android:layout_below="@+id/hotelluxuryno"
 	        android:layout_marginTop="40dp"
@@ -378,8 +386,8 @@
 
 	    <ImageView
 	        android:id="@+id/ImageView03"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
 	        android:layout_below="@+id/ImageView01"
 	        android:layout_marginTop="52dp"
 	        android:layout_toLeftOf="@+id/ImageView04"
@@ -387,22 +395,22 @@
 
 	    <ImageView
 	        android:id="@+id/ImageView01"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
 	        android:layout_alignParentLeft="true"
 	        android:layout_below="@+id/View05"
 	        android:layout_marginTop="42dp"
 	        android:src="@drawable/person" />
 
 	    <View
-	        android:id="@+id/View02"
-	        android:layout_width="wrap_content"
-	        android:layout_height="1dp"
-	        android:layout_alignRight="@+id/textView6"
-	        android:layout_below="@+id/edithoteltitle"
-	        android:layout_toRightOf="@+id/reportaproblem"
-	        android:background="@android:color/darker_gray"
-	        android:visibility="visible" />
+            android:id="@+id/View02"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@+id/edithoteltitle"
+            android:background="@android:color/darker_gray"
+            android:visibility="visible"
+            android:layout_alignEnd="@+id/textView6"
+            android:layout_toEndOf="@+id/reportaproblem"/>
 
 	    <TextView
 	        android:id="@+id/results"

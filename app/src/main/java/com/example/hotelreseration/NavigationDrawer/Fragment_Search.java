@@ -8,12 +8,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.example.hotelreseration.R;
 
 public class Fragment_Search extends Fragment {
 	
 	public boolean flag=false;
-	
+    public boolean checkflag = false;
+
 	@Override
     public View onCreateView(
             LayoutInflater inflater, 
@@ -28,15 +31,32 @@ public class Fragment_Search extends Fragment {
             Ascending.setVisibility(rootView.GONE);
             Descending.setVisibility(rootView.GONE);
         }
-        
-        final Button SetDate = (Button)rootView.findViewById(R.id.selectdate);
-        SetDate.setOnClickListener(new View.OnClickListener() {
-    	    public void onClick(View v) {   	
-                ((MainActivity) getActivity()).SetDate(); 
+
+
+
+        final Button CheckIn = (Button)rootView.findViewById(R.id.checkin);
+        CheckIn.setOnClickListener(new View.OnClickListener() {
+    	    public void onClick(View v) {
+                checkflag = true;
+                ((MainActivity) getActivity()).SetDate(checkflag);
                 flag=true;
             }  
     	    });
-        
+
+        final Button CheckOut = (Button)rootView.findViewById(R.id.checkout);
+        CheckOut.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                if (!checkflag){
+                    Toast.makeText(getActivity(), "Please Check in first", Toast.LENGTH_SHORT).show();
+                }else{
+                    checkflag = false;
+                    ((MainActivity) getActivity()).SetDate(checkflag);
+                    flag=true;
+                }
+
+            }
+        });
+
         TextView tvDisplayDate = (TextView) rootView.findViewById(R.id.todaysdate);
 
 

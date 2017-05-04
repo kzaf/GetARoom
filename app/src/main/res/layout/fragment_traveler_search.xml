@@ -11,7 +11,7 @@
         android:layout_height="1dp"
         android:layout_alignLeft="@+id/list1"
         android:layout_alignRight="@+id/list1"
-        android:layout_below="@+id/selectdate"
+        android:layout_below="@+id/checkin"
         android:background="#000000"
         android:visibility="visible"
         tools:ignore="RtlHardcoded" />
@@ -25,26 +25,19 @@
     </ListView>
 
     <TextView
-        android:id="@+id/edithotels"
+        android:id="@+id/checkoutdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/separator"
-        android:layout_below="@+id/separator"
-        android:text="Selected date:"
+        android:text="--/--/----"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textStyle="bold"
-        tools:ignore="HardcodedText,RtlHardcoded" />
+        android:textColor="#ba2525"
+        tools:ignore="HardcodedText"
+        android:gravity="right"
+        android:layout_below="@+id/separator"
+        android:layout_alignStart="@+id/checkout"
+        android:layout_alignEnd="@+id/separator"
+        android:layout_above="@+id/descending"/>
 
-    <View
-        android:id="@+id/View01"
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:layout_alignLeft="@+id/edithotels"
-        android:layout_alignRight="@+id/separator"
-        android:layout_below="@+id/edithotels"
-        android:background="#000000"
-        android:visibility="visible"
-        tools:ignore="RtlHardcoded" />
 
     <View
         android:id="@+id/View03"
@@ -58,14 +51,26 @@
         tools:ignore="RtlHardcoded" />
 
     <Button
-        android:id="@+id/selectdate"
-        android:layout_width="wrap_content"
+        android:id="@+id/checkin"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/onoma"
-        android:layout_alignRight="@+id/separator"
         android:layout_below="@+id/View02"
-        android:text="Select Date"
+        android:text="Check In"
+        android:background="@drawable/custom_button"
+        android:textColor="#FFFFFF"
         tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <Button
+        android:id="@+id/checkout"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Check Out"
+        tools:ignore="HardcodedText,RtlHardcoded"
+        android:layout_below="@+id/View02"
+        android:background="@drawable/custom_button"
+        android:textColor="#FFFFFF"
+        android:layout_alignEnd="@+id/list1"/>
 
     <TextView
         android:id="@+id/onoma"
@@ -84,22 +89,11 @@
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:layout_alignLeft="@+id/onoma"
-        android:layout_alignRight="@+id/selectdate"
         android:layout_below="@+id/onoma"
         android:background="#000000"
         android:visibility="visible"
-        tools:ignore="RtlHardcoded" />
-
-    <TextView
-        android:id="@+id/pickeddate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="--/--/----"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#ba2525"
-        tools:ignore="HardcodedText"
-        android:layout_alignBottom="@+id/View01"
-        android:layout_alignEnd="@+id/View01" />
+        tools:ignore="RtlHardcoded"
+        android:layout_alignEnd="@+id/checkout"/>
 
     <TextView
         android:id="@+id/todaysdate"
@@ -109,8 +103,9 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#011f60"
         tools:ignore="HardcodedText"
-        android:layout_above="@+id/selectdate"
-        android:layout_alignEnd="@+id/selectdate" />
+        android:layout_alignBaseline="@+id/onoma"
+        android:layout_alignBottom="@+id/onoma"
+        android:layout_alignEnd="@+id/View03"/>
 
     <TextView
         android:id="@+id/ascending"
@@ -140,5 +135,16 @@
         android:background="#000000"
         android:visibility="visible"
         tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/checkindate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/separator"
+        android:layout_below="@+id/separator"
+        android:text="--/--/----"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ba2525"
+        tools:ignore="HardcodedText"/>
 
 </RelativeLayout>

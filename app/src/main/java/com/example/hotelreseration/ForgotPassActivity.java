@@ -16,11 +16,14 @@ public class ForgotPassActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_forgot_pass);
+
 		//disable the ActionBar
 		android.support.v7.app.ActionBar AB=getSupportActionBar();
 		AB.hide();
+
 		//me aytes tis entoles allazw thn grammatoseira enos Text View
 		 TextView fpt = (TextView) findViewById(R.id.forgotpasstext);
 		 TextView dw = (TextView) findViewById(R.id.dontworry);
@@ -42,9 +45,6 @@ public class ForgotPassActivity extends ActionBarActivity {
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 
 		return id == R.id.action_settings || super.onOptionsItemSelected(item);

@@ -9,6 +9,9 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v4.app.FragmentManager;
@@ -139,6 +142,9 @@ public class MainActivity extends AppCompatActivity {
         // Enable the action bar to have up navigation
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        ColorDrawable newColor = new ColorDrawable(Color.parseColor("#333333"));//your color
+        //newColor.setAlpha(128);//from 0(0%) to 256(100%)
+        getSupportActionBar().setBackgroundDrawable(newColor);
 
         // Allow the the action bar to toggle the drawer
         drawerToggle = new ActionBarDrawerToggle(
@@ -475,10 +481,20 @@ public class MainActivity extends AppCompatActivity {
     	LayoutInflater layoutInflater = LayoutInflater.from(context);
 		View promptView = layoutInflater.inflate(R.layout.reportproblem, null);
 		alertDialog.setView(promptView);
+        final EditText reportproblem= (EditText)promptView.findViewById(R.id.suite1);
     	alertDialog.setButton("OK", new DialogInterface.OnClickListener()
     	{
     		public void onClick(DialogInterface dialog, int which) 
     		{
+                //Edw orizw ta mail sta opoia tha steilei email o xrhsths se periptwsh pou ksexasei to password tou
+                String subject="Report a problem";
+                String message=reportproblem.getText().toString();
+                {
+                    Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto","kzaf@it.teithe.gr,ziskatas@it.teithe.gr", null));
+                    intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+                    intent.putExtra(Intent.EXTRA_TEXT, message);
+                    startActivity(Intent.createChooser(intent, "Choose an Email client :"));
+                }
 	        }
 
     	});
@@ -774,17 +790,21 @@ public class MainActivity extends AppCompatActivity {
     
     @SuppressLint("InflateParams")
 	@SuppressWarnings("deprecation")
-   	public void SetDate(){
-       	AlertDialog alertDialog = new AlertDialog.Builder(context).create();
+   	public void SetDate(final boolean flag){
+
+       	final AlertDialog alertDialog = new AlertDialog.Builder(context).create();
        	alertDialog.setTitle("Select Date");
        	alertDialog.setIcon(R.drawable.action_reservations);
        	LayoutInflater layoutInflater = LayoutInflater.from(context);
    		View promptView = layoutInflater.inflate(R.layout.datepicker, null);
    		alertDialog.setView(promptView);
    		final DatePicker datePicker = (DatePicker) promptView.findViewById(R.id.datePicker1);
-   		final TextView PickedDate = (TextView) findViewById(R.id.pickeddate);
-   		final TextView Ascending = (TextView) findViewById(R.id.ascending);
+        datePicker.setMinDate(System.currentTimeMillis() - 1000); //prevent selecting older dates
+   		final TextView PickedDateIn = (TextView) findViewById(R.id.checkindate);
+        final TextView PickedDateOut = (TextView) findViewById(R.id.checkoutdate);
+        final TextView Ascending = (TextView) findViewById(R.id.ascending);
    		final TextView Descending = (TextView) findViewById(R.id.descending);
+
        	alertDialog.setButton("OK", new DialogInterface.OnClickListener()
        	{
        		public void onClick(DialogInterface dialog, int which) 
@@ -792,9 +812,17 @@ public class MainActivity extends AppCompatActivity {
        			day=datePicker.getDayOfMonth();
        			month=datePicker.getMonth() + 1;
        			year=datePicker.getYear();
-       			PickedDate.setText(new StringBuilder().append(day).append(" ").
-       					append("-").append(month).append("-").append(year));
-       			
+
+                if (flag){
+                    PickedDateIn.setText(new StringBuilder().append(day).append(" ").
+                            append("-").append(month).append("-").append(year));
+                }
+                else{
+                    PickedDateOut.setText(new StringBuilder().append(day).append(" ").
+                            append("-").append(month).append("-").append(year));
+
+                }
+
        	        Ascending.setVisibility(View.VISIBLE);
        	        Descending.setVisibility(View.VISIBLE);
    	        }

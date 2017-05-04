@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|center|top"
         android:gravity="center"
-        android:text="If you have any issue, please feel free to report it." />
+        android:text="If you have any issues, please feel free to report them." />
 
     <TextView
         android:id="@+id/textView9"

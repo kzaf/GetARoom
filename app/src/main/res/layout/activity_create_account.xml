@@ -81,6 +81,16 @@
              android:inputType="phone"
              android:textColor="#FFFFFF" />
 
+        <EditText
+            android:id="@+id/regCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Country"
+            android:textColorHint="#c1bdbd"
+            android:textColor="#FFFFFF" />
+
     </LinearLayout>
 
     <Button
