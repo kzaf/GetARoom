@@ -1,7 +1,11 @@
 package com.example.hotelreseration.NavigationDrawer;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.pm.PackageManager;
+import android.location.Criteria;
+import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
@@ -66,27 +70,39 @@ public class Fragment_maps extends android.support.v4.app.Fragment implements On
         double latitude = 40.639350;
         double longitude = 22.944607;
 
+//        LocationManager locationManager = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
+//        Criteria criteria = new Criteria();
+//
+//        Location location = locationManager.getLastKnownLocation(locationManager
+//                .getBestProvider(criteria, false));
+//        double lat = location.getLatitude();
+//        double lon = location.getLongitude();
+
         googleMap.setOnMapLongClickListener(this);
         googleMap.setOnMapClickListener(this);
         
         // create marker
         MarkerOptions thessaloniki = new MarkerOptions().position(new LatLng(latitude, longitude)).title("Thessaloniki");
-        //----------------
         MarkerOptions LeykosPyrgos = new MarkerOptions().position(new LatLng(40.626401, 22.948352)).title("Leykos Pyrgos");
 
         // Changing marker icon
         thessaloniki.icon(BitmapDescriptorFactory .defaultMarker(BitmapDescriptorFactory.HUE_ROSE));
-        //----------------
         LeykosPyrgos.icon(BitmapDescriptorFactory .fromResource(R.drawable.whitetower));
 
         // adding marker
         googleMap.addMarker(thessaloniki);
-        CameraPosition cameraPositionThess = new CameraPosition.Builder() .target(new LatLng(40.639350, 22.944607)).zoom(12).build();
+        CameraPosition cameraPositionThess = new CameraPosition.Builder() .target(new LatLng(latitude, longitude)).zoom(12).build();
         googleMap.animateCamera(CameraUpdateFactory .newCameraPosition(cameraPositionThess));
-        //----------------
+
         googleMap.addMarker(LeykosPyrgos);
-        CameraPosition cameraPositionLeykosPyrgos = new CameraPosition.Builder() .target(new LatLng(40.626401, 22.948352)).zoom(12).build();
-        googleMap.animateCamera(CameraUpdateFactory .newCameraPosition(cameraPositionLeykosPyrgos));
+//        CameraPosition cameraPositionLeykosPyrgos = new CameraPosition.Builder() .target(new LatLng(40.626401, 22.948352)).zoom(12).build();
+//        googleMap.animateCamera(CameraUpdateFactory .newCameraPosition(cameraPositionLeykosPyrgos));
+    }
+
+    public void onLocationChanged(Location location) {
+        double currentLatitude = location.getLatitude();
+        double currentLongitude = location.getLongitude();
+        LatLng latLng = new LatLng(currentLatitude, currentLongitude);
     }
 
     // Check for permission to access Location

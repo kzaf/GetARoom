@@ -818,9 +818,38 @@ public class MainActivity extends AppCompatActivity {
                             append("-").append(month).append("-").append(year));
                 }
                 else{
-                    PickedDateOut.setText(new StringBuilder().append(day).append(" ").
-                            append("-").append(month).append("-").append(year));
 
+                    String a = PickedDateIn.getText().toString();
+
+                    String[] partsa = a.split("-");
+                    String part1a = partsa[0];
+                    String[] p = part1a.split(" ");
+                    part1a = p[0];
+                    String part2a = partsa[1];
+                    String part3a = partsa[2];
+                    int p1a = Integer.parseInt(part1a);
+                    int p2a = Integer.parseInt(part2a);
+                    int p3a = Integer.parseInt(part3a);
+
+                    if(p3a >= year){
+                        if(p2a >= month){
+                            if(p1a >= day){
+                                Toast.makeText(getApplicationContext(), "CheckIn date cannot be the same or bigger than CheckOut!", Toast.LENGTH_LONG).show();
+                            }else{
+                                PickedDateOut.setText(new StringBuilder().append(day).append(" ").
+                                        append("-").append(month).append("-").append(year));
+
+                            }
+                        }else{
+                            PickedDateOut.setText(new StringBuilder().append(day).append(" ").
+                                    append("-").append(month).append("-").append(year));
+
+                        }
+                    }else{
+                        PickedDateOut.setText(new StringBuilder().append(day).append(" ").
+                                append("-").append(month).append("-").append(year));
+
+                    }
                 }
 
        	        Ascending.setVisibility(View.VISIBLE);
