@@ -24,6 +24,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -804,6 +805,7 @@ public class MainActivity extends AppCompatActivity {
         final TextView PickedDateOut = (TextView) findViewById(R.id.checkoutdate);
         final TextView Ascending = (TextView) findViewById(R.id.ascending);
    		final TextView Descending = (TextView) findViewById(R.id.descending);
+        final boolean[] flg = {false};
 
        	alertDialog.setButton("OK", new DialogInterface.OnClickListener()
        	{
@@ -835,25 +837,31 @@ public class MainActivity extends AppCompatActivity {
                         if(p2a >= month){
                             if(p1a >= day){
                                 Toast.makeText(getApplicationContext(), "CheckIn date cannot be the same or bigger than CheckOut!", Toast.LENGTH_LONG).show();
+                                flg[0] = false;
                             }else{
                                 PickedDateOut.setText(new StringBuilder().append(day).append(" ").
                                         append("-").append(month).append("-").append(year));
+                                flg[0] = true;
 
                             }
                         }else{
                             PickedDateOut.setText(new StringBuilder().append(day).append(" ").
                                     append("-").append(month).append("-").append(year));
+                            flg[0] = true;
 
                         }
                     }else{
                         PickedDateOut.setText(new StringBuilder().append(day).append(" ").
                                 append("-").append(month).append("-").append(year));
+                        flg[0] = true;
 
                     }
                 }
+                if (flg[0]){
+                    Ascending.setVisibility(View.VISIBLE);
+                    Descending.setVisibility(View.VISIBLE);
+                }
 
-       	        Ascending.setVisibility(View.VISIBLE);
-       	        Descending.setVisibility(View.VISIBLE);
    	        }
 
        	});

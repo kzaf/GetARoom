@@ -1,8 +1,6 @@
 package com.example.hotelreseration;
 
-import android.content.Context;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -45,27 +43,11 @@ public class SelectUserActivity extends ActionBarActivity {
 		TextView sr = (TextView) findViewById(R.id.SelectRole);
 		Typeface srface = Typeface.createFromAsset(getAssets(),"fonts/black_jack.ttf");
 		sr.setTypeface(srface);
-		//------------------------------------------------------------
+
 		TextView welcome = (TextView) findViewById(R.id.Welcome);
 		Typeface welcomeface = Typeface.createFromAsset(getAssets(),"fonts/KaushanScript-Regular.ttf");
 		welcome.setTypeface(welcomeface);
-		
-		//create DB (tables & records)
-		SQLiteDatabase db;
-		db=openOrCreateDatabase("Owner", Context.MODE_PRIVATE, null);
-		db=openOrCreateDatabase("Hotel", Context.MODE_PRIVATE, null);
-		db=openOrCreateDatabase("Roomtype", Context.MODE_PRIVATE, null);
-		db=openOrCreateDatabase("ReservedRooms", Context.MODE_PRIVATE, null);
-		db=openOrCreateDatabase("Reservation", Context.MODE_PRIVATE, null);
-		db=openOrCreateDatabase("Traveller", Context.MODE_PRIVATE, null);
-		
-		//db.execSQL("CREATE TABLE IF NOT EXISTS Owner(Oid VARCHAR,Name VARCHAR,Surname VARCHAR,Mail VARCHAR,Password INTEGER");
-		//db.execSQL("CREATE TABLE IF NOT EXISTS Hotel(Hid VARCHAR,Hotelname VARCHAR,City VARCHAR,Address VARCHAR,TK VARCHAR,Telephone VARCHAR,Website VARCHAR,OidFK VARCHAR,Stars VARCHAR");
-		//db.execSQL("CREATE TABLE IF NOT EXISTS Roomtype(RoomtypeID VARCHAR,HotelFK VARCHAR,Type VARCHAR,HasWC VARCHAR,HasTV VARCHAR,HasAC VARCHAR,HasMB VARCHAR,IsAvailable VARCHAR,Price REAL,BedsNo INTEGER,RoomNo VARCHAR");
-		//db.execSQL("CREATE TABLE IF NOT EXISTS ReservedRooms(RRID VARCHAR,RoomtypeFK VARCHAR,ReservationFK VARCHAR,Arrivaldate DATE,Departuredate DATE");
-		//db.execSQL("CREATE TABLE IF NOT EXISTS Reservation(ReservationID VARCHAR,TravellerFK VARCHAR,Reservationdate DATE,Cancellationdate VARCHAR");
-		//db.execSQL("CREATE TABLE IF NOT EXISTS Traveller(TravellerID VARCHAR,Tname VARCHAR,Tsurname VARCHAR,Tmail VARCHAR,Tpassword INTEGER");
-		
+
 		//orizw to flag gia to listview me ta hotel na einai false
 	}
 	

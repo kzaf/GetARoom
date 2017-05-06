@@ -1,9 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/RelativeLayout1"
-    android:layout_width="fill_parent"
-    android:background="@drawable/bluenav"
-    android:layout_height="fill_parent" >
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="fill_parent"
+                android:background="@drawable/bluenav"
+                android:layout_height="fill_parent" >
 
     <View
         android:id="@+id/separator"
@@ -19,7 +19,7 @@
     <ListView
         android:id="@+id/list1"
         android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_height="250dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true">
     </ListView>
@@ -33,10 +33,10 @@
         android:textColor="#ba2525"
         tools:ignore="HardcodedText"
         android:gravity="right"
-        android:layout_below="@+id/separator"
         android:layout_alignStart="@+id/checkout"
         android:layout_alignEnd="@+id/separator"
-        android:layout_above="@+id/descending"/>
+        android:layout_above="@+id/descending"
+        android:layout_alignTop="@+id/checkindate"/>
 
 
     <View
@@ -54,12 +54,12 @@
         android:id="@+id/checkin"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/onoma"
-        android:layout_below="@+id/View02"
         android:text="Check In"
         android:background="@drawable/custom_button"
         android:textColor="#FFFFFF"
-        tools:ignore="HardcodedText,RtlHardcoded" />
+        tools:ignore="HardcodedText,RtlHardcoded"
+        android:layout_below="@+id/searchView"
+        android:layout_alignStart="@+id/separator"/>
 
     <Button
         android:id="@+id/checkout"
@@ -67,10 +67,11 @@
         android:layout_height="wrap_content"
         android:text="Check Out"
         tools:ignore="HardcodedText,RtlHardcoded"
-        android:layout_below="@+id/View02"
         android:background="@drawable/custom_button"
         android:textColor="#FFFFFF"
-        android:layout_alignEnd="@+id/list1"/>
+        android:layout_alignBaseline="@+id/checkin"
+        android:layout_alignBottom="@+id/checkin"
+        android:layout_alignEnd="@+id/separator"/>
 
     <TextView
         android:id="@+id/onoma"
@@ -80,9 +81,9 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textStyle="bold"
         tools:ignore="HardcodedText,RtlHardcoded"
+        android:layout_marginTop="64dp"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/separator"
-        android:layout_marginTop="70dp" />
+        android:layout_alignStart="@+id/searchView"/>
 
     <View
         android:id="@+id/View02"
@@ -111,7 +112,7 @@
         android:id="@+id/ascending"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ascending ⇑"
+        android:text="ascending ?"
         tools:ignore="HardcodedText,RtlHardcoded"
         android:layout_marginBottom="9dp"
         android:layout_above="@+id/list1"
@@ -121,7 +122,7 @@
         android:id="@+id/descending"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="⇓ descending"
+        android:text="descending"
         tools:ignore="HardcodedText,RtlHardcoded"
         android:layout_alignTop="@+id/View04"
         android:layout_alignParentEnd="true" />
@@ -140,11 +141,19 @@
         android:id="@+id/checkindate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/separator"
-        android:layout_below="@+id/separator"
         android:text="--/--/----"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#ba2525"
-        tools:ignore="HardcodedText"/>
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/checkin"
+        android:layout_alignStart="@+id/separator"/>
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/checkin"
+        android:layout_alignEnd="@+id/checkout"
+        android:layout_below="@+id/View02"/>
 
 </RelativeLayout>
