@@ -21,7 +21,8 @@
         android:layout_width="300dp"
         android:layout_height="250dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ascending">
     </ListView>
 
     <TextView
@@ -112,17 +113,16 @@
         android:id="@+id/ascending"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ascending ?"
+        android:text="ascending ⇑"
         tools:ignore="HardcodedText,RtlHardcoded"
-        android:layout_marginBottom="9dp"
-        android:layout_above="@+id/list1"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/View04"
+        android:layout_alignParentStart="true"/>
 
     <TextView
         android:id="@+id/descending"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="descending"
+        android:text="⇓ descending"
         tools:ignore="HardcodedText,RtlHardcoded"
         android:layout_alignTop="@+id/View04"
         android:layout_alignParentEnd="true" />
@@ -132,10 +132,10 @@
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignTop="@+id/ascending"
         android:background="#000000"
         android:visibility="visible"
-        tools:ignore="RtlHardcoded" />
+        tools:ignore="RtlHardcoded"
+        android:layout_below="@+id/checkindate"/>
 
     <TextView
         android:id="@+id/checkindate"
