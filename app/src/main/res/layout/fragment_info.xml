@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/bluenav"
+    android:background="@drawable/bckgrnd"
     tools:context="com.example.hotelreseration.MainScreenActivity$PlaceholderFragment" >
 
     <View
@@ -88,12 +88,12 @@
         android:id="@+id/contactus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/guide"
-        android:layout_below="@+id/View02"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="53dp"
         android:text="Contact Us"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/View02"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/guide"

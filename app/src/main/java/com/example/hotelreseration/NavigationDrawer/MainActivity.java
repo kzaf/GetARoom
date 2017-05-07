@@ -1,7 +1,6 @@
 package com.example.hotelreseration.NavigationDrawer;
 
 //import android.R;
-import java.util.HashMap;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -13,29 +12,33 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.example.hotelreseration.LoginActivity;
 import com.example.hotelreseration.R;
 import com.example.hotelreseration.SelectUserActivity;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.HashMap;
+
+public class MainActivity extends ActionBarActivity {
 
     // Fields -----------------------------------------------------------------
 	android.support.v4.app.FragmentTransaction fragTran;
@@ -75,9 +78,7 @@ public class MainActivity extends AppCompatActivity {
     // Lifecycle Callbacks ----------------------------------------------------
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-    	
-    	//getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(Color.parseColor(#05078D)))); 
-    	
+
         // Base implemenation
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -112,9 +113,7 @@ public class MainActivity extends AppCompatActivity {
                     R.drawable.action_about,
                     R.drawable.action_settings,
                     R.drawable.action_logout
-                    
             };
-
         }
         
         // Get the drawer layout from the XML file and the ListView inside it
@@ -143,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
         // Enable the action bar to have up navigation
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        ColorDrawable newColor = new ColorDrawable(Color.parseColor("#333333"));//your color
+        ColorDrawable newColor = new ColorDrawable(Color.parseColor("#002766"));//your color
         //newColor.setAlpha(128);//from 0(0%) to 256(100%)
         getSupportActionBar().setBackgroundDrawable(newColor);
 
@@ -176,7 +175,6 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState == null){
             selectItem(0);
         }
-
     }
 
     // Methods ----------------------------------------------------------------

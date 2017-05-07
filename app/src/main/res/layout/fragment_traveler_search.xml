@@ -2,7 +2,7 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:id="@+id/RelativeLayout1"
                 android:layout_width="fill_parent"
-                android:background="@drawable/bluenav"
+                android:background="@drawable/bckgrnd"
                 android:layout_height="fill_parent" >
 
     <View

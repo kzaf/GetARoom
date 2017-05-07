@@ -3,10 +3,7 @@
     package="com.example.hotelreseration"
     android:versionCode="1"
     android:versionName="1.0" >
-
-    <!--<uses-sdk-->
-        <!--android:minSdkVersion="17"-->
-        <!--android:targetSdkVersion="23" />-->
+    
 
     <permission
         android:name="com.example.hotelreseration.permission.MAPS_RECEIVE"

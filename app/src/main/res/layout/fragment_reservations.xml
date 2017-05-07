@@ -3,7 +3,7 @@
     android:id="@android:id/tabhost"
     android:layout_width="match_parent"
     android:textColor="#FFFFFF"
-    android:background="@drawable/bluenav"
+    android:background="@drawable/bckgrnd"
     android:layout_height="match_parent">
 
     <LinearLayout
