@@ -78,7 +78,7 @@
              android:ems="10"
              android:hint="Telephone"
              android:textColorHint="#c1bdbd"
-             android:inputType="phone"
+             android:inputType="number"
              android:textColor="#FFFFFF" />
 
         <EditText

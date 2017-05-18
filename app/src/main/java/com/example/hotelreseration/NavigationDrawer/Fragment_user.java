@@ -38,6 +38,12 @@ public class Fragment_user extends Fragment {
     	EditText ChangeTelephone=(EditText)rootView.findViewById(R.id.ChangeTelephone);
     	EditText ChangeMail=(EditText)rootView.findViewById(R.id.ChangeMail);
     	EditText ChangeCountry=(EditText)rootView.findViewById(R.id.ChangeCountry);
+
+        ChangeName.setText(new StringBuilder().append(MainActivity.dbname));
+        ChangeSurname.setText(new StringBuilder().append(MainActivity.dbsurname));
+        ChangeTelephone.setText(new StringBuilder().append(MainActivity.dbtelephone));
+        ChangeMail.setText(new StringBuilder().append(MainActivity.dbmail));
+        ChangeCountry.setText(new StringBuilder().append(MainActivity.dbcountry));
     	
     	if(LoginActivity.flagkzaf){
     		ChangeName.setText(new StringBuilder().append("Konstantinos"));
@@ -57,7 +63,7 @@ public class Fragment_user extends Fragment {
                         Intent intent = new Intent();
                         intent.setType("image/*");
                         intent.setAction(Intent.ACTION_GET_CONTENT);
-                        startActivityForResult(Intent.createChooser(intent,"Select Picture"), SELECT_PICTURE); 
+                        startActivityForResult(Intent.createChooser(intent,"Select Picture"), SELECT_PICTURE);
                     }
                 });     
         return rootView;

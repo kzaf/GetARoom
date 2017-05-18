@@ -59,16 +59,16 @@ public class Fragment_Search extends Fragment {
             }
         });
 
-        TextView tvDisplayDate = (TextView) rootView.findViewById(R.id.todaysdate);
-
-
-        final Calendar c = Calendar.getInstance();
-        int yy = c.get(Calendar.YEAR);
-        int mm = c.get(Calendar.MONTH);
-        int dd = c.get(Calendar.DAY_OF_MONTH);
-
-        // set current date into textview        // Month is 0 based, just add 1
-        tvDisplayDate.setText(new StringBuilder().append(dd).append(" ").append("-").append(mm + 1).append("-").append(yy));
+//        TextView tvDisplayDate = (TextView) rootView.findViewById(R.id.todaysdate);
+//
+//
+//        final Calendar c = Calendar.getInstance();
+//        int yy = c.get(Calendar.YEAR);
+//        int mm = c.get(Calendar.MONTH);
+//        int dd = c.get(Calendar.DAY_OF_MONTH);
+//
+//        // set current date into textview        // Month is 0 based, just add 1
+//        tvDisplayDate.setText(new StringBuilder().append(dd).append(" ").append("-").append(mm + 1).append("-").append(yy));
         
         return rootView;
     }   

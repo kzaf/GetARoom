@@ -15,46 +15,46 @@
 
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/getaroom"
         android:label="@string/welcome"
+        android:name=".DataBase.AppController"
         android:theme="@style/AppBaseTheme">"
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
         <activity
             android:name=".LoginActivity"
-            android:label="@string/app_name" 
+            android:label="@string/app_name"
             android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".CreateAccountActivity"
-            android:label="@string/title_activity_activity_create_account" 
+            android:label="@string/title_activity_activity_create_account"
             android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".MainScreenActivity"
-            android:label="@string/title_activity_main_screen" 
+            android:label="@string/title_activity_main_screen"
             android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".SplashScreen"
-            android:label="@string/title_activity_splash_screen" 
+            android:label="@string/title_activity_splash_screen"
             android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".SelectUserActivity"
-            android:label="@string/title_activity_select_user" 
+            android:label="@string/title_activity_select_user"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -64,12 +64,12 @@
         </activity>
         <activity
             android:name=".ForgotPassActivity"
-            android:label="@string/title_activity_forgot_pass" 
+            android:label="@string/title_activity_forgot_pass"
             android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".NavigationDrawer.MainActivity"
-            android:label="@string/title_activity_main" 
+            android:label="@string/title_activity_main"
             android:screenOrientation="portrait">
         </activity>
         <meta-data

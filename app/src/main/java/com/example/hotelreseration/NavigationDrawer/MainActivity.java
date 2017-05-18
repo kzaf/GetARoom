@@ -18,8 +18,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import java.util.HashMap;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -32,6 +31,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.hotelreseration.DataBase.SQLiteHandler;
 import com.example.hotelreseration.LoginActivity;
 import com.example.hotelreseration.R;
 import com.example.hotelreseration.SelectUserActivity;
@@ -55,10 +55,15 @@ public class MainActivity extends ActionBarActivity {
     private Fragment_reservations reservations;
     private Fragment_maps maps;
     private Fragment_hotels hotels;
-//    private CharSequence drawerTitle;
+	private SQLiteHandler db;
+	public static String dbname;
+	public static String dbsurname;
+	public static String dbcountry;
+	public static String dbmail;
+	public static String dbtelephone;
     private final String[] titlesowner = new String[]{
     		"Home",
-    		 LoginActivity.mail,
+			"Profile",
             "Manage Reservations",
             "Manage Hotels",
             "Info",
@@ -67,7 +72,7 @@ public class MainActivity extends ActionBarActivity {
     };
     private final String[] titlestraveler = new String[]{
     		"Home",
-    		 LoginActivity.mail,	
+			"Profile",
             "Manage Booking",
             "Map",
             "Info",
@@ -91,7 +96,17 @@ public class MainActivity extends ActionBarActivity {
         reservations = new Fragment_reservations();
         maps = new Fragment_maps();
         hotels=new Fragment_hotels();
-        
+
+		// SQLite database handler
+		db = new SQLiteHandler(getApplicationContext());
+
+		//HashMap<String, String> user = db.getUserDetails();
+		dbname = db.getData("name"); //user.get("name");
+		dbsurname = db.getData("surname");
+		dbcountry = db.getData("country");
+		dbmail = db.getData("email");
+		dbtelephone = db.getData("telephone");
+
         // Get the icons from the drawables folder
         if (SelectUserActivity.flagOwner){
         	iconsOwner = new int[]{
@@ -137,7 +152,7 @@ public class MainActivity extends ActionBarActivity {
             drawerList.setOnItemClickListener(new DrawerItemClickListener());
         }
         //Set the name of the ActionBar on open
-        	getSupportActionBar().setTitle(LoginActivity.mail);//to onoma pou tha deixnei to actionbar tha einai tou logariasmou tou xrhsth
+        	getSupportActionBar().setTitle(dbname);// LoginActivity.mail to onoma pou tha deixnei to actionbar tha einai tou logariasmou tou xrhsth
 
         // Enable the action bar to have up navigation
         getSupportActionBar().setHomeButtonEnabled(true);
@@ -159,7 +174,7 @@ public class MainActivity extends ActionBarActivity {
             @SuppressWarnings("deprecation")
 			public void onDrawerOpened(View view){
             	backButtonCount=0;
-            	getSupportActionBar().setTitle(LoginActivity.mail);//ayto einai gia na paramenei to onoma sto actionbar otan anoigei kai kleinei
+            	getSupportActionBar().setTitle(dbname);// LoginActivity.mail ayto einai gia na paramenei to onoma sto actionbar otan anoigei kai kleinei
             	//if (SelectUserActivity.flagOwner==true){
                 	//getSupportActionBar().setTitle("Owner");
                 //}else{
