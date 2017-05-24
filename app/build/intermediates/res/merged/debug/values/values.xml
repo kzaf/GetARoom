@@ -845,7 +845,11 @@
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <style name="AppBaseTheme" parent="Theme.AppCompat.Light"> 
+    <style name="AppBaseTheme" parent="Theme.AppCompat.NoActionBar">
+         <!-- Customize your theme here. -->
+         <item name="colorPrimary">#002766</item>
+         <item name="colorPrimaryDark">#002766</item>
+         <item name="colorAccent">#002766</item>
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
         <item name="android:background">#05078D</item>
@@ -1891,17 +1895,11 @@
 <item name="castPlayButtonDrawable">@drawable/cast_ic_mini_controller_play</item>
 <item name="castShowImageThumbnail">true</item>
 </style>
-    <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
-        <item name="android:actionBarStyle">@style/MyActionBar</item>
-    </style>
     <style name="CustomCastTheme">
 <item name="castExpandedControllerStyle">@style/CastExpandedController</item>
 <item name="castIntroOverlayStyle">@style/CastIntroOverlay</item>
 <item name="castMiniControllerStyle">@style/CastMiniController</item>
 </style>
-    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">#05078D</item>
-    </style>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
 

@@ -18,12 +18,14 @@ public class SQLiteHandler extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
 
     // Database Name
-    private static final String DATABASE_NAME = "user_1";
+    private static final String DATABASE_NAME = "user_6";
 
     // Login table name
     private static final String TABLE_USER = "user";
 
     // Login Table Columns names
+    private static final String KEY_ID = "ida";
+    private static final String KEY_UID = "id";
     private static final String KEY_NAME = "name";
     private static final String KEY_SURNAME = "surname";
     private static final String KEY_COUNTRY = "country";
@@ -38,9 +40,9 @@ public class SQLiteHandler extends SQLiteOpenHelper {
     // Creating Tables
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String CREATE_LOGIN_TABLE = "CREATE TABLE " + TABLE_USER + "("
+        String CREATE_LOGIN_TABLE = "CREATE TABLE " + TABLE_USER + "(" + KEY_ID + " INTEGER PRIMARY KEY,"  + KEY_UID + " TEXT,"
                 + KEY_NAME + " TEXT," + KEY_SURNAME + " TEXT," + KEY_COUNTRY + " TEXT,"
-                + KEY_EMAIL + " TEXT UNIQUE," + KEY_PASSWORD + " TEXT,"
+                + KEY_EMAIL + " TEXT," + KEY_PASSWORD + " TEXT,"
                 + KEY_TELEPHONE + " TEXT" + ")";
         db.execSQL(CREATE_LOGIN_TABLE);
 
@@ -48,9 +50,9 @@ public class SQLiteHandler extends SQLiteOpenHelper {
     }
 
     //Delete the DB
-    public void dropDB(SQLiteDatabase db){
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_USER);
-    }
+//    public void dropDB(SQLiteDatabase db){
+//        db.execSQL("DROP TABLE IF EXISTS " + TABLE_USER);
+//    }
 
     // Upgrading database
     @Override
@@ -65,10 +67,11 @@ public class SQLiteHandler extends SQLiteOpenHelper {
     /**
      * Storing user details in database
      * */
-    public void addUser(String name, String surname, String country, String email, String password, String telephone) {
+    public void addUser(String id, String name, String surname, String country, String email, String password, String telephone) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
+        values.put(KEY_UID, id); // Id
         values.put(KEY_NAME, name); // Name
         values.put(KEY_SURNAME, surname); // Surname
         values.put(KEY_COUNTRY, country); // Country
@@ -77,10 +80,10 @@ public class SQLiteHandler extends SQLiteOpenHelper {
         values.put(KEY_TELEPHONE, telephone); // Telephone
 
         // Inserting Row
-        long id = db.insert(TABLE_USER, null, values);
+        Long ide = db.insertOrThrow(TABLE_USER, null, values);
         db.close(); // Closing database connection
 
-        Log.d(TAG, "New user inserted into sqlite: " + id);
+        Log.d(TAG, "New user inserted into sqlite: " + ide);
     }
 
     /**
@@ -88,7 +91,7 @@ public class SQLiteHandler extends SQLiteOpenHelper {
      * */
     public HashMap<String, String> getUserDetails() {
         HashMap<String, String> user = new HashMap<>();
-        String selectQuery = "SELECT  * FROM " + TABLE_USER;
+        String selectQuery = "SELECT * FROM " + TABLE_USER;
         //String[] selectedArgs = {"name","surname", "country", "email", "password"};
 
         SQLiteDatabase db = this.getReadableDatabase();
@@ -97,12 +100,13 @@ public class SQLiteHandler extends SQLiteOpenHelper {
         // Move to first row
         cursor.moveToFirst();
         if (cursor.getCount() > 0) {
-            user.put("name", cursor.getString(1));
-            user.put("surname", cursor.getString(2));
-            user.put("country", cursor.getString(3));
-            user.put("email", cursor.getString(4));
-            user.put("password", cursor.getString(5));
-            user.put("telephone", cursor.getString(6));
+            user.put("id", cursor.getString(1));
+            user.put("name", cursor.getString(2));
+            user.put("surname", cursor.getString(3));
+            user.put("country", cursor.getString(4));
+            user.put("email", cursor.getString(5));
+            user.put("password", cursor.getString(6));
+            user.put("telephone", cursor.getString(7));
         }
         cursor.close();
         db.close();
@@ -111,17 +115,17 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 
         return user;
     }
-
-    public String getData(String a){
-        SQLiteDatabase db = this.getReadableDatabase();
-        String s;
-        Cursor c = db.rawQuery("SELECT  * FROM " + TABLE_USER, null);
-        c.moveToFirst();
-        s=c.getString(c.getColumnIndex(a));
-        db.close();
-
-        return s;
-    }
+//
+//    public String getData(String a){
+//        SQLiteDatabase db = this.getReadableDatabase();
+//        String s;
+//        Cursor c = db.rawQuery("SELECT * FROM " + TABLE_USER + " WHERE name = " + KEY_NAME, null);
+//        c.moveToFirst();
+//        s=c.getString(c.getColumnIndex(a));
+//        db.close();
+//
+//        return s;
+//    }
 
     /**
      * Re crate database Delete all tables and create them again

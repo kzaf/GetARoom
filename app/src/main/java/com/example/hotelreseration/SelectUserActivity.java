@@ -11,7 +11,11 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.hotelreseration.DataBase.SQLiteHandler;
+
 public class SelectUserActivity extends ActionBarActivity {
+
+	private SQLiteHandler db;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,10 @@ public class SelectUserActivity extends ActionBarActivity {
 		//mhdenismos twn flag
 		SelectUserActivity.flagOwner=false;
 		LoginActivity.flagkzaf=false;
+
+		// SQLite database handler
+		db = new SQLiteHandler(getApplicationContext());
+        db.deleteUsers();
 		
 		//Orizw to label sto loginactivity na leei Log in as Owner otan epilegw Owner
 		//opote to startActivity event energopoieitai apo edw.

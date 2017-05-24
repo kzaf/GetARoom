@@ -5,12 +5,8 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="17"
+        android:minSdkVersion="21"
         android:targetSdkVersion="23" />
-
-    <!-- <uses-sdk -->
-    <!-- android:minSdkVersion="17" -->
-    <!-- android:targetSdkVersion="23" /> -->
 
     <permission
         android:name="com.example.hotelreseration.permission.MAPS_RECEIVE"
@@ -22,13 +18,11 @@
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- Optional permission for Analytics to run. -->
     <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Permissions required for GCM -->
@@ -40,7 +34,12 @@
 
     <uses-permission android:name="com.example.hotelreseration.permission.C2D_MESSAGE" />
 
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+
     <application
+        android:name="com.example.hotelreseration.DataBase.AppController"
         android:allowBackup="true"
         android:icon="@drawable/getaroom"
         android:label="@string/welcome"

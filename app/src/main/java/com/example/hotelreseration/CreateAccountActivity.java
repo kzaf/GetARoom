@@ -182,6 +182,7 @@ public class CreateAccountActivity extends ActionBarActivity {
 						// User successfully stored in MySQL
 						// Now store the user in sqlite
 						JSONObject user = jObj.getJSONObject("user");
+                        String id = user.getString("id");
 						String name = user.getString("name");
                         String surname = user.getString("surname");
                         String country = user.getString("country");
@@ -191,7 +192,7 @@ public class CreateAccountActivity extends ActionBarActivity {
                         //int telephone = 123456;//Integer.parseInt(tel);
 
 						// Inserting row in users table
-						db.addUser(name, surname, country, email, password, telephone);
+						db.addUser(id, name, surname, country, email, password, telephone);
 
 						Toast.makeText(getApplicationContext(), "User successfully registered. Try login now!", Toast.LENGTH_LONG).show();
 

@@ -100,12 +100,12 @@ public class MainActivity extends ActionBarActivity {
 		// SQLite database handler
 		db = new SQLiteHandler(getApplicationContext());
 
-		//HashMap<String, String> user = db.getUserDetails();
-		dbname = db.getData("name"); //user.get("name");
-		dbsurname = db.getData("surname");
-		dbcountry = db.getData("country");
-		dbmail = db.getData("email");
-		dbtelephone = db.getData("telephone");
+		HashMap<String, String> user = db.getUserDetails();
+		dbname = user.get("name");
+        dbsurname = user.get("surname");
+        dbcountry = user.get("country");
+        dbmail = user.get("email");
+        dbtelephone = user.get("telephone");
 
         // Get the icons from the drawables folder
         if (SelectUserActivity.flagOwner){
@@ -255,13 +255,13 @@ public class MainActivity extends ActionBarActivity {
 
     }
     
-    private void addMapFragment() { 
-        FragmentManager manager = getSupportFragmentManager(); 
-        FragmentTransaction transaction = manager.beginTransaction();
-        Fragment_maps fragment = new Fragment_maps();
-        transaction.add(R.id.map, fragment); 
-        transaction.commit(); 
-} 
+//    private void addMapFragment() {
+//        FragmentManager manager = getSupportFragmentManager();
+//        FragmentTransaction transaction = manager.beginTransaction();
+//        Fragment_maps fragment = new Fragment_maps();
+//        transaction.add(R.id.map, fragment);
+//        transaction.commit();
+//}
     
     @SuppressWarnings("deprecation")
 	private void selectItem(int position){
@@ -321,6 +321,7 @@ public class MainActivity extends ActionBarActivity {
             	{
             		public void onClick(DialogInterface dialog, int which) 
             		{
+                        db.deleteUsers();
             			//to parakatw gia na kanei logout ton xrhsth kai na epistrefei sthn othonh epiloghs rolou
            		    	startActivity(new Intent(MainActivity.this, SelectUserActivity.class));
            		    	finish();
@@ -527,6 +528,7 @@ public class MainActivity extends ActionBarActivity {
     	{
     		public void onClick(DialogInterface dialog, int which) 
     		{
+                db.deleteUsers();
         	 	Toast.makeText(getApplicationContext(), "Your account has been deleted!",
         	 	Toast.LENGTH_SHORT).show();
         	 	startActivity(new Intent(MainActivity.this, SelectUserActivity.class));

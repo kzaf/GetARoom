@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:2:1-84:12
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:2:1-81:12
 	package
 		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:3:5-42
 		INJECTED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml
@@ -16,24 +16,24 @@ ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidMan
 	xmlns:android
 		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:2:11-69
 permission#com.example.hotelreseration.permission.MAPS_RECEIVE
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:11:5-13:47
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:8:5-10:47
 	android:protectionLevel
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:13:9-44
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:10:9-44
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:12:9-75
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:9:9-75
 uses-feature#0x00020000
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:15:5-17:35
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:12:5-14:35
 MERGED from [com.google.android.gms:play-services-maps:10.2.4] C:\Users\kazaf\.android\build-cache\9ca4acaf2ea20997b749cd659a2ea344187bb858\output\AndroidManifest.xml:21:5-77
 	android:glEsVersion
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:16:9-41
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:13:9-41
 	android:required
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:17:9-32
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:14:9-32
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:19:2-77
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:16:2-77
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:19:19-75
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:16:19-75
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:20:5-67
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:17:5-67
 MERGED from [com.google.android.gms:play-services-ads-lite:10.2.4] C:\Users\kazaf\.android\build-cache\faa4da1ae793f6f4c53cc24e367b352d932eeffc\output\AndroidManifest.xml:19:5-66
 MERGED from [com.google.android.gms:play-services-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\af807ba429f6aa732bbd2a0362c2a37d6a2e05ea\output\AndroidManifest.xml:20:5-66
 MERGED from [com.google.android.gms:play-services-appinvite:10.2.4] C:\Users\kazaf\.android\build-cache\68b5d2beed1fbec243cf1506bba548323ceedd7a\output\AndroidManifest.xml:18:5-66
@@ -47,21 +47,21 @@ MERGED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\bu
 MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.4] C:\Users\kazaf\.android\build-cache\01d6689b359c327e02beb229fb42a92a79b31166\output\AndroidManifest.xml:20:5-66
 MERGED from [com.google.android.gms:play-services-maps:10.2.4] C:\Users\kazaf\.android\build-cache\9ca4acaf2ea20997b749cd659a2ea344187bb858\output\AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:20:22-64
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:17:22-64
 uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:22:5-98
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:18:5-98
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:22:22-95
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:18:22-95
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:23:5-81
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:19:5-81
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:23:22-78
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:19:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:24:5-79
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:20:5-79
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:24:22-76
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:20:22-76
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:25:5-79
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:21:5-79
 MERGED from [com.google.android.gms:play-services-ads-lite:10.2.4] C:\Users\kazaf\.android\build-cache\faa4da1ae793f6f4c53cc24e367b352d932eeffc\output\AndroidManifest.xml:20:5-78
 MERGED from [com.google.android.gms:play-services-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\af807ba429f6aa732bbd2a0362c2a37d6a2e05ea\output\AndroidManifest.xml:21:5-78
 MERGED from [com.google.android.gms:play-services-nearby:10.2.4] C:\Users\kazaf\.android\build-cache\d4649836b1793ab851349358f05f16882a3cbdc1\output\AndroidManifest.xml:4:5-78
@@ -72,13 +72,14 @@ MERGED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\bu
 MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.4] C:\Users\kazaf\.android\build-cache\01d6689b359c327e02beb229fb42a92a79b31166\output\AndroidManifest.xml:21:5-78
 MERGED from [com.google.android.gms:play-services-maps:10.2.4] C:\Users\kazaf\.android\build-cache\9ca4acaf2ea20997b749cd659a2ea344187bb858\output\AndroidManifest.xml:19:5-78
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:25:22-76
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:21:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:26:5-76
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:22:5-76
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:26:22-73
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:22:22-73
 application
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:29:5-82:19
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:24:5-79:19
+MERGED from [com.mcxiaoke.volley:library:1.0.6] C:\Users\kazaf\.android\build-cache\4a553156e71d4f8b214318f31e7d29ad1c4a9ea8\output\AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.gms:play-services:10.2.4] C:\Users\kazaf\.android\build-cache\eb81127ec7181429d99a545cdd9ad1f9ee80c93f\output\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-ads-lite:10.2.4] C:\Users\kazaf\.android\build-cache\faa4da1ae793f6f4c53cc24e367b352d932eeffc\output\AndroidManifest.xml:23:5-27:19
 MERGED from [com.google.android.gms:play-services-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\af807ba429f6aa732bbd2a0362c2a37d6a2e05ea\output\AndroidManifest.xml:26:5-19
@@ -124,101 +125,104 @@ MERGED from [com.google.android.gms:play-services-wearable:10.2.4] C:\Users\kaza
 MERGED from [com.google.android.gms:play-services-base:10.2.4] C:\Users\kazaf\.android\build-cache\da9710f615d4c13c2534cc89fdd71ec2be0048b2\output\AndroidManifest.xml:18:5-20:19
 MERGED from [com.google.android.gms:play-services-tasks:10.2.4] C:\Users\kazaf\.android\build-cache\50346fdc9830cf66c8fe958bdc9b177b07b8dbaa\output\AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-basement:10.2.4] C:\Users\kazaf\.android\build-cache\c89981cd023c1412f43f3197a60a027a3a250228\output\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:24.2.1] C:\Users\kazaf\.android\build-cache\f5bd82d0b309768ffa869445e2d2bd0a9758e534\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\kazaf\.android\build-cache\9cd3e6f2c343b404d3f7993ad824c6d96d653951\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\kazaf\.android\build-cache\d2a5f4e16aca20bfd40cd7d4ad9102b9f6addaf5\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\kazaf\.android\build-cache\0c3d1117e91107b6ffd8ec4c91775d7828307dad\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\kazaf\.android\build-cache\875f4486e15579b92e6861dbae4e867c09976c85\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\kazaf\.android\build-cache\ed23b547b318fe1e698ee915eba192bf92eaa375\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\kazaf\.android\build-cache\0286eaed4c36399f9ee30676045876c7d71352fc\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\kazaf\.android\build-cache\59e3a04673d786800eec5044914d4868820bbc4c\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\kazaf\.android\build-cache\0a42a1d11b0c53a018234ebcc07e1b29b20de89c\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\kazaf\.android\build-cache\c0090146182f2a653520dc44ed8e39cc20663a39\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\kazaf\.android\build-cache\ccd213f2faa23fb86161c60ca71fcae5462b0c59\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\kazaf\.android\build-cache\4d000fe5afe101180bf5a3cdc5874ac64bd783f6\output\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:32:9-40
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:27:9-40
 	android:allowBackup
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:30:9-35
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:25:9-35
 	android:icon
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:31:9-42
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:26:9-42
 	android:theme
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:33:9-44
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:29:9-44
+	android:name
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:28:9-47
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:34:9-36:69
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:31:9-33:69
 MERGED from [com.google.android.gms:play-services-basement:10.2.4] C:\Users\kazaf\.android\build-cache\c89981cd023c1412f43f3197a60a027a3a250228\output\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:36:13-66
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:33:13-66
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:35:13-58
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:32:13-58
 activity#com.example.hotelreseration.LoginActivity
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:38:9-42:20
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:35:9-39:20
 	android:screenOrientation
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:41:13-49
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:38:13-49
 	android:label
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:40:13-45
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:37:13-45
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:39:13-42
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:36:13-42
 activity#com.example.hotelreseration.CreateAccountActivity
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:43:9-47:20
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:40:9-44:20
 	android:screenOrientation
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:46:13-49
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:43:13-49
 	android:label
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:45:13-75
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:42:13-75
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:44:13-50
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:41:13-50
 activity#com.example.hotelreseration.MainScreenActivity
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:48:9-52:20
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:45:9-49:20
 	android:screenOrientation
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:51:13-49
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:48:13-49
 	android:label
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:50:13-63
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:47:13-63
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:49:13-47
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:46:13-47
 activity#com.example.hotelreseration.SplashScreen
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:53:9-57:20
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:50:9-54:20
 	android:screenOrientation
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:56:13-49
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:53:13-49
 	android:label
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:55:13-65
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:52:13-65
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:54:13-41
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:51:13-41
 activity#com.example.hotelreseration.SelectUserActivity
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:58:9-67:20
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:55:9-64:20
 	android:screenOrientation
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:61:13-49
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:58:13-49
 	android:label
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:60:13-63
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:57:13-63
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:59:13-47
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:56:13-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:62:13-66:29
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:59:13-63:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:63:17-69
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:60:17-69
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:63:25-66
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:60:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:65:17-77
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:62:17-77
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:65:27-74
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:62:27-74
 activity#com.example.hotelreseration.ForgotPassActivity
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:68:9-72:20
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:65:9-69:20
 	android:screenOrientation
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:71:13-49
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:68:13-49
 	android:label
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:70:13-63
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:67:13-63
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:69:13-47
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:66:13-47
 activity#com.example.hotelreseration.NavigationDrawer.MainActivity
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:73:9-77:20
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:70:9-74:20
 	android:screenOrientation
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:76:13-49
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:73:13-49
 	android:label
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:75:13-56
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:72:13-56
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:74:13-58
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:71:13-58
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:78:9-80:73
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:75:9-77:73
 	android:value
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:80:13-70
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:77:13-70
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:79:13-62
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:76:13-62
 uses-sdk
 INJECTED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.mcxiaoke.volley:library:1.0.6] C:\Users\kazaf\.android\build-cache\4a553156e71d4f8b214318f31e7d29ad1c4a9ea8\output\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.gms:play-services:10.2.4] C:\Users\kazaf\.android\build-cache\eb81127ec7181429d99a545cdd9ad1f9ee80c93f\output\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-ads:10.2.4] C:\Users\kazaf\.android\build-cache\b5d31407e2797389b6ddbc8e474c3d089f391915\output\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-ads-lite:10.2.4] C:\Users\kazaf\.android\build-cache\faa4da1ae793f6f4c53cc24e367b352d932eeffc\output\AndroidManifest.xml:22:5-43
@@ -273,12 +277,12 @@ MERGED from [com.google.android.gms:play-services-wearable:10.2.4] C:\Users\kaza
 MERGED from [com.google.android.gms:play-services-base:10.2.4] C:\Users\kazaf\.android\build-cache\da9710f615d4c13c2534cc89fdd71ec2be0048b2\output\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-tasks:10.2.4] C:\Users\kazaf\.android\build-cache\50346fdc9830cf66c8fe958bdc9b177b07b8dbaa\output\AndroidManifest.xml:3:5-43
 MERGED from [com.google.android.gms:play-services-basement:10.2.4] C:\Users\kazaf\.android\build-cache\c89981cd023c1412f43f3197a60a027a3a250228\output\AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:support-v4:24.2.1] C:\Users\kazaf\.android\build-cache\f5bd82d0b309768ffa869445e2d2bd0a9758e534\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\kazaf\.android\build-cache\9cd3e6f2c343b404d3f7993ad824c6d96d653951\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\kazaf\.android\build-cache\d2a5f4e16aca20bfd40cd7d4ad9102b9f6addaf5\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\kazaf\.android\build-cache\0c3d1117e91107b6ffd8ec4c91775d7828307dad\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\kazaf\.android\build-cache\875f4486e15579b92e6861dbae4e867c09976c85\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\kazaf\.android\build-cache\ed23b547b318fe1e698ee915eba192bf92eaa375\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\kazaf\.android\build-cache\0286eaed4c36399f9ee30676045876c7d71352fc\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\kazaf\.android\build-cache\59e3a04673d786800eec5044914d4868820bbc4c\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\kazaf\.android\build-cache\0a42a1d11b0c53a018234ebcc07e1b29b20de89c\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\kazaf\.android\build-cache\c0090146182f2a653520dc44ed8e39cc20663a39\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\kazaf\.android\build-cache\ccd213f2faa23fb86161c60ca71fcae5462b0c59\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\kazaf\.android\build-cache\4d000fe5afe101180bf5a3cdc5874ac64bd783f6\output\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:24.2.1] C:\Users\kazaf\.android\build-cache\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\output\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
@@ -503,3 +507,14 @@ ADDED from [com.google.android.gms:play-services-base:10.2.4] C:\Users\kazaf\.an
 		ADDED from [com.google.android.gms:play-services-base:10.2.4] C:\Users\kazaf\.android\build-cache\da9710f615d4c13c2534cc89fdd71ec2be0048b2\output\AndroidManifest.xml:19:86-145
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:10.2.4] C:\Users\kazaf\.android\build-cache\da9710f615d4c13c2534cc89fdd71ec2be0048b2\output\AndroidManifest.xml:19:19-85
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:25.3.1] C:\Users\kazaf\.android\build-cache\0286eaed4c36399f9ee30676045876c7d71352fc\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\kazaf\.android\build-cache\59e3a04673d786800eec5044914d4868820bbc4c\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\kazaf\.android\build-cache\0a42a1d11b0c53a018234ebcc07e1b29b20de89c\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\kazaf\.android\build-cache\c0090146182f2a653520dc44ed8e39cc20663a39\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\kazaf\.android\build-cache\ccd213f2faa23fb86161c60ca71fcae5462b0c59\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\kazaf\.android\build-cache\4d000fe5afe101180bf5a3cdc5874ac64bd783f6\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:support-v4:25.3.1] C:\Users\kazaf\.android\build-cache\0286eaed4c36399f9ee30676045876c7d71352fc\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:support-v4:25.3.1] C:\Users\kazaf\.android\build-cache\0286eaed4c36399f9ee30676045876c7d71352fc\output\AndroidManifest.xml:26:9-47

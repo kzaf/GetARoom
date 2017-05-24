@@ -732,6 +732,10 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\bckgrnd.jpg",
+        "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\drawable-xhdpi\\bckgrnd.jpg"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_media_route_on_04_light.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xhdpi-v4\\ic_media_route_on_04_light.png"
     },

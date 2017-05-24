@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bluenav"
+    android:background="@drawable/bckgrnd"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -25,7 +25,7 @@
     <View
         android:id="@+id/separator"
         android:layout_width="wrap_content"
-        android:layout_height="1dp"
+        android:layout_height="2dp"
         android:layout_alignLeft="@+id/user_label"
         android:layout_alignRight="@+id/user_label"
         android:layout_below="@+id/user_label"
@@ -50,7 +50,7 @@
         android:layout_below="@+id/onoma"
         android:layout_centerHorizontal="true"
         android:text="Get A Room"
-        android:textColor="#088304"
+        android:textColor="#025900"
         android:textSize="25sp"
         android:textStyle="bold"
         tools:ignore="HardcodedText" />
@@ -87,65 +87,28 @@
         tools:ignore="RtlHardcoded" />
 
     <TextView
-        android:id="@+id/TodayIstextView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/View02"
-        android:layout_below="@+id/View02"
-        android:text="Today is:"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textStyle="bold"
-        tools:ignore="HardcodedText,RtlHardcoded" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/TodayIstextView2"
-        android:layout_below="@+id/TodayIstextView2"
-        android:layout_marginTop="20dp"
-        android:text="Time:"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        tools:ignore="HardcodedText,RtlHardcoded" />
-
-    <AnalogClock
-        android:id="@+id/analogClock1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/digitalClock1"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:id="@+id/slideformenutextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_below="@+id/analogClock1"
-        android:layout_marginTop="33dp"
-        android:text="Slide to see menu --->"
-        tools:ignore="HardcodedText,RtlHardcoded" />
-
-    <TextView
         android:id="@+id/DateTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView3"
-        android:layout_alignRight="@+id/View02"
-        android:text="TextView"
-        android:textColor="#042c83"
+        android:text="20/4/2017"
+        android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:ignore="HardcodedText,RtlHardcoded" />
+        tools:ignore="HardcodedText,RtlHardcoded"
+        android:layout_below="@+id/View02"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/onoma" />
 
     <DigitalClock
         android:id="@+id/digitalClock1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView3"
-        android:layout_alignRight="@+id/DateTextView"
         android:text="DigitalClock"
-        android:textColor="#042c83"
+        android:textColor="#000000"
         android:textSize="17sp"
-        tools:ignore="HardcodedText,RtlHardcoded" />
+        tools:ignore="HardcodedText,RtlHardcoded"
+        android:layout_alignTop="@+id/DateTextView"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

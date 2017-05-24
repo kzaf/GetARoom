@@ -1,9 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/tools"
-    android:id="@+id/RelativeLayout1"
-    android:layout_width="fill_parent"
-    android:background="@drawable/bluenav"
-    android:layout_height="fill_parent" >
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="fill_parent"
+                android:background="@drawable/bckgrnd"
+                android:layout_height="fill_parent" >
 
     <View
         android:id="@+id/separator"
@@ -11,137 +11,126 @@
         android:layout_height="1dp"
         android:layout_alignLeft="@+id/list1"
         android:layout_alignRight="@+id/list1"
-        android:layout_below="@+id/selectdate"
+        android:layout_below="@+id/checkin"
         android:background="#000000"
         android:visibility="visible"
-        app:ignore="RtlHardcoded" />
+        tools:ignore="RtlHardcoded" />
 
     <ListView
         android:id="@+id/list1"
         android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_height="250dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="19dp" >
+        android:layout_below="@+id/ascending">
     </ListView>
 
     <TextView
-        android:id="@+id/edithotels"
+        android:id="@+id/checkoutdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/separator"
-        android:layout_below="@+id/separator"
-        android:text="Selected date:"
+        android:text="--/--/----"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textStyle="bold"
-        app:ignore="HardcodedText,RtlHardcoded" />
+        android:textColor="#ba2525"
+        tools:ignore="HardcodedText"
+        android:gravity="right"
+        android:layout_alignStart="@+id/checkout"
+        android:layout_alignEnd="@+id/separator"
+        android:layout_above="@+id/descending"
+        android:layout_alignTop="@+id/checkindate"/>
 
-    <View
-        android:id="@+id/View01"
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:layout_alignLeft="@+id/edithotels"
-        android:layout_alignRight="@+id/separator"
-        android:layout_below="@+id/edithotels"
-        android:background="#000000"
-        android:visibility="visible"
-        app:ignore="RtlHardcoded" />
-
-    <View
-        android:id="@+id/View03"
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:layout_above="@+id/todaysdate"
-        android:layout_alignLeft="@+id/onoma"
-        android:layout_alignRight="@+id/View02"
-        android:background="#000000"
-        android:visibility="visible"
-        app:ignore="RtlHardcoded" />
 
     <Button
-        android:id="@+id/selectdate"
-        android:layout_width="wrap_content"
+        android:id="@+id/checkin"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/onoma"
-        android:layout_alignRight="@+id/separator"
-        android:layout_below="@+id/View02"
-        android:text="Select Date"
-        app:ignore="HardcodedText,RtlHardcoded" />
+        android:text="Check In"
+        android:background="@drawable/custom_button"
+        android:textColor="#FFFFFF"
+        tools:ignore="HardcodedText,RtlHardcoded"
+        android:layout_below="@+id/searchView"
+        android:layout_alignStart="@+id/separator"/>
+
+    <Button
+        android:id="@+id/checkout"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Check Out"
+        tools:ignore="HardcodedText,RtlHardcoded"
+        android:background="@drawable/custom_button"
+        android:textColor="#FFFFFF"
+        android:layout_alignBaseline="@+id/checkin"
+        android:layout_alignBottom="@+id/checkin"
+        android:layout_alignEnd="@+id/separator"/>
 
     <TextView
         android:id="@+id/onoma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/separator"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="60dp"
-        android:text="Today is:"
+        android:layout_alignStart="@+id/searchView"
+        android:layout_marginTop="64dp"
+        android:text="Search:"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textStyle="bold"
-        app:ignore="HardcodedText,RtlHardcoded" />
+        tools:ignore="HardcodedText,RtlHardcoded"/>
 
     <View
         android:id="@+id/View02"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:layout_alignLeft="@+id/onoma"
-        android:layout_alignRight="@+id/selectdate"
         android:layout_below="@+id/onoma"
         android:background="#000000"
         android:visibility="visible"
-        app:ignore="RtlHardcoded" />
-
-    <TextView
-        android:id="@+id/pickeddate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/edithotels"
-        android:layout_alignBottom="@+id/edithotels"
-        android:layout_centerHorizontal="true"
-        android:text="--/--/----"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#ba2525"
-        app:ignore="HardcodedText" />
-
-    <TextView
-        android:id="@+id/todaysdate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/onoma"
-        android:layout_alignBottom="@+id/onoma"
-        android:layout_centerHorizontal="true"
-        android:text="TodaysDate"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#011f60"
-        app:ignore="HardcodedText" />
+        tools:ignore="RtlHardcoded"
+        android:layout_alignEnd="@+id/checkout"/>
 
     <TextView
         android:id="@+id/ascending"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/descending"
-        android:layout_alignBottom="@+id/descending"
-        android:layout_alignRight="@+id/onoma"
         android:text="ascending ⇑"
-        app:ignore="HardcodedText,RtlHardcoded" />
+        tools:ignore="HardcodedText,RtlHardcoded"
+        android:layout_below="@+id/View04"
+        android:layout_alignParentStart="true"/>
 
     <TextView
         android:id="@+id/descending"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/View01"
-        android:layout_below="@+id/View01"
         android:text="⇓ descending"
-        app:ignore="HardcodedText,RtlHardcoded" />
+        tools:ignore="HardcodedText,RtlHardcoded"
+        android:layout_alignTop="@+id/View04"
+        android:layout_alignParentEnd="true" />
 
     <View
         android:id="@+id/View04"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignTop="@+id/ascending"
         android:background="#000000"
         android:visibility="visible"
-        app:ignore="RtlHardcoded" />
+        tools:ignore="RtlHardcoded"
+        android:layout_below="@+id/checkindate"/>
+
+    <TextView
+        android:id="@+id/checkindate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--/--/----"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ba2525"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/checkin"
+        android:layout_alignStart="@+id/separator"/>
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/checkin"
+        android:layout_alignEnd="@+id/checkout"
+        android:layout_below="@+id/View02"/>
 
 </RelativeLayout>

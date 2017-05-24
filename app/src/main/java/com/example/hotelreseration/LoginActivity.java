@@ -42,20 +42,6 @@ public class LoginActivity extends ActionBarActivity {
     private SessionManager session;
     private SQLiteHandler db;
     public String URL_LOGIN;
-//    static String retrieve_user = "http://ptyxiaki2016.eu.pn/databaseConnection.php";
-//    // JSON Node names
-//    private static final String TAG_SUCCESS = "success";
-//    private static final String TAG_PRODUCTS = "products";
-//    private static final String TAG_PID = "pid";
-//    private static final String TAG_NAME = "name";
-//    // products JSONArray
-//    JSONArray products = null;
-//    // Progress Dialog
-//    private ProgressDialog pDialog;
-//    // Creating JSON Parser object
-//    JSONParser jParser = new JSONParser();
-//    ArrayList<HashMap<String, String>> productsList;
-//---------------------------------------------------------------------------------------------------------//
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -215,6 +201,7 @@ public class LoginActivity extends ActionBarActivity {
 
                         // Now store the user in sqlite
                         JSONObject user = jObj.getJSONObject("user");
+                        String id = user.getString("id");
                         String name = user.getString("name");
                         String surname = user.getString("surname");
                         String country = user.getString("country");
@@ -224,7 +211,7 @@ public class LoginActivity extends ActionBarActivity {
                         //int telephone = Integer.parseInt(tel);
 
                         // Inserting row in users table
-                        db.addUser(name, surname, country, email, password, telephone);
+                        db.addUser(id, name, surname, country, email, password, telephone);
 
                         // Launch main activity
                         Intent intent = new Intent(LoginActivity.this,

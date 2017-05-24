@@ -56,10 +56,6 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable\\abc_edit_text_material.xml"
-    },
-    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_closed_caption.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable\\cast_ic_mini_controller_closed_caption.xml"
     },
@@ -256,10 +252,6 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\da9710f615d4c13c2534cc89fdd71ec2be0048b2\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\df8aae0bd6be45048dbfe3ac7adcfc6b4bf99964\\output\\res\\drawable\\design_snackbar_background.xml"
-    },
-    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
@@ -392,10 +384,6 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable\\cast_ic_mini_controller_pause_large.xml"
     },
     {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable\\abc_btn_colored_material.xml"
-    },
-    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
@@ -430,10 +418,6 @@
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\df8aae0bd6be45048dbfe3ac7adcfc6b4bf99964\\output\\res\\drawable\\design_fab_background.xml"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_dark.xml",

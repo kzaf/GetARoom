@@ -52,16 +52,20 @@
         "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\drawable-xhdpi\\action_logout.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\user_pic.png",
+        "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\drawable-xhdpi\\user_pic.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_drawer.png",
         "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\drawable-xhdpi\\ic_drawer.png"
     },
     {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\logout.png",
-        "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\drawable-xhdpi\\logout.png"
-    },
-    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\simpleb.png",
         "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\drawable-xhdpi\\simpleb.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\logout.png",
+        "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\drawable-xhdpi\\logout.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\action_reservations.png",

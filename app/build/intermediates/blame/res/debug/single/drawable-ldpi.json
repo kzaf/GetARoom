@@ -52,6 +52,10 @@
         "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\drawable-ldpi\\action_user.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\user_pic.png",
+        "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\drawable-ldpi\\user_pic.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\ic_maps_indicator_current_position.png",
         "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\drawable-ldpi\\ic_maps_indicator_current_position.png"
     },

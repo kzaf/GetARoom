@@ -24,23 +24,13 @@
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:gravity="center"
-	        android:text="As a hotel owner you can add in the app your hotels and their characteristics. You can add only 3 hotels per account." />
-	
-	    <TextView
-	        android:id="@+id/reportaproblem"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:gravity="center"
-	        android:text="You can pin your hotel on the map. Select pin hotel and then on your place long click to place a point." />
-	
-	    <TextView
-	        android:id="@+id/textView9"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_gravity="center"
-	        android:text="__________"
-	        android:textAppearance="?android:attr/textAppearanceSmall" />
-	
+	        android:text="As a hotel owner you can add in the app your hotels and their info. You can add only 3 hotels per account." />
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="5dp"
+			android:background="@android:color/darker_gray"/>
+
 	    <TextView
 	        android:id="@+id/date"
 	        android:layout_width="wrap_content"
@@ -60,7 +50,7 @@
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:gravity="center"
-	        android:text="Suite is the best room. Contains everything, like AirCondition, MiniBar, TV, PrivateBathroom with jacuzzi, nice view from balcony ect.." />
+	        android:text="Suite is the best room. Contains the most like AirCondition, MiniBar, TV, PrivateBathroom with jacuzzi, nice view from balcony ect.." />
 
 	    <TextView
 	        android:id="@+id/textView6"
@@ -88,10 +78,14 @@
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:gravity="center"
-	        android:text="Regular room is the classic room with not a lot of luxuryties. Contains a TV but probably has not a PrivateBathroom and not an AirCondition. But this room is cheaper." />
+	        android:text="Regular room is the classic room with not a lot of luxurities. Contains a TV but probably has not a PrivateBathroom and not an AirCondition. But this room is cheaper." />
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="5dp"
+			android:background="@android:color/darker_gray"/>
 
 	    <TextView
-	        android:id="@+id/todaysdate"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:text="Pin hotel on the map:"
