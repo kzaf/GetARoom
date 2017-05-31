@@ -1,9 +1,8 @@
 package com.example.hotelreseration.NavigationDrawer;
 
-//import android.R;
-
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -11,6 +10,7 @@ import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -19,35 +19,60 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 import java.util.HashMap;
+
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.example.hotelreseration.CreateAccountActivity;
+import com.example.hotelreseration.DataBase.AppController;
 import com.example.hotelreseration.DataBase.SQLiteHandler;
 import com.example.hotelreseration.LoginActivity;
 import com.example.hotelreseration.R;
 import com.example.hotelreseration.SelectUserActivity;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.HashMap;
+import java.util.Map;
+
+import static com.example.hotelreseration.DataBase.AppConfig.URL_REGISTER_HOTEL;
 
 public class MainActivity extends ActionBarActivity {
 
     // Fields -----------------------------------------------------------------
 	android.support.v4.app.FragmentTransaction fragTran;
 	final Context context=this;
+    public static String onomaxarth="none"; //orizw mia metavlhth na krataei to onoma tou ksenodoxeiou gia na kanei pin sto xarth
+    public int backButtonCount=0;
+
+    public int day;
+    public int month;
+    public int year;
+
     private DrawerLayout drawerLayout;
     private ListView drawerList;
     private ActionBarDrawerToggle drawerToggle;
     private MenuListAdapter menuAdapter;
+
     private int[] iconsOwner,iconsTraveler;
+
     private Fragment_home home;
     private Fragment_user user;
     private Fragment_info info;
@@ -55,12 +80,39 @@ public class MainActivity extends ActionBarActivity {
     private Fragment_reservations reservations;
     private Fragment_maps maps;
     private Fragment_hotels hotels;
+
 	private SQLiteHandler db;
+
 	public static String dbname;
 	public static String dbsurname;
 	public static String dbcountry;
 	public static String dbmail;
 	public static String dbtelephone;
+    public static String dboFKey;
+
+    private ProgressDialog pDialog;
+    private static final String TAG = MainActivity.class.getSimpleName();
+
+    EditText hotelname;
+    EditText hotelcity;
+    EditText hoteladdress;
+    EditText hotelpostalcode;
+    EditText hoteltelephone;
+    EditText hotelwebsite;
+    Spinner hotelstars;
+    CheckBox hotelswimmingpool;
+    public String gethotelname;
+    public String gethotelcity;
+    public String gethoteladdress;
+    public String gethotelpostalcode;
+    public String gethoteltelephone;
+    public String gethotelwebsite;
+    public String gethotelstars;
+    public boolean gethotelswimmingpool;
+    public String sp = "false";
+
+	public String drawerSelection = "Home";
+
     private final String[] titlesowner = new String[]{
     		"Home",
 			"Profile",
@@ -100,34 +152,39 @@ public class MainActivity extends ActionBarActivity {
 		// SQLite database handler
 		db = new SQLiteHandler(getApplicationContext());
 
+        // Progress dialog
+        pDialog = new ProgressDialog(this);
+        pDialog.setCancelable(false);
+
 		HashMap<String, String> user = db.getUserDetails();
 		dbname = user.get("name");
         dbsurname = user.get("surname");
         dbcountry = user.get("country");
         dbmail = user.get("email");
         dbtelephone = user.get("telephone");
+        dboFKey = user.get("id");
 
         // Get the icons from the drawables folder
         if (SelectUserActivity.flagOwner){
         	iconsOwner = new int[]{
-            		R.drawable.action_home,
-            		R.drawable.action_user,
-                    R.drawable.action_reservations,
-                    R.drawable.action_hotels,
-                    R.drawable.action_about,
-                    R.drawable.action_settings,
-                    R.drawable.action_logout        
+                R.drawable.action_home,
+                R.drawable.action_user,
+                R.drawable.action_reservations,
+                R.drawable.action_hotels,
+                R.drawable.action_about,
+                R.drawable.action_settings,
+                R.drawable.action_logout
             };
         	  
         }else{
         	iconsTraveler = new int[]{
-            		R.drawable.action_home,
-            		R.drawable.action_user,
-                    R.drawable.action_reservations,
-                    R.drawable.action_maps,
-                    R.drawable.action_about,
-                    R.drawable.action_settings,
-                    R.drawable.action_logout
+                R.drawable.action_home,
+                R.drawable.action_user,
+                R.drawable.action_reservations,
+                R.drawable.action_maps,
+                R.drawable.action_about,
+                R.drawable.action_settings,
+                R.drawable.action_logout
             };
         }
         
@@ -152,14 +209,11 @@ public class MainActivity extends ActionBarActivity {
             drawerList.setOnItemClickListener(new DrawerItemClickListener());
         }
         //Set the name of the ActionBar on open
-        	getSupportActionBar().setTitle(dbname);// LoginActivity.mail to onoma pou tha deixnei to actionbar tha einai tou logariasmou tou xrhsth
+        	getSupportActionBar().setTitle(drawerSelection);// Set the drawer selection name on the ActionBar
 
         // Enable the action bar to have up navigation
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        ColorDrawable newColor = new ColorDrawable(Color.parseColor("#002766"));//your color
-        //newColor.setAlpha(128);//from 0(0%) to 256(100%)
-        getSupportActionBar().setBackgroundDrawable(newColor);
 
         // Allow the the action bar to toggle the drawer
         drawerToggle = new ActionBarDrawerToggle(
@@ -169,17 +223,14 @@ public class MainActivity extends ActionBarActivity {
                 R.string.navigation_drawer_close){
 
             public void onDrawerClosed(View view){
+                getSupportActionBar().setTitle(drawerSelection);// Set the drawer selection name on the ActionBar
                 super.onDrawerClosed(view);
             }
             @SuppressWarnings("deprecation")
 			public void onDrawerOpened(View view){
             	backButtonCount=0;
-            	getSupportActionBar().setTitle(dbname);// LoginActivity.mail ayto einai gia na paramenei to onoma sto actionbar otan anoigei kai kleinei
-            	//if (SelectUserActivity.flagOwner==true){
-                	//getSupportActionBar().setTitle("Owner");
-                //}else{
-                	//getSupportActionBar().setTitle("Traveler");
-                //}
+            	getSupportActionBar().setTitle(drawerSelection);// Set the drawer selection name on the ActionBar
+
                 super.onDrawerOpened(view);
             }
         };
@@ -201,7 +252,7 @@ public class MainActivity extends ActionBarActivity {
 	}
     
     @SuppressWarnings("deprecation")
-	@Override
+    @Override
     public boolean onOptionsItemSelected(MenuItem item){
     	switch (item.getItemId()) {
         case android.R.id.home:
@@ -237,6 +288,7 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
 
     }
+
     @Override
     protected void onPostCreate(Bundle savedInstanceState){
 
@@ -245,6 +297,7 @@ public class MainActivity extends ActionBarActivity {
         drawerToggle.syncState();
 
     }
+
     @Override
     public void onConfigurationChanged(Configuration newConfig){
 
@@ -254,14 +307,6 @@ public class MainActivity extends ActionBarActivity {
         drawerToggle.onConfigurationChanged(newConfig);
 
     }
-    
-//    private void addMapFragment() {
-//        FragmentManager manager = getSupportFragmentManager();
-//        FragmentTransaction transaction = manager.beginTransaction();
-//        Fragment_maps fragment = new Fragment_maps();
-//        transaction.add(R.id.map, fragment);
-//        transaction.commit();
-//}
     
     @SuppressWarnings("deprecation")
 	private void selectItem(int position){
@@ -274,33 +319,37 @@ public class MainActivity extends ActionBarActivity {
         switch (position){
         	case 0:{
         		fragTran.replace(R.id.content_frame, home);
+				drawerSelection = "Home";
         		break;
         	}
             case 1:{
                 fragTran.replace(R.id.content_frame, user);
+				drawerSelection = "Profile";
                 break;
             }
             case 2:{
                 fragTran.replace(R.id.content_frame, reservations);
+				drawerSelection = "Reservations";
                 break;
             }
             case 3:{
             	if (!SelectUserActivity.flagOwner){
-            		//startActivity(new Intent(MainActivity.this, Fragment_maps.class));
             		fragTran.replace(R.id.content_frame, maps);
-            		//setContentView(R.layout.fragment_maps); 
-            		//addMapFragment();
+					drawerSelection = "Map";
             	}else{
-            		fragTran.replace(R.id.content_frame, hotels);            		
+            		fragTran.replace(R.id.content_frame, hotels);
+					drawerSelection = "Hotels";
             	}
                 break;
             }
             case 4:{
                 fragTran.replace(R.id.content_frame, info);
+				drawerSelection = "Info";
                 break;
             }
             case 5:{
                 fragTran.replace(R.id.content_frame, settings);
+				drawerSelection = "Settings";
                 break;
             }
             case 6:{
@@ -340,29 +389,11 @@ public class MainActivity extends ActionBarActivity {
         drawerLayout.closeDrawer(drawerList);
 
     }
+
     public void setTitle(CharSequence title){
         getSupportActionBar().setTitle(title);
-
     }
 
-    // Classes ----------------------------------------------------------------
-    private class DrawerItemClickListener 
-    implements ListView.OnItemClickListener{
-
-        @Override
-        public void onItemClick(
-                AdapterView<?> parent, 
-                View view, 
-                int position,
-                long id) {
-
-            // When clicked, select open the appropriate fragment
-            selectItem(position);
-
-        }
-    }
-    //orizw mia metavlhth na krataei to onoma tou ksenodoxeiou gia na kanei pin sto xarth
-    public static String onomaxarth="none";
     @SuppressWarnings("deprecation")
 	public void alerthotel()
     {    	
@@ -372,44 +403,142 @@ public class MainActivity extends ActionBarActivity {
     	LayoutInflater layoutInflater = LayoutInflater.from(context);
 		View promptView = layoutInflater.inflate(R.layout.fragment_add_hotel, null);
 		alertDialog.setView(promptView);
-		final EditText hotelname= (EditText)promptView.findViewById(R.id.hotelname);
-		final EditText hotelcity= (EditText)promptView.findViewById(R.id.hotelcity);
-		final EditText hoteladdress= (EditText)promptView.findViewById(R.id.hoteladdress);
-		final EditText hotelpostalcode= (EditText)promptView.findViewById(R.id.hotelpostalcode);
-		final EditText hoteltelephone= (EditText)promptView.findViewById(R.id.hoteltelephone);
-		final EditText hotelwebsite= (EditText)promptView.findViewById(R.id.hotelwebsite);
+
+		hotelname= (EditText)promptView.findViewById(R.id.hotelname);
+		hotelcity= (EditText)promptView.findViewById(R.id.hotelcity);
+		hoteladdress= (EditText)promptView.findViewById(R.id.hoteladdress);
+		hotelpostalcode= (EditText)promptView.findViewById(R.id.hotelpostalcode);
+		hoteltelephone= (EditText)promptView.findViewById(R.id.hoteltelephone);
+		hotelwebsite= (EditText)promptView.findViewById(R.id.hotelwebsite);
+        hotelstars = (Spinner)promptView.findViewById(R.id.hotelstars);
+        hotelswimmingpool = (CheckBox)promptView.findViewById(R.id.hotelswimmingpool);
+
     	alertDialog.setButton("OK", new DialogInterface.OnClickListener()
     	{
     		public void onClick(DialogInterface dialog, int which) 
     		{
     			if (hotelname.getText().toString().equals("")||
-    					 hotelcity.getText().toString().equals("")||
-	        			 hoteladdress.getText().toString().equals("")||
-	        			 hotelpostalcode.getText().toString().equals("")||
-	        			 hoteltelephone.getText().toString().equals("")||
-	        			 hotelwebsite.getText().toString().equals("")){
+                     hotelcity.getText().toString().equals("")||
+                     hoteladdress.getText().toString().equals("")||
+                     hotelpostalcode.getText().toString().equals("")||
+                     hoteltelephone.getText().toString().equals("")||
+                     hotelwebsite.getText().toString().equals("")){
 	        		    //Toast is the pop up message
 	            	 	Toast.makeText(getApplicationContext(), "Please fill in all of the fields",
 	            	 	Toast.LENGTH_LONG).show();
 	            	 	
 	        	 }
     			else{
+                    gethotelname = hotelname.getText().toString().trim();
+                    gethotelcity = hotelcity.getText().toString().trim();
+                    gethoteladdress = hoteladdress.getText().toString().trim();
+                    gethotelpostalcode= hotelpostalcode.getText().toString().trim();
+                    gethoteltelephone= hoteltelephone.getText().toString().trim();
+                    gethotelwebsite= hotelwebsite.getText().toString().trim();
+                    gethotelstars= hotelstars.getSelectedItem().toString();
+                    gethotelswimmingpool = hotelswimmingpool.isChecked();
+                    if(gethotelswimmingpool){
+                        sp = "true";
+                    }
+
     				//Orizw tis times pou thelw sto HashMap kai tis kanw add sth lista me ta ksenodoxeia tou Owner
     				//Sto arxeio Fragment_hotels.java vrisketai h lista
-    				HashMap<String,String> hotel = new HashMap<String,String>();
+    				HashMap<String,String> hotel = new HashMap<>();
     				hotel.put("name",hotelname.getText().toString());
     				hotel.put("city", hotelcity.getText().toString());
     				hotels.Target.add(hotel);
     				onomaxarth=hotelname.getText().toString();//krataei to onoma gia na to kanei pin sto xarth
     				hotels.adapter.notifyDataSetChanged();//kanei update to listview me ta hotels
         			Toast.makeText(getApplicationContext(), "Hotel added!", Toast.LENGTH_SHORT).show();
+
+                    registerHotel(gethotelname, gethotelcity, gethoteladdress, gethotelpostalcode,
+                            gethoteltelephone, gethotelstars, dboFKey, gethotelwebsite, sp);
     			}
-    			
     		}
     	});
     	// Showing Alert Message
     	alertDialog.show();
     }
+
+    //-----------------------------------------------------------DB--------------------------------------------------------//
+
+    private void registerHotel(final String hotelname, final String city, final String address,
+                               final String postalcode, final String hoteltelephone,
+                               final String stars, final String dboFKey, final String website, final String swimmingpool)
+    {
+
+        // Tag used to cancel the request
+        String tag_string_req = "req_register";
+
+        pDialog.setMessage("Registering ...");
+        showDialog();
+
+        StringRequest strReq = new StringRequest(Request.Method.POST, URL_REGISTER_HOTEL, new Response.Listener<String>()
+        {
+
+            @Override
+            public void onResponse(String response)
+            {
+                Log.d(TAG, "Register Response: " + response.toString());
+                hideDialog();
+
+                try
+                {
+                    JSONObject jObj = new JSONObject(response);
+                    boolean error = jObj.getBoolean("error");
+                }
+                catch (JSONException e)
+                {
+                    e.printStackTrace();
+                }
+            }
+
+        }, new Response.ErrorListener()
+        {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e(TAG, "Registration Error: " + error.getMessage());
+                Toast.makeText(getApplicationContext(),
+                        error.getMessage(), Toast.LENGTH_LONG).show();
+                hideDialog();
+            }
+        }) {
+
+            @Override
+            protected Map<String, String> getParams() {
+                // Posting params to register url
+                Map<String, String> params = new HashMap<>();
+                params.put("hotelname", hotelname);
+                params.put("city", city);
+                params.put("address", address);
+                params.put("tk", String.valueOf(postalcode));
+                params.put("telephone", String.valueOf(hoteltelephone));
+                params.put("stars", stars);
+                params.put("oidFK", dboFKey);
+                params.put("website", website);
+                params.put("swimmingpool", swimmingpool);
+
+                return params;
+            }
+
+        };
+
+        // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+    }
+
+    private void showDialog() {
+        if (!pDialog.isShowing())
+            pDialog.show();
+    }
+
+    private void hideDialog() {
+        if (pDialog.isShowing())
+            pDialog.dismiss();
+    }
+
+
     @SuppressWarnings("deprecation")
 	public void OwnerGuide(){
     	if (SelectUserActivity.flagOwner){
@@ -423,8 +552,8 @@ public class MainActivity extends ActionBarActivity {
         	{
         		public void onClick(DialogInterface dialog, int which) 
         		{
-    	            	 	Toast.makeText(getApplicationContext(), "For more info contact us via mail",
-    	            	 	Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "For more info contact us via mail",
+                    Toast.LENGTH_SHORT).show();
     	        }
 
         	});
@@ -442,8 +571,8 @@ public class MainActivity extends ActionBarActivity {
         	{
         		public void onClick(DialogInterface dialog, int which) 
         		{
-    	            	 	Toast.makeText(getApplicationContext(), "For more info contact us via mail",
-    	            	 	Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "For more info contact us via mail",
+                    Toast.LENGTH_SHORT).show();
     	        }
 
         	});
@@ -452,6 +581,7 @@ public class MainActivity extends ActionBarActivity {
     	}
     	
     }
+
     @SuppressWarnings("deprecation")
 	public void AboutUs(){
     	AlertDialog alertDialog = new AlertDialog.Builder(context).create();
@@ -470,6 +600,7 @@ public class MainActivity extends ActionBarActivity {
     	// Showing Alert Message
     	alertDialog.show();
     }
+
     @SuppressWarnings("deprecation")
 	public void ContactUs(){
     	AlertDialog alertDialog = new AlertDialog.Builder(context).create();
@@ -488,6 +619,7 @@ public class MainActivity extends ActionBarActivity {
     	// Showing Alert Message
     	alertDialog.show();
     }
+
     @SuppressWarnings("deprecation")
 	public void ReportProblem(){
     	AlertDialog alertDialog = new AlertDialog.Builder(context).create();
@@ -516,6 +648,7 @@ public class MainActivity extends ActionBarActivity {
     	// Showing Alert Message
     	alertDialog.show();
     }
+
     @SuppressWarnings("deprecation")
 	public void DeleteAccount(){
     	AlertDialog alertDialog = new AlertDialog.Builder(context).create();
@@ -539,6 +672,7 @@ public class MainActivity extends ActionBarActivity {
     	// Showing Alert Message
     	alertDialog.show();
     }
+
     public void EditHotels(){
     	final AlertDialog alertDialog = new AlertDialog.Builder(context).create();
     	alertDialog.setTitle("Edit Hotels");
@@ -563,7 +697,7 @@ public class MainActivity extends ActionBarActivity {
 			String aLongValue = hashMap.get("name");
 			hotel1.setText(aLongValue);
 			hotel2.setVisibility(promptView.GONE);
-			hotel3.setVisibility(promptView.GONE);			
+			hotel3.setVisibility(promptView.GONE);
 		}else if (hotels.listView.getCount()==2){
 			hotel1.setEnabled(true);
 			hotels.adapter.notifyDataSetChanged();
@@ -575,7 +709,7 @@ public class MainActivity extends ActionBarActivity {
 			HashMap<String, String> hashMap1 = (HashMap<String, String>) hotels.listView.getItemAtPosition(1);
 			String aLongValue1 = hashMap1.get("name");
 			hotel2.setText(aLongValue1);
-			hotel3.setVisibility(promptView.GONE);	
+			hotel3.setVisibility(promptView.GONE);
 		}else{
 			hotel1.setEnabled(true);
 			hotels.adapter.notifyDataSetChanged();
@@ -636,28 +770,29 @@ public class MainActivity extends ActionBarActivity {
     			    	alertDialog.setIcon(R.drawable.addhotel);
     			    	LayoutInflater layoutInflater = LayoutInflater.from(context);
     					View promptView = layoutInflater.inflate(R.layout.fragment_add_hotel, null);
-    					alertDialog.setView(promptView);
-    					final EditText hotelname= (EditText)promptView.findViewById(R.id.hotelname);
-    					final EditText hotelcity= (EditText)promptView.findViewById(R.id.hotelcity);
-    					final EditText hoteladdress= (EditText)promptView.findViewById(R.id.hoteladdress);
-    					final EditText hotelpostalcode= (EditText)promptView.findViewById(R.id.hotelpostalcode);
-    					final EditText hoteltelephone= (EditText)promptView.findViewById(R.id.hoteltelephone);
-    					final EditText hotelwebsite= (EditText)promptView.findViewById(R.id.hotelwebsite);
+
+
+    					hotelname= (EditText)promptView.findViewById(R.id.hotelname);
+    					hotelcity= (EditText)promptView.findViewById(R.id.hotelcity);
+    					hoteladdress= (EditText)promptView.findViewById(R.id.hoteladdress);
+    					hotelpostalcode= (EditText)promptView.findViewById(R.id.hotelpostalcode);
+    					hoteltelephone= (EditText)promptView.findViewById(R.id.hoteltelephone);
+    					hotelwebsite= (EditText)promptView.findViewById(R.id.hotelwebsite);
+
     			    	alertDialog.setButton("OK", new DialogInterface.OnClickListener()
     			    	{
     			    		public void onClick(DialogInterface dialog, int which) 
     			    		{
     			    			if (hotelname.getText().toString().equals("")||
-    			    					 hotelcity.getText().toString().equals("")||
-    				        			 hoteladdress.getText().toString().equals("")||
-    				        			 hotelpostalcode.getText().toString().equals("")||
-    				        			 hoteltelephone.getText().toString().equals("")||
-    				        			 hotelwebsite.getText().toString().equals("")){
-    				        		    //Toast is the pop up message
-    				            	 	Toast.makeText(getApplicationContext(), "Please fill in all of the fields",
-    				            	 	Toast.LENGTH_LONG).show();
-    				            	 	
-    				        	 }
+                                     hotelcity.getText().toString().equals("")||
+                                     hoteladdress.getText().toString().equals("")||
+                                     hotelpostalcode.getText().toString().equals("")||
+                                     hoteltelephone.getText().toString().equals("")||
+                                     hotelwebsite.getText().toString().equals("")) {
+                                    //Toast is the pop up message
+                                    Toast.makeText(getApplicationContext(), "Please fill in all of the fields",
+                                    Toast.LENGTH_LONG).show();
+                                }
     			    			else{
     			    				//Orizw tis times pou thelw sto HashMap kai tis kanw add sth lista me ta ksenodoxeia tou Owner
     			    				//Sto arxeio Fragment_hotels.java vrisketai h lista
@@ -744,7 +879,7 @@ public class MainActivity extends ActionBarActivity {
     	// Showing Alert Message
     	alertDialog.show();
     }
-    public int backButtonCount=0;
+
     @SuppressWarnings("deprecation")
 	@Override
     public void onBackPressed(){
@@ -800,10 +935,6 @@ public class MainActivity extends ActionBarActivity {
     	alertDialog.show();
     }
     
-    public int day;
-    public int month;
-    public int year;
-    
     @SuppressLint("InflateParams")
 	@SuppressWarnings("deprecation")
    	public void SetDate(final boolean flag){
@@ -816,8 +947,8 @@ public class MainActivity extends ActionBarActivity {
    		alertDialog.setView(promptView);
    		final DatePicker datePicker = (DatePicker) promptView.findViewById(R.id.datePicker1);
         datePicker.setMinDate(System.currentTimeMillis() - 1000); //prevent selecting older dates
-   		final TextView PickedDateIn = (TextView) findViewById(R.id.checkindate);
-        final TextView PickedDateOut = (TextView) findViewById(R.id.checkoutdate);
+        final Button CheckIn = (Button) findViewById(R.id.checkin);
+        final Button CheckOut = (Button) findViewById(R.id.checkout);
         final TextView Ascending = (TextView) findViewById(R.id.ascending);
    		final TextView Descending = (TextView) findViewById(R.id.descending);
         final boolean[] flg = {false};
@@ -831,12 +962,11 @@ public class MainActivity extends ActionBarActivity {
        			year=datePicker.getYear();
 
                 if (flag){
-                    PickedDateIn.setText(new StringBuilder().append(day).append(" ").
-                            append("-").append(month).append("-").append(year));
+                    CheckIn.setText(new StringBuilder().append(day).append(" ").append("-").append(month).append("-").append(year));
                 }
                 else{
 
-                    String a = PickedDateIn.getText().toString();
+                    String a = CheckIn.getText().toString();
 
                     String[] partsa = a.split("-");
                     String part1a = partsa[0];
@@ -848,28 +978,42 @@ public class MainActivity extends ActionBarActivity {
                     int p2a = Integer.parseInt(part2a);
                     int p3a = Integer.parseInt(part3a);
 
-                    if(p3a >= year){
-                        if(p2a >= month){
-                            if(p1a >= day){
-                                Toast.makeText(getApplicationContext(), "CheckIn date cannot be the same or bigger than CheckOut!", Toast.LENGTH_LONG).show();
-                                flg[0] = false;
-                            }else{
-                                PickedDateOut.setText(new StringBuilder().append(day).append(" ").
-                                        append("-").append(month).append("-").append(year));
-                                flg[0] = true;
-
-                            }
-                        }else{
-                            PickedDateOut.setText(new StringBuilder().append(day).append(" ").
-                                    append("-").append(month).append("-").append(year));
-                            flg[0] = true;
-
-                        }
-                    }else{
-                        PickedDateOut.setText(new StringBuilder().append(day).append(" ").
+                    if(p3a < year){
+                        CheckOut.setText(new StringBuilder().append(day).append(" ").
                                 append("-").append(month).append("-").append(year));
                         flg[0] = true;
+                    }else if(p3a == year)
+                    {
+                        if(p2a < month){
+                            CheckOut.setText(new StringBuilder().append(day).append(" ").
+                                    append("-").append(month).append("-").append(year));
+                            flg[0] = true;
+                        }else if(p2a == month)
+                        {
+                            if(p1a < day){
+                                CheckOut.setText(new StringBuilder().append(day).append(" ").
+                                        append("-").append(month).append("-").append(year));
+                                flg[0] = true;
+                            }else{
+                                Toast.makeText(getApplicationContext(), "CheckIn date cannot be the same or bigger than CheckOut!", Toast.LENGTH_LONG).show();
+                                flg[0] = false;
+                                CheckIn.setText("CHECK IN");
+                                CheckOut.setText("CHECK OUT");
 
+                            }
+
+                        }else{
+                            Toast.makeText(getApplicationContext(), "CheckIn date cannot be the same or bigger than CheckOut!", Toast.LENGTH_LONG).show();
+                            flg[0] = false;
+                            CheckIn.setText("CHECK IN");
+                            CheckOut.setText("CHECK OUT");
+                        }
+
+                    }else{
+                        Toast.makeText(getApplicationContext(), "CheckIn date cannot be the same or bigger than CheckOut!", Toast.LENGTH_LONG).show();
+                        flg[0] = false;
+                        CheckIn.setText("CHECK IN");
+                        CheckOut.setText("CHECK OUT");
                     }
                 }
                 if (flg[0]){
@@ -883,5 +1027,16 @@ public class MainActivity extends ActionBarActivity {
        	// Showing Alert Message
        	alertDialog.show();
        }
-    
+
+    // Classes ----------------------------------------------------------------
+    private class DrawerItemClickListener implements ListView.OnItemClickListener{
+
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+            // When clicked, select open the appropriate fragment
+            selectItem(position);
+
+        }
+    }
 }

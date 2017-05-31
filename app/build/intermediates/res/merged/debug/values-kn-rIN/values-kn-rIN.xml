@@ -13,13 +13,16 @@
     <string msgid="7723749260725869598" name="abc_search_hint">"ಹುಡುಕಿ…"</string>
     <string msgid="3691816814315814921" name="abc_searchview_description_clear">"ಪ್ರಶ್ನೆಯನ್ನು ತೆರವುಗೊಳಿಸು"</string>
     <string msgid="2550479030709304392" name="abc_searchview_description_query">"ಪ್ರಶ್ನೆಯನ್ನು ಹುಡುಕಿ"</string>
-    <string msgid="8264924765203268293" name="abc_searchview_description_search">"ಹುಡುಕು"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"ಹುಡುಕಿ"</string>
     <string msgid="8928215447528550784" name="abc_searchview_description_submit">"ಪ್ರಶ್ನೆಯನ್ನು ಸಲ್ಲಿಸು"</string>
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"ಧ್ವನಿ ಹುಡುಕಾಟ"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"ಇವರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s ಜೊತೆಗೆ ಹಂಚಿಕೊಳ್ಳಿ"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"ಸಂಕುಚಿಸು"</string>
     <string msgid="3698378085901466129" name="mr_button_content_description">"ಬಿತ್ತರಿಸು ಬಟನ್‌"</string>
+    <string msgid="5088427771788648085" name="mr_cast_button_connected">"ಬಿತ್ತರಿಸು ಬಟನ್‌. ಸಂಪರ್ಕಿತಗೊಂಡಿದೆ"</string>
+    <string msgid="2187642765091873834" name="mr_cast_button_connecting">"ಬಿತ್ತರಿಸು ಬಟನ್‌. ಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ"</string>
+    <string msgid="816305490427819240" name="mr_cast_button_disconnected">"ಬಿತ್ತರಿಸು ಬಟನ್‌. ಸಂಪರ್ಕ ಕಡಿತಗೊಳಿಸಲಾಗಿದೆ"</string>
     <string msgid="6349900579507521956" name="mr_chooser_searching">"ಸಾಧನಗಳನ್ನು ಹುಡುಕಲಾಗುತ್ತಿದೆ"</string>
     <string msgid="414301941546135990" name="mr_chooser_title">"ಇದಕ್ಕೆ ಬಿತ್ತರಿಸಿ"</string>
     <string msgid="6422801843540543585" name="mr_controller_album_art">"ಆಲ್ಬಮ್ ಕಲೆ"</string>
@@ -33,8 +36,9 @@
     <string msgid="5451884435510905406" name="mr_controller_pause">"ವಿರಾಮ"</string>
     <string msgid="683634565969987458" name="mr_controller_play">"ಪ್ಲೇ ಮಾಡಿ"</string>
     <string msgid="4570331844078181931" name="mr_controller_stop">"ಬಿತ್ತರಿಸುವಿಕೆ ನಿಲ್ಲಿಸು"</string>
+    <string msgid="2361785992211841709" name="mr_controller_volume_slider">"ವಾಲ್ಯೂಮ್ ಸ್ಲೈಡರ್"</string>
     <string msgid="5441529851481176817" name="mr_system_route_name">"ಸಿಸ್ಟಂ"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"ಸಾಧನಗಳು"</string>
-    <string msgid="146198913615257606" name="search_menu_title">"ಹುಡುಕು"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"ಹುಡುಕಿ"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

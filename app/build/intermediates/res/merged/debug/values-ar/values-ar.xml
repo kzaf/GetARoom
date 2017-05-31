@@ -84,6 +84,9 @@
     <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"تحرّي الخلل وإصلاحه"</string>
     <string msgid="6099173376375995052" name="decline">"رفض"</string>
     <string msgid="3698378085901466129" name="mr_button_content_description">"زر الإرسال"</string>
+    <string msgid="5088427771788648085" name="mr_cast_button_connected">"زر الإرسال. تم الاتصال"</string>
+    <string msgid="2187642765091873834" name="mr_cast_button_connecting">"زر الإرسال. جارٍ الاتصال"</string>
+    <string msgid="816305490427819240" name="mr_cast_button_disconnected">"زر الإرسال. تم قطع الاتصال"</string>
     <string msgid="6349900579507521956" name="mr_chooser_searching">"جارٍ البحث عن أجهزة"</string>
     <string msgid="414301941546135990" name="mr_chooser_title">"إرسال إلى"</string>
     <string msgid="6422801843540543585" name="mr_controller_album_art">"صورة الألبوم"</string>
@@ -97,6 +100,7 @@
     <string msgid="5451884435510905406" name="mr_controller_pause">"إيقاف مؤقت"</string>
     <string msgid="683634565969987458" name="mr_controller_play">"تشغيل"</string>
     <string msgid="4570331844078181931" name="mr_controller_stop">"إيقاف الإرسال"</string>
+    <string msgid="2361785992211841709" name="mr_controller_volume_slider">"شريط تمرير مستوى الصوت"</string>
     <string msgid="5441529851481176817" name="mr_system_route_name">"النظام"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"الأجهزة"</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"مسح البحث"</string>

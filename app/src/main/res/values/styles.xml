@@ -12,5 +12,6 @@
     
     <style name="AppTheme" parent="AppBaseTheme">
         <item name="android:background">#05078D</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
     </style>
 </resources>

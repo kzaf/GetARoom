@@ -5,7 +5,7 @@
     style="?attr/dropdownListPreferredItemHeight"
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
-    android:background="#0F0F0F"
+    android:background="@android:color/transparent"
     android:orientation="horizontal"
     android:weightSum="10" >
 
@@ -45,7 +45,7 @@
             android:ellipsize="end"
             android:singleLine="true"
             android:textColor="@android:color/darker_gray"
-            android:textSize="@dimen/abc_text_size_body_2_material" />
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/map"

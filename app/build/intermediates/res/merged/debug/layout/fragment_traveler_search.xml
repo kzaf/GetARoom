@@ -12,9 +12,9 @@
         android:layout_alignLeft="@+id/list1"
         android:layout_alignRight="@+id/list1"
         android:layout_below="@+id/checkin"
-        android:background="#000000"
+        android:background="@android:color/transparent"
         android:visibility="visible"
-        tools:ignore="RtlHardcoded" />
+        tools:ignore="RtlHardcoded"/>
 
     <ListView
         android:id="@+id/list1"
@@ -29,15 +29,15 @@
         android:id="@+id/checkoutdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="--/--/----"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#ba2525"
-        tools:ignore="HardcodedText"
-        android:gravity="right"
-        android:layout_alignStart="@+id/checkout"
-        android:layout_alignEnd="@+id/separator"
         android:layout_above="@+id/descending"
-        android:layout_alignTop="@+id/checkindate"/>
+        android:layout_alignEnd="@+id/separator"
+        android:layout_alignStart="@+id/checkout"
+        android:layout_alignTop="@+id/checkindate"
+        android:gravity="right"
+        android:text="CheckOut Date"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/common_google_signin_btn_text_light_default"
+        tools:ignore="HardcodedText"/>
 
 
     <Button
@@ -67,13 +67,13 @@
         android:id="@+id/onoma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/searchView"
         android:layout_marginTop="64dp"
         android:text="Search:"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textStyle="bold"
-        tools:ignore="HardcodedText,RtlHardcoded"/>
+        tools:ignore="HardcodedText,RtlHardcoded"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/searchView"/>
 
     <View
         android:id="@+id/View02"
@@ -118,12 +118,12 @@
         android:id="@+id/checkindate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="--/--/----"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#ba2525"
-        tools:ignore="HardcodedText"
+        android:layout_alignStart="@+id/separator"
         android:layout_below="@+id/checkin"
-        android:layout_alignStart="@+id/separator"/>
+        android:text="CheckIn Date"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/common_google_signin_btn_text_light_default"
+        tools:ignore="HardcodedText"/>
 
     <android.support.v7.widget.SearchView
         android:id="@+id/searchView"

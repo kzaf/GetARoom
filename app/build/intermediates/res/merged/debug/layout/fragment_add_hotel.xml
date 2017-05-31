@@ -32,8 +32,8 @@
 	        android:id="@+id/hotelcity"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/reportaproblem"
-	        android:layout_alignParentRight="true"
+            android:layout_alignParentRight="true"
+			android:inputType="textCapSentences"
 	        android:layout_below="@+id/hotelname"
 	        android:ems="10"
 	        android:hint="city" />
@@ -45,6 +45,7 @@
 	        android:layout_alignLeft="@+id/hotelcity"
 	        android:layout_alignRight="@+id/hotelcity"
 	        android:layout_below="@+id/hotelcity"
+            android:inputType="textCapSentences"
 	        android:ems="10"
 	        android:hint="address"/>
 	
@@ -77,6 +78,7 @@
 	        android:layout_alignLeft="@+id/hoteltelephone"
 	        android:layout_alignRight="@+id/hoteltelephone"
 	        android:layout_below="@+id/hoteltelephone"
+            android:inputType="textWebEmailAddress"
 	        android:ems="10"
 	        android:hint="website"/>
 	
@@ -125,16 +127,18 @@
 	        android:text="Stars No.:" />
 	
 	    <EditText
-	        android:id="@+id/hotelname"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/hotelcity"
-	        android:layout_alignParentRight="true"
-	        android:layout_marginTop="24dp"
-	        android:ems="10"
-	        android:hint="name" >
-	        
-	        	        <requestFocus />
+            android:id="@+id/hotelname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:hint="name"
+            android:inputType="textCapSentences"
+            android:layout_below="@+id/Space1"
+            android:layout_alignStart="@+id/hotelcity"
+            android:layout_alignParentEnd="true">
+
+	        <requestFocus />
 	    </EditText>
 	
 	    <View

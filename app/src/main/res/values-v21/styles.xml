@@ -1,6 +1,10 @@
 <resources>
-
-    <style name="AppTheme" parent="android:Theme.Material.Light">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#002780</item>
+        <item name="android:statusBarColor">#002766</item>
+        <item name="colorPrimaryDark">#ffffff</item>
+        <item name="colorAccent">#002790</item>
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
     </style>
-
 </resources>

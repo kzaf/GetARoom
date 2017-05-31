@@ -19,6 +19,9 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Bununla paylaşın"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Dağıt"</string>
     <string msgid="3698378085901466129" name="mr_button_content_description">"Yayım düyməsi"</string>
+    <string msgid="5088427771788648085" name="mr_cast_button_connected">"Yayım düyməsi. Qoşuldu"</string>
+    <string msgid="2187642765091873834" name="mr_cast_button_connecting">"Yayım düyməsi. Qoşulur"</string>
+    <string msgid="816305490427819240" name="mr_cast_button_disconnected">"Yayım düyməsi. Bağlantı kəsildi"</string>
     <string msgid="6349900579507521956" name="mr_chooser_searching">"Cihazlar axtarılır"</string>
     <string msgid="414301941546135990" name="mr_chooser_title">"Bura yayımlayın"</string>
     <string msgid="6422801843540543585" name="mr_controller_album_art">"Albom incəsənəti"</string>
@@ -32,6 +35,7 @@
     <string msgid="5451884435510905406" name="mr_controller_pause">"Durdurun"</string>
     <string msgid="683634565969987458" name="mr_controller_play">"Oynadın"</string>
     <string msgid="4570331844078181931" name="mr_controller_stop">"Yayımı dayandırın"</string>
+    <string msgid="2361785992211841709" name="mr_controller_volume_slider">"Səs hərmi diyircəyi"</string>
     <string msgid="5441529851481176817" name="mr_system_route_name">"Sistem"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"Cihazlar"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Axtarış"</string>

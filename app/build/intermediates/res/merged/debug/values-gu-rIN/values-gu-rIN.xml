@@ -20,6 +20,9 @@
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s સાથે શેર કરો"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"સંકુચિત કરો"</string>
     <string msgid="3698378085901466129" name="mr_button_content_description">"કાસ્ટ કરો બટન"</string>
+    <string msgid="5088427771788648085" name="mr_cast_button_connected">"કાસ્ટ કરો બટન. કનેક્ટ થયું"</string>
+    <string msgid="2187642765091873834" name="mr_cast_button_connecting">"કાસ્ટ કરો બટન. કનેક્ટ થઈ રહ્યું છે"</string>
+    <string msgid="816305490427819240" name="mr_cast_button_disconnected">"કાસ્ટ કરો બટન. ડિસ્કનેક્ટ કર્યું"</string>
     <string msgid="6349900579507521956" name="mr_chooser_searching">"ઉપકરણો શોધી રહ્યાં છીએ"</string>
     <string msgid="414301941546135990" name="mr_chooser_title">"આના પર કાસ્ટ કરો"</string>
     <string msgid="6422801843540543585" name="mr_controller_album_art">"આલ્બમ કલા"</string>
@@ -33,6 +36,7 @@
     <string msgid="5451884435510905406" name="mr_controller_pause">"થોભાવો"</string>
     <string msgid="683634565969987458" name="mr_controller_play">"ચલાવો"</string>
     <string msgid="4570331844078181931" name="mr_controller_stop">"કાસ્ટ કરવાનું રોકો"</string>
+    <string msgid="2361785992211841709" name="mr_controller_volume_slider">"વૉલ્યુમ સ્લાઇડર"</string>
     <string msgid="5441529851481176817" name="mr_system_route_name">"સિસ્ટમ"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"ઉપકરણો"</string>
     <string msgid="146198913615257606" name="search_menu_title">"શોધો"</string>

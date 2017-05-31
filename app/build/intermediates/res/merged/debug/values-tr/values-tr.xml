@@ -84,6 +84,9 @@
     <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"Sorun Giderme"</string>
     <string msgid="6099173376375995052" name="decline">"Reddet"</string>
     <string msgid="3698378085901466129" name="mr_button_content_description">"Yayın düğmesi"</string>
+    <string msgid="5088427771788648085" name="mr_cast_button_connected">"Yayınla düğmesi. Bağlandı"</string>
+    <string msgid="2187642765091873834" name="mr_cast_button_connecting">"Yayınla düğmesi. Bağlanıyor"</string>
+    <string msgid="816305490427819240" name="mr_cast_button_disconnected">"Yayınla düğmesi. Bağlantı kesildi"</string>
     <string msgid="6349900579507521956" name="mr_chooser_searching">"Cihazlar bulunuyor"</string>
     <string msgid="414301941546135990" name="mr_chooser_title">"Şuraya yayınla:"</string>
     <string msgid="6422801843540543585" name="mr_controller_album_art">"Albüm kapağı"</string>
@@ -97,6 +100,7 @@
     <string msgid="5451884435510905406" name="mr_controller_pause">"Duraklat"</string>
     <string msgid="683634565969987458" name="mr_controller_play">"Oynat"</string>
     <string msgid="4570331844078181931" name="mr_controller_stop">"Yayını durdur"</string>
+    <string msgid="2361785992211841709" name="mr_controller_volume_slider">"Ses düzeyi kaydırma çubuğu"</string>
     <string msgid="5441529851481176817" name="mr_system_route_name">"Sistem"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"Cihazlar"</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"Aramayı temizle"</string>

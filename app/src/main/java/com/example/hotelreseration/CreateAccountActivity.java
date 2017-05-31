@@ -22,7 +22,6 @@ import com.example.hotelreseration.DataBase.AppConfig;
 import com.example.hotelreseration.DataBase.AppController;
 import com.example.hotelreseration.DataBase.SQLiteHandler;
 import com.example.hotelreseration.DataBase.SessionManager;
-import com.example.hotelreseration.NavigationDrawer.MainActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -31,9 +30,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CreateAccountActivity extends ActionBarActivity {
-	//--------------------------------------------
-	//EditText USER_NAME, USER_PASS, CON_PASS;
+
 	private static final String TAG = CreateAccountActivity.class.getSimpleName();
+
     public String getname;
     public String getsurname;
     public String getcountry;
@@ -41,6 +40,7 @@ public class CreateAccountActivity extends ActionBarActivity {
     public String gettel;
     public String getpassword;
 	public Button suButton;
+
 	private ProgressDialog pDialog;
 	private SessionManager session;
 	private SQLiteHandler db;
@@ -107,6 +107,7 @@ public class CreateAccountActivity extends ActionBarActivity {
                      getemail = mail.getText().toString().trim();
                      getpassword = pass.getText().toString().trim();
                      gettel = tel.getText().toString().trim();
+
                      if (SelectUserActivity.flagOwner){
                          URL_REGISTER = AppConfig.URL_REGISTER_OWNER;
                      }else{

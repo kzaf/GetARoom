@@ -20,6 +20,9 @@
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%sga ruxsat berish"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Yig‘ish"</string>
     <string msgid="3698378085901466129" name="mr_button_content_description">"Translatsiya tugmasi"</string>
+    <string msgid="5088427771788648085" name="mr_cast_button_connected">"Translatsiya tugmasi. Ulandi"</string>
+    <string msgid="2187642765091873834" name="mr_cast_button_connecting">"Translatsiya tugmasi. Ulanmoqda"</string>
+    <string msgid="816305490427819240" name="mr_cast_button_disconnected">"Translatsiya tugmasi. Uzildi"</string>
     <string msgid="6349900579507521956" name="mr_chooser_searching">"Qurilmalarni topish"</string>
     <string msgid="414301941546135990" name="mr_chooser_title">"Quyidagiga translatsiya qilish:"</string>
     <string msgid="6422801843540543585" name="mr_controller_album_art">"Albom muqovasi"</string>
@@ -33,6 +36,7 @@
     <string msgid="5451884435510905406" name="mr_controller_pause">"To‘xtatib turish"</string>
     <string msgid="683634565969987458" name="mr_controller_play">"Boshlash"</string>
     <string msgid="4570331844078181931" name="mr_controller_stop">"Translatsiyani to‘xtatish"</string>
+    <string msgid="2361785992211841709" name="mr_controller_volume_slider">"Ovoz balandligi slayderi"</string>
     <string msgid="5441529851481176817" name="mr_system_route_name">"Tizim"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"Qurilmalar"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Qidirish"</string>

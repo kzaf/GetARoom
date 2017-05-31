@@ -84,6 +84,9 @@
     <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"פתרון בעיות"</string>
     <string msgid="6099173376375995052" name="decline">"דחה"</string>
     <string msgid="3698378085901466129" name="mr_button_content_description">"‏לחצן הפעלת Cast"</string>
+    <string msgid="5088427771788648085" name="mr_cast_button_connected">"‏לחצן הפעלת Cast. מחובר"</string>
+    <string msgid="2187642765091873834" name="mr_cast_button_connecting">"‏לחצן הפעלת Cast. מתחבר"</string>
+    <string msgid="816305490427819240" name="mr_cast_button_disconnected">"‏לחצן הפעלת Cast. מנותק"</string>
     <string msgid="6349900579507521956" name="mr_chooser_searching">"מחפש מכשירים"</string>
     <string msgid="414301941546135990" name="mr_chooser_title">"העבר אל"</string>
     <string msgid="6422801843540543585" name="mr_controller_album_art">"עטיפת אלבום"</string>
@@ -97,6 +100,7 @@
     <string msgid="5451884435510905406" name="mr_controller_pause">"השהה"</string>
     <string msgid="683634565969987458" name="mr_controller_play">"הפעל"</string>
     <string msgid="4570331844078181931" name="mr_controller_stop">"עצור העברה"</string>
+    <string msgid="2361785992211841709" name="mr_controller_volume_slider">"מחוון עוצמה"</string>
     <string msgid="5441529851481176817" name="mr_system_route_name">"מערכת"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"מכשירים"</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"נקה את החיפוש"</string>

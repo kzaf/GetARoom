@@ -4,60 +4,92 @@
         "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\drawable-xxhdpi\\separator.jpg"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_17_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_17_light.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_07_dark.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_07_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_pause_circle_filled_grey600_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_pause_circle_filled_grey600_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_pause_circle_filled_grey600_36.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_07_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_07_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_pause_grey600_48.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_pause_grey600_48.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_pause_grey600_48.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_skip_next_white_24.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_skip_next_white_24.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_skip_next_white_24.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_plusone_standard_off_client.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dad2579d3b3366bda360d69e103575a9e1ae072f\\output\\res\\drawable-xxhdpi-v4\\ic_plusone_standard_off_client.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_15_dark.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_15_dark.png"
     },
     {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_plusone_standard_off_client.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3ad227e6c54af2ac524d447cb22c2d3c956f32c7\\output\\res\\drawable-xxhdpi-v4\\ic_plusone_standard_off_client.png"
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_04_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_04_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_01_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_01_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_21_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_21_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_focused_holo.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_list_focused_holo.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_11_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_11_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_15_light.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_15_light.png"
     },
     {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_half_black_36dp.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_36dp.png"
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_12_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_12_dark.png"
     },
     {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_04_dark.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_04_dark.png"
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_half_black_36dp.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_19_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_19_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_05_light.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_05_light.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_04_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_04_dark.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_06_dark.png",
@@ -68,12 +100,20 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_10_dark.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_20_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_20_dark.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_volume_off_grey600_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_volume_off_grey600_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_volume_off_grey600_36.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\deletehotel.jpg",
         "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\drawable-xxhdpi\\deletehotel.jpg"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_05_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_05_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\contactus.jpg",
@@ -85,23 +125,27 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_bigtop_updates_white_24.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_bigtop_updates_white_24.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_bigtop_updates_white_24.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
-    },
-    {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\googleg_standard_color_18.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\da9710f615d4c13c2534cc89fdd71ec2be0048b2\\output\\res\\drawable-xxhdpi-v4\\googleg_standard_color_18.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_03_dark.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_03_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\googleg_standard_color_18.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\5e5bd45d44fd073b019608b73096fff0acddbf04\\output\\res\\drawable-xxhdpi-v4\\googleg_standard_color_18.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_11_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_11_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_22_dark.png",
@@ -109,23 +153,35 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\da9710f615d4c13c2534cc89fdd71ec2be0048b2\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\5e5bd45d44fd073b019608b73096fff0acddbf04\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_09_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_09_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_05_dark.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_05_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_13_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_13_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_21_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_21_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_13_dark.png",
@@ -133,7 +189,7 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_stop_white_24.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_stop_white_24.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_stop_white_24.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_05_dark.png",
@@ -148,16 +204,24 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_20_dark.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_17_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_17_dark.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_pause_white_24.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_pause_white_24.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_pause_white_24.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\navigation_background.jpg",
         "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\drawable-xxhdpi\\navigation_background.jpg"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_16_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_16_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_cast_dark.png",
@@ -165,43 +229,55 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\da9710f615d4c13c2534cc89fdd71ec2be0048b2\\output\\res\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\5e5bd45d44fd073b019608b73096fff0acddbf04\\output\\res\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_02_dark.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_02_dark.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_06_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_06_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_10_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_10_dark.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_000.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_000.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_12_dark.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_12_dark.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_06_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_06_dark.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_plusone_medium_off_client.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3ad227e6c54af2ac524d447cb22c2d3c956f32c7\\output\\res\\drawable-xxhdpi-v4\\ic_plusone_medium_off_client.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dad2579d3b3366bda360d69e103575a9e1ae072f\\output\\res\\drawable-xxhdpi-v4\\ic_plusone_medium_off_client.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_skip_next_white_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_skip_next_white_36.png"
-    },
-    {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_closed_caption_grey600_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_closed_caption_grey600_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_skip_next_white_36.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_black_36dp.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_36dp.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_closed_caption_grey600_36.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_closed_caption_grey600_36.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_disabled_mono_dark.png",
@@ -213,19 +289,31 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_abc_scrubber_control_off_mtrl_alpha.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\cast_abc_scrubber_control_off_mtrl_alpha.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\cast_abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_pause_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_media_pause_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_20_dark.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_20_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_18_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_18_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_03_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_03_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\addpic.jpg",
@@ -233,7 +321,11 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_volume_up_grey600_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_volume_up_grey600_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_volume_up_grey600_36.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_08_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_08_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\guide.jpg",
@@ -245,7 +337,7 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_audiotrack_light.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_audiotrack_light.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_audiotrack_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_speaker_dark.png",
@@ -256,16 +348,28 @@
         "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\drawable-xxhdpi\\blurbackground.jpg"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_16_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_16_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_00_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_00_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_00_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_00_dark.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_plusone_small_off_client.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3ad227e6c54af2ac524d447cb22c2d3c956f32c7\\output\\res\\drawable-xxhdpi-v4\\ic_plusone_small_off_client.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dad2579d3b3366bda360d69e103575a9e1ae072f\\output\\res\\drawable-xxhdpi-v4\\ic_plusone_small_off_client.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\powered_by_google_dark.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4d9afd3b03b814145ed07ae640d43ed692ce6dd3\\output\\res\\drawable-xxhdpi-v4\\powered_by_google_dark.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\c72434afabeeeeeaa99a03d4baf2f1b76305336a\\output\\res\\drawable-xxhdpi-v4\\powered_by_google_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_tv_dark.png",
@@ -273,7 +377,7 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_light.png",
@@ -281,15 +385,19 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_skip_previous_white_24.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_skip_previous_white_24.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_skip_previous_white_24.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_play_circle_filled_grey600_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_play_circle_filled_grey600_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_play_circle_filled_grey600_36.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_09_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_09_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_06_light.png",
@@ -309,11 +417,11 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_ic_notification_0.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\65fb2e2e3132ad65a303f00239bc1a78b58f91c4\\output\\res\\drawable-xxhdpi-v4\\cast_ic_notification_0.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\51876f30c9c097e689f98befbcea5ab20cf76126\\output\\res\\drawable-xxhdpi-v4\\cast_ic_notification_0.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_19_dark.png",
@@ -324,8 +432,16 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_play_light.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_12_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_12_light.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_00_light.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_00_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_05_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_05_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.jpg",
@@ -336,16 +452,28 @@
         "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\drawable-xxhdpi\\background.jpg"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_disabled_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_disabled_dark.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_replay_30_white_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_replay_30_white_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_replay_30_white_36.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_10_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_10_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_03_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_03_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_stop_grey600_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_stop_grey600_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_stop_grey600_36.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_pause.png",
@@ -357,7 +485,7 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_refresh_white_24.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_refresh_white_24.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_refresh_white_24.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_00_light.png",
@@ -369,23 +497,23 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\places_ic_clear.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4d9afd3b03b814145ed07ae640d43ed692ce6dd3\\output\\res\\drawable-xxhdpi-v4\\places_ic_clear.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\c72434afabeeeeeaa99a03d4baf2f1b76305336a\\output\\res\\drawable-xxhdpi-v4\\places_ic_clear.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_play_circle_filled_white_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_play_circle_filled_white_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_play_circle_filled_white_36.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_volume_off_white_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_volume_off_white_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_volume_off_white_36.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_skip_previous_grey600_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_skip_previous_grey600_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_skip_previous_grey600_36.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\da9710f615d4c13c2534cc89fdd71ec2be0048b2\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\5e5bd45d44fd073b019608b73096fff0acddbf04\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\back.xml",
@@ -396,8 +524,12 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_17_light.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_10_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_10_light.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_speaker_group_dark.png",
@@ -410,6 +542,14 @@
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_11_light.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_11_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_disconnected_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_disconnected_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_12_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_12_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_09_dark.png",
@@ -429,19 +569,31 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_20_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_20_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_17_dark.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_17_dark.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_05_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_05_light.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_cast_connected_white_24.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_cast_connected_white_24.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_cast_connected_white_24.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_11_light.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_11_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_17_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_17_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\getaroom.jpg",
@@ -449,7 +601,7 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_005.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_005.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_22_light.png",
@@ -457,11 +609,15 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\powered_by_google_light.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4d9afd3b03b814145ed07ae640d43ed692ce6dd3\\output\\res\\drawable-xxhdpi-v4\\powered_by_google_light.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\c72434afabeeeeeaa99a03d4baf2f1b76305336a\\output\\res\\drawable-xxhdpi-v4\\powered_by_google_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_black_16dp.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_16dp.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_12_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_12_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_15_light.png",
@@ -470,6 +626,14 @@
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_04_light.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_04_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_pause_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_media_pause_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_14_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_14_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_13_light.png",
@@ -484,12 +648,24 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_01_dark.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_05_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_05_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_18_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_18_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_03_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_03_light.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_14_dark.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_14_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_11_dark.png",
@@ -505,31 +681,43 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_play_arrow_grey600_48.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_play_arrow_grey600_48.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_play_arrow_grey600_48.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_12_light.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_12_light.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_04_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_04_light.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_play_arrow_white_24.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_play_arrow_white_24.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_play_arrow_white_24.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_close_dark.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_close_dark.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_14_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_14_light.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_22_light.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_22_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_vol_type_speaker_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_vol_type_speaker_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_00_dark.png",
@@ -537,15 +725,27 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_vol_type_tv_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_vol_type_tv_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\da9710f615d4c13c2534cc89fdd71ec2be0048b2\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\5e5bd45d44fd073b019608b73096fff0acddbf04\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_02_light.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_02_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_04_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_04_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_11_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_11_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_08_light.png",
@@ -553,15 +753,27 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_light.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_forward_30_white_24.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_forward_30_white_24.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_forward_30_white_24.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_vol_type_tv_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_vol_type_tv_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\blue.jpg",
         "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\drawable-xxhdpi\\blue.jpg"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_03_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_03_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_19_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_19_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_18_light.png",
@@ -569,19 +781,43 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_plusone_tall_off_client.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3ad227e6c54af2ac524d447cb22c2d3c956f32c7\\output\\res\\drawable-xxhdpi-v4\\ic_plusone_tall_off_client.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dad2579d3b3366bda360d69e103575a9e1ae072f\\output\\res\\drawable-xxhdpi-v4\\ic_plusone_tall_off_client.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_02_light.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_02_light.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_11_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_11_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_21_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_21_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_01_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_01_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_vol_type_speaker_group_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_vol_type_speaker_group_dark.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_forward_30_white_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_forward_30_white_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_forward_30_white_36.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_08_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_08_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_18_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_18_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_play.png",
@@ -592,6 +828,10 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_19_dark.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_07_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_07_light.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_18_light.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_18_light.png"
     },
@@ -600,8 +840,24 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_cast_off_light.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_18_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_18_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_disconnected_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_disconnected_dark.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_pause_dark.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_pause_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_10_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_10_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_play_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_media_play_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_off_mono_dark.png",
@@ -613,23 +869,43 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_black_48dp.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_48dp.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_08_light.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_08_light.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_17_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_17_light.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_skip_next_grey600_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_skip_next_grey600_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_skip_next_grey600_36.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_vol_type_speaker_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_vol_type_speaker_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_09_light.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_09_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_dialog_close_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_dialog_close_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_09_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_09_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_13_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_13_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_tv_light.png",
@@ -641,23 +917,47 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_ic_stop_circle_filled_white.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\cast_ic_stop_circle_filled_white.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\cast_ic_stop_circle_filled_white.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_audiotrack_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_audiotrack_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\places_ic_search.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4d9afd3b03b814145ed07ae640d43ed692ce6dd3\\output\\res\\drawable-xxhdpi-v4\\places_ic_search.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\c72434afabeeeeeaa99a03d4baf2f1b76305336a\\output\\res\\drawable-xxhdpi-v4\\places_ic_search.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\backgroundb.jpg",
         "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\drawable-xxhdpi\\backgroundb.jpg"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_dialog_close_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_dialog_close_dark.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_15_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_15_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_replay_white_24.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_replay_white_24.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_replay_white_24.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_06_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_06_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_01_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_01_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_19_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_19_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_02_dark.png",
@@ -665,7 +965,7 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_ic_notification_on.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\65fb2e2e3132ad65a303f00239bc1a78b58f91c4\\output\\res\\drawable-xxhdpi-v4\\cast_ic_notification_on.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\51876f30c9c097e689f98befbcea5ab20cf76126\\output\\res\\drawable-xxhdpi-v4\\cast_ic_notification_on.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\rolewall.jpg",
@@ -673,7 +973,7 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_replay_30_white_24.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_replay_30_white_24.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_replay_30_white_24.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_10_dark.png",
@@ -681,11 +981,15 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_stop_grey600_48.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_stop_grey600_48.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_stop_grey600_48.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_09_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_09_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_cast_grey.png",
@@ -701,31 +1005,47 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_16_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_16_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\da9710f615d4c13c2534cc89fdd71ec2be0048b2\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\5e5bd45d44fd073b019608b73096fff0acddbf04\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_ic_notification_1.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\65fb2e2e3132ad65a303f00239bc1a78b58f91c4\\output\\res\\drawable-xxhdpi-v4\\cast_ic_notification_1.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\51876f30c9c097e689f98befbcea5ab20cf76126\\output\\res\\drawable-xxhdpi-v4\\cast_ic_notification_1.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_volume_up_white_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_volume_up_white_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_volume_up_white_36.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_cast_light.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_cast_light.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_21_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_21_dark.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_11_dark.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_11_dark.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_06_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_06_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_15_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_15_dark.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_22_dark.png",
@@ -733,11 +1053,15 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_forward_30_grey600_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_forward_30_grey600_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_forward_30_grey600_36.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_replay_10_white_24.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_replay_10_white_24.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_replay_10_white_24.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_07_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_07_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_18_dark.png",
@@ -756,20 +1080,28 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_speaker_light.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_15_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_15_dark.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_close_light.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_close_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_closed_caption_white_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_closed_caption_white_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_closed_caption_white_36.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_03_light.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_03_light.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_vol_type_speaker_group_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_vol_type_speaker_group_light.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_art_track_grey600_48.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_art_track_grey600_48.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_art_track_grey600_48.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_15_dark.png",
@@ -778,6 +1110,14 @@
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_audiotrack.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_audiotrack.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_22_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_22_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_19_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_19_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_pause_light.png",
@@ -789,11 +1129,19 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_cast_white_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_cast_white_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_cast_white_36.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_14_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_14_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_14_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_14_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_09_light.png",
@@ -801,27 +1149,51 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_01_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_01_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_02_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_02_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_22_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_22_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_clear_white_24.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_clear_white_24.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_clear_white_24.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_10_light.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_10_light.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_16_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_16_dark.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_12_dark.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_12_dark.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_08_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_08_dark.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_06_dark.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_06_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_20_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_20_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_00_dark.png",
@@ -829,7 +1201,11 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_pause_circle_filled_white_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_pause_circle_filled_white_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_pause_circle_filled_white_36.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_13_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_13_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_03_dark.png",
@@ -840,16 +1216,28 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_16_light.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_00_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_00_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_disabled_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_disabled_light.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_07_light.png",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_07_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_ic_stop_circle_filled_grey600.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\cast_ic_stop_circle_filled_grey600.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\cast_ic_stop_circle_filled_grey600.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_07_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_07_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_10_light.png",
@@ -860,16 +1248,24 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_cast_disabled_light.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_20_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_20_light.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_keyboard_arrow_down_white_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_keyboard_arrow_down_white_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_keyboard_arrow_down_white_36.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_22_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_22_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\button.jpg",
@@ -888,16 +1284,24 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_on_01_dark.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_02_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_02_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_grey.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_grey.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_ic_notification_2.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\65fb2e2e3132ad65a303f00239bc1a78b58f91c4\\output\\res\\drawable-xxhdpi-v4\\cast_ic_notification_2.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\51876f30c9c097e689f98befbcea5ab20cf76126\\output\\res\\drawable-xxhdpi-v4\\cast_ic_notification_2.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_pause_grey600_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_pause_grey600_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_pause_grey600_36.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_21_light.png",
@@ -905,7 +1309,11 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_02_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_02_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_21_light.png",
@@ -917,7 +1325,7 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_half_black_48dp.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_48dp.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_01_light.png",
@@ -925,7 +1333,11 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_play_arrow_grey600_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_play_arrow_grey600_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_play_arrow_grey600_36.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_15_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_15_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_play_dark.png",
@@ -937,7 +1349,7 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_replay_30_grey600_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_replay_30_grey600_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_replay_30_grey600_36.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_14_light.png",
@@ -945,7 +1357,11 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_08_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_08_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_21_dark.png",
@@ -960,12 +1376,24 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_17_dark.png"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_04_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_04_light.png"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\\output\\res\\drawable-xxhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable-xxhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_play_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_media_play_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_22_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_22_dark.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_skip_previous_white_36.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_skip_previous_white_36.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_skip_previous_white_36.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_05_light.png",
@@ -981,11 +1409,23 @@
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_abc_scrubber_primary_mtrl_alpha.9.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\cast_abc_scrubber_primary_mtrl_alpha.9.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\cast_abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_forward_10_white_24.png",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\fc181c04346feca5ccf00cb6e66809ef0bba1a49\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_forward_10_white_24.png"
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_forward_10_white_24.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_02_dark.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_02_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_13_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_13_light.png"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_00_light.png",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_00_light.png"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_speaker_group_light.png",

@@ -84,6 +84,9 @@
     <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"문제해결"</string>
     <string msgid="6099173376375995052" name="decline">"거부"</string>
     <string msgid="3698378085901466129" name="mr_button_content_description">"전송 버튼"</string>
+    <string msgid="5088427771788648085" name="mr_cast_button_connected">"전송 버튼. 연결됨"</string>
+    <string msgid="2187642765091873834" name="mr_cast_button_connecting">"전송 버튼. 연결 중"</string>
+    <string msgid="816305490427819240" name="mr_cast_button_disconnected">"전송 버튼. 연결 해제됨"</string>
     <string msgid="6349900579507521956" name="mr_chooser_searching">"기기를 찾는 중"</string>
     <string msgid="414301941546135990" name="mr_chooser_title">"전송할 기기"</string>
     <string msgid="6422801843540543585" name="mr_controller_album_art">"앨범아트"</string>
@@ -97,6 +100,7 @@
     <string msgid="5451884435510905406" name="mr_controller_pause">"일시중지"</string>
     <string msgid="683634565969987458" name="mr_controller_play">"재생"</string>
     <string msgid="4570331844078181931" name="mr_controller_stop">"전송 중지"</string>
+    <string msgid="2361785992211841709" name="mr_controller_volume_slider">"볼륨 슬라이더"</string>
     <string msgid="5441529851481176817" name="mr_system_route_name">"시스템"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"기기"</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"검색어 지우기"</string>

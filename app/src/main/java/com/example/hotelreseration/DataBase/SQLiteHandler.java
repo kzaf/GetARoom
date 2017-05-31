@@ -18,10 +18,11 @@ public class SQLiteHandler extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
 
     // Database Name
-    private static final String DATABASE_NAME = "user_6";
+    private static final String DATABASE_NAME = "user_db";
 
     // Login table name
     private static final String TABLE_USER = "user";
+    private static final String TABLE_HOTEL = "hotel";
 
     // Login Table Columns names
     private static final String KEY_ID = "ida";

@@ -20,6 +20,9 @@
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s සමඟ බෙදාගන්න"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"හකුළන්න"</string>
     <string msgid="3698378085901466129" name="mr_button_content_description">"විකාශ බොත්තම"</string>
+    <string msgid="5088427771788648085" name="mr_cast_button_connected">"විකාශ බොත්තම සම්බන්ධ කරන ලදී"</string>
+    <string msgid="2187642765091873834" name="mr_cast_button_connecting">"විකාශ බොත්තම සම්බන්ධ කරමින්"</string>
+    <string msgid="816305490427819240" name="mr_cast_button_disconnected">"විකාශ බොත්තම. විසන්ධි කරන ලදී"</string>
     <string msgid="6349900579507521956" name="mr_chooser_searching">"උපාංග සෙවීම"</string>
     <string msgid="414301941546135990" name="mr_chooser_title">"විකාශය"</string>
     <string msgid="6422801843540543585" name="mr_controller_album_art">"ඇල්බම කලාව"</string>
@@ -33,6 +36,7 @@
     <string msgid="5451884435510905406" name="mr_controller_pause">"විරාම ගන්වන්න"</string>
     <string msgid="683634565969987458" name="mr_controller_play">"ධාවනය කරන්න"</string>
     <string msgid="4570331844078181931" name="mr_controller_stop">"විකාශ කිරීම නවත්වන්න"</string>
+    <string msgid="2361785992211841709" name="mr_controller_volume_slider">"හඬ පරිමා ස්ලයිඩරය"</string>
     <string msgid="5441529851481176817" name="mr_system_route_name">"පද්ධතිය"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"උපාංග"</string>
     <string msgid="146198913615257606" name="search_menu_title">"සොයන්න"</string>

@@ -20,6 +20,9 @@
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"ແບ່ງ​ປັນ​ກັບ​ %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"ຫຍໍ້"</string>
     <string msgid="3698378085901466129" name="mr_button_content_description">"ປຸ່ມ​ຄາ​ສ​ທ໌"</string>
+    <string msgid="5088427771788648085" name="mr_cast_button_connected">"ປຸ່ມສົ່ງສັນຍານ. ເຊື່ອມຕໍ່ແລ້ວ"</string>
+    <string msgid="2187642765091873834" name="mr_cast_button_connecting">"ປຸ່ມສົ່ງສັນຍານ. ກຳລັງເຊື່ອມຕໍ່"</string>
+    <string msgid="816305490427819240" name="mr_cast_button_disconnected">"ປຸ່ມສົ່ງສັນຍານ. ຕັດການເຊື່ອມຕໍ່ແລ້ວ"</string>
     <string msgid="6349900579507521956" name="mr_chooser_searching">"ກຳລັງ​ຊອກ​ຫາ​ອຸ​ປະ​ກອນ"</string>
     <string msgid="414301941546135990" name="mr_chooser_title">"ຄາ​ສ​ທ໌​ຫາ"</string>
     <string msgid="6422801843540543585" name="mr_controller_album_art">"ໜ້າປົກອະລະບໍ້າ"</string>
@@ -33,6 +36,7 @@
     <string msgid="5451884435510905406" name="mr_controller_pause">"ຢຸດຊົ່ວຄາວ"</string>
     <string msgid="683634565969987458" name="mr_controller_play">"ຫຼິ້ນ"</string>
     <string msgid="4570331844078181931" name="mr_controller_stop">"ຢຸດການຄາ​ສ​ທ໌"</string>
+    <string msgid="2361785992211841709" name="mr_controller_volume_slider">"ຕົວປັບລະດັບສຽງ"</string>
     <string msgid="5441529851481176817" name="mr_system_route_name">"ລະບົບ"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"ອຸປະກອນ"</string>
     <string msgid="146198913615257606" name="search_menu_title">"ຊອກຫາ"</string>

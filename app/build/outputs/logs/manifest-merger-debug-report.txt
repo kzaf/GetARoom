@@ -23,108 +23,108 @@ ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidMan
 		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:9:9-75
 uses-feature#0x00020000
 ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:12:5-14:35
-MERGED from [com.google.android.gms:play-services-maps:10.2.4] C:\Users\kazaf\.android\build-cache\9ca4acaf2ea20997b749cd659a2ea344187bb858\output\AndroidManifest.xml:21:5-77
+MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\kazaf\.android\build-cache\25aa0148bf39e339c6991fccc2d8ec01445dd35b\output\AndroidManifest.xml:21:5-77
 	android:glEsVersion
 		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:13:9-41
 	android:required
 		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:14:9-32
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:16:2-77
-	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:16:19-75
-uses-permission#android.permission.INTERNET
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:17:5-67
-MERGED from [com.google.android.gms:play-services-ads-lite:10.2.4] C:\Users\kazaf\.android\build-cache\faa4da1ae793f6f4c53cc24e367b352d932eeffc\output\AndroidManifest.xml:19:5-66
-MERGED from [com.google.android.gms:play-services-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\af807ba429f6aa732bbd2a0362c2a37d6a2e05ea\output\AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-appinvite:10.2.4] C:\Users\kazaf\.android\build-cache\68b5d2beed1fbec243cf1506bba548323ceedd7a\output\AndroidManifest.xml:18:5-66
-MERGED from [com.google.firebase:firebase-crash:10.2.4] C:\Users\kazaf\.android\build-cache\48ba6ef4603f26fe0057255f15fbc2fe11b67708\output\AndroidManifest.xml:18:5-66
-MERGED from [com.google.android.gms:play-services-gcm:10.2.4] C:\Users\kazaf\.android\build-cache\01dad317ab8eb1a8f380bc60bb614557b71b1b5c\output\AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-iid:10.2.4] C:\Users\kazaf\.android\build-cache\62b78331e2ffd46264fdb1c0b504cddd70617e7f\output\AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.4] C:\Users\kazaf\.android\build-cache\d1e5c7f5d5d2ce361587e8d6141a1c09a19f1101\output\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\7a81b95fd3452ef9f53e2053b71b67036ed8e994\output\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics-impl:10.2.4] C:\Users\kazaf\.android\build-cache\a2b2e704fbe40d5f5e53b6cbb1d350ae0cc0b482\output\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.4] C:\Users\kazaf\.android\build-cache\01d6689b359c327e02beb229fb42a92a79b31166\output\AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-maps:10.2.4] C:\Users\kazaf\.android\build-cache\9ca4acaf2ea20997b749cd659a2ea344187bb858\output\AndroidManifest.xml:20:5-66
-	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:17:22-64
 uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:18:5-98
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:16:5-98
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:18:22-95
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:16:22-95
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:19:5-81
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:17:5-81
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:19:22-78
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:17:22-78
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:18:2-77
+	android:name
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:18:19-75
 uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:19:5-79
+	android:name
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:19:22-76
+uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:20:5-79
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\kazaf\.android\build-cache\92d7507c397d08d3e2ed55635ef48047c9104b9a\output\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\00324f067cb56df6a09a2502248117bb48c4f9d0\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-nearby:10.2.6] C:\Users\kazaf\.android\build-cache\f7307a6256c6efaefd60c7ecd10eda2dde991a4f\output\AndroidManifest.xml:4:5-78
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\kazaf\.android\build-cache\241f9325fe2f0e8492c1e68146d7f72977dc4f14\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\c0c97592f7ef2fcda0ee51f5a4bfbc0c1df8d180\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\kazaf\.android\build-cache\d7a3e353714142f7520aea09ad2e2c11ea720882\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.6] C:\Users\kazaf\.android\build-cache\d003ec2b0e3f7ce673146a67197625f761bd391f\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\kazaf\.android\build-cache\25aa0148bf39e339c6991fccc2d8ec01445dd35b\output\AndroidManifest.xml:19:5-78
 	android:name
 		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:20:22-76
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:21:5-79
-MERGED from [com.google.android.gms:play-services-ads-lite:10.2.4] C:\Users\kazaf\.android\build-cache\faa4da1ae793f6f4c53cc24e367b352d932eeffc\output\AndroidManifest.xml:20:5-78
-MERGED from [com.google.android.gms:play-services-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\af807ba429f6aa732bbd2a0362c2a37d6a2e05ea\output\AndroidManifest.xml:21:5-78
-MERGED from [com.google.android.gms:play-services-nearby:10.2.4] C:\Users\kazaf\.android\build-cache\d4649836b1793ab851349358f05f16882a3cbdc1\output\AndroidManifest.xml:4:5-78
-MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.4] C:\Users\kazaf\.android\build-cache\d1e5c7f5d5d2ce361587e8d6141a1c09a19f1101\output\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\7a81b95fd3452ef9f53e2053b71b67036ed8e994\output\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-analytics-impl:10.2.4] C:\Users\kazaf\.android\build-cache\a2b2e704fbe40d5f5e53b6cbb1d350ae0cc0b482\output\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:19:5-78
-MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.4] C:\Users\kazaf\.android\build-cache\01d6689b359c327e02beb229fb42a92a79b31166\output\AndroidManifest.xml:21:5-78
-MERGED from [com.google.android.gms:play-services-maps:10.2.4] C:\Users\kazaf\.android\build-cache\9ca4acaf2ea20997b749cd659a2ea344187bb858\output\AndroidManifest.xml:19:5-78
-	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:21:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:22:5-76
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:21:5-76
 	android:name
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:22:22-73
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:21:22-73
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\kazaf\.android\build-cache\92d7507c397d08d3e2ed55635ef48047c9104b9a\output\AndroidManifest.xml:19:5-66
+MERGED from [com.google.android.gms:play-services-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\00324f067cb56df6a09a2502248117bb48c4f9d0\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\kazaf\.android\build-cache\9b7efd6abb05142e348bbf855342078f525fdc7a\output\AndroidManifest.xml:18:5-66
+MERGED from [com.google.firebase:firebase-crash:10.2.6] C:\Users\kazaf\.android\build-cache\b95fe3e90f67d48469fafb8e3af9f6c02e494a59\output\AndroidManifest.xml:18:5-66
+MERGED from [com.google.android.gms:play-services-gcm:10.2.6] C:\Users\kazaf\.android\build-cache\d405112c14fff6e3b09daea3fd7febce3629096b\output\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:10.2.6] C:\Users\kazaf\.android\build-cache\e86fd64cf38ca79a647e3ecf0b1581560b506dff\output\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\kazaf\.android\build-cache\241f9325fe2f0e8492c1e68146d7f72977dc4f14\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\c0c97592f7ef2fcda0ee51f5a4bfbc0c1df8d180\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\kazaf\.android\build-cache\d7a3e353714142f7520aea09ad2e2c11ea720882\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.6] C:\Users\kazaf\.android\build-cache\d003ec2b0e3f7ce673146a67197625f761bd391f\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\kazaf\.android\build-cache\25aa0148bf39e339c6991fccc2d8ec01445dd35b\output\AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:22:22-64
 application
 ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:24:5-79:19
 MERGED from [com.mcxiaoke.volley:library:1.0.6] C:\Users\kazaf\.android\build-cache\4a553156e71d4f8b214318f31e7d29ad1c4a9ea8\output\AndroidManifest.xml:11:5-20
-MERGED from [com.google.android.gms:play-services:10.2.4] C:\Users\kazaf\.android\build-cache\eb81127ec7181429d99a545cdd9ad1f9ee80c93f\output\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-ads-lite:10.2.4] C:\Users\kazaf\.android\build-cache\faa4da1ae793f6f4c53cc24e367b352d932eeffc\output\AndroidManifest.xml:23:5-27:19
-MERGED from [com.google.android.gms:play-services-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\af807ba429f6aa732bbd2a0362c2a37d6a2e05ea\output\AndroidManifest.xml:26:5-19
-MERGED from [com.google.android.gms:play-services-appinvite:10.2.4] C:\Users\kazaf\.android\build-cache\68b5d2beed1fbec243cf1506bba548323ceedd7a\output\AndroidManifest.xml:19:5-26:19
-MERGED from [com.google.android.gms:play-services-auth:10.2.4] C:\Users\kazaf\.android\build-cache\c986766eda87449ee4bcdbba3ab9c8072ad7089b\output\AndroidManifest.xml:19:5-25:19
-MERGED from [com.google.android.gms:play-services-cast-framework:10.2.4] C:\Users\kazaf\.android\build-cache\fc181c04346feca5ccf00cb6e66809ef0bba1a49\output\AndroidManifest.xml:4:5-8:19
-MERGED from [com.google.android.gms:play-services-cast:10.2.4] C:\Users\kazaf\.android\build-cache\65fb2e2e3132ad65a303f00239bc1a78b58f91c4\output\AndroidManifest.xml:18:5-19
-MERGED from [com.android.support:mediarouter-v7:24.0.0] C:\Users\kazaf\.android\build-cache\dba13bc920531090371b253048c301f0f84e8092\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:palette-v7:24.0.0] C:\Users\kazaf\.android\build-cache\794bb7b869ec527a54b4041cace7b0e837375027\output\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\kazaf\.android\build-cache\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\kazaf\.android\build-cache\da33d57dc6934db1612a0eec98b703e6e55966d3\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\kazaf\.android\build-cache\ad6bd3ac7ce36cef2058b6553edb031ea9de5de7\output\AndroidManifest.xml:23:5-20
-MERGED from [com.google.android.gms:play-services-clearcut:10.2.4] C:\Users\kazaf\.android\build-cache\fcf8ea8a436b5e9e603a29e85961bc0d9f1c361e\output\AndroidManifest.xml:18:5-19
-MERGED from [com.google.firebase:firebase-config:10.2.4] C:\Users\kazaf\.android\build-cache\7a80af95f5932be8ccffa8daf31ca4d0913fc9c6\output\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-awareness:10.2.4] C:\Users\kazaf\.android\build-cache\7090fb537e500f27c98afc6d595a23c23806c29d\output\AndroidManifest.xml:18:5-19
-MERGED from [com.google.firebase:firebase-crash:10.2.4] C:\Users\kazaf\.android\build-cache\48ba6ef4603f26fe0057255f15fbc2fe11b67708\output\AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.firebase:firebase-auth:10.2.4] C:\Users\kazaf\.android\build-cache\4b3f34f61aa8ee0157bf26b14a17cf8a154d1117\output\AndroidManifest.xml:19:5-20:19
-MERGED from [com.google.firebase:firebase-messaging:10.2.4] C:\Users\kazaf\.android\build-cache\815c3e82ad5db7c645a9b168a81a415f9f552551\output\AndroidManifest.xml:19:5-29:19
-MERGED from [com.google.android.gms:play-services-fitness:10.2.4] C:\Users\kazaf\.android\build-cache\83bd791cb0b7bb339ac882743e871825c4f19d7b\output\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-games:10.2.4] C:\Users\kazaf\.android\build-cache\eda3be3a25b83993cbd920f7d9bdec25ba337648\output\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-drive:10.2.4] C:\Users\kazaf\.android\build-cache\4cc741b4851fcb6c8a13ba5eed6f4a96f5de7aa6\output\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-gass:10.2.4] C:\Users\kazaf\.android\build-cache\70c031f4531b75d87c4de091ab83df94439f285b\output\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-gcm:10.2.4] C:\Users\kazaf\.android\build-cache\01dad317ab8eb1a8f380bc60bb614557b71b1b5c\output\AndroidManifest.xml:23:5-19
-MERGED from [com.google.firebase:firebase-appindexing:10.2.4] C:\Users\kazaf\.android\build-cache\da431ec66cd52032cff071e9555a53bef98e7d2b\output\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-iid:10.2.4] C:\Users\kazaf\.android\build-cache\62b78331e2ffd46264fdb1c0b504cddd70617e7f\output\AndroidManifest.xml:23:5-19
-MERGED from [com.google.android.gms:play-services-location:10.2.4] C:\Users\kazaf\.android\build-cache\c8f2b3e956e299bdab1c46050e0d8fec7eab99de\output\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-nearby:10.2.4] C:\Users\kazaf\.android\build-cache\d4649836b1793ab851349358f05f16882a3cbdc1\output\AndroidManifest.xml:5:5-19
-MERGED from [com.google.android.gms:play-services-panorama:10.2.4] C:\Users\kazaf\.android\build-cache\78481657e90c9bcbfdde927e8e7fe670fa480df7\output\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-places:10.2.4] C:\Users\kazaf\.android\build-cache\4d9afd3b03b814145ed07ae640d43ed692ce6dd3\output\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-plus:10.2.4] C:\Users\kazaf\.android\build-cache\3ad227e6c54af2ac524d447cb22c2d3c956f32c7\output\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-safetynet:10.2.4] C:\Users\kazaf\.android\build-cache\887d891707be1996eb4f9246bac19e9b04953b22\output\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.4] C:\Users\kazaf\.android\build-cache\d1e5c7f5d5d2ce361587e8d6141a1c09a19f1101\output\AndroidManifest.xml:23:5-33:19
-MERGED from [com.google.firebase:firebase-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\7a81b95fd3452ef9f53e2053b71b67036ed8e994\output\AndroidManifest.xml:24:5-33:19
-MERGED from [com.google.firebase:firebase-analytics-impl:10.2.4] C:\Users\kazaf\.android\build-cache\a2b2e704fbe40d5f5e53b6cbb1d350ae0cc0b482\output\AndroidManifest.xml:24:5-28:19
-MERGED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:28:5-49:19
-MERGED from [com.google.firebase:firebase-common:10.2.4] C:\Users\kazaf\.android\build-cache\39f39cd5d35834de297c523fc2318508b3e757f8\output\AndroidManifest.xml:4:5-7:19
-MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.2.4] C:\Users\kazaf\.android\build-cache\eaf7cec0c07e8ef8ca4d875632d2da7dbe664167\output\AndroidManifest.xml:19:5-19
-MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.4] C:\Users\kazaf\.android\build-cache\01d6689b359c327e02beb229fb42a92a79b31166\output\AndroidManifest.xml:26:5-19
-MERGED from [com.google.android.gms:play-services-vision:10.2.4] C:\Users\kazaf\.android\build-cache\cb44d45f5f5c738e0208fbc80f37c1ba86f06905\output\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-identity:10.2.4] C:\Users\kazaf\.android\build-cache\1e842e01edb083037fe29d45815295f4f2fcdceb\output\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-maps:10.2.4] C:\Users\kazaf\.android\build-cache\9ca4acaf2ea20997b749cd659a2ea344187bb858\output\AndroidManifest.xml:24:5-19
-MERGED from [com.google.android.gms:play-services-wearable:10.2.4] C:\Users\kazaf\.android\build-cache\2ac990f4799091fba39109ff20d6805a2e271d41\output\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-base:10.2.4] C:\Users\kazaf\.android\build-cache\da9710f615d4c13c2534cc89fdd71ec2be0048b2\output\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-tasks:10.2.4] C:\Users\kazaf\.android\build-cache\50346fdc9830cf66c8fe958bdc9b177b07b8dbaa\output\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:10.2.4] C:\Users\kazaf\.android\build-cache\c89981cd023c1412f43f3197a60a027a3a250228\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services:10.2.6] C:\Users\kazaf\.android\build-cache\a5ae6c12b077354f788cd639a86e19b9f871449e\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\kazaf\.android\build-cache\92d7507c397d08d3e2ed55635ef48047c9104b9a\output\AndroidManifest.xml:23:5-27:19
+MERGED from [com.google.android.gms:play-services-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\00324f067cb56df6a09a2502248117bb48c4f9d0\output\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\kazaf\.android\build-cache\9b7efd6abb05142e348bbf855342078f525fdc7a\output\AndroidManifest.xml:19:5-26:19
+MERGED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\kazaf\.android\build-cache\eb76a2bbd6b449fb5f4672be08ad8788cc91e97d\output\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-cast-framework:10.2.6] C:\Users\kazaf\.android\build-cache\9a06834be1a804764838a1d8fa61a78d507276a7\output\AndroidManifest.xml:4:5-8:19
+MERGED from [com.google.android.gms:play-services-cast:10.2.6] C:\Users\kazaf\.android\build-cache\51876f30c9c097e689f98befbcea5ab20cf76126\output\AndroidManifest.xml:18:5-19
+MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\kazaf\.android\build-cache\b302adeb90cb290b3eb829d2b1e2d936697a198c\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\kazaf\.android\build-cache\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\kazaf\.android\build-cache\74022e428481751e66a7555d5a4922e39c4ab941\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\kazaf\.android\build-cache\2be0b4fd822d20cdaa7d53696c93a18eb15349a0\output\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:palette-v7:25.2.0] C:\Users\kazaf\.android\build-cache\623aefd868c49b1b552d5cfc7fb99f24bad84b25\output\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-clearcut:10.2.6] C:\Users\kazaf\.android\build-cache\3b30deb3777fd3802334c132287f0ad6742b9278\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-config:10.2.6] C:\Users\kazaf\.android\build-cache\51fce8b60ad9fcc2fd046e4ec9356d4c1397f6ca\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-awareness:10.2.6] C:\Users\kazaf\.android\build-cache\db3ec31c7f64a2f918b9c7a03dc9f612d17dc835\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-crash:10.2.6] C:\Users\kazaf\.android\build-cache\b95fe3e90f67d48469fafb8e3af9f6c02e494a59\output\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-auth:10.2.6] C:\Users\kazaf\.android\build-cache\385be6cb3bb50ed7cf844835dfda2284a76f17d8\output\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-messaging:10.2.6] C:\Users\kazaf\.android\build-cache\c7b3073a51b1c4bdf94bc19d67a18e2a13fe63bd\output\AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.android.gms:play-services-fitness:10.2.6] C:\Users\kazaf\.android\build-cache\87814717df4b660573349957778a4c2bd5ab51d1\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-games:10.2.6] C:\Users\kazaf\.android\build-cache\93698e49cdbe09689446b89ad221cd2bb7043bc5\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-drive:10.2.6] C:\Users\kazaf\.android\build-cache\d807fff6add51b93f5d7bd96974da1def13ba0bd\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-gass:10.2.6] C:\Users\kazaf\.android\build-cache\4d71c675d6f673447923e4b15d22ffb3e3a81caf\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-gcm:10.2.6] C:\Users\kazaf\.android\build-cache\d405112c14fff6e3b09daea3fd7febce3629096b\output\AndroidManifest.xml:23:5-19
+MERGED from [com.google.firebase:firebase-appindexing:10.2.6] C:\Users\kazaf\.android\build-cache\5a4f615aaed694e400e1e998fc9f310812879aa6\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-iid:10.2.6] C:\Users\kazaf\.android\build-cache\e86fd64cf38ca79a647e3ecf0b1581560b506dff\output\AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-location:10.2.6] C:\Users\kazaf\.android\build-cache\72472197ad81289694f44a166fce8006b6e176ae\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-nearby:10.2.6] C:\Users\kazaf\.android\build-cache\f7307a6256c6efaefd60c7ecd10eda2dde991a4f\output\AndroidManifest.xml:5:5-19
+MERGED from [com.google.android.gms:play-services-panorama:10.2.6] C:\Users\kazaf\.android\build-cache\0fa79c3dd96ad8fa87a5e7e077b954b7367f2655\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-places:10.2.6] C:\Users\kazaf\.android\build-cache\c72434afabeeeeeaa99a03d4baf2f1b76305336a\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-plus:10.2.6] C:\Users\kazaf\.android\build-cache\dad2579d3b3366bda360d69e103575a9e1ae072f\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-safetynet:10.2.6] C:\Users\kazaf\.android\build-cache\3af8f773cd8c070f1b4a687cae74c192f7f8d460\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\kazaf\.android\build-cache\241f9325fe2f0e8492c1e68146d7f72977dc4f14\output\AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\c0c97592f7ef2fcda0ee51f5a4bfbc0c1df8d180\output\AndroidManifest.xml:24:5-33:19
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\kazaf\.android\build-cache\d7a3e353714142f7520aea09ad2e2c11ea720882\output\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:28:5-49:19
+MERGED from [com.google.firebase:firebase-common:10.2.6] C:\Users\kazaf\.android\build-cache\06eed7830a55c3e631182b89bcf2e89067da24ad\output\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.2.6] C:\Users\kazaf\.android\build-cache\8521bdc42fa46b46810d35c1ceea1c3c3db6c10b\output\AndroidManifest.xml:19:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.6] C:\Users\kazaf\.android\build-cache\d003ec2b0e3f7ce673146a67197625f761bd391f\output\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-vision:10.2.6] C:\Users\kazaf\.android\build-cache\e6a1e9362e190d86a32074cddb33d8616705cf10\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-identity:10.2.6] C:\Users\kazaf\.android\build-cache\37c8df91c7709dcc2baa076536ed11c2b01c5831\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\kazaf\.android\build-cache\25aa0148bf39e339c6991fccc2d8ec01445dd35b\output\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-wearable:10.2.6] C:\Users\kazaf\.android\build-cache\e76bcf7ec56c0d24b5addd57bc3ea0bcc1c62c73\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\kazaf\.android\build-cache\5e5bd45d44fd073b019608b73096fff0acddbf04\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.6] C:\Users\kazaf\.android\build-cache\ab3122a3f59c3365ab2d50471ac15ad74e7027ca\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\kazaf\.android\build-cache\a43a741c47a38cc6b27269a9ce9968a867709051\output\AndroidManifest.xml:19:5-21:19
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\kazaf\.android\build-cache\0286eaed4c36399f9ee30676045876c7d71352fc\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\kazaf\.android\build-cache\59e3a04673d786800eec5044914d4868820bbc4c\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\kazaf\.android\build-cache\0a42a1d11b0c53a018234ebcc07e1b29b20de89c\output\AndroidManifest.xml:29:5-20
@@ -138,12 +138,12 @@ MERGED from [com.android.support:support-compat:25.3.1] C:\Users\kazaf\.android\
 	android:icon
 		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:26:9-42
 	android:theme
-		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:29:9-44
+		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:29:9-40
 	android:name
 		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:28:9-47
 meta-data#com.google.android.gms.version
 ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:31:9-33:69
-MERGED from [com.google.android.gms:play-services-basement:10.2.4] C:\Users\kazaf\.android\build-cache\c89981cd023c1412f43f3197a60a027a3a250228\output\AndroidManifest.xml:20:9-121
+MERGED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\kazaf\.android\build-cache\a43a741c47a38cc6b27269a9ce9968a867709051\output\AndroidManifest.xml:20:9-121
 	android:value
 		ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml:33:13-66
 	android:name
@@ -223,60 +223,60 @@ ADDED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidMan
 uses-sdk
 INJECTED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.mcxiaoke.volley:library:1.0.6] C:\Users\kazaf\.android\build-cache\4a553156e71d4f8b214318f31e7d29ad1c4a9ea8\output\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.gms:play-services:10.2.4] C:\Users\kazaf\.android\build-cache\eb81127ec7181429d99a545cdd9ad1f9ee80c93f\output\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-ads:10.2.4] C:\Users\kazaf\.android\build-cache\b5d31407e2797389b6ddbc8e474c3d089f391915\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-ads-lite:10.2.4] C:\Users\kazaf\.android\build-cache\faa4da1ae793f6f4c53cc24e367b352d932eeffc\output\AndroidManifest.xml:22:5-43
-MERGED from [com.google.android.gms:play-services-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\af807ba429f6aa732bbd2a0362c2a37d6a2e05ea\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-appinvite:10.2.4] C:\Users\kazaf\.android\build-cache\68b5d2beed1fbec243cf1506bba548323ceedd7a\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-auth:10.2.4] C:\Users\kazaf\.android\build-cache\c986766eda87449ee4bcdbba3ab9c8072ad7089b\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-auth-base:10.2.4] C:\Users\kazaf\.android\build-cache\a108c45c045f7045139998bf48f519b0cc8070a5\output\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-cast-framework:10.2.4] C:\Users\kazaf\.android\build-cache\fc181c04346feca5ccf00cb6e66809ef0bba1a49\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-cast:10.2.4] C:\Users\kazaf\.android\build-cache\65fb2e2e3132ad65a303f00239bc1a78b58f91c4\output\AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:mediarouter-v7:24.0.0] C:\Users\kazaf\.android\build-cache\dba13bc920531090371b253048c301f0f84e8092\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:palette-v7:24.0.0] C:\Users\kazaf\.android\build-cache\794bb7b869ec527a54b4041cace7b0e837375027\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\kazaf\.android\build-cache\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\kazaf\.android\build-cache\da33d57dc6934db1612a0eec98b703e6e55966d3\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\kazaf\.android\build-cache\ad6bd3ac7ce36cef2058b6553edb031ea9de5de7\output\AndroidManifest.xml:21:5-43
-MERGED from [com.google.android.gms:play-services-clearcut:10.2.4] C:\Users\kazaf\.android\build-cache\fcf8ea8a436b5e9e603a29e85961bc0d9f1c361e\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-config:10.2.4] C:\Users\kazaf\.android\build-cache\7a80af95f5932be8ccffa8daf31ca4d0913fc9c6\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-awareness:10.2.4] C:\Users\kazaf\.android\build-cache\7090fb537e500f27c98afc6d595a23c23806c29d\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-crash:10.2.4] C:\Users\kazaf\.android\build-cache\48ba6ef4603f26fe0057255f15fbc2fe11b67708\output\AndroidManifest.xml:20:5-43
-MERGED from [com.google.firebase:firebase-auth:10.2.4] C:\Users\kazaf\.android\build-cache\4b3f34f61aa8ee0157bf26b14a17cf8a154d1117\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-database:10.2.4] C:\Users\kazaf\.android\build-cache\802e3114ea090eb5d9eb2dbb1e0975ecab4ee6fe\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.firebase:firebase-database-connection:10.2.4] C:\Users\kazaf\.android\build-cache\75d34a7c09f3c504e7e1478df10e9cb64a6d8256\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.firebase:firebase-messaging:10.2.4] C:\Users\kazaf\.android\build-cache\815c3e82ad5db7c645a9b168a81a415f9f552551\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-storage:10.2.4] C:\Users\kazaf\.android\build-cache\9609437c9a8c58d522b87061f9e157895571aee0\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.firebase:firebase-storage-common:10.2.4] C:\Users\kazaf\.android\build-cache\64ee7cbc6dba2fb29fab3f38360d13008238112e\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-fitness:10.2.4] C:\Users\kazaf\.android\build-cache\83bd791cb0b7bb339ac882743e871825c4f19d7b\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-games:10.2.4] C:\Users\kazaf\.android\build-cache\eda3be3a25b83993cbd920f7d9bdec25ba337648\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-drive:10.2.4] C:\Users\kazaf\.android\build-cache\4cc741b4851fcb6c8a13ba5eed6f4a96f5de7aa6\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-gass:10.2.4] C:\Users\kazaf\.android\build-cache\70c031f4531b75d87c4de091ab83df94439f285b\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-gcm:10.2.4] C:\Users\kazaf\.android\build-cache\01dad317ab8eb1a8f380bc60bb614557b71b1b5c\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-appindexing:10.2.4] C:\Users\kazaf\.android\build-cache\da431ec66cd52032cff071e9555a53bef98e7d2b\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-iid:10.2.4] C:\Users\kazaf\.android\build-cache\62b78331e2ffd46264fdb1c0b504cddd70617e7f\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-instantapps:10.2.4] C:\Users\kazaf\.android\build-cache\e645701ef157290b117aca03f0d3fc7ca08410ea\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-location:10.2.4] C:\Users\kazaf\.android\build-cache\c8f2b3e956e299bdab1c46050e0d8fec7eab99de\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-nearby:10.2.4] C:\Users\kazaf\.android\build-cache\d4649836b1793ab851349358f05f16882a3cbdc1\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-panorama:10.2.4] C:\Users\kazaf\.android\build-cache\78481657e90c9bcbfdde927e8e7fe670fa480df7\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-places:10.2.4] C:\Users\kazaf\.android\build-cache\4d9afd3b03b814145ed07ae640d43ed692ce6dd3\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-plus:10.2.4] C:\Users\kazaf\.android\build-cache\3ad227e6c54af2ac524d447cb22c2d3c956f32c7\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-safetynet:10.2.4] C:\Users\kazaf\.android\build-cache\887d891707be1996eb4f9246bac19e9b04953b22\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tagmanager:10.2.4] C:\Users\kazaf\.android\build-cache\82aa021ffac892fb3766e26ef6737b3c9b8e7744\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.4] C:\Users\kazaf\.android\build-cache\d1e5c7f5d5d2ce361587e8d6141a1c09a19f1101\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\7a81b95fd3452ef9f53e2053b71b67036ed8e994\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-analytics-impl:10.2.4] C:\Users\kazaf\.android\build-cache\a2b2e704fbe40d5f5e53b6cbb1d350ae0cc0b482\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-common:10.2.4] C:\Users\kazaf\.android\build-cache\39f39cd5d35834de297c523fc2318508b3e757f8\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.2.4] C:\Users\kazaf\.android\build-cache\eaf7cec0c07e8ef8ca4d875632d2da7dbe664167\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.4] C:\Users\kazaf\.android\build-cache\01d6689b359c327e02beb229fb42a92a79b31166\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-vision:10.2.4] C:\Users\kazaf\.android\build-cache\cb44d45f5f5c738e0208fbc80f37c1ba86f06905\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-wallet:10.2.4] C:\Users\kazaf\.android\build-cache\9e57ba0a4939fa60decbc3f55cd8cdf5d265ab67\output\AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-identity:10.2.4] C:\Users\kazaf\.android\build-cache\1e842e01edb083037fe29d45815295f4f2fcdceb\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-maps:10.2.4] C:\Users\kazaf\.android\build-cache\9ca4acaf2ea20997b749cd659a2ea344187bb858\output\AndroidManifest.xml:23:5-43
-MERGED from [com.google.android.gms:play-services-wearable:10.2.4] C:\Users\kazaf\.android\build-cache\2ac990f4799091fba39109ff20d6805a2e271d41\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-base:10.2.4] C:\Users\kazaf\.android\build-cache\da9710f615d4c13c2534cc89fdd71ec2be0048b2\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tasks:10.2.4] C:\Users\kazaf\.android\build-cache\50346fdc9830cf66c8fe958bdc9b177b07b8dbaa\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-basement:10.2.4] C:\Users\kazaf\.android\build-cache\c89981cd023c1412f43f3197a60a027a3a250228\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services:10.2.6] C:\Users\kazaf\.android\build-cache\a5ae6c12b077354f788cd639a86e19b9f871449e\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-ads:10.2.6] C:\Users\kazaf\.android\build-cache\75d12a42d35ffc25930dcdc27eae2c8e9880fbd6\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\kazaf\.android\build-cache\92d7507c397d08d3e2ed55635ef48047c9104b9a\output\AndroidManifest.xml:22:5-43
+MERGED from [com.google.android.gms:play-services-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\00324f067cb56df6a09a2502248117bb48c4f9d0\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\kazaf\.android\build-cache\9b7efd6abb05142e348bbf855342078f525fdc7a\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\kazaf\.android\build-cache\eb76a2bbd6b449fb5f4672be08ad8788cc91e97d\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:10.2.6] C:\Users\kazaf\.android\build-cache\056f14107ebc90368169797144cdd7e6ac9f421a\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-cast-framework:10.2.6] C:\Users\kazaf\.android\build-cache\9a06834be1a804764838a1d8fa61a78d507276a7\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-cast:10.2.6] C:\Users\kazaf\.android\build-cache\51876f30c9c097e689f98befbcea5ab20cf76126\output\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\kazaf\.android\build-cache\b302adeb90cb290b3eb829d2b1e2d936697a198c\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\kazaf\.android\build-cache\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\kazaf\.android\build-cache\74022e428481751e66a7555d5a4922e39c4ab941\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\kazaf\.android\build-cache\2be0b4fd822d20cdaa7d53696c93a18eb15349a0\output\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:palette-v7:25.2.0] C:\Users\kazaf\.android\build-cache\623aefd868c49b1b552d5cfc7fb99f24bad84b25\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-clearcut:10.2.6] C:\Users\kazaf\.android\build-cache\3b30deb3777fd3802334c132287f0ad6742b9278\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-config:10.2.6] C:\Users\kazaf\.android\build-cache\51fce8b60ad9fcc2fd046e4ec9356d4c1397f6ca\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-awareness:10.2.6] C:\Users\kazaf\.android\build-cache\db3ec31c7f64a2f918b9c7a03dc9f612d17dc835\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-crash:10.2.6] C:\Users\kazaf\.android\build-cache\b95fe3e90f67d48469fafb8e3af9f6c02e494a59\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-auth:10.2.6] C:\Users\kazaf\.android\build-cache\385be6cb3bb50ed7cf844835dfda2284a76f17d8\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-database:10.2.6] C:\Users\kazaf\.android\build-cache\907d3eb2f136512f3cf01ca0639d41a8441e19dd\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection:10.2.6] C:\Users\kazaf\.android\build-cache\f0fe2e7fee75594ed2e51daf736d6864e1785a44\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-messaging:10.2.6] C:\Users\kazaf\.android\build-cache\c7b3073a51b1c4bdf94bc19d67a18e2a13fe63bd\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-storage:10.2.6] C:\Users\kazaf\.android\build-cache\04901bc8e22cf391ab3be932d9ff8671db24eb64\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage-common:10.2.6] C:\Users\kazaf\.android\build-cache\32fb3d9adfd5ebc6f803cc7e975932b7df49fdb6\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-fitness:10.2.6] C:\Users\kazaf\.android\build-cache\87814717df4b660573349957778a4c2bd5ab51d1\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-games:10.2.6] C:\Users\kazaf\.android\build-cache\93698e49cdbe09689446b89ad221cd2bb7043bc5\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-drive:10.2.6] C:\Users\kazaf\.android\build-cache\d807fff6add51b93f5d7bd96974da1def13ba0bd\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-gass:10.2.6] C:\Users\kazaf\.android\build-cache\4d71c675d6f673447923e4b15d22ffb3e3a81caf\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-gcm:10.2.6] C:\Users\kazaf\.android\build-cache\d405112c14fff6e3b09daea3fd7febce3629096b\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-appindexing:10.2.6] C:\Users\kazaf\.android\build-cache\5a4f615aaed694e400e1e998fc9f310812879aa6\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-iid:10.2.6] C:\Users\kazaf\.android\build-cache\e86fd64cf38ca79a647e3ecf0b1581560b506dff\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-instantapps:10.2.6] C:\Users\kazaf\.android\build-cache\178d9c9bdb117548b0ce34a5db7e48080873e24f\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-location:10.2.6] C:\Users\kazaf\.android\build-cache\72472197ad81289694f44a166fce8006b6e176ae\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-nearby:10.2.6] C:\Users\kazaf\.android\build-cache\f7307a6256c6efaefd60c7ecd10eda2dde991a4f\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-panorama:10.2.6] C:\Users\kazaf\.android\build-cache\0fa79c3dd96ad8fa87a5e7e077b954b7367f2655\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-places:10.2.6] C:\Users\kazaf\.android\build-cache\c72434afabeeeeeaa99a03d4baf2f1b76305336a\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-plus:10.2.6] C:\Users\kazaf\.android\build-cache\dad2579d3b3366bda360d69e103575a9e1ae072f\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-safetynet:10.2.6] C:\Users\kazaf\.android\build-cache\3af8f773cd8c070f1b4a687cae74c192f7f8d460\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager:10.2.6] C:\Users\kazaf\.android\build-cache\71fa90cb9e4d768ed0f3cd57f4ea83b99cf77114\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\kazaf\.android\build-cache\241f9325fe2f0e8492c1e68146d7f72977dc4f14\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\c0c97592f7ef2fcda0ee51f5a4bfbc0c1df8d180\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\kazaf\.android\build-cache\d7a3e353714142f7520aea09ad2e2c11ea720882\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-common:10.2.6] C:\Users\kazaf\.android\build-cache\06eed7830a55c3e631182b89bcf2e89067da24ad\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.2.6] C:\Users\kazaf\.android\build-cache\8521bdc42fa46b46810d35c1ceea1c3c3db6c10b\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.6] C:\Users\kazaf\.android\build-cache\d003ec2b0e3f7ce673146a67197625f761bd391f\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-vision:10.2.6] C:\Users\kazaf\.android\build-cache\e6a1e9362e190d86a32074cddb33d8616705cf10\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-wallet:10.2.6] C:\Users\kazaf\.android\build-cache\ee0bebed444ea61c1ab056b0e6d19c31aeb225e8\output\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-identity:10.2.6] C:\Users\kazaf\.android\build-cache\37c8df91c7709dcc2baa076536ed11c2b01c5831\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\kazaf\.android\build-cache\25aa0148bf39e339c6991fccc2d8ec01445dd35b\output\AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-wearable:10.2.6] C:\Users\kazaf\.android\build-cache\e76bcf7ec56c0d24b5addd57bc3ea0bcc1c62c73\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\kazaf\.android\build-cache\5e5bd45d44fd073b019608b73096fff0acddbf04\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.6] C:\Users\kazaf\.android\build-cache\ab3122a3f59c3365ab2d50471ac15ad74e7027ca\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\kazaf\.android\build-cache\a43a741c47a38cc6b27269a9ce9968a867709051\output\AndroidManifest.xml:17:5-43
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\kazaf\.android\build-cache\0286eaed4c36399f9ee30676045876c7d71352fc\output\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\kazaf\.android\build-cache\59e3a04673d786800eec5044914d4868820bbc4c\output\AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\kazaf\.android\build-cache\0a42a1d11b0c53a018234ebcc07e1b29b20de89c\output\AndroidManifest.xml:21:5-23:63
@@ -284,7 +284,7 @@ MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\kazaf\.android
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\kazaf\.android\build-cache\ccd213f2faa23fb86161c60ca71fcae5462b0c59\output\AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\kazaf\.android\build-cache\4d000fe5afe101180bf5a3cdc5874ac64bd783f6\output\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:24.2.1] C:\Users\kazaf\.android\build-cache\3b50f42d69b27bd71dbd4bfe6542019d8168b1ec\output\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:25.2.0] C:\Users\kazaf\.android\build-cache\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\output\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml
@@ -292,221 +292,221 @@ MERGED from [com.android.support:support-compat:25.3.1] C:\Users\kazaf\.android\
 		INJECTED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\kazaf\StudioProjects\HotelReseration\app\src\main\AndroidManifest.xml
 activity#com.google.android.gms.ads.AdActivity
-ADDED from [com.google.android.gms:play-services-ads-lite:10.2.4] C:\Users\kazaf\.android\build-cache\faa4da1ae793f6f4c53cc24e367b352d932eeffc\output\AndroidManifest.xml:25:9-232
+ADDED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\kazaf\.android\build-cache\92d7507c397d08d3e2ed55635ef48047c9104b9a\output\AndroidManifest.xml:25:9-232
 	android:configChanges
-		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.4] C:\Users\kazaf\.android\build-cache\faa4da1ae793f6f4c53cc24e367b352d932eeffc\output\AndroidManifest.xml:25:72-181
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\kazaf\.android\build-cache\92d7507c397d08d3e2ed55635ef48047c9104b9a\output\AndroidManifest.xml:25:72-181
 	android:theme
-		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.4] C:\Users\kazaf\.android\build-cache\faa4da1ae793f6f4c53cc24e367b352d932eeffc\output\AndroidManifest.xml:25:182-230
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\kazaf\.android\build-cache\92d7507c397d08d3e2ed55635ef48047c9104b9a\output\AndroidManifest.xml:25:182-230
 	android:name
-		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.4] C:\Users\kazaf\.android\build-cache\faa4da1ae793f6f4c53cc24e367b352d932eeffc\output\AndroidManifest.xml:25:19-71
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\kazaf\.android\build-cache\92d7507c397d08d3e2ed55635ef48047c9104b9a\output\AndroidManifest.xml:25:19-71
 activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
-ADDED from [com.google.android.gms:play-services-ads-lite:10.2.4] C:\Users\kazaf\.android\build-cache\faa4da1ae793f6f4c53cc24e367b352d932eeffc\output\AndroidManifest.xml:26:9-131
+ADDED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\kazaf\.android\build-cache\92d7507c397d08d3e2ed55635ef48047c9104b9a\output\AndroidManifest.xml:26:9-131
 	android:theme
-		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.4] C:\Users\kazaf\.android\build-cache\faa4da1ae793f6f4c53cc24e367b352d932eeffc\output\AndroidManifest.xml:26:92-129
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\kazaf\.android\build-cache\92d7507c397d08d3e2ed55635ef48047c9104b9a\output\AndroidManifest.xml:26:92-129
 	android:name
-		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.4] C:\Users\kazaf\.android\build-cache\faa4da1ae793f6f4c53cc24e367b352d932eeffc\output\AndroidManifest.xml:26:19-91
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\kazaf\.android\build-cache\92d7507c397d08d3e2ed55635ef48047c9104b9a\output\AndroidManifest.xml:26:19-91
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.android.gms:play-services-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\af807ba429f6aa732bbd2a0362c2a37d6a2e05ea\output\AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\7a81b95fd3452ef9f53e2053b71b67036ed8e994\output\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:10.2.4] C:\Users\kazaf\.android\build-cache\a2b2e704fbe40d5f5e53b6cbb1d350ae0cc0b482\output\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.4] C:\Users\kazaf\.android\build-cache\01d6689b359c327e02beb229fb42a92a79b31166\output\AndroidManifest.xml:24:5-67
+ADDED from [com.google.android.gms:play-services-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\00324f067cb56df6a09a2502248117bb48c4f9d0\output\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\c0c97592f7ef2fcda0ee51f5a4bfbc0c1df8d180\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\kazaf\.android\build-cache\d7a3e353714142f7520aea09ad2e2c11ea720882\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.6] C:\Users\kazaf\.android\build-cache\d003ec2b0e3f7ce673146a67197625f761bd391f\output\AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from [com.google.android.gms:play-services-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\af807ba429f6aa732bbd2a0362c2a37d6a2e05ea\output\AndroidManifest.xml:24:22-65
+		ADDED from [com.google.android.gms:play-services-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\00324f067cb56df6a09a2502248117bb48c4f9d0\output\AndroidManifest.xml:24:22-65
 activity#com.google.android.gms.appinvite.PreviewActivity
-ADDED from [com.google.android.gms:play-services-appinvite:10.2.4] C:\Users\kazaf\.android\build-cache\68b5d2beed1fbec243cf1506bba548323ceedd7a\output\AndroidManifest.xml:20:9-25:20
+ADDED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\kazaf\.android\build-cache\9b7efd6abb05142e348bbf855342078f525fdc7a\output\AndroidManifest.xml:20:9-25:20
 	android:exported
-		ADDED from [com.google.android.gms:play-services-appinvite:10.2.4] C:\Users\kazaf\.android\build-cache\68b5d2beed1fbec243cf1506bba548323ceedd7a\output\AndroidManifest.xml:20:51-74
+		ADDED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\kazaf\.android\build-cache\9b7efd6abb05142e348bbf855342078f525fdc7a\output\AndroidManifest.xml:20:51-74
 	android:theme
-		ADDED from [com.google.android.gms:play-services-appinvite:10.2.4] C:\Users\kazaf\.android\build-cache\68b5d2beed1fbec243cf1506bba548323ceedd7a\output\AndroidManifest.xml:20:75-121
+		ADDED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\kazaf\.android\build-cache\9b7efd6abb05142e348bbf855342078f525fdc7a\output\AndroidManifest.xml:20:75-121
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:10.2.4] C:\Users\kazaf\.android\build-cache\68b5d2beed1fbec243cf1506bba548323ceedd7a\output\AndroidManifest.xml:20:19-50
+		ADDED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\kazaf\.android\build-cache\9b7efd6abb05142e348bbf855342078f525fdc7a\output\AndroidManifest.xml:20:19-50
 intent-filter#android.intent.category.DEFAULT+com.google.android.gms.appinvite.ACTION_PREVIEW
-ADDED from [com.google.android.gms:play-services-appinvite:10.2.4] C:\Users\kazaf\.android\build-cache\68b5d2beed1fbec243cf1506bba548323ceedd7a\output\AndroidManifest.xml:21:13-24:29
+ADDED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\kazaf\.android\build-cache\9b7efd6abb05142e348bbf855342078f525fdc7a\output\AndroidManifest.xml:21:13-24:29
 action#com.google.android.gms.appinvite.ACTION_PREVIEW
-ADDED from [com.google.android.gms:play-services-appinvite:10.2.4] C:\Users\kazaf\.android\build-cache\68b5d2beed1fbec243cf1506bba548323ceedd7a\output\AndroidManifest.xml:22:17-89
+ADDED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\kazaf\.android\build-cache\9b7efd6abb05142e348bbf855342078f525fdc7a\output\AndroidManifest.xml:22:17-89
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:10.2.4] C:\Users\kazaf\.android\build-cache\68b5d2beed1fbec243cf1506bba548323ceedd7a\output\AndroidManifest.xml:22:25-87
+		ADDED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\kazaf\.android\build-cache\9b7efd6abb05142e348bbf855342078f525fdc7a\output\AndroidManifest.xml:22:25-87
 category#android.intent.category.DEFAULT
-ADDED from [com.google.android.gms:play-services-appinvite:10.2.4] C:\Users\kazaf\.android\build-cache\68b5d2beed1fbec243cf1506bba548323ceedd7a\output\AndroidManifest.xml:23:17-75
+ADDED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\kazaf\.android\build-cache\9b7efd6abb05142e348bbf855342078f525fdc7a\output\AndroidManifest.xml:23:17-75
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:10.2.4] C:\Users\kazaf\.android\build-cache\68b5d2beed1fbec243cf1506bba548323ceedd7a\output\AndroidManifest.xml:23:27-73
+		ADDED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\kazaf\.android\build-cache\9b7efd6abb05142e348bbf855342078f525fdc7a\output\AndroidManifest.xml:23:27-73
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:10.2.4] C:\Users\kazaf\.android\build-cache\c986766eda87449ee4bcdbba3ab9c8072ad7089b\output\AndroidManifest.xml:20:9-189
+ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\kazaf\.android\build-cache\eb76a2bbd6b449fb5f4672be08ad8788cc91e97d\output\AndroidManifest.xml:20:9-189
 	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:10.2.4] C:\Users\kazaf\.android\build-cache\c986766eda87449ee4bcdbba3ab9c8072ad7089b\output\AndroidManifest.xml:20:129-162
+		ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\kazaf\.android\build-cache\eb76a2bbd6b449fb5f4672be08ad8788cc91e97d\output\AndroidManifest.xml:20:129-162
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:10.2.4] C:\Users\kazaf\.android\build-cache\c986766eda87449ee4bcdbba3ab9c8072ad7089b\output\AndroidManifest.xml:20:163-187
+		ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\kazaf\.android\build-cache\eb76a2bbd6b449fb5f4672be08ad8788cc91e97d\output\AndroidManifest.xml:20:163-187
 	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:10.2.4] C:\Users\kazaf\.android\build-cache\c986766eda87449ee4bcdbba3ab9c8072ad7089b\output\AndroidManifest.xml:20:69-128
+		ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\kazaf\.android\build-cache\eb76a2bbd6b449fb5f4672be08ad8788cc91e97d\output\AndroidManifest.xml:20:69-128
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:10.2.4] C:\Users\kazaf\.android\build-cache\c986766eda87449ee4bcdbba3ab9c8072ad7089b\output\AndroidManifest.xml:20:19-68
+		ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\kazaf\.android\build-cache\eb76a2bbd6b449fb5f4672be08ad8788cc91e97d\output\AndroidManifest.xml:20:19-68
 service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:10.2.4] C:\Users\kazaf\.android\build-cache\c986766eda87449ee4bcdbba3ab9c8072ad7089b\output\AndroidManifest.xml:24:9-184
+ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\kazaf\.android\build-cache\eb76a2bbd6b449fb5f4672be08ad8788cc91e97d\output\AndroidManifest.xml:24:9-184
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:10.2.4] C:\Users\kazaf\.android\build-cache\c986766eda87449ee4bcdbba3ab9c8072ad7089b\output\AndroidManifest.xml:24:64-87
+		ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\kazaf\.android\build-cache\eb76a2bbd6b449fb5f4672be08ad8788cc91e97d\output\AndroidManifest.xml:24:64-87
 	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:10.2.4] C:\Users\kazaf\.android\build-cache\c986766eda87449ee4bcdbba3ab9c8072ad7089b\output\AndroidManifest.xml:24:88-182
+		ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\kazaf\.android\build-cache\eb76a2bbd6b449fb5f4672be08ad8788cc91e97d\output\AndroidManifest.xml:24:88-182
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:10.2.4] C:\Users\kazaf\.android\build-cache\c986766eda87449ee4bcdbba3ab9c8072ad7089b\output\AndroidManifest.xml:24:18-63
+		ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\kazaf\.android\build-cache\eb76a2bbd6b449fb5f4672be08ad8788cc91e97d\output\AndroidManifest.xml:24:18-63
 receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
-ADDED from [com.google.android.gms:play-services-cast-framework:10.2.4] C:\Users\kazaf\.android\build-cache\fc181c04346feca5ccf00cb6e66809ef0bba1a49\output\AndroidManifest.xml:5:9-99
+ADDED from [com.google.android.gms:play-services-cast-framework:10.2.6] C:\Users\kazaf\.android\build-cache\9a06834be1a804764838a1d8fa61a78d507276a7\output\AndroidManifest.xml:5:9-99
 	android:name
-		ADDED from [com.google.android.gms:play-services-cast-framework:10.2.4] C:\Users\kazaf\.android\build-cache\fc181c04346feca5ccf00cb6e66809ef0bba1a49\output\AndroidManifest.xml:5:19-97
+		ADDED from [com.google.android.gms:play-services-cast-framework:10.2.6] C:\Users\kazaf\.android\build-cache\9a06834be1a804764838a1d8fa61a78d507276a7\output\AndroidManifest.xml:5:19-97
 service#com.google.android.gms.cast.framework.media.MediaNotificationService
-ADDED from [com.google.android.gms:play-services-cast-framework:10.2.4] C:\Users\kazaf\.android\build-cache\fc181c04346feca5ccf00cb6e66809ef0bba1a49\output\AndroidManifest.xml:6:9-103
+ADDED from [com.google.android.gms:play-services-cast-framework:10.2.6] C:\Users\kazaf\.android\build-cache\9a06834be1a804764838a1d8fa61a78d507276a7\output\AndroidManifest.xml:6:9-103
 	android:name
-		ADDED from [com.google.android.gms:play-services-cast-framework:10.2.4] C:\Users\kazaf\.android\build-cache\fc181c04346feca5ccf00cb6e66809ef0bba1a49\output\AndroidManifest.xml:6:18-101
+		ADDED from [com.google.android.gms:play-services-cast-framework:10.2.6] C:\Users\kazaf\.android\build-cache\9a06834be1a804764838a1d8fa61a78d507276a7\output\AndroidManifest.xml:6:18-101
 service#com.google.android.gms.cast.framework.ReconnectionService
-ADDED from [com.google.android.gms:play-services-cast-framework:10.2.4] C:\Users\kazaf\.android\build-cache\fc181c04346feca5ccf00cb6e66809ef0bba1a49\output\AndroidManifest.xml:7:9-92
+ADDED from [com.google.android.gms:play-services-cast-framework:10.2.6] C:\Users\kazaf\.android\build-cache\9a06834be1a804764838a1d8fa61a78d507276a7\output\AndroidManifest.xml:7:9-92
 	android:name
-		ADDED from [com.google.android.gms:play-services-cast-framework:10.2.4] C:\Users\kazaf\.android\build-cache\fc181c04346feca5ccf00cb6e66809ef0bba1a49\output\AndroidManifest.xml:7:18-90
+		ADDED from [com.google.android.gms:play-services-cast-framework:10.2.6] C:\Users\kazaf\.android\build-cache\9a06834be1a804764838a1d8fa61a78d507276a7\output\AndroidManifest.xml:7:18-90
 service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:10.2.4] C:\Users\kazaf\.android\build-cache\815c3e82ad5db7c645a9b168a81a415f9f552551\output\AndroidManifest.xml:23:9-27:19
+ADDED from [com.google.firebase:firebase-messaging:10.2.6] C:\Users\kazaf\.android\build-cache\c7b3073a51b1c4bdf94bc19d67a18e2a13fe63bd\output\AndroidManifest.xml:23:9-27:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:10.2.4] C:\Users\kazaf\.android\build-cache\815c3e82ad5db7c645a9b168a81a415f9f552551\output\AndroidManifest.xml:23:88-111
+		ADDED from [com.google.firebase:firebase-messaging:10.2.6] C:\Users\kazaf\.android\build-cache\c7b3073a51b1c4bdf94bc19d67a18e2a13fe63bd\output\AndroidManifest.xml:23:88-111
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:10.2.4] C:\Users\kazaf\.android\build-cache\815c3e82ad5db7c645a9b168a81a415f9f552551\output\AndroidManifest.xml:23:18-87
+		ADDED from [com.google.firebase:firebase-messaging:10.2.6] C:\Users\kazaf\.android\build-cache\c7b3073a51b1c4bdf94bc19d67a18e2a13fe63bd\output\AndroidManifest.xml:23:18-87
 intent-filter#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:10.2.4] C:\Users\kazaf\.android\build-cache\815c3e82ad5db7c645a9b168a81a415f9f552551\output\AndroidManifest.xml:24:13-26:29
+ADDED from [com.google.firebase:firebase-messaging:10.2.6] C:\Users\kazaf\.android\build-cache\c7b3073a51b1c4bdf94bc19d67a18e2a13fe63bd\output\AndroidManifest.xml:24:13-26:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-messaging:10.2.4] C:\Users\kazaf\.android\build-cache\815c3e82ad5db7c645a9b168a81a415f9f552551\output\AndroidManifest.xml:24:28-51
+		ADDED from [com.google.firebase:firebase-messaging:10.2.6] C:\Users\kazaf\.android\build-cache\c7b3073a51b1c4bdf94bc19d67a18e2a13fe63bd\output\AndroidManifest.xml:24:28-51
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:10.2.4] C:\Users\kazaf\.android\build-cache\815c3e82ad5db7c645a9b168a81a415f9f552551\output\AndroidManifest.xml:25:17-77
+ADDED from [com.google.firebase:firebase-messaging:10.2.6] C:\Users\kazaf\.android\build-cache\c7b3073a51b1c4bdf94bc19d67a18e2a13fe63bd\output\AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:10.2.4] C:\Users\kazaf\.android\build-cache\815c3e82ad5db7c645a9b168a81a415f9f552551\output\AndroidManifest.xml:25:25-75
+		ADDED from [com.google.firebase:firebase-messaging:10.2.6] C:\Users\kazaf\.android\build-cache\c7b3073a51b1c4bdf94bc19d67a18e2a13fe63bd\output\AndroidManifest.xml:25:25-75
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.android.gms:play-services-gcm:10.2.4] C:\Users\kazaf\.android\build-cache\01dad317ab8eb1a8f380bc60bb614557b71b1b5c\output\AndroidManifest.xml:20:5-81
-MERGED from [com.google.android.gms:play-services-iid:10.2.4] C:\Users\kazaf\.android\build-cache\62b78331e2ffd46264fdb1c0b504cddd70617e7f\output\AndroidManifest.xml:20:5-81
-MERGED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:22:5-81
+ADDED from [com.google.android.gms:play-services-gcm:10.2.6] C:\Users\kazaf\.android\build-cache\d405112c14fff6e3b09daea3fd7febce3629096b\output\AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:10.2.6] C:\Users\kazaf\.android\build-cache\e86fd64cf38ca79a647e3ecf0b1581560b506dff\output\AndroidManifest.xml:20:5-81
+MERGED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:22:5-81
 	android:name
-		ADDED from [com.google.android.gms:play-services-gcm:10.2.4] C:\Users\kazaf\.android\build-cache\01dad317ab8eb1a8f380bc60bb614557b71b1b5c\output\AndroidManifest.xml:20:22-79
+		ADDED from [com.google.android.gms:play-services-gcm:10.2.6] C:\Users\kazaf\.android\build-cache\d405112c14fff6e3b09daea3fd7febce3629096b\output\AndroidManifest.xml:20:22-79
 service#com.google.android.gms.tagmanager.TagManagerService
-ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.4] C:\Users\kazaf\.android\build-cache\d1e5c7f5d5d2ce361587e8d6141a1c09a19f1101\output\AndroidManifest.xml:24:9-134
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\kazaf\.android\build-cache\241f9325fe2f0e8492c1e68146d7f72977dc4f14\output\AndroidManifest.xml:24:9-134
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.4] C:\Users\kazaf\.android\build-cache\d1e5c7f5d5d2ce361587e8d6141a1c09a19f1101\output\AndroidManifest.xml:24:110-132
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\kazaf\.android\build-cache\241f9325fe2f0e8492c1e68146d7f72977dc4f14\output\AndroidManifest.xml:24:110-132
 	android:exported
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.4] C:\Users\kazaf\.android\build-cache\d1e5c7f5d5d2ce361587e8d6141a1c09a19f1101\output\AndroidManifest.xml:24:85-109
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\kazaf\.android\build-cache\241f9325fe2f0e8492c1e68146d7f72977dc4f14\output\AndroidManifest.xml:24:85-109
 	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.4] C:\Users\kazaf\.android\build-cache\d1e5c7f5d5d2ce361587e8d6141a1c09a19f1101\output\AndroidManifest.xml:24:18-84
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\kazaf\.android\build-cache\241f9325fe2f0e8492c1e68146d7f72977dc4f14\output\AndroidManifest.xml:24:18-84
 activity#com.google.android.gms.tagmanager.TagManagerPreviewActivity
-ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.4] C:\Users\kazaf\.android\build-cache\d1e5c7f5d5d2ce361587e8d6141a1c09a19f1101\output\AndroidManifest.xml:25:9-32:20
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\kazaf\.android\build-cache\241f9325fe2f0e8492c1e68146d7f72977dc4f14\output\AndroidManifest.xml:25:9-32:20
 	android:noHistory
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.4] C:\Users\kazaf\.android\build-cache\d1e5c7f5d5d2ce361587e8d6141a1c09a19f1101\output\AndroidManifest.xml:25:94-118
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\kazaf\.android\build-cache\241f9325fe2f0e8492c1e68146d7f72977dc4f14\output\AndroidManifest.xml:25:94-118
 	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.4] C:\Users\kazaf\.android\build-cache\d1e5c7f5d5d2ce361587e8d6141a1c09a19f1101\output\AndroidManifest.xml:25:19-93
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\kazaf\.android\build-cache\241f9325fe2f0e8492c1e68146d7f72977dc4f14\output\AndroidManifest.xml:25:19-93
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.4] C:\Users\kazaf\.android\build-cache\d1e5c7f5d5d2ce361587e8d6141a1c09a19f1101\output\AndroidManifest.xml:26:13-31:29
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\kazaf\.android\build-cache\241f9325fe2f0e8492c1e68146d7f72977dc4f14\output\AndroidManifest.xml:26:13-31:29
 data
-ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.4] C:\Users\kazaf\.android\build-cache\d1e5c7f5d5d2ce361587e8d6141a1c09a19f1101\output\AndroidManifest.xml:27:17-71
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\kazaf\.android\build-cache\241f9325fe2f0e8492c1e68146d7f72977dc4f14\output\AndroidManifest.xml:27:17-71
 	android:scheme
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.4] C:\Users\kazaf\.android\build-cache\d1e5c7f5d5d2ce361587e8d6141a1c09a19f1101\output\AndroidManifest.xml:27:23-69
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\kazaf\.android\build-cache\241f9325fe2f0e8492c1e68146d7f72977dc4f14\output\AndroidManifest.xml:27:23-69
 action#android.intent.action.VIEW
-ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.4] C:\Users\kazaf\.android\build-cache\d1e5c7f5d5d2ce361587e8d6141a1c09a19f1101\output\AndroidManifest.xml:28:17-68
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\kazaf\.android\build-cache\241f9325fe2f0e8492c1e68146d7f72977dc4f14\output\AndroidManifest.xml:28:17-68
 	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.4] C:\Users\kazaf\.android\build-cache\d1e5c7f5d5d2ce361587e8d6141a1c09a19f1101\output\AndroidManifest.xml:28:25-66
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\kazaf\.android\build-cache\241f9325fe2f0e8492c1e68146d7f72977dc4f14\output\AndroidManifest.xml:28:25-66
 category#android.intent.category.BROWSABLE
-ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.4] C:\Users\kazaf\.android\build-cache\d1e5c7f5d5d2ce361587e8d6141a1c09a19f1101\output\AndroidManifest.xml:30:17-77
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\kazaf\.android\build-cache\241f9325fe2f0e8492c1e68146d7f72977dc4f14\output\AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.4] C:\Users\kazaf\.android\build-cache\d1e5c7f5d5d2ce361587e8d6141a1c09a19f1101\output\AndroidManifest.xml:30:27-75
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\kazaf\.android\build-cache\241f9325fe2f0e8492c1e68146d7f72977dc4f14\output\AndroidManifest.xml:30:27-75
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\7a81b95fd3452ef9f53e2053b71b67036ed8e994\output\AndroidManifest.xml:25:7-26:18
-MERGED from [com.google.firebase:firebase-analytics-impl:10.2.4] C:\Users\kazaf\.android\build-cache\a2b2e704fbe40d5f5e53b6cbb1d350ae0cc0b482\output\AndroidManifest.xml:25:7-26:18
+ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\c0c97592f7ef2fcda0ee51f5a4bfbc0c1df8d180\output\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\kazaf\.android\build-cache\d7a3e353714142f7520aea09ad2e2c11ea720882\output\AndroidManifest.xml:25:7-26:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\7a81b95fd3452ef9f53e2053b71b67036ed8e994\output\AndroidManifest.xml:25:90-112
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\c0c97592f7ef2fcda0ee51f5a4bfbc0c1df8d180\output\AndroidManifest.xml:25:90-112
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\7a81b95fd3452ef9f53e2053b71b67036ed8e994\output\AndroidManifest.xml:25:113-137
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\c0c97592f7ef2fcda0ee51f5a4bfbc0c1df8d180\output\AndroidManifest.xml:25:113-137
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\7a81b95fd3452ef9f53e2053b71b67036ed8e994\output\AndroidManifest.xml:25:17-89
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\c0c97592f7ef2fcda0ee51f5a4bfbc0c1df8d180\output\AndroidManifest.xml:25:17-89
 receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
-ADDED from [com.google.firebase:firebase-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\7a81b95fd3452ef9f53e2053b71b67036ed8e994\output\AndroidManifest.xml:27:7-31:18
+ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\c0c97592f7ef2fcda0ee51f5a4bfbc0c1df8d180\output\AndroidManifest.xml:27:7-31:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\7a81b95fd3452ef9f53e2053b71b67036ed8e994\output\AndroidManifest.xml:27:162-184
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\c0c97592f7ef2fcda0ee51f5a4bfbc0c1df8d180\output\AndroidManifest.xml:27:162-184
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\7a81b95fd3452ef9f53e2053b71b67036ed8e994\output\AndroidManifest.xml:27:105-161
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\c0c97592f7ef2fcda0ee51f5a4bfbc0c1df8d180\output\AndroidManifest.xml:27:105-161
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\7a81b95fd3452ef9f53e2053b71b67036ed8e994\output\AndroidManifest.xml:27:17-104
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\c0c97592f7ef2fcda0ee51f5a4bfbc0c1df8d180\output\AndroidManifest.xml:27:17-104
 intent-filter#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\7a81b95fd3452ef9f53e2053b71b67036ed8e994\output\AndroidManifest.xml:28:11-30:27
+ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\c0c97592f7ef2fcda0ee51f5a4bfbc0c1df8d180\output\AndroidManifest.xml:28:11-30:27
 action#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\7a81b95fd3452ef9f53e2053b71b67036ed8e994\output\AndroidManifest.xml:29:15-76
+ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\c0c97592f7ef2fcda0ee51f5a4bfbc0c1df8d180\output\AndroidManifest.xml:29:15-76
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\7a81b95fd3452ef9f53e2053b71b67036ed8e994\output\AndroidManifest.xml:29:23-74
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\c0c97592f7ef2fcda0ee51f5a4bfbc0c1df8d180\output\AndroidManifest.xml:29:23-74
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\7a81b95fd3452ef9f53e2053b71b67036ed8e994\output\AndroidManifest.xml:32:7-137
-MERGED from [com.google.firebase:firebase-analytics-impl:10.2.4] C:\Users\kazaf\.android\build-cache\a2b2e704fbe40d5f5e53b6cbb1d350ae0cc0b482\output\AndroidManifest.xml:27:7-137
+ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\c0c97592f7ef2fcda0ee51f5a4bfbc0c1df8d180\output\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\kazaf\.android\build-cache\d7a3e353714142f7520aea09ad2e2c11ea720882\output\AndroidManifest.xml:27:7-137
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\7a81b95fd3452ef9f53e2053b71b67036ed8e994\output\AndroidManifest.xml:32:88-110
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\c0c97592f7ef2fcda0ee51f5a4bfbc0c1df8d180\output\AndroidManifest.xml:32:88-110
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\7a81b95fd3452ef9f53e2053b71b67036ed8e994\output\AndroidManifest.xml:32:111-135
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\c0c97592f7ef2fcda0ee51f5a4bfbc0c1df8d180\output\AndroidManifest.xml:32:111-135
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.2.4] C:\Users\kazaf\.android\build-cache\7a81b95fd3452ef9f53e2053b71b67036ed8e994\output\AndroidManifest.xml:32:16-87
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\kazaf\.android\build-cache\c0c97592f7ef2fcda0ee51f5a4bfbc0c1df8d180\output\AndroidManifest.xml:32:16-87
 permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:24:5-109
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:24:5-109
 	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:24:72-107
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:24:72-107
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:24:17-71
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:24:17-71
 uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:26:5-78
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:26:5-78
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:26:22-76
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:26:22-76
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:30:9-35:20
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:30:9-35:20
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:30:85-108
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:30:85-108
 	android:permission
-		ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:30:109-169
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:30:109-169
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:30:19-84
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:30:19-84
 intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:31:13-34:29
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:31:13-34:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:32:17-80
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:32:17-80
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:32:25-78
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:32:25-78
 category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:33:17-60
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:33:17-60
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:33:27-58
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:33:27-58
 receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
-ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:39:9-119
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:39:9-119
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:39:93-117
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:39:93-117
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:39:19-92
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:39:19-92
 service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:43:9-47:19
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:43:9-47:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:43:83-106
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:43:83-106
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:43:18-82
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:43:18-82
 intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:44:13-46:29
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:44:13-46:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:44:28-51
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:44:28-51
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:45:17-79
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:45:17-79
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.4] C:\Users\kazaf\.android\build-cache\9e4358189608a7645dff435b74dc73e9712d2513\output\AndroidManifest.xml:45:25-77
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\kazaf\.android\build-cache\5fb152c8b9c55fcef0d1240e67dc5b502c00281d\output\AndroidManifest.xml:45:25-77
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:10.2.4] C:\Users\kazaf\.android\build-cache\39f39cd5d35834de297c523fc2318508b3e757f8\output\AndroidManifest.xml:6:9-194
+ADDED from [com.google.firebase:firebase-common:10.2.6] C:\Users\kazaf\.android\build-cache\06eed7830a55c3e631182b89bcf2e89067da24ad\output\AndroidManifest.xml:6:9-194
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:10.2.4] C:\Users\kazaf\.android\build-cache\39f39cd5d35834de297c523fc2318508b3e757f8\output\AndroidManifest.xml:6:19-78
+		ADDED from [com.google.firebase:firebase-common:10.2.6] C:\Users\kazaf\.android\build-cache\06eed7830a55c3e631182b89bcf2e89067da24ad\output\AndroidManifest.xml:6:19-78
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:10.2.4] C:\Users\kazaf\.android\build-cache\39f39cd5d35834de297c523fc2318508b3e757f8\output\AndroidManifest.xml:6:144-168
+		ADDED from [com.google.firebase:firebase-common:10.2.6] C:\Users\kazaf\.android\build-cache\06eed7830a55c3e631182b89bcf2e89067da24ad\output\AndroidManifest.xml:6:144-168
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:10.2.4] C:\Users\kazaf\.android\build-cache\39f39cd5d35834de297c523fc2318508b3e757f8\output\AndroidManifest.xml:6:169-192
+		ADDED from [com.google.firebase:firebase-common:10.2.6] C:\Users\kazaf\.android\build-cache\06eed7830a55c3e631182b89bcf2e89067da24ad\output\AndroidManifest.xml:6:169-192
 	android:name
-		ADDED from [com.google.firebase:firebase-common:10.2.4] C:\Users\kazaf\.android\build-cache\39f39cd5d35834de297c523fc2318508b3e757f8\output\AndroidManifest.xml:6:79-143
+		ADDED from [com.google.firebase:firebase-common:10.2.6] C:\Users\kazaf\.android\build-cache\06eed7830a55c3e631182b89bcf2e89067da24ad\output\AndroidManifest.xml:6:79-143
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:10.2.4] C:\Users\kazaf\.android\build-cache\da9710f615d4c13c2534cc89fdd71ec2be0048b2\output\AndroidManifest.xml:19:9-172
+ADDED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\kazaf\.android\build-cache\5e5bd45d44fd073b019608b73096fff0acddbf04\output\AndroidManifest.xml:19:9-172
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:10.2.4] C:\Users\kazaf\.android\build-cache\da9710f615d4c13c2534cc89fdd71ec2be0048b2\output\AndroidManifest.xml:19:146-170
+		ADDED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\kazaf\.android\build-cache\5e5bd45d44fd073b019608b73096fff0acddbf04\output\AndroidManifest.xml:19:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:10.2.4] C:\Users\kazaf\.android\build-cache\da9710f615d4c13c2534cc89fdd71ec2be0048b2\output\AndroidManifest.xml:19:86-145
+		ADDED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\kazaf\.android\build-cache\5e5bd45d44fd073b019608b73096fff0acddbf04\output\AndroidManifest.xml:19:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:10.2.4] C:\Users\kazaf\.android\build-cache\da9710f615d4c13c2534cc89fdd71ec2be0048b2\output\AndroidManifest.xml:19:19-85
+		ADDED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\kazaf\.android\build-cache\5e5bd45d44fd073b019608b73096fff0acddbf04\output\AndroidManifest.xml:19:19-85
 meta-data#android.support.VERSION
 ADDED from [com.android.support:support-v4:25.3.1] C:\Users\kazaf\.android\build-cache\0286eaed4c36399f9ee30676045876c7d71352fc\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\kazaf\.android\build-cache\59e3a04673d786800eec5044914d4868820bbc4c\output\AndroidManifest.xml:25:5-27:34
