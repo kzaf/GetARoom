@@ -208,7 +208,6 @@ public class LoginActivity extends ActionBarActivity {
                         String email = user.getString("email");
                         String password = user.getString("password");
                         String telephone = user.getString("telephone");
-                        //int telephone = Integer.parseInt(tel);
 
                         // Inserting row in users table
                         db.addUser(id, name, surname, country, email, password, telephone);
@@ -245,7 +244,7 @@ public class LoginActivity extends ActionBarActivity {
             @Override
             protected Map<String, String> getParams() {
                 // Posting parameters to login url
-                Map<String, String> params = new HashMap<String, String>();
+                Map<String, String> params = new HashMap<>();
                 params.put("email", email);
                 params.put("password", password);
 

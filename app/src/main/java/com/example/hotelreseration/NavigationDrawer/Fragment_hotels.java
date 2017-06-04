@@ -17,12 +17,12 @@ import android.widget.Toast;
 import com.example.hotelreseration.R;
 
 public class Fragment_hotels extends Fragment {
-	
+
 	static ListView listView;
 	SimpleAdapter adapter;
-	//Dhmiourgw HashMap gia na mporw na valw polla String na fainontai se kathe stoixeio ths listas
-	ArrayList<HashMap<String,String>> Target = new ArrayList<>(); //HashMap<String,String>
-	TextView txt;
+	ArrayList<HashMap<String,String>> records = new ArrayList<>(); //Dhmiourgw HashMap gia na mporw na valw polla String na fainontai se kathe stoixeio ths listas
+
+    static TextView txt;
 	
 	@Override
 	public View onCreateView(
@@ -33,18 +33,15 @@ public class Fragment_hotels extends Fragment {
 		View view = inflater.inflate(R.layout.fragment_hotels, container,false);
 		listView = (ListView) view.findViewById(R.id.list);
 		txt=(TextView) view.findViewById(R.id.nobookingtxt);
-		
-		
-		adapter = new SimpleAdapter(getActivity(), Target,
-		R.layout.mytextview,
-		new String[] {"name","city"},
-		new int[] {R.id.tv,R.id.sub});
-	    
+
+		adapter = new SimpleAdapter(getActivity(), records, R.layout.mytextview,
+                new String[] {"name","city"}, new int[] {R.id.tv,R.id.sub});
+
 	    // Assign adapter to ListView
 		listView.setAdapter(adapter);
-		
+
 		if(listView.getCount()==0){
-    		txt.setVisibility(View.VISIBLE);
+    		txt.setVisibility(View.VISIBLE); //show/hide the "add a new hotel" message
     	}else{
     		txt.setVisibility(View.GONE);
     	}
@@ -60,7 +57,7 @@ public class Fragment_hotels extends Fragment {
             		((MainActivity) getActivity()).alerthotel();
             	}
             	else{
-            		Toast.makeText(getActivity(),"You can add up to 3 hotels! Please read the info",Toast.LENGTH_SHORT).show();
+            		Toast.makeText(getActivity(),"You can add up to 3 hotels! Please read the info",Toast.LENGTH_LONG).show();
             	}
             	
             break;
