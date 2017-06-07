@@ -59,6 +59,7 @@ import java.util.Map;
 import java.util.Objects;
 
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_HOTELS;
+import static com.example.hotelreseration.DataBase.AppConfig.URL_REGISTER_COORDINATES;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_REGISTER_HOTEL;
 import static com.example.hotelreseration.NavigationDrawer.Fragment_hotels.listView;
 
@@ -108,6 +109,7 @@ public class MainActivity extends ActionBarActivity {
     public boolean gethotelswimmingpool;
     public String sp = "false";
     public boolean flagaddnew = false;
+    public static boolean flagpinhotel = false;
 
     public static String hid, hn, hc, ha,
             htk, ht, hs, hoidFK, hw, hsp;
@@ -652,6 +654,7 @@ public class MainActivity extends ActionBarActivity {
                 fragTran = getSupportFragmentManager().beginTransaction();
                 fragTran.replace(R.id.content_frame, maps);
                 fragTran.commit();
+                MainActivity.flagpinhotel = true;
                 if(hotel1.isChecked()){
                     onomaxarth=(String) hotel1.getText();
                 }else if (hotel2.isChecked()){
@@ -1029,6 +1032,75 @@ public class MainActivity extends ActionBarActivity {
                 return params;
             }
 
+        };
+
+        // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+    }
+
+    public void registerCoordinates(final String onomaxarth, final String oidFK, final String latitude, final String longitude)
+    {
+
+        // Tag used to cancel the request
+        String tag_string_req = "req_register";
+
+        pDialog.setMessage("Registering coordinates...");
+        showDialog();
+
+        StringRequest strReq = new StringRequest(Request.Method.POST, URL_REGISTER_COORDINATES, new Response.Listener<String>()
+        {
+
+            @Override
+            public void onResponse(String response)
+            {
+                Log.d(TAG, "Register Response: " + response.toString());
+                hideDialog();
+
+                try
+                {
+                    JSONObject jObj = new JSONObject(response);
+                    boolean error = jObj.getBoolean("error");
+
+                    // Check for error node in json
+                    if (!error) {
+                        Toast.makeText(getApplicationContext(), "Hotel has been pinned successfully!", Toast.LENGTH_SHORT).show();
+                        //loadHotels(dboFKey); //reload the hotel list each time the user add a new one
+                    } else {
+                        // Error in login. Get the error message
+                        String errorMsg = jObj.getString("error_msg");
+                        Toast.makeText(getApplicationContext(),
+                                errorMsg, Toast.LENGTH_LONG).show();
+                    }
+                }
+                catch (JSONException e)
+                {
+                    e.printStackTrace();
+                }
+            }
+
+        }, new Response.ErrorListener()
+        {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e(TAG, "Registration Error: " + error.getMessage());
+                Toast.makeText(getApplicationContext(),
+                        error.getMessage(), Toast.LENGTH_LONG).show();
+                hideDialog();
+            }
+        }) {
+
+            @Override
+            protected Map<String, String> getParams() {
+                // Posting params to register url
+                Map<String, String> params = new HashMap<>();
+                params.put("hotelname", onomaxarth);
+                params.put("oidFK", String.valueOf(oidFK));
+                params.put("latitude", String.valueOf(latitude));
+                params.put("longitude", String.valueOf(longitude));
+
+                return params;
+            }
         };
 
         // Adding request to request queue

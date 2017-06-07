@@ -9,6 +9,9 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -37,6 +40,10 @@ public class Fragment_maps extends android.support.v4.app.Fragment implements On
 
     MapView mMapView;
     private GoogleMap googleMap;
+
+    public String latlong;
+    String latitude;
+    String longitude;
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
@@ -201,11 +208,20 @@ public class Fragment_maps extends android.support.v4.app.Fragment implements On
     @Override 
     public void onMapLongClick(LatLng point) {
     	 if (SelectUserActivity.flagOwner){
-    		 googleMap.addMarker(new MarkerOptions()
-             .position(point)
-             .title(MainActivity.onomaxarth)           
-             .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
-    		Toast.makeText(getActivity(),"Hotel pinned at: "+point.toString(),Toast.LENGTH_SHORT).show();
+             if(MainActivity.flagpinhotel){
+                 googleMap.addMarker(new MarkerOptions()
+                         .position(point)
+                         .title(MainActivity.onomaxarth)
+                         .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+                 Toast.makeText(getActivity(),"Hotel pinned at: "+point.toString(),Toast.LENGTH_SHORT).show();
+
+                 latlong = point.toString();
+                 getcoords(latlong);
+             }else{
+                 Toast.makeText(getActivity(),"You have already pinned your hotel",Toast.LENGTH_SHORT).show();
+             }
+
+
          }else{
      		Toast.makeText(getActivity(),point.toString(),Toast.LENGTH_SHORT).show();
          }
@@ -233,5 +249,33 @@ public class Fragment_maps extends android.support.v4.app.Fragment implements On
     public void onLowMemory() { 
         super.onLowMemory(); 
         mMapView.onLowMemory(); 
+    }
+
+    public void getcoords(String latlong){
+        String CurrentString = latlong;
+        String[] separated = CurrentString.split(":");
+        separated[0] = separated[0].trim();
+        separated[1] = separated[1].trim();
+
+        String[] lats = separated[1].split(",");
+        String[] latslat = lats[0].split("\\(");
+        latitude = latslat[1];
+        String[] longslong = lats[1].split("\\)");
+        longitude = longslong[0];
+
+        googleMap.getUiSettings().setAllGesturesEnabled(false);
+        MainActivity.flagpinhotel = false;
+
+        MainActivity activity = (MainActivity) getActivity();
+        activity.registerCoordinates(MainActivity.onomaxarth,MainActivity.hoidFK,latitude,longitude);
+
+
+
+//        Fragment fragment = new Fragment_hotels();
+//        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+//        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//        fragmentTransaction.replace(R.id.content_frame, fragment);
+//        fragmentTransaction.addToBackStack(null);
+//        fragmentTransaction.commit();
     }
 }

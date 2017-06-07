@@ -33,6 +33,7 @@ public class Fragment_hotels extends Fragment {
 		View view = inflater.inflate(R.layout.fragment_hotels, container,false);
 		listView = (ListView) view.findViewById(R.id.list);
 		txt=(TextView) view.findViewById(R.id.nobookingtxt);
+		MainActivity.flagpinhotel = false;
 
 		adapter = new SimpleAdapter(getActivity(), records, R.layout.mytextview,
                 new String[] {"name","city"}, new int[] {R.id.tv,R.id.sub});
