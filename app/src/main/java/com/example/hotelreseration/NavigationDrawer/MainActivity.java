@@ -7,19 +7,13 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 import android.util.Log;
@@ -33,7 +27,6 @@ import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -42,22 +35,22 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.example.hotelreseration.CreateAccountActivity;
 import com.example.hotelreseration.DataBase.AppController;
 import com.example.hotelreseration.DataBase.SQLiteHandler;
-import com.example.hotelreseration.LoginActivity;
 import com.example.hotelreseration.R;
 import com.example.hotelreseration.SelectUserActivity;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
-import java.util.Objects;
 
+import static com.example.hotelreseration.DataBase.AppConfig.URL_DELETE_USER;
+import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_COORDINATES;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_HOTELS;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_REGISTER_COORDINATES;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_REGISTER_HOTEL;
@@ -579,8 +572,6 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(DialogInterface dialog, int which)
             {
                 db.deleteUsers();
-                Toast.makeText(getApplicationContext(), "Your account has been deleted!",
-                        Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(MainActivity.this, SelectUserActivity.class));
 
             }
@@ -1064,7 +1055,6 @@ public class MainActivity extends ActionBarActivity {
                     // Check for error node in json
                     if (!error) {
                         Toast.makeText(getApplicationContext(), "Hotel has been pinned successfully!", Toast.LENGTH_SHORT).show();
-                        //loadHotels(dboFKey); //reload the hotel list each time the user add a new one
                     } else {
                         // Error in login. Get the error message
                         String errorMsg = jObj.getString("error_msg");
@@ -1195,6 +1185,150 @@ public class MainActivity extends ActionBarActivity {
         };
         // Adding request to request queue
         AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+    }
+
+    public void loadCoordinates(){
+        // Tag used to cancel the request
+        String tag_string_req = "req_login";
+
+        pDialog.setMessage("Loading hotels ...");
+        showDialog();
+
+        StringRequest strReq = new StringRequest(Request.Method.POST, URL_LOAD_COORDINATES, new Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String response) {
+
+                hideDialog();
+
+                try {
+                    JSONObject jObj = new JSONObject(response);
+                    boolean error = jObj.getBoolean("error");
+                    // Check for error node in json
+                    if (!error) {
+
+                        JSONArray jcoord= jObj.getJSONArray("coords");
+                        Log.d("hotel",jcoord.toString());
+
+                        for(int i=0; i<jcoord.length(); i++){
+                            //HashMap<String,String> coordlhm = new HashMap<>();
+                            JSONObject coord = jcoord.getJSONObject(i);
+                            String name = coord.getString("hotelname");
+                            String lat = coord.getString("latitude");
+                            String lon = coord.getString("longitude");
+                            Fragment_maps.addMarkers(lat, lon, name);
+                        }
+
+                    } else {
+                        // Error in login. Get the error message
+                        String errorMsg = jObj.getString("error_msg");
+                        Toast.makeText(getApplicationContext(),
+                                errorMsg, Toast.LENGTH_LONG).show();
+                    }
+                } catch (JSONException e) {
+                    // JSON error
+                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e(TAG, "Login Error: " + error.getMessage());
+                Toast.makeText(getApplicationContext(),
+                        error.getMessage(), Toast.LENGTH_LONG).show();
+                hideDialog();
+            }
+        }) {
+
+            @Override
+            protected Map<String, String> getParams() {
+                // Posting parameters to login url
+                Map<String, String> params = new HashMap<>();
+                params.put("oidFK", dboFKey);
+
+                return params;
+            }
+        };
+        // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+    }
+
+    public void deleteUser(final String dboFKey){
+        // Tag used to cancel the request
+        String tag_string_req = "req_login";
+
+        pDialog.setMessage("Delete user ...");
+        showDialog();
+
+        StringRequest strReq = new StringRequest(Request.Method.POST, URL_DELETE_USER, new Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String response) {
+
+                hideDialog();
+
+                try {
+                    JSONObject jObj = new JSONObject(response);
+                    boolean error = jObj.getBoolean("error");
+                    // Check for error node in json
+                    if (!error) {
+
+                        JSONArray jcoord= jObj.getJSONArray("coords");
+                        Log.d("hotel",jcoord.toString());
+
+                        Toast.makeText(getApplicationContext(), "Your account has been deleted!",
+                                Toast.LENGTH_SHORT).show();
+
+                    } else {
+                        // Error in login. Get the error message
+                        String errorMsg = jObj.getString("error_msg");
+                        Toast.makeText(getApplicationContext(),
+                                errorMsg, Toast.LENGTH_LONG).show();
+                    }
+                } catch (JSONException e) {
+                    // JSON error
+                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e(TAG, "Login Error: " + error.getMessage());
+                Toast.makeText(getApplicationContext(),
+                        error.getMessage(), Toast.LENGTH_LONG).show();
+                hideDialog();
+            }
+        }) {
+
+            @Override
+            protected Map<String, String> getParams() {
+                // Posting parameters to login url
+                Map<String, String> params = new HashMap<>();
+                params.put("oidFK", dboFKey);
+
+                return params;
+            }
+        };
+        // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+    }
+
+    public void updateUser(final String dboFKey){
+
+    }
+
+    public void deleteHotel(){
+
+    }
+
+    public void updateHotel(){
+
     }
 
     private void showDialog() {

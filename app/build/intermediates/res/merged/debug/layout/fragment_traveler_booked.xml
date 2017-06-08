@@ -44,8 +44,8 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/list1"
         android:layout_centerHorizontal="true"
-        android:text="My Booked Hotels"
+        android:text="My Bookings"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 
 </RelativeLayout>

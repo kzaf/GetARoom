@@ -39,7 +39,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class Fragment_maps extends android.support.v4.app.Fragment implements OnMapLongClickListener, OnMapClickListener, OnMapReadyCallback {
 
     MapView mMapView;
-    private GoogleMap googleMap;
+    private static GoogleMap googleMap;
 
     public String latlong;
     String latitude;
@@ -77,17 +77,12 @@ public class Fragment_maps extends android.support.v4.app.Fragment implements On
         double latitude = 40.639350;
         double longitude = 22.944607;
 
-//        LocationManager locationManager = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
-//        Criteria criteria = new Criteria();
-//
-//        Location location = locationManager.getLastKnownLocation(locationManager
-//                .getBestProvider(criteria, false));
-//        double lat = location.getLatitude();
-//        double lon = location.getLongitude();
-
         googleMap.setOnMapLongClickListener(this);
         googleMap.setOnMapClickListener(this);
-        
+
+        MainActivity activity = (MainActivity) getActivity();
+        activity.loadCoordinates(); //load the hotels on the map
+
         // create marker
         MarkerOptions thessaloniki = new MarkerOptions().position(new LatLng(latitude, longitude)).title("Thessaloniki");
         MarkerOptions LeykosPyrgos = new MarkerOptions().position(new LatLng(40.626401, 22.948352)).title("Leykos Pyrgos");
@@ -102,8 +97,6 @@ public class Fragment_maps extends android.support.v4.app.Fragment implements On
         googleMap.animateCamera(CameraUpdateFactory .newCameraPosition(cameraPositionThess));
 
         googleMap.addMarker(LeykosPyrgos);
-//        CameraPosition cameraPositionLeykosPyrgos = new CameraPosition.Builder() .target(new LatLng(40.626401, 22.948352)).zoom(12).build();
-//        googleMap.animateCamera(CameraUpdateFactory .newCameraPosition(cameraPositionLeykosPyrgos));
     }
 
     public void onLocationChanged(Location location) {
@@ -268,14 +261,20 @@ public class Fragment_maps extends android.support.v4.app.Fragment implements On
 
         MainActivity activity = (MainActivity) getActivity();
         activity.registerCoordinates(MainActivity.onomaxarth,MainActivity.hoidFK,latitude,longitude);
-
-
-
 //        Fragment fragment = new Fragment_hotels();
 //        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
 //        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 //        fragmentTransaction.replace(R.id.content_frame, fragment);
 //        fragmentTransaction.addToBackStack(null);
 //        fragmentTransaction.commit();
+    }
+
+    public static void addMarkers(String lat, String lon, String name){
+        double latn = Double.parseDouble(lat);
+        double lonn = Double.parseDouble(lon);
+
+        MarkerOptions hotelposition = new MarkerOptions().position(new LatLng(latn, lonn)).title(name);
+        hotelposition.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ROSE));
+        googleMap.addMarker(hotelposition);
     }
 }

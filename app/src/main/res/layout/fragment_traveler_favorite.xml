@@ -9,6 +9,27 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.hotelreseration.NavigationDrawer.Fragment_hotels" >
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/list1"
+        android:layout_centerHorizontal="true"
+        android:text="Favorites"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/onoma"
+        android:layout_alignLeft="@+id/list1"
+        android:background="#000000"
+        android:visibility="visible"
+        android:layout_below="@id/textView2"
+        tools:ignore="RtlHardcoded"/>
+
     <ListView
         android:id="@+id/list1"
         android:layout_width="match_parent"
