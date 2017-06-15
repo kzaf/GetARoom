@@ -14,7 +14,8 @@ public class AppConfig {
     public static String URL_REGISTER_COORDINATES = "http://ptyxiaki2016.eu.pn/registercoordinates.php";
 
     // Server delete user
-    public static String URL_DELETE_USER = "http://ptyxiaki2016.eu.pn/deleteuser.php";
+    public static String URL_DELETE_OWNER = "http://ptyxiaki2016.eu.pn/deleteowner.php";
+    public static String URL_DELETE_TRAVELER = "http://ptyxiaki2016.eu.pn/deletetraveler.php";
     public static String URL_DELETE_HOTEL = "http://ptyxiaki2016.eu.pn/deletehotel.php";
 
     // Server update user

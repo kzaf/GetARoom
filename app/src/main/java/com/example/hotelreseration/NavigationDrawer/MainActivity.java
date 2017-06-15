@@ -35,13 +35,11 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.example.hotelreseration.DataBase.AppConfig;
 import com.example.hotelreseration.DataBase.AppController;
 import com.example.hotelreseration.DataBase.SQLiteHandler;
 import com.example.hotelreseration.R;
 import com.example.hotelreseration.SelectUserActivity;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -49,7 +47,7 @@ import org.json.JSONObject;
 
 import java.util.Map;
 
-import static com.example.hotelreseration.DataBase.AppConfig.URL_DELETE_USER;
+import static com.example.hotelreseration.DataBase.AppConfig.URL_DELETE_OWNER;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_COORDINATES;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_HOTELS;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_REGISTER_COORDINATES;
@@ -103,6 +101,7 @@ public class MainActivity extends ActionBarActivity {
     public String sp = "false";
     public boolean flagaddnew = false;
     public static boolean flagpinhotel = false;
+    public String URL_DELETE;
 
     public static String hid, hn, hc, ha,
             htk, ht, hs, hoidFK, hw, hsp;
@@ -571,7 +570,15 @@ public class MainActivity extends ActionBarActivity {
         {
             public void onClick(DialogInterface dialog, int which)
             {
+                if (SelectUserActivity.flagOwner)
+                {
+                    URL_DELETE = AppConfig.URL_DELETE_OWNER;
+                }else{
+                    URL_DELETE = AppConfig.URL_DELETE_TRAVELER;
+                }
+
                 db.deleteUsers();
+                deleteUser(dbmail);
                 startActivity(new Intent(MainActivity.this, SelectUserActivity.class));
 
             }
@@ -1256,14 +1263,14 @@ public class MainActivity extends ActionBarActivity {
         AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
     }
 
-    public void deleteUser(final String dboFKey){
+    public void deleteUser(final String dbmail){
         // Tag used to cancel the request
         String tag_string_req = "req_login";
 
         pDialog.setMessage("Delete user ...");
         showDialog();
 
-        StringRequest strReq = new StringRequest(Request.Method.POST, URL_DELETE_USER, new Response.Listener<String>() {
+        StringRequest strReq = new StringRequest(Request.Method.POST, URL_DELETE, new Response.Listener<String>() {
 
             @Override
             public void onResponse(String response) {
@@ -1276,8 +1283,6 @@ public class MainActivity extends ActionBarActivity {
                     // Check for error node in json
                     if (!error) {
 
-                        JSONArray jcoord= jObj.getJSONArray("coords");
-                        Log.d("hotel",jcoord.toString());
 
                         Toast.makeText(getApplicationContext(), "Your account has been deleted!",
                                 Toast.LENGTH_SHORT).show();
@@ -1310,7 +1315,7 @@ public class MainActivity extends ActionBarActivity {
             protected Map<String, String> getParams() {
                 // Posting parameters to login url
                 Map<String, String> params = new HashMap<>();
-                params.put("oidFK", dboFKey);
+                params.put("email", dbmail);
 
                 return params;
             }
