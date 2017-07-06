@@ -27,60 +27,57 @@
 	        android:layout_alignTop="@+id/date"
 	        android:entries="@array/spinnerItems"
 	        android:spinnerMode="dialog" />
-	
-	    <EditText
-	        android:id="@+id/hotelcity"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+
+		<EditText
+			android:id="@+id/hotelcity"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_below="@+id/hotelname"
+			android:ems="10"
+			android:inputType="textCapSentences"/>
+
+		<EditText
+			android:id="@+id/hoteladdress"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/hotelcity"
+			android:layout_alignRight="@+id/hotelcity"
+			android:layout_below="@+id/hotelcity"
+			android:ems="10"
 			android:inputType="textCapSentences"
-	        android:layout_below="@+id/hotelname"
-	        android:ems="10"
-	        android:hint="city" />
-	
-	    <EditText
-	        android:id="@+id/hoteladdress"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/hotelcity"
-	        android:layout_alignRight="@+id/hotelcity"
-	        android:layout_below="@+id/hotelcity"
-            android:inputType="textCapSentences"
-	        android:ems="10"
-	        android:hint="address"/>
-	
-	    <EditText
-	        android:id="@+id/hotelpostalcode"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/hoteladdress"
-	        android:layout_alignRight="@+id/hoteladdress"
-	        android:layout_below="@+id/hoteladdress"
-	        android:ems="10"
-	        android:hint="postal code"
-	        android:inputType="textPostalAddress" />
-	
-	    <EditText
-	        android:id="@+id/hoteltelephone"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/hotelpostalcode"
-	        android:layout_alignParentRight="true"
-	        android:layout_below="@+id/hotelpostalcode"
-	        android:ems="10"
-	        android:hint="telephone"
-	        android:inputType="numberSigned" />
-	
-	    <EditText
-	        android:id="@+id/hotelwebsite"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/hoteltelephone"
-	        android:layout_alignRight="@+id/hoteltelephone"
-	        android:layout_below="@+id/hoteltelephone"
-            android:inputType="textWebEmailAddress"
-	        android:ems="10"
-	        android:hint="website"/>
+			/>
+
+		<EditText
+			android:id="@+id/hotelpostalcode"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/hoteladdress"
+			android:layout_alignRight="@+id/hoteladdress"
+			android:layout_below="@+id/hoteladdress"
+			android:ems="10"
+			android:inputType="textPostalAddress"/>
+
+		<EditText
+			android:id="@+id/hoteltelephone"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/hotelpostalcode"
+			android:layout_alignParentRight="true"
+			android:layout_below="@+id/hotelpostalcode"
+			android:ems="10"
+			android:inputType="numberSigned"/>
+
+		<EditText
+			android:id="@+id/hotelwebsite"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/hoteltelephone"
+			android:layout_alignRight="@+id/hoteltelephone"
+			android:layout_below="@+id/hoteltelephone"
+			android:ems="10"
+			android:inputType="textWebEmailAddress"
+			/>
 	
 	    <View
 	        android:id="@+id/View04"
@@ -125,21 +122,20 @@
 	        android:layout_below="@+id/hotelwebsite"
 	        android:layout_marginTop="17dp"
 	        android:text="Stars No.:" />
-	
-	    <EditText
-            android:id="@+id/hotelname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="22dp"
-            android:ems="10"
-            android:hint="name"
-            android:inputType="textCapSentences"
-            android:layout_below="@+id/Space1"
-            android:layout_alignStart="@+id/hotelcity"
-            android:layout_alignParentEnd="true">
 
-	        <requestFocus />
-	    </EditText>
+		<EditText
+			android:id="@+id/hotelname"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_alignStart="@+id/hotelcity"
+			android:layout_below="@+id/Space1"
+			android:layout_marginTop="22dp"
+			android:ems="10"
+			android:inputType="textCapSentences">
+
+			<requestFocus/>
+		</EditText>
 	
 	    <View
 	        android:id="@+id/View01"
@@ -416,65 +412,71 @@
             android:layout_alignEnd="@+id/textView6"
             android:layout_toEndOf="@+id/reportaproblem"/>
 
-	    <TextView
-	        android:id="@+id/results"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_alignBaseline="@+id/hoteladdress"
-	        android:layout_alignBottom="@+id/hoteladdress"
-	        android:layout_alignLeft="@+id/pickeddate"
-	        android:text="Address:"
-	        android:textStyle="bold" />
+		<TextView
+			android:id="@+id/results"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBaseline="@+id/hoteladdress"
+			android:layout_alignBottom="@+id/hoteladdress"
+			android:layout_alignLeft="@+id/pickeddate"
+			android:text="Address:"
+			android:textSize="18sp"
+			android:textStyle="bold"/>
 
-	    <TextView
-	        android:id="@+id/textView8"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_alignBaseline="@+id/hotelpostalcode"
-	        android:layout_alignBottom="@+id/hotelpostalcode"
-	        android:layout_alignLeft="@+id/results"
-	        android:text="Postal code:"
-	        android:textStyle="bold" />
+		<TextView
+			android:id="@+id/textView8"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBaseline="@+id/hotelpostalcode"
+			android:layout_alignBottom="@+id/hotelpostalcode"
+			android:layout_alignLeft="@+id/results"
+			android:text="Postal code:"
+			android:textSize="18sp"
+			android:textStyle="bold"/>
 
-	    <TextView
-	        android:id="@+id/textView9"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_alignBaseline="@+id/hoteltelephone"
-	        android:layout_alignBottom="@+id/hoteltelephone"
-	        android:layout_alignLeft="@+id/textView8"
-	        android:text="Tel:"
-	        android:textStyle="bold" />
+		<TextView
+			android:id="@+id/textView9"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBaseline="@+id/hoteltelephone"
+			android:layout_alignBottom="@+id/hoteltelephone"
+			android:layout_alignLeft="@+id/textView8"
+			android:text="Tel:"
+			android:textSize="18sp"
+			android:textStyle="bold"/>
 
-	    <TextView
-	        android:id="@+id/textView10"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_alignBaseline="@+id/hotelwebsite"
-	        android:layout_alignBottom="@+id/hotelwebsite"
-	        android:layout_alignLeft="@+id/textView9"
-	        android:text="Website:"
-	        android:textStyle="bold" />
+		<TextView
+			android:id="@+id/textView10"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBaseline="@+id/hotelwebsite"
+			android:layout_alignBottom="@+id/hotelwebsite"
+			android:layout_alignLeft="@+id/textView9"
+			android:text="Website:"
+			android:textSize="18sp"
+			android:textStyle="bold"/>
 
-	    <TextView
-	        android:id="@+id/todaysdate"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_alignBaseline="@+id/hotelname"
-	        android:layout_alignBottom="@+id/hotelname"
-	        android:layout_alignParentLeft="true"
-	        android:text="Name:"
-	        android:textStyle="bold" />
+		<TextView
+			android:id="@+id/todaysdate"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBaseline="@+id/hotelname"
+			android:layout_alignBottom="@+id/hotelname"
+			android:layout_alignParentLeft="true"
+			android:text="Name:"
+			android:textSize="18sp"
+			android:textStyle="bold"/>
 
-	    <TextView
-	        android:id="@+id/pickeddate"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_alignBaseline="@+id/hotelcity"
-	        android:layout_alignBottom="@+id/hotelcity"
-	        android:layout_alignParentLeft="true"
-	        android:text="City:"
-	        android:textStyle="bold" />
+		<TextView
+			android:id="@+id/pickeddate"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBaseline="@+id/hotelcity"
+			android:layout_alignBottom="@+id/hotelcity"
+			android:layout_alignParentLeft="true"
+			android:text="City:"
+			android:textSize="18sp"
+			android:textStyle="bold"/>
 	
 	</RelativeLayout>
 

@@ -8,6 +8,17 @@
     android:background="@drawable/simpleb"
     android:orientation="vertical" >
 
+    <EditText
+        android:id="@+id/editTextCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignParentEnd="true"
+        android:inputType="textCapSentences"
+        android:ems="10"
+        tools:ignore="RtlHardcoded,LabelFor"/>
+
     <TextView
         android:id="@+id/todaysdate"
         android:layout_width="match_parent"
@@ -19,47 +30,48 @@
         tools:ignore="HardcodedText,RtlHardcoded" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editTextName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
+        android:inputType="textCapSentences"
         android:ems="10"
-        android:inputType="textEmailAddress"
         tools:ignore="RtlHardcoded,LabelFor" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editTextSurname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/editText3"
+        android:layout_below="@+id/editTextName"
+        android:inputType="textCapSentences"
         android:ems="10"
         tools:ignore="TextFields,RtlHardcoded,LabelFor" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/editTextTelephone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/editText2"
+        android:layout_below="@+id/editTextSurname"
         android:ems="10"
         tools:ignore="TextFields,RtlHardcoded,LabelFor" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/editTextEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/editText4"
+        android:layout_below="@+id/editTextTelephone"
         android:ems="10"
         tools:ignore="TextFields,RtlHardcoded,LabelFor" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/editTextPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/editText1"
+        android:layout_below="@+id/editTextEmail"
         android:ems="10"
         android:inputType="textPassword"
         tools:ignore="RtlHardcoded,LabelFor" />
@@ -68,8 +80,8 @@
         android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editText5"
-        android:layout_alignBottom="@+id/editText5"
+        android:layout_alignBaseline="@+id/editTextPass"
+        android:layout_alignBottom="@+id/editTextPass"
         android:layout_alignParentLeft="true"
         android:text="Password:"
         tools:ignore="HardcodedText,RtlHardcoded" />
@@ -78,8 +90,8 @@
         android:id="@+id/pickeddate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editText2"
-        android:layout_alignBottom="@+id/editText2"
+        android:layout_alignBaseline="@+id/editTextSurname"
+        android:layout_alignBottom="@+id/editTextSurname"
         android:layout_alignParentLeft="true"
         android:text="Surname:"
         tools:ignore="HardcodedText,RtlHardcoded" />
@@ -88,8 +100,8 @@
         android:id="@+id/results"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editText4"
-        android:layout_alignBottom="@+id/editText4"
+        android:layout_alignBaseline="@+id/editTextTelephone"
+        android:layout_alignBottom="@+id/editTextTelephone"
         android:layout_alignParentLeft="true"
         android:text="Telephone:"
         tools:ignore="HardcodedText,RtlHardcoded" />
@@ -98,10 +110,19 @@
         android:id="@+id/descending"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editText1"
-        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignBaseline="@+id/editTextEmail"
+        android:layout_alignBottom="@+id/editTextEmail"
         android:layout_alignParentLeft="true"
         android:text="E-mail:"
         tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextPass"
+        android:layout_marginTop="20dp"
+        android:text="City:"/>
 
 </RelativeLayout>

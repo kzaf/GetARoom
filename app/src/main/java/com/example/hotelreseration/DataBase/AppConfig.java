@@ -19,7 +19,8 @@ public class AppConfig {
     public static String URL_DELETE_HOTEL = "http://ptyxiaki2016.eu.pn/deletehotel.php";
 
     // Server update user
-    public static String URL_UPDATE_USER = "http://ptyxiaki2016.eu.pn/updateuser.php";
+    public static String URL_UPDATE_OWNER = "http://ptyxiaki2016.eu.pn/updateowner.php";
+    public static String URL_UPDATE_TRAVELER = "http://ptyxiaki2016.eu.pn/updatetraveler.php";
     public static String URL_UPDATE_HOTEL = "http://ptyxiaki2016.eu.pn/updatehotel.php";
 
 }

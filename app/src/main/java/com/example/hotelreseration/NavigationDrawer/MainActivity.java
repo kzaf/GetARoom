@@ -38,6 +38,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.example.hotelreseration.DataBase.AppConfig;
 import com.example.hotelreseration.DataBase.AppController;
 import com.example.hotelreseration.DataBase.SQLiteHandler;
+import com.example.hotelreseration.LoginActivity;
 import com.example.hotelreseration.R;
 import com.example.hotelreseration.SelectUserActivity;
 
@@ -47,11 +48,13 @@ import org.json.JSONObject;
 
 import java.util.Map;
 
+import static com.example.hotelreseration.DataBase.AppConfig.URL_DELETE_HOTEL;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_DELETE_OWNER;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_COORDINATES;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_HOTELS;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_REGISTER_COORDINATES;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_REGISTER_HOTEL;
+import static com.example.hotelreseration.DataBase.AppConfig.URL_UPDATE_HOTEL;
 import static com.example.hotelreseration.NavigationDrawer.Fragment_hotels.listView;
 
 public class MainActivity extends ActionBarActivity {
@@ -101,7 +104,8 @@ public class MainActivity extends ActionBarActivity {
     public String sp = "false";
     public boolean flagaddnew = false;
     public static boolean flagpinhotel = false;
-    public String URL_DELETE;
+    public String URL_DELETE, URL_UPDATE;
+    public String hoteln;
 
     public static String hid, hn, hc, ha,
             htk, ht, hs, hoidFK, hw, hsp;
@@ -682,10 +686,11 @@ public class MainActivity extends ActionBarActivity {
                     Toast.makeText(getApplicationContext(), "You can change your hotel info",Toast.LENGTH_SHORT).show();
 
                     final AlertDialog alertDialog = new AlertDialog.Builder(context).create();
-                    alertDialog.setTitle("Add new hotel");
+                    alertDialog.setTitle("Edit hotel");
                     alertDialog.setIcon(R.drawable.addhotel);
                     LayoutInflater layoutInflater = LayoutInflater.from(context);
                     View promptView = layoutInflater.inflate(R.layout.fragment_add_hotel, null);
+                    alertDialog.setView(promptView);
 
 
                     hotelname= (EditText)promptView.findViewById(R.id.hotelname);
@@ -694,8 +699,56 @@ public class MainActivity extends ActionBarActivity {
                     hotelpostalcode= (EditText)promptView.findViewById(R.id.hotelpostalcode);
                     hoteltelephone= (EditText)promptView.findViewById(R.id.hoteltelephone);
                     hotelwebsite= (EditText)promptView.findViewById(R.id.hotelwebsite);
+                    hotelstars = (Spinner)promptView.findViewById(R.id.hotelstars);
+                    hotelswimmingpool = (CheckBox)promptView.findViewById(R.id.hotelswimmingpool);
 
-                    alertDialog.setButton("OK", new DialogInterface.OnClickListener()
+                    if(hotel1.isChecked()){
+                        hotelname.setText(hotels.records.get(0).get("name"));
+                        hotelcity.setText(hotels.records.get(0).get("city"));
+                        hoteladdress.setText(hotels.records.get(0).get("address"));
+                        hotelpostalcode.setText(hotels.records.get(0).get("tk"));
+                        hoteltelephone.setText(hotels.records.get(0).get("telephone"));
+                        hotelwebsite.setText(hotels.records.get(0).get("website"));
+                        try {
+                            final int myNum = Integer.parseInt(hotels.records.get(0).get("stars"));
+                            hotelstars.setSelection(myNum);
+                        } catch(NumberFormatException nfe){
+                            System.err.println("Exception: " + nfe.getMessage());
+                        }
+                        boolean a = Boolean.parseBoolean(hotels.records.get(0).get("swimmingpool"));
+                        hotelswimmingpool.setChecked(a);
+                    }else if(hotel2.isChecked()){
+                        hotelname.setText(hotels.records.get(1).get("name"));
+                        hotelcity.setText(hotels.records.get(1).get("city"));
+                        hoteladdress.setText(hotels.records.get(1).get("address"));
+                        hotelpostalcode.setText(hotels.records.get(1).get("tk"));
+                        hoteltelephone.setText(hotels.records.get(1).get("telephone"));
+                        hotelwebsite.setText(hotels.records.get(1).get("website"));
+                        try {
+                            final int myNum = Integer.parseInt(hotels.records.get(1).get("stars"));
+                            hotelstars.setSelection(myNum);
+                        } catch(NumberFormatException nfe){
+                            System.err.println("Exception: " + nfe.getMessage());
+                        }
+                        boolean a = Boolean.parseBoolean(hotels.records.get(1).get("swimmingpool"));
+                        hotelswimmingpool.setChecked(a);
+                    }else{
+                        hotelname.setText(hotels.records.get(2).get("name"));
+                        hotelcity.setText(hotels.records.get(2).get("city"));
+                        hoteladdress.setText(hotels.records.get(2).get("address"));
+                        hotelpostalcode.setText(hotels.records.get(2).get("tk"));
+                        hoteltelephone.setText(hotels.records.get(2).get("telephone"));
+                        hotelwebsite.setText(hotels.records.get(2).get("website"));
+                        try {
+                            final int myNum = Integer.parseInt(hotels.records.get(2).get("stars"));
+                            hotelstars.setSelection(myNum);
+                        } catch(NumberFormatException nfe){
+                            System.err.println("Exception: " + nfe.getMessage());
+                        }
+                        boolean a = Boolean.parseBoolean(hotels.records.get(2).get("swimmingpool"));
+                        hotelswimmingpool.setChecked(a);
+                    }
+                    alertDialog.setButton("Update", new DialogInterface.OnClickListener()
                     {
                         public void onClick(DialogInterface dialog, int which)
                         {
@@ -710,15 +763,32 @@ public class MainActivity extends ActionBarActivity {
                                         Toast.LENGTH_LONG).show();
                             }
                             else{
-                                //Orizw tis times pou thelw sto HashMap kai tis kanw add sth lista me ta ksenodoxeia tou Owner
-                                //Sto arxeio Fragment_hotels.java vrisketai h lista
-                                HashMap<String,String> hotel = new HashMap<String,String>();
-                                hotel.put("name",hotelname.getText().toString());
-                                hotel.put("city", hotelcity.getText().toString());
-                                hotels.records.add(hotel);
-                                onomaxarth=hotelname.getText().toString();//krataei to onoma gia na to kanei pin sto xarth
+                                gethotelname = hotelname.getText().toString().trim();
+                                gethotelcity = hotelcity.getText().toString().trim();
+                                gethoteladdress = hoteladdress.getText().toString().trim();
+                                gethotelpostalcode= hotelpostalcode.getText().toString().trim();
+                                gethoteltelephone= hoteltelephone.getText().toString().trim();
+                                gethotelwebsite= hotelwebsite.getText().toString().trim();
+                                gethotelstars= hotelstars.getSelectedItem().toString();
+                                gethotelswimmingpool = hotelswimmingpool.isChecked();
+                                if(gethotelswimmingpool){
+                                    sp = "true";
+                                }
+                                if(hotel1.isChecked()){
+                                    onomaxarth=(String) hotel1.getText();
+                                }else if (hotel2.isChecked()){
+                                    onomaxarth=(String) hotel2.getText();
+                                }else{
+                                    onomaxarth=(String) hotel3.getText();
+                                }
+                                //onomaxarth=hotelname.getText().toString();//krataei to onoma gia na to kanei pin sto xarth
                                 hotels.adapter.notifyDataSetChanged();//kanei update to listview me ta hotels
-                                Toast.makeText(getApplicationContext(), "Hotel info changed!", Toast.LENGTH_SHORT).show();
+                                updateHotel(onomaxarth, gethotelname, gethotelcity, gethoteladdress, gethotelpostalcode,
+                                        gethoteltelephone, gethotelstars, gethotelwebsite, sp);
+                                db.deleteUsers();
+                                startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                                finish();
+                                Toast.makeText(getApplicationContext(), "Please sign in again for the changes to take effect", Toast.LENGTH_LONG).show();
                             }
 
                         }
@@ -758,6 +828,8 @@ public class MainActivity extends ActionBarActivity {
                         {
                             if (hotel1.isChecked()){
                                 Toast.makeText(getApplicationContext(), "Hotel "+hotel1.getText()+" removed!",Toast.LENGTH_LONG).show();
+                                hoteln = hotel1.getText().toString();
+                                deleteHotel(hoteln);
                                 hotels.records.remove(0);
                                 hotels.adapter.notifyDataSetChanged();
                                 //Afou kanei delete to ksenodoxeio phgainei sto fragment me th lista twn ksenodoxeiwn
@@ -766,6 +838,8 @@ public class MainActivity extends ActionBarActivity {
                                 fragTran.commit();
                             }else if (hotel2.isChecked()){
                                 Toast.makeText(getApplicationContext(), "Hotel "+hotel2.getText()+" removed!",Toast.LENGTH_LONG).show();
+                                hoteln = hotel2.getText().toString();
+                                deleteHotel(hoteln);
                                 hotels.records.remove(1);
                                 hotels.adapter.notifyDataSetChanged();
                                 //Afou kanei delete to ksenodoxeio phgainei sto fragment me th lista twn ksenodoxeiwn
@@ -774,6 +848,8 @@ public class MainActivity extends ActionBarActivity {
                                 fragTran.commit();
                             }else if (hotel3.isChecked()){
                                 Toast.makeText(getApplicationContext(), "Hotel "+hotel3.getText()+" removed!",Toast.LENGTH_LONG).show();
+                                hoteln = hotel3.getText().toString();
+                                deleteHotel(hoteln);
                                 hotels.records.remove(2);
                                 hotels.adapter.notifyDataSetChanged();
                                 //Afou kanei delete to ksenodoxeio phgainei sto fragment me th lista twn ksenodoxeiwn
@@ -838,12 +914,47 @@ public class MainActivity extends ActionBarActivity {
         LayoutInflater layoutInflater = LayoutInflater.from(context);
         View promptView = layoutInflater.inflate(R.layout.changeinfo, null);
         alertDialog.setView(promptView);
+
+        final EditText name= (EditText)promptView.findViewById(R.id.editTextName);
+        name.setText(dbname);
+
+        final EditText surname= (EditText)promptView.findViewById(R.id.editTextSurname);
+        surname.setText(dbsurname);
+
+        final EditText telephone= (EditText)promptView.findViewById(R.id.editTextTelephone);
+        telephone.setText(dbtelephone);
+
+        final EditText email= (EditText)promptView.findViewById(R.id.editTextEmail);
+        email.setText(dbmail);
+
+        final EditText pass= (EditText)promptView.findViewById(R.id.editTextPass);
+        pass.setText("**********");
+
+        final EditText country= (EditText)promptView.findViewById(R.id.editTextCountry);
+        country.setText(dbcountry);
+
         alertDialog.setButton("Save Changes", new DialogInterface.OnClickListener()
         {
             public void onClick(DialogInterface dialog, int which)
             {
-                Toast.makeText(getApplicationContext(), "Your account info has been changed!",
-                        Toast.LENGTH_SHORT).show();
+                final String nname = name.getText().toString().trim();
+                final String ssurname = surname.getText().toString().trim();
+                final String eemail = email.getText().toString().trim();
+                final String ppass = pass.getText().toString().trim();
+                final String ttelephone = telephone.getText().toString().trim();
+                final String ccountry = country.getText().toString().trim();
+
+                if (SelectUserActivity.flagOwner)
+                {
+                    URL_UPDATE = AppConfig.URL_UPDATE_OWNER;
+                }else{
+                    URL_UPDATE = AppConfig.URL_UPDATE_TRAVELER;
+                }
+                updateUser(dbmail, nname, ssurname, eemail, ppass, ttelephone, ccountry);
+                db.deleteUsers();
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                finish();
+                Toast.makeText(getApplicationContext(), "Please login with the new credentials", Toast.LENGTH_LONG).show();
             }
 
         });
@@ -1147,6 +1258,12 @@ public class MainActivity extends ActionBarActivity {
 
                                 hotelhm.put("name",hn);
                                 hotelhm.put("city", hc);
+                                hotelhm.put("address", ha);
+                                hotelhm.put("tk", htk);
+                                hotelhm.put("telephone", ht);
+                                hotelhm.put("stars", hs);
+                                hotelhm.put("website", hw);
+                                hotelhm.put("swimmingpool", hsp);
                                 hotels.records.add(hotelhm);
 
                                 flagaddnew = false;
@@ -1324,16 +1441,198 @@ public class MainActivity extends ActionBarActivity {
         AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
     }
 
-    public void updateUser(final String dboFKey){
+    public void updateUser(final String dbmail, final String name, final String surname, final String email, final String pass, final String telephone, final String country){
+        String tag_string_req = "req_login";
+
+        pDialog.setMessage("Update user ...");
+        showDialog();
+
+        StringRequest strReq = new StringRequest(Request.Method.POST, URL_UPDATE, new Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String response) {
+
+                hideDialog();
+
+                try {
+                    JSONObject jObj = new JSONObject(response);
+                    boolean error = jObj.getBoolean("error");
+                    // Check for error node in json
+                    if (!error) {
+
+
+                        Toast.makeText(getApplicationContext(), "Your account info has been updated!",
+                                Toast.LENGTH_SHORT).show();
+
+                    } else {
+                        // Error in login. Get the error message
+                        String errorMsg = jObj.getString("error_msg");
+                        Toast.makeText(getApplicationContext(),
+                                errorMsg, Toast.LENGTH_LONG).show();
+                    }
+                } catch (JSONException e) {
+                    // JSON error
+                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e(TAG, "Login Error: " + error.getMessage());
+                Toast.makeText(getApplicationContext(),
+                        error.getMessage(), Toast.LENGTH_LONG).show();
+                hideDialog();
+            }
+        }) {
+
+            @Override
+            protected Map<String, String> getParams() {
+                // Posting parameters to login url
+                Map<String, String> params = new HashMap<>();
+                params.put("dbmail", dbmail);
+                params.put("nname", name);
+                params.put("nsurname", surname);
+                params.put("nemail", email);
+                params.put("npass", pass);
+                params.put("ntelephone", telephone);
+                params.put("ncountry", country);
+
+                return params;
+            }
+        };
+        // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
 
     }
 
-    public void deleteHotel(){
+    public void deleteHotel(final String hoteln){
 
+        String tag_string_req = "req_login";
+
+        pDialog.setMessage("Delete user ...");
+        showDialog();
+
+        StringRequest strReq = new StringRequest(Request.Method.POST, URL_DELETE_HOTEL, new Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String response) {
+
+                hideDialog();
+
+                try {
+                    JSONObject jObj = new JSONObject(response);
+                    boolean error = jObj.getBoolean("error");
+                    // Check for error node in json
+                    if (!error) {
+                        Toast.makeText(getApplicationContext(), "Hotel " + dbmail + "has been deleted!",
+                                Toast.LENGTH_SHORT).show();
+
+                    } else {
+                        // Error in login. Get the error message
+                        String errorMsg = jObj.getString("error_msg");
+                        Toast.makeText(getApplicationContext(),
+                                errorMsg, Toast.LENGTH_LONG).show();
+                    }
+                } catch (JSONException e) {
+                    // JSON error
+                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e(TAG, "Login Error: " + error.getMessage());
+                Toast.makeText(getApplicationContext(),
+                        error.getMessage(), Toast.LENGTH_LONG).show();
+                hideDialog();
+            }
+        }) {
+
+            @Override
+            protected Map<String, String> getParams() {
+                // Posting parameters to login url
+                Map<String, String> params = new HashMap<>();
+                params.put("hotelname", hoteln);
+
+                return params;
+            }
+        };
+        // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
     }
 
-    public void updateHotel(){
+    public void updateHotel(final String hoteln, final String hotelname, final String city, final String address,
+                            final String postalcode, final String hoteltelephone,
+                            final String stars, final String website, final String swimmingpool){
+        String tag_string_req = "req_login";
 
+        pDialog.setMessage("Update hotel ...");
+        showDialog();
+
+        StringRequest strReq = new StringRequest(Request.Method.POST, URL_UPDATE_HOTEL, new Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String response) {
+
+                hideDialog();
+
+                try {
+                    JSONObject jObj = new JSONObject(response);
+                    boolean error = jObj.getBoolean("error");
+                    // Check for error node in json
+                    if (!error) {
+                        Toast.makeText(getApplicationContext(), "Hotel "+ hoteln +" has been updated!",
+                                Toast.LENGTH_SHORT).show();
+
+                    } else {
+                        // Error in login. Get the error message
+                        String errorMsg = jObj.getString("error_msg");
+                        Toast.makeText(getApplicationContext(),
+                                errorMsg, Toast.LENGTH_LONG).show();
+                    }
+                } catch (JSONException e) {
+                    // JSON error
+                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e(TAG, "Login Error: " + error.getMessage());
+                Toast.makeText(getApplicationContext(),
+                        error.getMessage(), Toast.LENGTH_LONG).show();
+                hideDialog();
+            }
+        }) {
+
+            @Override
+            protected Map<String, String> getParams() {
+                // Posting parameters to login url
+                Map<String, String> params = new HashMap<>();
+                params.put("dbhname", hoteln);
+                params.put("nhname", hotelname);
+                params.put("nhcity", city);
+                params.put("nhaddress", address);
+                params.put("nhpostalcode", postalcode);
+                params.put("nhtelephone", hoteltelephone);
+                params.put("nhwebsite", website);
+                params.put("nhstars", stars);
+                params.put("nhswimmingpool", swimmingpool);
+
+                return params;
+            }
+        };
+        // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
     }
 
     private void showDialog() {

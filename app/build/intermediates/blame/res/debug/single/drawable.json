@@ -16,10 +16,6 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable\\mr_button_connecting_light.xml"
     },
     {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_expand.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable\\ic_expand.xml"
-    },
-    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable\\abc_switch_thumb_material.xml"
     },
@@ -28,12 +24,12 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\5e5bd45d44fd073b019608b73096fff0acddbf04\\output\\res\\drawable\\common_google_signin_btn_text_light_normal.xml"
     },
     {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_small_icon.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable\\cast_ic_notification_small_icon.xml"
-    },
-    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_media_play_light.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable\\mr_media_play_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_small_icon.xml",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable\\cast_ic_notification_small_icon.xml"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_button_connected_light.xml",
@@ -48,12 +44,12 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_forward30.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable\\cast_ic_notification_forward30.xml"
-    },
-    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_normal.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\5e5bd45d44fd073b019608b73096fff0acddbf04\\output\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_forward30.xml",
+        "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable\\cast_ic_notification_forward30.xml"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_closed_caption.xml",
@@ -68,20 +64,12 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_mono_light.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable\\mr_ic_media_route_mono_light.xml"
-    },
-    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_closed_caption.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable\\cast_ic_mini_controller_closed_caption.xml"
-    },
-    {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_audiotrack_light.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable\\mr_ic_audiotrack_light.xml"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_expanded_controller_seekbar_track.xml",
@@ -132,20 +120,12 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\5e5bd45d44fd073b019608b73096fff0acddbf04\\output\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
     },
     {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_cast_dark.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable\\mr_ic_cast_dark.xml"
-    },
-    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_skip_prev.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable\\cast_ic_mini_controller_skip_prev.xml"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_skip_prev.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable\\cast_ic_notification_skip_prev.xml"
-    },
-    {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_close_light.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable\\mr_ic_close_light.xml"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_rewind.xml",
@@ -168,24 +148,12 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_light.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable\\mr_ic_play_light.xml"
-    },
-    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_normal.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\5e5bd45d44fd073b019608b73096fff0acddbf04\\output\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
-    },
-    {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_dark.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable\\mr_ic_media_route_connecting_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_on_light.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable\\mr_ic_media_route_on_light.xml"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_dialog_close_light.xml",
@@ -202,10 +170,6 @@
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_dialog_material_background_light.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\drawable\\mr_dialog_material_background_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_cast_light.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable\\mr_ic_cast_light.xml"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_normal.xml",
@@ -250,10 +214,6 @@
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_stop_live_stream.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable\\cast_ic_notification_stop_live_stream.xml"
-    },
-    {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_close_dark.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable\\mr_ic_close_dark.xml"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_button_connecting_dark.xml",
@@ -352,10 +312,6 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
     },
     {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_dark.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable\\mr_ic_pause_dark.xml"
-    },
-    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_disconnect.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable\\cast_ic_notification_disconnect.xml"
     },
@@ -370,14 +326,6 @@
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_stop_large.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable\\cast_ic_mini_controller_stop_large.xml"
-    },
-    {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_light.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable\\mr_ic_media_route_connecting_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_collapse.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable\\ic_collapse.xml"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_pause.xml",
@@ -416,16 +364,8 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_mono_dark.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable\\mr_ic_media_route_mono_dark.xml"
-    },
-    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_play.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\9a06834be1a804764838a1d8fa61a78d507276a7\\output\\res\\drawable\\cast_ic_expanded_controller_play.xml"
-    },
-    {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_on_dark.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable\\mr_ic_media_route_on_dark.xml"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
@@ -488,20 +428,12 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_light.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable\\mr_ic_pause_light.xml"
-    },
-    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable\\abc_vector_test.xml"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_dark.xml",
-        "source": "C:\\Users\\kazaf\\.android\\build-cache\\dba13bc920531090371b253048c301f0f84e8092\\output\\res\\drawable\\mr_ic_play_dark.xml"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_skip_ad_label_border.xml",
