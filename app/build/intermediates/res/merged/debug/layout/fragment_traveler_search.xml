@@ -5,39 +5,14 @@
                 android:background="@drawable/bckgrnd"
                 android:layout_height="fill_parent" >
 
-    <View
-        android:id="@+id/separator"
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:layout_alignLeft="@+id/list1"
-        android:layout_alignRight="@+id/list1"
-        android:layout_below="@+id/checkin"
-        android:background="@android:color/transparent"
-        android:visibility="visible"
-        tools:ignore="RtlHardcoded"/>
-
     <ListView
         android:id="@+id/list1"
         android:layout_width="300dp"
-        android:layout_height="250dp"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/ascending">
+        android:layout_alignParentEnd="true">
     </ListView>
-
-    <TextView
-        android:id="@+id/checkoutdate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/descending"
-        android:layout_alignEnd="@+id/separator"
-        android:layout_alignStart="@+id/checkout"
-        android:layout_alignTop="@+id/checkindate"
-        android:gravity="right"
-        android:text="CheckOut Date"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@color/common_google_signin_btn_text_light_default"
-        tools:ignore="HardcodedText"/>
 
 
     <Button
@@ -45,11 +20,11 @@
         android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:text="Check In"
-        android:background="@drawable/custom_button"
-        android:textColor="#FFFFFF"
+        android:background = "@android:color/transparent"
+        android:textColor="#cbffd8"
         tools:ignore="HardcodedText,RtlHardcoded"
-        android:layout_below="@+id/searchView"
-        android:layout_alignStart="@+id/separator"/>
+        android:layout_above="@+id/citysearch"
+        android:layout_alignParentStart="true"/>
 
     <Button
         android:id="@+id/checkout"
@@ -57,34 +32,35 @@
         android:layout_height="wrap_content"
         android:text="Check Out"
         tools:ignore="HardcodedText,RtlHardcoded"
-        android:background="@drawable/custom_button"
-        android:textColor="#FFFFFF"
+        android:background = "@android:color/transparent"
+        android:textColor="#ffc8c8"
         android:layout_alignBaseline="@+id/checkin"
         android:layout_alignBottom="@+id/checkin"
-        android:layout_alignEnd="@+id/separator"/>
+        android:layout_alignParentEnd="true"/>
 
     <TextView
         android:id="@+id/onoma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="Search:"
+        android:gravity="center_vertical"
+        android:text="Search city:"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textStyle="bold"
         tools:ignore="HardcodedText,RtlHardcoded"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/searchView"/>
+        android:layout_above="@+id/search"
+        android:layout_alignStart="@+id/checkin"
+        android:layout_marginBottom="12dp"/>
 
     <View
         android:id="@+id/View02"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
-        android:layout_alignLeft="@+id/onoma"
-        android:layout_below="@+id/onoma"
+        android:layout_below="@+id/search"
         android:background="#000000"
         android:visibility="visible"
         tools:ignore="RtlHardcoded"
-        android:layout_alignEnd="@+id/checkout"/>
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"/>
 
     <TextView
         android:id="@+id/ascending"
@@ -92,7 +68,8 @@
         android:layout_height="wrap_content"
         android:text="ascending ⇑"
         tools:ignore="HardcodedText,RtlHardcoded"
-        android:layout_below="@+id/View04"
+
+        android:layout_above="@+id/list1"
         android:layout_alignParentStart="true"/>
 
     <TextView
@@ -101,36 +78,32 @@
         android:layout_height="wrap_content"
         android:text="⇓ descending"
         tools:ignore="HardcodedText,RtlHardcoded"
-        android:layout_alignTop="@+id/View04"
-        android:layout_alignParentEnd="true" />
 
-    <View
-        android:id="@+id/View04"
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:layout_alignParentLeft="true"
-        android:background="#000000"
-        android:visibility="visible"
-        tools:ignore="RtlHardcoded"
-        android:layout_below="@+id/checkindate"/>
+        android:layout_above="@+id/list1"
+        android:layout_alignParentEnd="true"/>
 
-    <TextView
-        android:id="@+id/checkindate"
+    <EditText
+        android:id="@+id/citysearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/separator"
-        android:layout_below="@+id/checkin"
-        android:text="CheckIn Date"
-        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:ems="10"
+        android:inputType="textCapSentences"
         android:textColor="@color/common_google_signin_btn_text_light_default"
-        tools:ignore="HardcodedText"/>
+        android:layout_alignBaseline="@+id/onoma"
+        android:layout_alignBottom="@+id/onoma"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/onoma"/>
 
-    <android.support.v7.widget.SearchView
-        android:id="@+id/searchView"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_alignStart="@+id/checkin"
-        android:layout_alignEnd="@+id/checkout"
-        android:layout_below="@+id/View02"/>
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="19dp"
+        android:text="Search"
+        android:layout_above="@+id/list1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
 
 </RelativeLayout>

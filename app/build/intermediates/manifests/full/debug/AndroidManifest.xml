@@ -60,16 +60,6 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.example.hotelreseration.MainScreenActivity"
-            android:label="@string/title_activity_main_screen"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.example.hotelreseration.SplashScreen"
-            android:label="@string/title_activity_splash_screen"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
             android:name="com.example.hotelreseration.SelectUserActivity"
             android:label="@string/title_activity_select_user"
             android:screenOrientation="portrait" >
@@ -87,7 +77,8 @@
         <activity
             android:name="com.example.hotelreseration.NavigationDrawer.MainActivity"
             android:label="@string/title_activity_main"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
         </activity>
 
         <meta-data

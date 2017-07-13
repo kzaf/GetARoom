@@ -296,6 +296,10 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\layout\\traveler_hotel_registration.xml",
+        "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\layout\\traveler_hotel_registration.xml"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_owner_upcoming.xml",
         "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\layout\\fragment_owner_upcoming.xml"
     },

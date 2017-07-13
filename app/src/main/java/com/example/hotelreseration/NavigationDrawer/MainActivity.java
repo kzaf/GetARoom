@@ -27,6 +27,7 @@ import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.SearchView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -52,6 +53,7 @@ import static com.example.hotelreseration.DataBase.AppConfig.URL_DELETE_HOTEL;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_DELETE_OWNER;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_COORDINATES;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_HOTELS;
+import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_RESULT_HOTELS;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_REGISTER_COORDINATES;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_REGISTER_HOTEL;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_UPDATE_HOTEL;
@@ -329,6 +331,7 @@ public class MainActivity extends ActionBarActivity {
             case 2:{
                 fragTran.replace(R.id.content_frame, reservations);
                 drawerSelection = "Reservations";
+                Fragment_Search.records.clear(); //clear the list with the hotels in traveler Manage Booking
                 break;
             }
             case 3:{
@@ -1627,6 +1630,99 @@ public class MainActivity extends ActionBarActivity {
                 params.put("nhwebsite", website);
                 params.put("nhstars", stars);
                 params.put("nhswimmingpool", swimmingpool);
+
+                return params;
+            }
+        };
+        // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+    }
+
+    public void travelerLoadHotels(final String city, final String checkin, final String checkout){
+        // Tag used to cancel the request
+        String tag_string_req = "req_login";
+
+        pDialog.setMessage("Loading hotels ...");
+        showDialog();
+
+        StringRequest strReq = new StringRequest(Request.Method.POST, URL_LOAD_RESULT_HOTELS, new Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String response) {
+                //Log.d(TAG, "Login Response: " + response.toString());
+                //String resp = response.toString();
+                hideDialog();
+
+                try {
+                    JSONObject jObj = new JSONObject(response);
+                    boolean error = jObj.getBoolean("error");
+                    // Check for error node in json
+                    if (!error) {
+
+                        Fragment_Search.records.clear(); //clear the old list and load the new one
+
+                        JSONArray jhotel= jObj.getJSONArray("hotel");
+                        Log.d("hotel",jhotel.toString());
+
+                        for(int i=0; i<jhotel.length(); i++){
+                            HashMap<String,String> hotelhm = new HashMap<>();
+                            JSONObject hotel = jhotel.getJSONObject(i);
+                            hid = hotel.getString("hid");
+                            hn = hotel.getString("name");
+                            hc = hotel.getString("city");
+                            ha = hotel.getString("address");
+                            htk = hotel.getString("tk");
+                            ht = hotel.getString("telephone");
+                            hs = hotel.getString("stars");
+                            hoidFK = hotel.getString("oidFK");
+                            hw = hotel.getString("website");
+                            hsp = hotel.getString("swimmingpool");
+
+                            hotelhm.put("name",hn);
+                            hotelhm.put("city", hc);
+                            hotelhm.put("address", ha);
+                            hotelhm.put("tk", htk);
+                            hotelhm.put("telephone", ht);
+                            hotelhm.put("stars", hs);
+                            hotelhm.put("website", hw);
+                            hotelhm.put("swimmingpool", hsp);
+                            Fragment_Search.records.add(hotelhm);
+
+                            flagaddnew = false;
+                        }
+                        Fragment_Search.adapter.notifyDataSetChanged(); //Notify the adapter for the update
+
+                    } else {
+                        // Error in login. Get the error message
+                        String errorMsg = jObj.getString("error_msg");
+                        Toast.makeText(getApplicationContext(),
+                                errorMsg, Toast.LENGTH_LONG).show();
+                    }
+                } catch (JSONException e) {
+                    // JSON error
+                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e(TAG, "Login Error: " + error.getMessage());
+                Toast.makeText(getApplicationContext(),
+                        error.getMessage(), Toast.LENGTH_LONG).show();
+                hideDialog();
+            }
+        }) {
+
+            @Override
+            protected Map<String, String> getParams() {
+                // Posting parameters to login url
+                Map<String, String> params = new HashMap<>();
+                params.put("city", city);
+                params.put("checkin", checkin);
+                params.put("checkout", checkout);
 
                 return params;
             }
