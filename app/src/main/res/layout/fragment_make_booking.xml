@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/simpleb">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@drawable/simpleb"
+            android:columnCount="2"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/bookingtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="19dp"
+                android:text="Your booking at hotel"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"/>
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/bookingtitle"
+                android:background="@android:color/darker_gray"
+                android:visibility="visible"
+                tools:ignore="RtlHardcoded"/>
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check In"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignBaseline="@+id/textView4"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="35dp"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="17dp"
+                android:text="Check Out"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_above="@+id/tvCheckOut"
+                android:layout_alignEnd="@+id/textView36"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tvCheckIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView3"
+                android:layout_below="@+id/separator"
+                android:layout_marginTop="68dp"
+                android:text="--/--/----"/>
+
+            <TextView
+                android:id="@+id/tvCheckOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvCheckIn"
+                android:layout_alignBottom="@+id/tvCheckIn"
+                android:layout_alignStart="@+id/textView4"
+                android:text="--/--/----"/>
+
+            <EditText
+                android:id="@+id/editText12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView40"
+                android:layout_alignStart="@+id/textView40"
+                android:layout_below="@+id/textView41"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="textPersonName"/>
+
+            <EditText
+                android:id="@+id/editText13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView41"
+                android:layout_alignStart="@+id/textView41"
+                android:layout_below="@+id/textView41"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="textPersonName"/>
+
+            <EditText
+                android:id="@+id/editText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editText13"
+                android:layout_alignBottom="@+id/editText13"
+                android:layout_alignEnd="@+id/textView36"
+                android:layout_alignStart="@+id/textView36"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="textPersonName"/>
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView41"
+                android:layout_alignBottom="@+id/textView41"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="26dp"
+                android:text="Children:"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView40"
+                android:layout_alignBottom="@+id/textView40"
+                android:layout_centerHorizontal="true"
+                android:text="Adults:"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42dp"
+                android:text="Nights:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tvCheckIn"
+                android:layout_alignStart="@+id/textView3"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+

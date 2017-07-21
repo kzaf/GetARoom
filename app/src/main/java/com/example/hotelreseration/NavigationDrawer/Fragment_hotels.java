@@ -68,17 +68,11 @@ public class Fragment_hotels extends Fragment {
 	    //energopoiw to click event otan epilegw ena item apo to listview
 	    listView.setOnItemClickListener(new OnItemClickListener() {
 	    	  public void onItemClick(AdapterView<?> parent, View view,int position, long id) {
-	    	       switch(position) {
-	    	        case 0:
-	    	        	((MainActivity) getActivity()).EditHotels();
-	    	        	break;
-	    	        case 1: 
-	    	        	((MainActivity) getActivity()).EditHotels();
-	    	        	break;
-	    	        case 2:
-	    	        	((MainActivity) getActivity()).EditHotels();
-	    	        	break;
-	    	       }
+
+                  HashMap<String, String> hashMap = (HashMap<String, String>) listView.getItemAtPosition(position);
+                  String hotelname = hashMap.get("name");
+                  Toast.makeText(getActivity(), "You can edit hotel " + hotelname + " in settings.", Toast.LENGTH_LONG).show();
+
 	    	  }
 	    	});
 	    

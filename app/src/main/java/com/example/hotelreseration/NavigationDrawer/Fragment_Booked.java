@@ -27,7 +27,7 @@ public class Fragment_Booked extends Fragment {
             Bundle savedInstanceState){
 	  	    View view = inflater.inflate(R.layout.fragment_traveler_booked, container,false);
 
-	    ListView listView = (ListView) view.findViewById(R.id.list1);
+	    ListView listView = (ListView) view.findViewById(R.id.searchList);
 	    txt=(TextView) view.findViewById(R.id.nobookingtxt);
 	    
 	    

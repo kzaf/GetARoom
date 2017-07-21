@@ -30,7 +30,7 @@ public class Fragment_Upcoming extends Fragment {
             Bundle savedInstanceState){
 	  	    View view = inflater.inflate(R.layout.fragment_owner_upcoming, container,false);
 
-	    ListView listView = (ListView) view.findViewById(R.id.list1);
+	    ListView listView = (ListView) view.findViewById(R.id.searchList);
 	    txt=(TextView) view.findViewById(R.id.nobookingtxt);
 	    
 	    

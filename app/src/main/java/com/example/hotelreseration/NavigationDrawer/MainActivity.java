@@ -14,6 +14,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import android.util.Log;
@@ -27,7 +28,7 @@ import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.SearchView;
+import android.widget.RatingBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -42,6 +43,13 @@ import com.example.hotelreseration.DataBase.SQLiteHandler;
 import com.example.hotelreseration.LoginActivity;
 import com.example.hotelreseration.R;
 import com.example.hotelreseration.SelectUserActivity;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.MapsInitializer;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -49,10 +57,11 @@ import org.json.JSONObject;
 
 import java.util.Map;
 
+import static android.view.View.GONE;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_DELETE_HOTEL;
-import static com.example.hotelreseration.DataBase.AppConfig.URL_DELETE_OWNER;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_COORDINATES;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_HOTELS;
+import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_HOTEL_BOOKING;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_RESULT_HOTELS;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_REGISTER_COORDINATES;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_REGISTER_HOTEL;
@@ -140,6 +149,7 @@ public class MainActivity extends ActionBarActivity {
         // Base implemenation
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         // Instantiate the fragments
         home = new Fragment_home();
@@ -595,6 +605,116 @@ public class MainActivity extends ActionBarActivity {
         alertDialog.show();
     }
 
+    public static int getIndexOFValue(String value, ArrayList<HashMap<String, String>> listMap) { //Get the index out of a HashMap ArrayList, by key
+
+        int i = 0;
+        for (Map<String, String> map : listMap) {
+            if (map.containsValue(value)) {
+                return i;
+            }
+            i++;
+        }
+        return -1;
+    }
+
+    public void hotelBooking(final String hotelname, final String hotelCity, final String checkin, final String checkout){
+        AlertDialog alertDialog = new AlertDialog.Builder(context).create();
+        alertDialog.setTitle("Hotel Info");
+        alertDialog.setIcon(R.drawable.action_hotels);
+        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        View promptView = layoutInflater.inflate(R.layout.traveler_hotel_registration, null);
+        alertDialog.setView(promptView);
+
+//        ListView FavoritelistView = (ListView) promptView.findViewById(R.id.favoriteList);
+//        final SimpleAdapter Favoriteadapter;
+//        final ArrayList<HashMap<String,String>> Favoriterecords = new ArrayList<>();
+
+        final int i = getIndexOFValue(hotelname, Fragment_Search.records); //Get the index of the ArryList with HashMap with the hotels
+
+        final TextView website= (TextView) promptView.findViewById(R.id.tvwebsite);
+        final TextView address= (TextView) promptView.findViewById(R.id.tvaddress);
+        final TextView telephone= (TextView) promptView.findViewById(R.id.tvtelephone);
+        final RatingBar rb = (RatingBar) promptView.findViewById(R.id.ratingBar);
+        final CheckBox spool = (CheckBox)promptView.findViewById(R.id.swimmingpoolCheckBox);
+        website.setText(Fragment_Search.records.get(i).get("website"));
+        address.setText(Fragment_Search.records.get(i).get("address"));
+        telephone.setText(Fragment_Search.records.get(i).get("telephone"));
+        final String starsNo = Fragment_Search.records.get(i).get("stars");
+        rb.setRating(Integer.parseInt(starsNo));
+        boolean a = Boolean.parseBoolean(Fragment_Search.records.get(i).get("swimmingpool"));
+        spool.setChecked(a);
+
+        MapView mMapView = (MapView) promptView.findViewById(R.id.mapView2);
+        MapsInitializer.initialize(this);
+
+        mMapView.onCreate(alertDialog.onSaveInstanceState());
+        mMapView.onResume();
+
+        mMapView.getMapAsync(new OnMapReadyCallback() {
+            @Override
+            public void onMapReady(final GoogleMap googleMap) {
+                LatLng posisiabsen = new LatLng(40.626401, 22.948352); //// lat lng
+                googleMap.addMarker(new MarkerOptions().position(posisiabsen).title(hotelname));
+                googleMap.moveCamera(CameraUpdateFactory.newLatLng(posisiabsen));
+                googleMap.getUiSettings().setZoomControlsEnabled(true);
+                googleMap.animateCamera(CameraUpdateFactory.zoomTo(15), 2000, null);
+            }
+        });
+
+        final TextView hoteltitle= (TextView)promptView.findViewById(R.id.HotelInfoTitle);
+        hoteltitle.setText("Hotel " + hotelname);
+
+        alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Favorite", new DialogInterface.OnClickListener()
+        {
+            public void onClick(DialogInterface dialog, int which)
+            {
+//                HashMap<String,String> hotel = new HashMap<>();
+//
+//                hotel.put("name",hotelname);
+//                hotel.put("city", hotelCity);
+//                Favoriterecords.add(hotel);
+
+                Toast.makeText(getApplicationContext(), "Hotel has been saved to favorites!",
+                        Toast.LENGTH_LONG).show();
+
+            }
+
+        });
+        alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Make booking", new DialogInterface.OnClickListener()
+        {
+            public void onClick(DialogInterface dialog, int which)
+            {
+                AlertDialog alertDialog = new AlertDialog.Builder(context).create();
+                alertDialog.setTitle("Make Booking");
+                alertDialog.setIcon(R.drawable.action_hotels);
+                LayoutInflater layoutInflater = LayoutInflater.from(context);
+                View promptView = layoutInflater.inflate(R.layout.fragment_make_booking, null);
+                alertDialog.setView(promptView);
+
+                final TextView checkIn= (TextView) promptView.findViewById(R.id.tvCheckIn);
+                final TextView checkOut= (TextView) promptView.findViewById(R.id.tvCheckOut);
+                final TextView bookingtitle= (TextView) promptView.findViewById(R.id.bookingtitle);
+                checkIn.setText(checkin);
+                checkOut.setText(checkout);
+                bookingtitle.setText("Your booking at "+hotelname);
+
+                alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Make booking", new DialogInterface.OnClickListener()
+                {
+                    public void onClick(DialogInterface dialog, int which)
+                    {
+
+                        Toast.makeText(getApplicationContext(), "You make your booking at " + hotelname,
+                                Toast.LENGTH_LONG).show();
+
+                    }
+                });
+                alertDialog.show();
+            }
+
+        });
+        alertDialog.show();
+    }
+
     public void EditHotels(){
         final AlertDialog alertDialog = new AlertDialog.Builder(context).create();
         alertDialog.setTitle("Edit Hotels");
@@ -602,15 +722,17 @@ public class MainActivity extends ActionBarActivity {
         LayoutInflater layoutInflater = LayoutInflater.from(context);
         View promptView = layoutInflater.inflate(R.layout.edithotels, null);
         alertDialog.setView(promptView);
+
         final CheckBox hotel1= (CheckBox)promptView.findViewById(R.id.checkHotel1);
         final CheckBox hotel2= (CheckBox)promptView.findViewById(R.id.checkHotel2);
         final CheckBox hotel3= (CheckBox)promptView.findViewById(R.id.checkHotel3);
         final TextView edithoteltitle= (TextView)promptView.findViewById(R.id.edithoteltitle);
+
         if (listView==null){
             edithoteltitle.setText("No hotels added yet! Please add one!");
-            hotel1.setVisibility(promptView.GONE);
-            hotel2.setVisibility(promptView.GONE);
-            hotel3.setVisibility(promptView.GONE);
+            hotel1.setVisibility(GONE);
+            hotel2.setVisibility(GONE);
+            hotel3.setVisibility(GONE);
         }else if (listView.getCount()==1){
             hotel1.setEnabled(true);
             hotel1.setChecked(true);
@@ -618,8 +740,8 @@ public class MainActivity extends ActionBarActivity {
             HashMap<String, String> hashMap = (HashMap<String, String>) listView.getItemAtPosition(0);
             String aLongValue = hashMap.get("name");
             hotel1.setText(aLongValue);
-            hotel2.setVisibility(promptView.GONE);
-            hotel3.setVisibility(promptView.GONE);
+            hotel2.setVisibility(GONE);
+            hotel3.setVisibility(GONE);
         }else if (listView.getCount()==2){
             hotel1.setEnabled(true);
             hotels.adapter.notifyDataSetChanged();
@@ -631,7 +753,7 @@ public class MainActivity extends ActionBarActivity {
             HashMap<String, String> hashMap1 = (HashMap<String, String>) listView.getItemAtPosition(1);
             String aLongValue1 = hashMap1.get("name");
             hotel2.setText(aLongValue1);
-            hotel3.setVisibility(promptView.GONE);
+            hotel3.setVisibility(GONE);
         }else{
             hotel1.setEnabled(true);
             hotels.adapter.notifyDataSetChanged();
@@ -979,8 +1101,6 @@ public class MainActivity extends ActionBarActivity {
         datePicker.setMinDate(System.currentTimeMillis() - 1000); //prevent selecting older dates
         final Button CheckIn = (Button) findViewById(R.id.checkin);
         final Button CheckOut = (Button) findViewById(R.id.checkout);
-        final TextView Ascending = (TextView) findViewById(R.id.ascending);
-        final TextView Descending = (TextView) findViewById(R.id.descending);
         final boolean[] flg = {false};
 
         alertDialog.setButton("OK", new DialogInterface.OnClickListener()
@@ -1046,10 +1166,6 @@ public class MainActivity extends ActionBarActivity {
                         CheckOut.setText("CHECK OUT");
                     }
                 }
-                if (flg[0]){
-                    Ascending.setVisibility(View.VISIBLE);
-                    Descending.setVisibility(View.VISIBLE);
-                }
 
             }
 
@@ -1057,6 +1173,7 @@ public class MainActivity extends ActionBarActivity {
         // Showing Alert Message
         alertDialog.show();
     }
+
 
     // Classes ----------------------------------------------------------------
     private class DrawerItemClickListener implements ListView.OnItemClickListener{
@@ -1218,6 +1335,100 @@ public class MainActivity extends ActionBarActivity {
         AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
     }
 
+//    private void loadHotelBooking(final String hotelname){
+//        // Tag used to cancel the request
+//        String tag_string_req = "req_login";
+//
+//        pDialog.setMessage("Loading hotel details...");
+//        showDialog();
+//
+//        StringRequest strReq = new StringRequest(Request.Method.POST, URL_LOAD_HOTEL_BOOKING, new Response.Listener<String>() {
+//
+//            @Override
+//            public void onResponse(String response) {
+//                //Log.d(TAG, "Login Response: " + response.toString());
+//                //String resp = response.toString();
+//                hideDialog();
+//
+//                try {
+//                    JSONObject jObj = new JSONObject(response);
+//                    boolean error = jObj.getBoolean("error");
+//                    // Check for error node in json
+//                    if (!error) {
+//                        if(listView.getCount()==0 || flagaddnew){
+//
+//                            hotels.records.clear(); //clear the old list and load the new one
+//
+//                            JSONArray jhotel= jObj.getJSONArray("hotel");
+//                            Log.d("hotel",jhotel.toString());
+//
+//                            for(int i=0; i<jhotel.length(); i++){
+//                                HashMap<String,String> hotelhm = new HashMap<>();
+//                                JSONObject hotel = jhotel.getJSONObject(i);
+//                                hid = hotel.getString("hid");
+//                                hn = hotel.getString("name");
+//                                hc = hotel.getString("city");
+//                                ha = hotel.getString("address");
+//                                htk = hotel.getString("tk");
+//                                ht = hotel.getString("telephone");
+//                                hs = hotel.getString("stars");
+//                                hoidFK = hotel.getString("oidFK");
+//                                hw = hotel.getString("website");
+//                                hsp = hotel.getString("swimmingpool");
+//
+//                                hotelhm.put("name",hn);
+//                                hotelhm.put("city", hc);
+//                                hotelhm.put("address", ha);
+//                                hotelhm.put("tk", htk);
+//                                hotelhm.put("telephone", ht);
+//                                hotelhm.put("stars", hs);
+//                                hotelhm.put("website", hw);
+//                                hotelhm.put("swimmingpool", hsp);
+//                                hotels.records.add(hotelhm);
+//
+//                            }
+//                        }else{
+//                            Toast.makeText(getApplicationContext(), "To edit a hotel, click on it", Toast.LENGTH_SHORT).show();
+//                        }
+//                        Fragment_hotels.txt.setVisibility(GONE);
+//
+//                    } else {
+//                        // Error in login. Get the error message
+//                        String errorMsg = jObj.getString("error_msg");
+//                        Toast.makeText(getApplicationContext(),
+//                                errorMsg, Toast.LENGTH_LONG).show();
+//                    }
+//                } catch (JSONException e) {
+//                    // JSON error
+//                    e.printStackTrace();
+//                    Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+//                }
+//
+//            }
+//        }, new Response.ErrorListener() {
+//
+//            @Override
+//            public void onErrorResponse(VolleyError error) {
+//                Log.e(TAG, "Login Error: " + error.getMessage());
+//                Toast.makeText(getApplicationContext(),
+//                        error.getMessage(), Toast.LENGTH_LONG).show();
+//                hideDialog();
+//            }
+//        }) {
+//
+//            @Override
+//            protected Map<String, String> getParams() {
+//                // Posting parameters to login url
+//                Map<String, String> params = new HashMap<>();
+//                params.put("name", hotelname);
+//
+//                return params;
+//            }
+//        };
+//        // Adding request to request queue
+//        AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+//    }
+
     private void loadHotels(final String dboFKey){
         // Tag used to cancel the request
         String tag_string_req = "req_login";
@@ -1275,7 +1486,7 @@ public class MainActivity extends ActionBarActivity {
                         }else{
                             Toast.makeText(getApplicationContext(), "To edit a hotel, click on it", Toast.LENGTH_SHORT).show();
                         }
-                        Fragment_hotels.txt.setVisibility(View.GONE);
+                        Fragment_hotels.txt.setVisibility(GONE);
 
                     } else {
                         // Error in login. Get the error message

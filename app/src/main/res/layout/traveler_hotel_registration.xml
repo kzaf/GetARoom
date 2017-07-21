@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/simpleb">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="710dp"
+            android:background="@drawable/simpleb"
+            android:columnCount="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/HotelInfoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Hotel Name"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:id="@+id/View01"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+
+                android:layout_below="@+id/ratingBar"
+                android:background="@android:color/darker_gray"
+                android:visibility="visible"/>
+
+            <View
+                android:id="@+id/view13"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+
+                android:layout_below="@+id/additionalInfoTextView"
+                android:background="@android:color/darker_gray"
+                android:visibility="visible"
+                android:layout_alignEnd="@+id/mapView2"
+                android:layout_alignStart="@+id/websiteTextView"/>
+
+            <TextView
+                android:id="@+id/additionalInfoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="Additional Info"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/View01"
+                android:layout_centerHorizontal="true"/>
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView2"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="330dp"
+                android:layout_height="220dp"
+                android:layout_below="@+id/additionalInfoTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="187dp"/>
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="Location"
+                android:layout_below="@+id/swimmingpoolCheckBox"
+                android:layout_centerHorizontal="true"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/HotelInfoTitle"
+                android:layout_centerHorizontal="true"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:isIndicator="true"/>
+
+            <TextView
+                android:id="@+id/websiteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/additionalInfoTextView"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:text="WebSite"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/addressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/websiteTextView"
+                android:layout_below="@+id/websiteTextView"
+                android:layout_marginTop="15dp"
+                android:text="Address"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/telephoneTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/addressTextView"
+                android:layout_below="@+id/addressTextView"
+                android:layout_marginTop="14dp"
+                android:text="Telephone"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_above="@+id/telephoneTextView"
+                android:layout_alignEnd="@+id/ratingBar"/>
+
+            <TextView
+                android:id="@+id/tvtelephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_alignBaseline="@+id/telephoneTextView"
+                android:layout_alignBottom="@+id/telephoneTextView"
+                android:layout_alignStart="@+id/tvaddress"/>
+
+            <TextView
+                android:id="@+id/tvwebsite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_alignBottom="@+id/websiteTextView"
+                android:layout_alignStart="@+id/tvaddress"/>
+
+            <CheckBox
+                android:id="@+id/swimmingpoolCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/telephoneTextView"
+                android:layout_below="@+id/telephoneTextView"
+                android:layout_marginTop="10dp"
+                android:text="Swimming Pool"
+                android:clickable="false"
+                android:textAllCaps="false"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -13,7 +13,7 @@ public class FragmentAddRoom extends Fragment {
             LayoutInflater inflater, 
             ViewGroup container, 
             Bundle savedInstanceState){
-        View rootView = inflater.inflate(R.layout.fragment_add_room, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_make_booking, container, false);
         
         return rootView;
     }

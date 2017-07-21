@@ -10,7 +10,7 @@
     tools:context="com.example.hotelreseration.NavigationDrawer.Fragment_hotels" >
 
     <ListView
-        android:id="@+id/list1"
+        android:id="@+id/searchList"
         android:layout_width="match_parent"
         android:layout_height="330dp"
         android:layout_centerHorizontal="true"
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:layout_alignBottom="@+id/onoma"
-        android:layout_alignLeft="@+id/list1"
+        android:layout_alignLeft="@+id/searchList"
         android:background="#000000"
         android:visibility="visible"
         tools:ignore="RtlHardcoded" />
@@ -42,7 +42,7 @@
         android:id="@+id/onoma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/list1"
+        android:layout_above="@+id/searchList"
         android:layout_alignLeft="@+id/nobookingtxt"
         android:text="Upcoming Reservations"
         android:textAppearance="?android:attr/textAppearanceLarge"

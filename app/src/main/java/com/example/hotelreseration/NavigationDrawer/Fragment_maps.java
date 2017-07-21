@@ -274,7 +274,7 @@ public class Fragment_maps extends android.support.v4.app.Fragment implements On
         double lonn = Double.parseDouble(lon);
 
         MarkerOptions hotelposition = new MarkerOptions().position(new LatLng(latn, lonn)).title(name);
-        hotelposition.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ROSE));
+        hotelposition.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
         googleMap.addMarker(hotelposition);
     }
 }

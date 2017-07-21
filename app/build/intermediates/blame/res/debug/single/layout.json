@@ -128,10 +128,6 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\layout\\abc_screen_content_include.xml"
     },
     {
-        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_add_room.xml",
-        "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\layout\\fragment_add_room.xml"
-    },
-    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\layout\\notification_template_media_custom.xml"
     },
@@ -276,6 +272,10 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\4ae754c41c9fa030fca903c0b2a61d9fef9e4da2\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\layout\\traveler_hotel_search_list.xml",
+        "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\layout\\traveler_hotel_search_list.xml"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_reservations.xml",
         "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\layout\\fragment_reservations.xml"
     },
@@ -298,6 +298,10 @@
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\layout\\traveler_hotel_registration.xml",
         "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\layout\\traveler_hotel_registration.xml"
+    },
+    {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_make_booking.xml",
+        "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\layout\\fragment_make_booking.xml"
     },
     {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_owner_upcoming.xml",

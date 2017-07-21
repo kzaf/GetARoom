@@ -4,9 +4,7 @@ package com.example.hotelreseration.NavigationDrawer;
 import java.util.ArrayList;
 
 import com.example.hotelreseration.R;
-import com.example.hotelreseration.R.layout;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -34,7 +32,7 @@ public class Fragment_Running extends Fragment {
             Bundle savedInstanceState){
 	  	    View view = inflater.inflate(R.layout.fragment_owner_running, container,false);
 
-	    ListView listView = (ListView) view.findViewById(R.id.list1);
+	    ListView listView = (ListView) view.findViewById(R.id.searchList);
 	    txt=(TextView) view.findViewById(R.id.nobookingtxt);
 	    
 	    
