@@ -59,9 +59,9 @@ import java.util.Map;
 
 import static android.view.View.GONE;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_DELETE_HOTEL;
+import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_BOOKING_COORDS;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_COORDINATES;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_HOTELS;
-import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_HOTEL_BOOKING;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_RESULT_HOTELS;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_REGISTER_COORDINATES;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_REGISTER_HOTEL;
@@ -120,6 +120,8 @@ public class MainActivity extends ActionBarActivity {
 
     public static String hid, hn, hc, ha,
             htk, ht, hs, hoidFK, hw, hsp;
+
+    public double booking_lat, booking_lon;
 
     public String drawerSelection = "Home";
 
@@ -605,6 +607,11 @@ public class MainActivity extends ActionBarActivity {
         alertDialog.show();
     }
 
+    public void setCoords(final double lat, final double lon){
+        booking_lat = lat;
+        booking_lon = lon;
+    }
+
     public static int getIndexOFValue(String value, ArrayList<HashMap<String, String>> listMap) { //Get the index out of a HashMap ArrayList, by key
 
         int i = 0;
@@ -650,14 +657,17 @@ public class MainActivity extends ActionBarActivity {
         mMapView.onCreate(alertDialog.onSaveInstanceState());
         mMapView.onResume();
 
+        hotelcoords(hotelname); //load the coordinates for the selected hotel
+
         mMapView.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(final GoogleMap googleMap) {
-                LatLng posisiabsen = new LatLng(40.626401, 22.948352); //// lat lng
+                LatLng posisiabsen = new LatLng(booking_lat, booking_lon); //// lat lng
                 googleMap.addMarker(new MarkerOptions().position(posisiabsen).title(hotelname));
                 googleMap.moveCamera(CameraUpdateFactory.newLatLng(posisiabsen));
                 googleMap.getUiSettings().setZoomControlsEnabled(true);
                 googleMap.animateCamera(CameraUpdateFactory.zoomTo(15), 2000, null);
+                googleMap.getUiSettings().setMyLocationButtonEnabled(true);
             }
         });
 
@@ -704,6 +714,8 @@ public class MainActivity extends ActionBarActivity {
                     {
 
                         Toast.makeText(getApplicationContext(), "You make your booking at " + hotelname,
+                                Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Check in:" + checkin +", Check out:" + checkout,
                                 Toast.LENGTH_LONG).show();
 
                     }
@@ -1586,6 +1598,73 @@ public class MainActivity extends ActionBarActivity {
                 // Posting parameters to login url
                 Map<String, String> params = new HashMap<>();
                 params.put("oidFK", dboFKey);
+
+                return params;
+            }
+        };
+        // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+    }
+
+    public void hotelcoords(final String hotelname){
+        // Tag used to cancel the request
+        String tag_string_req = "req_login";
+
+        pDialog.setMessage("Loading hotels ...");
+        showDialog();
+
+        StringRequest strReq = new StringRequest(Request.Method.POST, URL_LOAD_BOOKING_COORDS, new Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String response) {
+
+                hideDialog();
+
+                try {
+                    JSONObject jObj = new JSONObject(response);
+                    boolean error = jObj.getBoolean("error");
+
+                    // Check for error node in json
+                    if (!error) {
+
+                        JSONArray jcoord= jObj.getJSONArray("coords");
+                        Log.d("hotel",jcoord.toString());
+
+                        JSONObject coord = jcoord.getJSONObject(0);
+                        booking_lat = Double.parseDouble(coord.getString("latitude"));
+                        booking_lon = Double.parseDouble(coord.getString("longitude"));
+                        setCoords(booking_lat, booking_lon);
+
+
+                    } else {
+                        // Error in login. Get the error message
+                        String errorMsg = jObj.getString("error_msg");
+                        Toast.makeText(getApplicationContext(),
+                                errorMsg, Toast.LENGTH_LONG).show();
+                    }
+                } catch (JSONException e) {
+                    // JSON error
+                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e(TAG, "Login Error: " + error.getMessage());
+                Toast.makeText(getApplicationContext(),
+                        error.getMessage(), Toast.LENGTH_LONG).show();
+                hideDialog();
+            }
+        }) {
+
+            @Override
+            protected Map<String, String> getParams() {
+                // Posting parameters to login url
+                Map<String, String> params = new HashMap<>();
+                params.put("hotelname", hotelname);
 
                 return params;
             }

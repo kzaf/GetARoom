@@ -56,7 +56,6 @@ public class Fragment_maps extends android.support.v4.app.Fragment implements On
         else askPermission();
 
         googleMap.getUiSettings().setMyLocationButtonEnabled(true);
-        //googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
 
         // Turns traffic layer on
         googleMap.setTrafficEnabled(true);
@@ -261,12 +260,6 @@ public class Fragment_maps extends android.support.v4.app.Fragment implements On
 
         MainActivity activity = (MainActivity) getActivity();
         activity.registerCoordinates(MainActivity.onomaxarth,MainActivity.hoidFK,latitude,longitude);
-//        Fragment fragment = new Fragment_hotels();
-//        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-//        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-//        fragmentTransaction.replace(R.id.content_frame, fragment);
-//        fragmentTransaction.addToBackStack(null);
-//        fragmentTransaction.commit();
     }
 
     public static void addMarkers(String lat, String lon, String name){
