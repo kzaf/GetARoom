@@ -28,6 +28,7 @@ import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.RadioGroup;
 import android.widget.RatingBar;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -63,6 +64,7 @@ import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_BOOKING_CO
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_COORDINATES;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_HOTELS;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_RESULT_HOTELS;
+import static com.example.hotelreseration.DataBase.AppConfig.URL_MAKE_BOOKING;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_REGISTER_COORDINATES;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_REGISTER_HOTEL;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_UPDATE_HOTEL;
@@ -121,7 +123,8 @@ public class MainActivity extends ActionBarActivity {
     public static String hid, hn, hc, ha,
             htk, ht, hs, hoidFK, hw, hsp;
 
-    public double booking_lat, booking_lon;
+    public double booking_lat;
+    public double booking_lon;
 
     public String drawerSelection = "Home";
 
@@ -607,10 +610,10 @@ public class MainActivity extends ActionBarActivity {
         alertDialog.show();
     }
 
-    public void setCoords(final double lat, final double lon){
-        booking_lat = lat;
-        booking_lon = lon;
-    }
+//    public void setCoords(final double lat, final double lon){
+//        booking_lat = lat;
+//        booking_lon = lon;
+//    }
 
     public static int getIndexOFValue(String value, ArrayList<HashMap<String, String>> listMap) { //Get the index out of a HashMap ArrayList, by key
 
@@ -625,6 +628,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void hotelBooking(final String hotelname, final String hotelCity, final String checkin, final String checkout){
+        hotelcoords(hotelname);
         AlertDialog alertDialog = new AlertDialog.Builder(context).create();
         alertDialog.setTitle("Hotel Info");
         alertDialog.setIcon(R.drawable.action_hotels);
@@ -656,8 +660,6 @@ public class MainActivity extends ActionBarActivity {
 
         mMapView.onCreate(alertDialog.onSaveInstanceState());
         mMapView.onResume();
-
-        hotelcoords(hotelname); //load the coordinates for the selected hotel
 
         mMapView.getMapAsync(new OnMapReadyCallback() {
             @Override
@@ -694,37 +696,82 @@ public class MainActivity extends ActionBarActivity {
         {
             public void onClick(DialogInterface dialog, int which)
             {
-                AlertDialog alertDialog = new AlertDialog.Builder(context).create();
-                alertDialog.setTitle("Make Booking");
-                alertDialog.setIcon(R.drawable.action_hotels);
-                LayoutInflater layoutInflater = LayoutInflater.from(context);
-                View promptView = layoutInflater.inflate(R.layout.fragment_make_booking, null);
-                alertDialog.setView(promptView);
-
-                final TextView checkIn= (TextView) promptView.findViewById(R.id.tvCheckIn);
-                final TextView checkOut= (TextView) promptView.findViewById(R.id.tvCheckOut);
-                final TextView bookingtitle= (TextView) promptView.findViewById(R.id.bookingtitle);
-                checkIn.setText(checkin);
-                checkOut.setText(checkout);
-                bookingtitle.setText("Your booking at "+hotelname);
-
-                alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Make booking", new DialogInterface.OnClickListener()
-                {
-                    public void onClick(DialogInterface dialog, int which)
-                    {
-
-                        Toast.makeText(getApplicationContext(), "You make your booking at " + hotelname,
-                                Toast.LENGTH_LONG).show();
-                        Toast.makeText(getApplicationContext(), "Check in:" + checkin +", Check out:" + checkout,
-                                Toast.LENGTH_LONG).show();
-
-                    }
-                });
-                alertDialog.show();
+                bookingAlert(hotelname, checkin, checkout);
             }
 
         });
         alertDialog.show();
+    }
+
+    public void bookingAlert(final String hotelname, final String checkin, final String checkout){
+
+        AlertDialog alertDialog = new AlertDialog.Builder(context).create();
+        alertDialog.setTitle("Make Booking");
+        alertDialog.setIcon(R.drawable.action_hotels);
+        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        View promptView = layoutInflater.inflate(R.layout.fragment_make_booking, null);
+        alertDialog.setView(promptView);
+
+        final TextView checkIn= (TextView) promptView.findViewById(R.id.tvCheckin);
+        final TextView checkOut= (TextView) promptView.findViewById(R.id.tvCheckOut);
+        final TextView bookingtitle= (TextView) promptView.findViewById(R.id.bookingtitle);
+
+        final Spinner adultsSP= (Spinner) promptView.findViewById(R.id.spinnerAdults);
+        final Spinner childrenSP= (Spinner) promptView.findViewById(R.id.spinnerChildren);
+
+        final RadioGroup roomtype = (RadioGroup) promptView.findViewById(R.id.radioGroupRoomType);
+        final RadioGroup bedsNo = (RadioGroup) promptView.findViewById(R.id.radioGroupBedsNo);
+
+        checkIn.setText(checkin);
+        checkOut.setText(checkout);
+        bookingtitle.setText("Your booking at "+hotelname);
+
+        alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Make booking", new DialogInterface.OnClickListener()
+        {
+            public void onClick(DialogInterface dialog, int which)
+            {
+                final int selectedRoomType =roomtype.getCheckedRadioButtonId();
+                String roomType = "Regular";
+                switch(selectedRoomType){
+                    case R.id.radioRegular:
+                        roomType = "Regular";
+                        break;
+                    case R.id.radioLuxury:
+                        roomType = "Luxury";
+                        break;
+                    case R.id.radioSuite:
+                        roomType = "Suite";
+                        break;
+                }
+
+                final int selectedBedType = bedsNo.getCheckedRadioButtonId();
+                String bedType = "Single";
+                switch(selectedBedType){
+                    case R.id.radioOne:
+                        bedType = "Single";
+                        break;
+                    case R.id.radioTwo:
+                        bedType = "Double";
+                        break;
+                    case R.id.radioThree:
+                        bedType = "Triple";
+                        break;
+                }
+
+                final String adults = adultsSP.getSelectedItem().toString();
+                final String children = childrenSP.getSelectedItem().toString();
+                final String finalRoomType = roomType;
+                final String finalBedType = bedType;
+
+                makeBooking(dboFKey, hotelname, checkin, checkout, adults, children, finalBedType, finalRoomType);
+
+                Toast.makeText(getApplicationContext(), "You make your booking at " + hotelname, Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Check in:" + checkin +", Check out:" + checkout, Toast.LENGTH_LONG).show();
+
+            }
+        });
+        alertDialog.show();
+
     }
 
     public void EditHotels(){
@@ -1186,20 +1233,6 @@ public class MainActivity extends ActionBarActivity {
         alertDialog.show();
     }
 
-
-    // Classes ----------------------------------------------------------------
-    private class DrawerItemClickListener implements ListView.OnItemClickListener{
-
-        @Override
-        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-            // When clicked, select open the appropriate fragment
-            selectItem(position);
-
-        }
-    }
-
-
     //-----------------------------------------------------------DB-Functions-------------------------------------------------------//
 
     private void registerHotel(final String hotelname, final String city, final String address,
@@ -1269,6 +1302,78 @@ public class MainActivity extends ActionBarActivity {
                 params.put("oidFK", dboFKey);
                 params.put("website", website);
                 params.put("swimmingpool", swimmingpool);
+
+                return params;
+            }
+
+        };
+
+        // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+    }
+
+    public void makeBooking(final String dboFKey, final String hotelname, final String checkIn, final String checkOut, final String adults,
+                            final String children, final String bedType, final String roomType)
+    {
+        // Tag used to cancel the request
+        String tag_string_req = "req_register";
+
+        pDialog.setMessage("Create reservation ...");
+        showDialog();
+
+        StringRequest strReq = new StringRequest(Request.Method.POST, URL_MAKE_BOOKING, new Response.Listener<String>()
+        {
+
+            @Override
+            public void onResponse(String response)
+            {
+                Log.d(TAG, "Register Response: " + response.toString());
+                hideDialog();
+
+                try
+                {
+                    JSONObject jObj = new JSONObject(response);
+                    boolean error = jObj.getBoolean("error");
+
+                    // Check for error node in json
+                    if (!error) {
+                        Toast.makeText(getApplicationContext(), "Reservation has been created!", Toast.LENGTH_SHORT).show();
+
+                    } else {
+                        // Error in login. Get the error message
+                        String errorMsg = jObj.getString("error_msg");
+                        Toast.makeText(getApplicationContext(), errorMsg, Toast.LENGTH_LONG).show();
+                    }
+                }
+                catch (JSONException e)
+                {
+                    e.printStackTrace();
+                }
+            }
+
+        }, new Response.ErrorListener()
+        {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e(TAG, "Registration Error: " + error.getMessage());
+                Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_LONG).show();
+                hideDialog();
+            }
+        }) {
+
+            @Override
+            protected Map<String, String> getParams() {
+                // Posting params to register url
+                Map<String, String> params = new HashMap<>();
+                params.put("hotelname", hotelname);
+                params.put("checkin", checkIn);
+                params.put("checkout", checkOut);
+                params.put("tidFK", dboFKey);
+                params.put("adults", adults);
+                params.put("children", children);
+                params.put("bedtype", bedType);
+                params.put("roomtype", roomType);
 
                 return params;
             }
@@ -1633,12 +1738,15 @@ public class MainActivity extends ActionBarActivity {
                         JSONObject coord = jcoord.getJSONObject(0);
                         booking_lat = Double.parseDouble(coord.getString("latitude"));
                         booking_lon = Double.parseDouble(coord.getString("longitude"));
-                        setCoords(booking_lat, booking_lon);
+                        //setCoords(booking_lat, booking_lon);
 
 
                     } else {
                         // Error in login. Get the error message
                         String errorMsg = jObj.getString("error_msg");
+                        booking_lat = 34.43772254507513;
+                        booking_lon = -41.0009765625;
+                        //setCoords(34.43772254507513,-41.0009765625);
                         Toast.makeText(getApplicationContext(),
                                 errorMsg, Toast.LENGTH_LONG).show();
                     }
@@ -2033,4 +2141,15 @@ public class MainActivity extends ActionBarActivity {
 
     //-----------------------------------------------------------DB-Functions-------------------------------------------------------//
 
+    // Classes ----------------------------------------------------------------
+    private class DrawerItemClickListener implements ListView.OnItemClickListener{
+
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+            // When clicked, select open the appropriate fragment
+            selectItem(position);
+
+        }
+    }
 }

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <string msgid="5835639618285370804" name="accept">"Прифати"</string>
     <string msgid="4778414446709286370" name="cast_ad_label">"Реклама"</string>
     <string msgid="366047012176970604" name="cast_casting_to_device">"Се емитува на %1$s"</string>
     <string msgid="2888745622334830481" name="cast_closed_captions">"Затворени титлови"</string>
@@ -34,8 +33,6 @@
     <string msgid="1162380934229249476" name="cast_tracks_chooser_dialog_cancel">"Откажи"</string>
     <string msgid="1779359505126875127" name="cast_tracks_chooser_dialog_closed_captions">"Затворени титлови"</string>
     <string msgid="3012268736704635952" name="cast_tracks_chooser_dialog_default_track_name">"Песна <ns1:g id="POSITION">%1$d</ns1:g>"</string>
-    <string msgid="5563446400083425854" name="cast_tracks_chooser_dialog_no_audio_tracks">"Нема достапни аудиозаписи"</string>
-    <string msgid="7413336699113748535" name="cast_tracks_chooser_dialog_no_text_tracks">"Нема достапни текстуални записи"</string>
     <string msgid="1176688358580178396" name="cast_tracks_chooser_dialog_none">"Ништо"</string>
     <string msgid="3804878371876790270" name="cast_tracks_chooser_dialog_ok">"ВО РЕД"</string>
     <string msgid="2454147715032376208" name="cast_tracks_chooser_dialog_subtitles">"Титлови"</string>
@@ -57,16 +54,13 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Отвори на телефонот"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Најави се"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Најави се со Google"</string>
-    <string msgid="6155048007205742679" name="create_calendar_message">"Дали дозволувате рекламата да создаде настан во календарот?"</string>
-    <string msgid="7967007864778154790" name="create_calendar_title">"Создај настан во календарот"</string>
-    <string msgid="4722375419392727435" name="debug_menu_ad_information">"Информации за реклама"</string>
-    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"Преглед на креатива"</string>
-    <string msgid="2039274714455389140" name="debug_menu_title">"Одберете режим на отстранување грешки"</string>
-    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"Отстранување грешки"</string>
-    <string msgid="6099173376375995052" name="decline">"Одбиј"</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"Исчисти го пребарувањето"</string>
     <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"Пребарај"</string>
-    <string msgid="8020323581538738027" name="store_picture_message">"Дали дозволувате рекламата да ја зачува сликата во галеријата со слики?"</string>
-    <string msgid="4180630057627064606" name="store_picture_title">"Зачувај ја сликата"</string>
+    <string msgid="368094699078615544" name="s1">"Зачувај ја сликата"</string>
+    <string msgid="4550830452390689489" name="s2">"Дали дозволувате рекламата да ја зачува сликата во „Галеријата со слики“?"</string>
+    <string msgid="2435407834265420668" name="s3">"Прифати"</string>
+    <string msgid="9167523597401839819" name="s4">"Одбиј"</string>
+    <string msgid="1566682516266724847" name="s5">"Создај настан во календарот"</string>
+    <string msgid="5996672174517137271" name="s6">"Дали дозволувате рекламата да создаде настан во календарот?"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Купувај со Google"</string>
 </resources>

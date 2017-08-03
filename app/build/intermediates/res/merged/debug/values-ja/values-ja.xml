@@ -19,7 +19,6 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"共有"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%sと共有"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"折りたたむ"</string>
-    <string msgid="5835639618285370804" name="accept">"同意する"</string>
     <string msgid="4778414446709286370" name="cast_ad_label">"広告"</string>
     <string msgid="366047012176970604" name="cast_casting_to_device">"「%1$s」にキャストしています"</string>
     <string msgid="2888745622334830481" name="cast_closed_captions">"クローズド キャプション"</string>
@@ -53,8 +52,6 @@
     <string msgid="1162380934229249476" name="cast_tracks_chooser_dialog_cancel">"キャンセル"</string>
     <string msgid="1779359505126875127" name="cast_tracks_chooser_dialog_closed_captions">"クローズド キャプション"</string>
     <string msgid="3012268736704635952" name="cast_tracks_chooser_dialog_default_track_name">"トラック <ns1:g id="POSITION">%1$d</ns1:g>"</string>
-    <string msgid="5563446400083425854" name="cast_tracks_chooser_dialog_no_audio_tracks">"利用可能な音声トラックがありません"</string>
-    <string msgid="7413336699113748535" name="cast_tracks_chooser_dialog_no_text_tracks">"利用可能なテキスト トラックがありません"</string>
     <string msgid="1176688358580178396" name="cast_tracks_chooser_dialog_none">"なし"</string>
     <string msgid="3804878371876790270" name="cast_tracks_chooser_dialog_ok">"OK"</string>
     <string msgid="2454147715032376208" name="cast_tracks_chooser_dialog_subtitles">"字幕"</string>
@@ -76,13 +73,6 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"スマートフォンで開く"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"ログイン"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Googleにログイン"</string>
-    <string msgid="6155048007205742679" name="create_calendar_message">"広告がカレンダーの予定を作成することを許可しますか？"</string>
-    <string msgid="7967007864778154790" name="create_calendar_title">"カレンダーの予定の作成"</string>
-    <string msgid="4722375419392727435" name="debug_menu_ad_information">"広告の情報"</string>
-    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"クリエイティブのプレビュー"</string>
-    <string msgid="2039274714455389140" name="debug_menu_title">"デバッグモードの選択"</string>
-    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"困ったときに"</string>
-    <string msgid="6099173376375995052" name="decline">"同意しない"</string>
     <string msgid="3698378085901466129" name="mr_button_content_description">"キャストアイコン"</string>
     <string msgid="5088427771788648085" name="mr_cast_button_connected">"キャスト アイコン。接続済み"</string>
     <string msgid="2187642765091873834" name="mr_cast_button_connecting">"キャスト アイコン。接続中"</string>
@@ -105,9 +95,13 @@
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"端末"</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"検索をクリア"</string>
     <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"検索"</string>
+    <string msgid="368094699078615544" name="s1">"画像の保存"</string>
+    <string msgid="4550830452390689489" name="s2">"広告が画像ギャラリーに画像を保存することを許可しますか？"</string>
+    <string msgid="2435407834265420668" name="s3">"許可する"</string>
+    <string msgid="9167523597401839819" name="s4">"許可しない"</string>
+    <string msgid="1566682516266724847" name="s5">"カレンダーの予定の作成"</string>
+    <string msgid="5996672174517137271" name="s6">"広告がカレンダーの予定を作成することを許可しますか？"</string>
     <string msgid="146198913615257606" name="search_menu_title">"検索"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
-    <string msgid="8020323581538738027" name="store_picture_message">"広告が画像ギャラリーに画像を保存することを許可しますか？"</string>
-    <string msgid="4180630057627064606" name="store_picture_title">"画像の保存"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Googleで購入"</string>
 </resources>

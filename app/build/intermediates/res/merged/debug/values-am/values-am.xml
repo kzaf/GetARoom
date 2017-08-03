@@ -19,7 +19,6 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"ከሚከተለው ጋር ያጋሩ"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"ከ%s ጋር ያጋሩ"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"ሰብስብ"</string>
-    <string msgid="5835639618285370804" name="accept">"ተቀበል"</string>
     <string msgid="4778414446709286370" name="cast_ad_label">"ማስታወቂያ"</string>
     <string msgid="366047012176970604" name="cast_casting_to_device">"ወደ %s cast በማድረግ ላይ"</string>
     <string msgid="2888745622334830481" name="cast_closed_captions">"የተዘጉ መግለጫ ጽሑፎች"</string>
@@ -53,8 +52,6 @@
     <string msgid="1162380934229249476" name="cast_tracks_chooser_dialog_cancel">"ይቅር"</string>
     <string msgid="1779359505126875127" name="cast_tracks_chooser_dialog_closed_captions">"ዝግ መግለጫ ጽሑፎች"</string>
     <string msgid="3012268736704635952" name="cast_tracks_chooser_dialog_default_track_name">"<ns1:g id="POSITION">%1$d</ns1:g>ን ይከታተሉ"</string>
-    <string msgid="5563446400083425854" name="cast_tracks_chooser_dialog_no_audio_tracks">"ምንም የኦዲዮ ትራኮች አይገኙም"</string>
-    <string msgid="7413336699113748535" name="cast_tracks_chooser_dialog_no_text_tracks">"ምንም የጽሑፍ ትራኮች አይገኙም"</string>
     <string msgid="1176688358580178396" name="cast_tracks_chooser_dialog_none">"ምንም የለም"</string>
     <string msgid="3804878371876790270" name="cast_tracks_chooser_dialog_ok">"እሺ"</string>
     <string msgid="2454147715032376208" name="cast_tracks_chooser_dialog_subtitles">"የግርጌ ጽሑፍ"</string>
@@ -76,13 +73,6 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"ስልክ ላይ ክፈት"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"ግባ"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"በGoogle ይግቡ"</string>
-    <string msgid="6155048007205742679" name="create_calendar_message">"ማስታወቂያ የቀን መቁጠሪያ ክስተት እንዲፈጥር ይፈቀድለት?"</string>
-    <string msgid="7967007864778154790" name="create_calendar_title">"የቀን መቁጠሪያ ክስተት ፍጠር"</string>
-    <string msgid="4722375419392727435" name="debug_menu_ad_information">"የማስታወቂያ መረጃ"</string>
-    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"የፈጠራ ቅድመ-እይታ"</string>
-    <string msgid="2039274714455389140" name="debug_menu_title">"የአርም ሁነታን ምረጥ"</string>
-    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"መላ መፈለግ"</string>
-    <string msgid="6099173376375995052" name="decline">"ውድቅ አድርግ"</string>
     <string msgid="3698378085901466129" name="mr_button_content_description">"የCast አዝራር"</string>
     <string msgid="5088427771788648085" name="mr_cast_button_connected">"Cast አዝራር። ተገናኝቷል"</string>
     <string msgid="2187642765091873834" name="mr_cast_button_connecting">"Cast አዝራር በማገናኘት ላይ"</string>
@@ -105,9 +95,13 @@
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"መሣሪያዎች"</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"ፍለጋን አጽዳ"</string>
     <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"ይፈልጉ"</string>
+    <string msgid="368094699078615544" name="s1">"ምስል አስቀምጥ"</string>
+    <string msgid="4550830452390689489" name="s2">"ማስታወቂያ ምስሉን በስዕል ማእከለ-ሥዕላት ውስጥ እንዲያከማች ይፈቀድለት?"</string>
+    <string msgid="2435407834265420668" name="s3">"ተቀበል"</string>
+    <string msgid="9167523597401839819" name="s4">"ውድቅ አድርግ"</string>
+    <string msgid="1566682516266724847" name="s5">"የቀን መቁጠሪያ ክስተት ፍጠር"</string>
+    <string msgid="5996672174517137271" name="s6">"ማስታወቂያ የቀን መቁጠሪያ ክስተት እንዲፈጥር ይፈቀድለት?"</string>
     <string msgid="146198913615257606" name="search_menu_title">"ፈልግ"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
-    <string msgid="8020323581538738027" name="store_picture_message">"ማስታወቂያ ምስሉን በስዕል ማዕከለ-ስዕላት ውስጥ እንዲያከማች ይፈቀድለት?"</string>
-    <string msgid="4180630057627064606" name="store_picture_title">"ምስል አስቀምጥ"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"በGoogle ይግዙ"</string>
 </resources>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <string msgid="5835639618285370804" name="accept">"അംഗീകരിക്കുക"</string>
     <string msgid="4778414446709286370" name="cast_ad_label">"പരസ്യം"</string>
     <string msgid="366047012176970604" name="cast_casting_to_device">"%1$s എന്നതിലേക്ക് കാസ്റ്റുചെയ്യുന്നു"</string>
     <string msgid="2888745622334830481" name="cast_closed_captions">"അടച്ച അടിക്കുറിപ്പുകൾ"</string>
@@ -34,8 +33,6 @@
     <string msgid="1162380934229249476" name="cast_tracks_chooser_dialog_cancel">"റദ്ദാക്കുക"</string>
     <string msgid="1779359505126875127" name="cast_tracks_chooser_dialog_closed_captions">"സബ്‌ടൈറ്റിലുകൾ"</string>
     <string msgid="3012268736704635952" name="cast_tracks_chooser_dialog_default_track_name">"<ns1:g id="POSITION">%1$d</ns1:g> ട്രാക്കുചെയ്യുക"</string>
-    <string msgid="5563446400083425854" name="cast_tracks_chooser_dialog_no_audio_tracks">"ഓഡിയോ ട്രാക്കുകളൊന്നും ലഭ്യമല്ല"</string>
-    <string msgid="7413336699113748535" name="cast_tracks_chooser_dialog_no_text_tracks">"ടെക്സ്റ്റ് ട്രാക്കുകളൊന്നും ലഭ്യമല്ല"</string>
     <string msgid="1176688358580178396" name="cast_tracks_chooser_dialog_none">"ഒന്നുമില്ല"</string>
     <string msgid="3804878371876790270" name="cast_tracks_chooser_dialog_ok">"ശരി"</string>
     <string msgid="2454147715032376208" name="cast_tracks_chooser_dialog_subtitles">"സബ്‌ടൈറ്റിലുകൾ"</string>
@@ -57,16 +54,13 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"ഫോണിൽ തുറക്കുക"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"സൈൻ ഇൻ ചെയ്യുക"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Google ഉപയോഗിച്ച് സൈൻ ഇൻ ചെയ്യുക"</string>
-    <string msgid="6155048007205742679" name="create_calendar_message">"ഒരു കലണ്ടർ ഇവന്റ് സൃഷ്ടിക്കാൻ പരസ്യത്തെ അനുവദിക്കണോ?"</string>
-    <string msgid="7967007864778154790" name="create_calendar_title">"കലണ്ടർ ഇവന്റ് സൃഷ്ടിക്കുക"</string>
-    <string msgid="4722375419392727435" name="debug_menu_ad_information">"പരസ്യ വിവരങ്ങൾ"</string>
-    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"ക്രിയേറ്റീവ് പ്രിവ്യൂ"</string>
-    <string msgid="2039274714455389140" name="debug_menu_title">"ഡീബഗ് മോഡ് തിരഞ്ഞെടുക്കുക"</string>
-    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"പ്രശ്‌നപരിഹാരം"</string>
-    <string msgid="6099173376375995052" name="decline">"നിരസിക്കുക"</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"തിരയുന്നത് മായ്‌ക്കുക"</string>
     <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"തിരയുക"</string>
-    <string msgid="8020323581538738027" name="store_picture_message">"ചിത്ര ഗാലറിയിൽ ചിത്രം സംഭരിക്കാൻ പരസ്യത്തെ അനുവദിക്കണോ?"</string>
-    <string msgid="4180630057627064606" name="store_picture_title">"ചിത്രം സംരക്ഷിക്കുക"</string>
+    <string msgid="368094699078615544" name="s1">"ചിത്രം സംരക്ഷിക്കുക"</string>
+    <string msgid="4550830452390689489" name="s2">"\'ചിത്ര ഗാലറി\'യിൽ ചിത്രം സംഭരിക്കാൻ പരസ്യത്തെ അനുവദിക്കണോ?"</string>
+    <string msgid="2435407834265420668" name="s3">"അംഗീകരിക്കുക"</string>
+    <string msgid="9167523597401839819" name="s4">"നിരസിക്കുക"</string>
+    <string msgid="1566682516266724847" name="s5">"കലണ്ടർ ഇവന്റ് സൃഷ്ടിക്കുക"</string>
+    <string msgid="5996672174517137271" name="s6">"കലണ്ടർ ഇവന്റ് സൃഷ്ടിക്കാൻ പരസ്യത്തെ അനുവദിക്കണോ?"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Google വഴി വാങ്ങുക"</string>
 </resources>

@@ -19,7 +19,6 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Дели са"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Дели са апликацијом %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Скупи"</string>
-    <string msgid="5835639618285370804" name="accept">"Прихвати"</string>
     <string msgid="4778414446709286370" name="cast_ad_label">"Оглас"</string>
     <string msgid="366047012176970604" name="cast_casting_to_device">"Пребацивање на %1$s"</string>
     <string msgid="2888745622334830481" name="cast_closed_captions">"Опционални титл"</string>
@@ -53,8 +52,6 @@
     <string msgid="1162380934229249476" name="cast_tracks_chooser_dialog_cancel">"Откажи"</string>
     <string msgid="1779359505126875127" name="cast_tracks_chooser_dialog_closed_captions">"Опционални титл"</string>
     <string msgid="3012268736704635952" name="cast_tracks_chooser_dialog_default_track_name">"<ns1:g id="POSITION">%1$d</ns1:g>. песма"</string>
-    <string msgid="5563446400083425854" name="cast_tracks_chooser_dialog_no_audio_tracks">"Нема доступних аудио записа"</string>
-    <string msgid="7413336699113748535" name="cast_tracks_chooser_dialog_no_text_tracks">"Нема доступних текстуалних записа"</string>
     <string msgid="1176688358580178396" name="cast_tracks_chooser_dialog_none">"Ништа"</string>
     <string msgid="3804878371876790270" name="cast_tracks_chooser_dialog_ok">"Потврди"</string>
     <string msgid="2454147715032376208" name="cast_tracks_chooser_dialog_subtitles">"Титлови"</string>
@@ -76,13 +73,6 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Отвори на телефону"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Пријави ме"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Пријави ме на Google"</string>
-    <string msgid="6155048007205742679" name="create_calendar_message">"Желите ли да дозволите да оглас направи догађај у календару?"</string>
-    <string msgid="7967007864778154790" name="create_calendar_title">"Прављење догађаја у календару"</string>
-    <string msgid="4722375419392727435" name="debug_menu_ad_information">"Информације о огласу"</string>
-    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"Преглед елемента огласа"</string>
-    <string msgid="2039274714455389140" name="debug_menu_title">"Изаберите Режим отклањања грешака"</string>
-    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"Решавање проблема"</string>
-    <string msgid="6099173376375995052" name="decline">"Одбиј"</string>
     <string msgid="3698378085901466129" name="mr_button_content_description">"Дугме Пребаци"</string>
     <string msgid="5088427771788648085" name="mr_cast_button_connected">"Дугме Пребаци. Повезан је"</string>
     <string msgid="2187642765091873834" name="mr_cast_button_connecting">"Дугме Пребаци. Повезује се"</string>
@@ -105,9 +95,13 @@
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"Уређаји"</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"Брисање претраге"</string>
     <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"Претражите"</string>
+    <string msgid="368094699078615544" name="s1">"Чување слике"</string>
+    <string msgid="4550830452390689489" name="s2">"Желите ли да дозволите да оглас сачува слику у Галерији слика?"</string>
+    <string msgid="2435407834265420668" name="s3">"Прихвати"</string>
+    <string msgid="9167523597401839819" name="s4">"Одбиј"</string>
+    <string msgid="1566682516266724847" name="s5">"Прављење догађаја у календару"</string>
+    <string msgid="5996672174517137271" name="s6">"Желите ли да дозволите да оглас направи догађај у календару?"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Претражи"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">">999"</string>
-    <string msgid="8020323581538738027" name="store_picture_message">"Желите ли да дозволите да оглас сачува слику у Галерији слика?"</string>
-    <string msgid="4180630057627064606" name="store_picture_title">"Чување слике"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Купи помоћу Google-а"</string>
 </resources>

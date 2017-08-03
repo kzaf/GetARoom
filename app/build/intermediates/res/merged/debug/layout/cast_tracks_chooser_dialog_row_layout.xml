@@ -12,7 +12,8 @@
         android:layout_centerVertical="true"
         android:clickable="false"
         android:focusable="false"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
 
     <TextView
         android:id="@+id/text"
@@ -22,6 +23,7 @@
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
         android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:textSize="@dimen/cast_tracks_chooser_dialog_row_text_size"
         android:layout_toLeftOf="@+id/radio"
         android:layout_toStartOf="@+id/radio" />

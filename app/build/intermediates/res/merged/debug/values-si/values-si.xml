@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <string msgid="5835639618285370804" name="accept">"පිළිගන්න"</string>
     <string msgid="4778414446709286370" name="cast_ad_label">"වෙළඳ දැන්වීම"</string>
     <string msgid="366047012176970604" name="cast_casting_to_device">"%1$s වෙත විකාශ කරමින්"</string>
     <string msgid="2888745622334830481" name="cast_closed_captions">"වැසූ සිරස්තල"</string>
@@ -34,8 +33,6 @@
     <string msgid="1162380934229249476" name="cast_tracks_chooser_dialog_cancel">"අවලංගු කරන්න"</string>
     <string msgid="1779359505126875127" name="cast_tracks_chooser_dialog_closed_captions">"වැසූ සිරස්තල"</string>
     <string msgid="3012268736704635952" name="cast_tracks_chooser_dialog_default_track_name">"ශ්‍රව්‍ය ඛණ්ඩය <ns1:g id="POSITION">%1$d</ns1:g>"</string>
-    <string msgid="5563446400083425854" name="cast_tracks_chooser_dialog_no_audio_tracks">"ලබා ගත හැකි ශ්‍රව්‍ය ඛණ්ඩ නැත"</string>
-    <string msgid="7413336699113748535" name="cast_tracks_chooser_dialog_no_text_tracks">"ලබා ගත හැකි පෙළ ඛණ්ඩ නැත"</string>
     <string msgid="1176688358580178396" name="cast_tracks_chooser_dialog_none">"කිසිවක් නැත"</string>
     <string msgid="3804878371876790270" name="cast_tracks_chooser_dialog_ok">"හරි"</string>
     <string msgid="2454147715032376208" name="cast_tracks_chooser_dialog_subtitles">"උපසිරැසි"</string>
@@ -57,16 +54,13 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"දුරකථනය තුළ විවෘත කරන්න"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"පුරන්න"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Google සමගින් පුරන්න"</string>
-    <string msgid="6155048007205742679" name="create_calendar_message">"වෙළඳ දැන්වීමට දින දර්ශන සිදුවීමක් සෑදීමට ඉඩ දෙන්නද?"</string>
-    <string msgid="7967007864778154790" name="create_calendar_title">"දින දර්ශන සිදුවීම සාදන්න"</string>
-    <string msgid="4722375419392727435" name="debug_menu_ad_information">"වෙළඳ දැන්වීම් තොරතුරු"</string>
-    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"නිර්මාණශීලී පෙරදසුන"</string>
-    <string msgid="2039274714455389140" name="debug_menu_title">"දෝෂහරණ ප්‍රකාරයක් තෝරන්න"</string>
-    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"දෝෂාවේක්ෂය"</string>
-    <string msgid="6099173376375995052" name="decline">"ප්‍රතික්ෂේප කරන්න"</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"සෙවීම හිස් කරන්න"</string>
     <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"සෙවීම"</string>
-    <string msgid="8020323581538738027" name="store_picture_message">"වෙළඳ දැන්වීමට පින්තූර ගැලරිය තුළ රූපය ගබඩා කිරීමට ඉඩ දෙන්නද?"</string>
-    <string msgid="4180630057627064606" name="store_picture_title">"රූපය සුරකින්න"</string>
+    <string msgid="368094699078615544" name="s1">"රූපය සුරකින්න"</string>
+    <string msgid="4550830452390689489" name="s2">"වෙළඳ දැන්වීමට පින්තූර ගැලරිය තුළ රූපය ගබඩා කිරීමට ඉඩ දෙන්නද?"</string>
+    <string msgid="2435407834265420668" name="s3">"පිළිගන්න"</string>
+    <string msgid="9167523597401839819" name="s4">"ප්‍රතික්ෂේප කරන්න"</string>
+    <string msgid="1566682516266724847" name="s5">"දින දර්ශන සිදුවීම සාදන්න"</string>
+    <string msgid="5996672174517137271" name="s6">"වෙළඳ දැන්වීමට දින දර්ශන සිදුවීමක් සෑදීමට ඉඩ දෙන්නද?"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Google සමඟ මිලදී ගන්න"</string>
 </resources>

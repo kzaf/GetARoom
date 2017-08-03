@@ -34,25 +34,6 @@
                 android:scrollbars="vertical"
                 android:choiceMode="singleChoice"
                 android:scrollbarFadeDuration="1000" />
-            <TextView
-                android:id="@+id/text_empty_message"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/cast_tracks_chooser_dialog_no_text_tracks"
-                android:gravity="center"
-                android:textSize="@dimen/cast_tracks_chooser_dialog_no_message_text_size"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp" />
-
-            <TextView
-                android:id="@+id/audio_empty_message"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/cast_tracks_chooser_dialog_no_audio_tracks"
-                android:gravity="center"
-                android:textSize="@dimen/cast_tracks_chooser_dialog_no_message_text_size"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp" />
 
         </FrameLayout>
     </LinearLayout>

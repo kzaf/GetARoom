@@ -118,6 +118,8 @@ public class Fragment_Search extends Fragment {
                 String hotelName = hashMap.get("name");
                 String hotelCity = hashMap.get("name");
                 Toast.makeText(getActivity(), "Select option for hotel " + hotelName, Toast.LENGTH_SHORT).show();
+
+                //((MainActivity) getActivity()).hotelcoords(hotelName); //load the coordinates for the selected hotel
                 ((MainActivity) getActivity()).hotelBooking(hotelName, hotelCity, checkin, checkout);
 
             }

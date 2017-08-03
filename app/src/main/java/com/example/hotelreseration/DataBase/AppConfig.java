@@ -8,6 +8,7 @@ public class AppConfig {
     public static String URL_LOAD_COORDINATES = "http://ptyxiaki2016.eu.pn/loadcoordinates.php";
     public static String URL_LOAD_RESULT_HOTELS = "http://ptyxiaki2016.eu.pn/resulthotels.php";
     public static String URL_LOAD_BOOKING_COORDS = "http://ptyxiaki2016.eu.pn/bookingcoords.php";
+    public static String URL_MAKE_BOOKING = "http://ptyxiaki2016.eu.pn/makebooking.php";
 
     // Server user register url
     public static String URL_REGISTER_OWNER = "http://ptyxiaki2016.eu.pn/registerowner.php";

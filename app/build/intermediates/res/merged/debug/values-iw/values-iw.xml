@@ -19,7 +19,6 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"שתף עם"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"‏שתף עם %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"כווץ"</string>
-    <string msgid="5835639618285370804" name="accept">"מסכים"</string>
     <string msgid="4778414446709286370" name="cast_ad_label">"מודעה"</string>
     <string msgid="366047012176970604" name="cast_casting_to_device">"‏מעביר אל %1$s"</string>
     <string msgid="2888745622334830481" name="cast_closed_captions">"כתוביות"</string>
@@ -53,8 +52,6 @@
     <string msgid="1162380934229249476" name="cast_tracks_chooser_dialog_cancel">"בטל"</string>
     <string msgid="1779359505126875127" name="cast_tracks_chooser_dialog_closed_captions">"כתוביות"</string>
     <string msgid="3012268736704635952" name="cast_tracks_chooser_dialog_default_track_name">"רצועה <ns1:g id="POSITION">%1$d</ns1:g>"</string>
-    <string msgid="5563446400083425854" name="cast_tracks_chooser_dialog_no_audio_tracks">"רצועות אודיו לא זמינות"</string>
-    <string msgid="7413336699113748535" name="cast_tracks_chooser_dialog_no_text_tracks">"רצועות טקסט לא זמינות"</string>
     <string msgid="1176688358580178396" name="cast_tracks_chooser_dialog_none">"אף אחת"</string>
     <string msgid="3804878371876790270" name="cast_tracks_chooser_dialog_ok">"אישור"</string>
     <string msgid="2454147715032376208" name="cast_tracks_chooser_dialog_subtitles">"כתוביות"</string>
@@ -76,13 +73,6 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"פתח בטלפון"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"היכנס"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"‏היכנס באמצעות Google"</string>
-    <string msgid="6155048007205742679" name="create_calendar_message">"האם לאפשר למודעה ליצור אירוע ביומן?"</string>
-    <string msgid="7967007864778154790" name="create_calendar_title">"צור אירוע יומן"</string>
-    <string msgid="4722375419392727435" name="debug_menu_ad_information">"פרטי המודעה"</string>
-    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"תצוגה מקדימה של קריאייטיב"</string>
-    <string msgid="2039274714455389140" name="debug_menu_title">"בחר מצב של ניפוי באגים"</string>
-    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"פתרון בעיות"</string>
-    <string msgid="6099173376375995052" name="decline">"דחה"</string>
     <string msgid="3698378085901466129" name="mr_button_content_description">"‏לחצן הפעלת Cast"</string>
     <string msgid="5088427771788648085" name="mr_cast_button_connected">"‏לחצן הפעלת Cast. מחובר"</string>
     <string msgid="2187642765091873834" name="mr_cast_button_connecting">"‏לחצן הפעלת Cast. מתחבר"</string>
@@ -105,9 +95,13 @@
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"מכשירים"</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"נקה את החיפוש"</string>
     <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"חיפוש"</string>
+    <string msgid="368094699078615544" name="s1">"שמור את התמונה"</string>
+    <string msgid="4550830452390689489" name="s2">"האם לאפשר למודעה לאחסן תמונה בגלריית התמונות?"</string>
+    <string msgid="2435407834265420668" name="s3">"קבל"</string>
+    <string msgid="9167523597401839819" name="s4">"דחה"</string>
+    <string msgid="1566682516266724847" name="s5">"צור אירוע ביומן"</string>
+    <string msgid="5996672174517137271" name="s6">"האם לאפשר למודעה ליצור אירוע ביומן?"</string>
     <string msgid="146198913615257606" name="search_menu_title">"חפש"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"‎999+‎"</string>
-    <string msgid="8020323581538738027" name="store_picture_message">"האם לאפשר למודעה לאחסן תמונה בגלריית התמונות?"</string>
-    <string msgid="4180630057627064606" name="store_picture_title">"שמור תמונה"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"קנה בעזרת Google"</string>
 </resources>

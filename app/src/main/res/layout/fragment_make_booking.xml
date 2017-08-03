@@ -35,115 +35,74 @@
             <View
                 android:id="@+id/separator"
                 android:layout_width="wrap_content"
-                android:layout_height="1dp"
+                android:layout_height="3dp"
                 android:layout_alignParentLeft="true"
                 android:layout_below="@id/bookingtitle"
                 android:background="@android:color/darker_gray"
                 android:visibility="visible"
                 tools:ignore="RtlHardcoded"/>
 
-
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView4"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_marginEnd="26dp"
+                android:layout_toStartOf="@+id/textView17"
                 android:text="Check In"
                 android:textColor="@android:color/holo_green_dark"
                 android:textSize="18sp"
-                android:textStyle="bold"
-                android:layout_alignBaseline="@+id/textView4"
-                android:layout_alignBottom="@+id/textView4"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="35dp"/>
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="17dp"
+                android:layout_below="@+id/separator"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="11dp"
+                android:layout_toEndOf="@+id/textView17"
                 android:text="Check Out"
                 android:textColor="@android:color/holo_red_dark"
                 android:textSize="18sp"
-                android:textStyle="bold"
-                android:layout_above="@+id/tvCheckOut"
-                android:layout_alignEnd="@+id/textView36"
-                android:layout_marginEnd="8dp"/>
+                android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/tvCheckIn"
+                android:id="@+id/tvCheckin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/textView3"
-                android:layout_below="@+id/separator"
-                android:layout_marginTop="68dp"
+                android:layout_below="@+id/textView4"
+                android:layout_marginTop="14dp"
                 android:text="--/--/----"/>
 
             <TextView
                 android:id="@+id/tvCheckOut"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/tvCheckIn"
-                android:layout_alignBottom="@+id/tvCheckIn"
+                android:layout_alignBaseline="@+id/tvCheckin"
+                android:layout_alignBottom="@+id/tvCheckin"
                 android:layout_alignStart="@+id/textView4"
                 android:text="--/--/----"/>
 
-            <EditText
-                android:id="@+id/editText12"
+            <View
+                android:id="@+id/sep"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/textView40"
-                android:layout_alignStart="@+id/textView40"
-                android:layout_below="@+id/textView41"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="0"
-                android:inputType="textPersonName"/>
-
-            <EditText
-                android:id="@+id/editText13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/textView41"
-                android:layout_alignStart="@+id/textView41"
-                android:layout_below="@+id/textView41"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="0"
-                android:inputType="textPersonName"/>
-
-            <EditText
-                android:id="@+id/editText14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/editText13"
-                android:layout_alignBottom="@+id/editText13"
-                android:layout_alignEnd="@+id/textView36"
-                android:layout_alignStart="@+id/textView36"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="0"
-                android:inputType="textPersonName"/>
-
-            <TextView
-                android:id="@+id/textView36"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/textView41"
-                android:layout_alignBottom="@+id/textView41"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="26dp"
-                android:text="Children:"
-                android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:layout_height="3dp"
+                android:layout_below="@id/tvCheckin"
+                android:background="@android:color/darker_gray"
+                android:visibility="visible"
+                tools:ignore="RtlHardcoded"/>
 
             <TextView
                 android:id="@+id/textView41"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/textView40"
-                android:layout_alignBottom="@+id/textView40"
-                android:layout_centerHorizontal="true"
-                android:text="Adults:"
+                android:layout_alignStart="@+id/textView40"
+                android:layout_below="@+id/textView40"
+                android:layout_marginTop="16dp"
+                android:text="Children:"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
 
@@ -151,12 +110,102 @@
                 android:id="@+id/textView40"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="42dp"
-                android:text="Nights:"
+                android:layout_alignStart="@+id/textView3"
+                android:layout_below="@+id/tvCheckin"
+                android:layout_marginTop="45dp"
+                android:text="Adults:"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_below="@+id/tvCheckIn"
-                android:layout_alignStart="@+id/textView3"/>
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupBedsNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerChildren"
+                android:layout_marginTop="82dp"
+                android:layout_toEndOf="@+id/textView17"
+                android:checkedButton="@+id/radioOne">
+
+                <RadioButton
+                    android:id="@+id/radioOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Single Bed"/>
+
+                <RadioButton
+                    android:id="@+id/radioTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Double Bed"/>
+
+                <RadioButton
+                    android:id="@+id/radioThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Triple Bed"/>
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radioGroupRoomType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView41"
+                android:layout_alignTop="@+id/radioGroupBedsNo"
+                android:checkedButton="@+id/radioRegular">
+
+                <RadioButton
+                    android:id="@+id/radioRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Regular Room"/>
+
+                <RadioButton
+                    android:id="@+id/radioLuxury"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Luxury Room"/>
+
+                <RadioButton
+                    android:id="@+id/radioSuite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Suite Room"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView41"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="27dp"
+                android:text="Room type:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/spinnerAdults"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView40"
+                android:layout_alignBottom="@+id/textView40"
+                android:layout_alignStart="@+id/tvCheckOut"
+                android:entries="@array/spinnerAdults"/>
+
+            <Spinner
+                android:id="@+id/spinnerChildren"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView41"
+                android:layout_alignStart="@+id/spinnerAdults"
+                android:layout_toEndOf="@+id/radioGroupRoomType"
+                android:entries="@array/spinnerChildren"/>
 
         </RelativeLayout>
 

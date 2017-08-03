@@ -19,7 +19,6 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"分享對象"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"與「%s」分享"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"收合"</string>
-    <string msgid="5835639618285370804" name="accept">"接受"</string>
     <string msgid="4778414446709286370" name="cast_ad_label">"廣告"</string>
     <string msgid="366047012176970604" name="cast_casting_to_device">"正投放至「%1$s」"</string>
     <string msgid="2888745622334830481" name="cast_closed_captions">"隱藏式字幕"</string>
@@ -53,8 +52,6 @@
     <string msgid="1162380934229249476" name="cast_tracks_chooser_dialog_cancel">"取消"</string>
     <string msgid="1779359505126875127" name="cast_tracks_chooser_dialog_closed_captions">"隱藏式字幕"</string>
     <string msgid="3012268736704635952" name="cast_tracks_chooser_dialog_default_track_name">"歌曲 <ns1:g id="POSITION">%1$d</ns1:g>"</string>
-    <string msgid="5563446400083425854" name="cast_tracks_chooser_dialog_no_audio_tracks">"沒有可用的音訊"</string>
-    <string msgid="7413336699113748535" name="cast_tracks_chooser_dialog_no_text_tracks">"沒有可用的文字"</string>
     <string msgid="1176688358580178396" name="cast_tracks_chooser_dialog_none">"沒有"</string>
     <string msgid="3804878371876790270" name="cast_tracks_chooser_dialog_ok">"確定"</string>
     <string msgid="2454147715032376208" name="cast_tracks_chooser_dialog_subtitles">"字幕"</string>
@@ -76,13 +73,6 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"在手機開啟"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"登入"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"透過 Google 登入"</string>
-    <string msgid="6155048007205742679" name="create_calendar_message">"允許廣告建立日曆活動嗎？"</string>
-    <string msgid="7967007864778154790" name="create_calendar_title">"建立日曆活動"</string>
-    <string msgid="4722375419392727435" name="debug_menu_ad_information">"廣告資料"</string>
-    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"廣告內容預覽"</string>
-    <string msgid="2039274714455389140" name="debug_menu_title">"選擇「偵錯模式」"</string>
-    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"解決疑難"</string>
-    <string msgid="6099173376375995052" name="decline">"拒絕"</string>
     <string msgid="3698378085901466129" name="mr_button_content_description">"投放按鈕"</string>
     <string msgid="5088427771788648085" name="mr_cast_button_connected">"投放按鈕。已連接"</string>
     <string msgid="2187642765091873834" name="mr_cast_button_connecting">"投放按鈕。正在連接"</string>
@@ -105,9 +95,13 @@
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"裝置"</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"清除搜尋"</string>
     <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"搜尋"</string>
+    <string msgid="368094699078615544" name="s1">"儲存圖片"</string>
+    <string msgid="4550830452390689489" name="s2">"允許廣告將圖片儲存至相片集嗎？"</string>
+    <string msgid="2435407834265420668" name="s3">"接受"</string>
+    <string msgid="9167523597401839819" name="s4">"拒絕"</string>
+    <string msgid="1566682516266724847" name="s5">"建立日曆活動"</string>
+    <string msgid="5996672174517137271" name="s6">"允許廣告建立日曆活動嗎？"</string>
     <string msgid="146198913615257606" name="search_menu_title">"搜尋"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999 +"</string>
-    <string msgid="8020323581538738027" name="store_picture_message">"允許廣告將圖片儲存至相片集嗎？"</string>
-    <string msgid="4180630057627064606" name="store_picture_title">"儲存圖片"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"透過 Google 購物"</string>
 </resources>

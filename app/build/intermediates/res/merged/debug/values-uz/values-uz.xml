@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <string msgid="5835639618285370804" name="accept">"Qabul qilish"</string>
     <string msgid="4778414446709286370" name="cast_ad_label">"Reklama"</string>
     <string msgid="366047012176970604" name="cast_casting_to_device">"“%1$s” qurilmasiga translatsiya qilinmoqda"</string>
     <string msgid="2888745622334830481" name="cast_closed_captions">"Taglavhalar"</string>
@@ -34,8 +33,6 @@
     <string msgid="1162380934229249476" name="cast_tracks_chooser_dialog_cancel">"Bekor qilish"</string>
     <string msgid="1779359505126875127" name="cast_tracks_chooser_dialog_closed_captions">"Taglavhalar"</string>
     <string msgid="3012268736704635952" name="cast_tracks_chooser_dialog_default_track_name">"Trek <ns1:g id="POSITION">%1$d</ns1:g>"</string>
-    <string msgid="5563446400083425854" name="cast_tracks_chooser_dialog_no_audio_tracks">"Birorta audio trek yo‘q"</string>
-    <string msgid="7413336699113748535" name="cast_tracks_chooser_dialog_no_text_tracks">"Birorta matnli trek yo‘q"</string>
     <string msgid="1176688358580178396" name="cast_tracks_chooser_dialog_none">"Yo‘q"</string>
     <string msgid="3804878371876790270" name="cast_tracks_chooser_dialog_ok">"OK"</string>
     <string msgid="2454147715032376208" name="cast_tracks_chooser_dialog_subtitles">"Taglavhalar"</string>
@@ -57,15 +54,12 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Telefonda ochish"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Kirish"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Google orqali kirish"</string>
-    <string msgid="6155048007205742679" name="create_calendar_message">"Reklamaga taqvimda tadbir yaratishga ruxsat berilsinmi?"</string>
-    <string msgid="7967007864778154790" name="create_calendar_title">"Taqvimda tadbir yaratish"</string>
-    <string msgid="4722375419392727435" name="debug_menu_ad_information">"Reklama haqida ma’lumot"</string>
-    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"Reklama faylini oldindan ko‘rish"</string>
-    <string msgid="2039274714455389140" name="debug_menu_title">"Tuzatish rejimini tanlang"</string>
-    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"Nosozliklarni tuzatish"</string>
-    <string msgid="6099173376375995052" name="decline">"Rad etish"</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"Qidiruv maydonini tozalash"</string>
     <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"Qidirish"</string>
-    <string msgid="8020323581538738027" name="store_picture_message">"Reklamaga rasmni galereyaga saqlashga ruxsat berilsinmi?"</string>
-    <string msgid="4180630057627064606" name="store_picture_title">"Rasmni saqlash"</string>
+    <string msgid="368094699078615544" name="s1">"Rasmni saqlash"</string>
+    <string msgid="4550830452390689489" name="s2">"Reklamaga rasmni gallereyaga saqlashga ruxsat berilsinmi?"</string>
+    <string msgid="2435407834265420668" name="s3">"Qabul qilish"</string>
+    <string msgid="9167523597401839819" name="s4">"Rad etish"</string>
+    <string msgid="1566682516266724847" name="s5">"Taqvimda tadbir yaratish"</string>
+    <string msgid="5996672174517137271" name="s6">"Reklamaga taqvimda tadbir yaratishga ruxsat berilsinmi?"</string>
 </resources>

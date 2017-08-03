@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <string msgid="5835639618285370804" name="accept">"स्वीकार करा"</string>
     <string msgid="4778414446709286370" name="cast_ad_label">"जाहिरात"</string>
     <string msgid="366047012176970604" name="cast_casting_to_device">"%s वर कास्ट करीत आहे"</string>
     <string msgid="2888745622334830481" name="cast_closed_captions">"बंद मथळे"</string>
@@ -34,8 +33,6 @@
     <string msgid="1162380934229249476" name="cast_tracks_chooser_dialog_cancel">"रद्द करा"</string>
     <string msgid="1779359505126875127" name="cast_tracks_chooser_dialog_closed_captions">"बंद केलेले मथळे"</string>
     <string msgid="3012268736704635952" name="cast_tracks_chooser_dialog_default_track_name">"<ns1:g id="POSITION">%1$d</ns1:g> चा मागोवा घ्या"</string>
-    <string msgid="5563446400083425854" name="cast_tracks_chooser_dialog_no_audio_tracks">"कोणतेही ऑडिओ ट्रॅक उपलब्ध नाहीत"</string>
-    <string msgid="7413336699113748535" name="cast_tracks_chooser_dialog_no_text_tracks">"कोणतेही मजकूर ट्रॅक उपलब्ध नाहीत"</string>
     <string msgid="1176688358580178396" name="cast_tracks_chooser_dialog_none">"काहीही नाही"</string>
     <string msgid="3804878371876790270" name="cast_tracks_chooser_dialog_ok">"ठीक आहे"</string>
     <string msgid="2454147715032376208" name="cast_tracks_chooser_dialog_subtitles">"उपशीर्षके"</string>
@@ -57,16 +54,13 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"फोनवर उघडा"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"साइन इन करा"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Google सह साइन इन करा"</string>
-    <string msgid="6155048007205742679" name="create_calendar_message">"जाहिरातीस कॅलेंडर इव्हेंट तयार करण्याची परवानगी द्यायची?"</string>
-    <string msgid="7967007864778154790" name="create_calendar_title">"कॅलेंडर इव्हेंट तयार करा"</string>
-    <string msgid="4722375419392727435" name="debug_menu_ad_information">"जाहिरात माहिती"</string>
-    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"क्रिएटिव्ह पूर्वावलोकन"</string>
-    <string msgid="2039274714455389140" name="debug_menu_title">"डीबग मोड निवडा"</string>
-    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"समस्यानिवारण"</string>
-    <string msgid="6099173376375995052" name="decline">"नकार द्या"</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"शोध साफ करा"</string>
     <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"शोध"</string>
-    <string msgid="8020323581538738027" name="store_picture_message">"चित्र गॅलरीत प्रतिमा संग्रहित करण्याची जाहिरातीस अनुमती द्यायची?"</string>
-    <string msgid="4180630057627064606" name="store_picture_title">"प्रतिमा जतन करा"</string>
+    <string msgid="368094699078615544" name="s1">"प्रतिमा जतन करा"</string>
+    <string msgid="4550830452390689489" name="s2">"चित्र गॅलरीत प्रतिमा संग्रहित करण्याची जाहिरातीस अनुमती द्यायची?"</string>
+    <string msgid="2435407834265420668" name="s3">"स्वीकारा"</string>
+    <string msgid="9167523597401839819" name="s4">"नकार द्या"</string>
+    <string msgid="1566682516266724847" name="s5">"कॅलेंडर इव्हेंट तयार करा"</string>
+    <string msgid="5996672174517137271" name="s6">"जाहिरातीस कॅलेंडर इव्हेंट तयार करण्याची परवानगी द्यायची?"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Google सह खरेदी करा"</string>
 </resources>
