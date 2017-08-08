@@ -10,6 +10,16 @@
     tools:context="com.example.hotelreseration.NavigationDrawer.Fragment_hotels" >
 
     <TextView
+        android:id="@+id/nofavoriteslabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="No favorite hotels has been added yet!"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#9f0007"/>
+
+    <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,8 +46,9 @@
         android:layout_width="match_parent"
         android:layout_height="330dp"
         tools:ignore="RtlHardcoded"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true">
+        android:layout_below="@+id/view"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp">
     </ListView>
 
 </RelativeLayout>

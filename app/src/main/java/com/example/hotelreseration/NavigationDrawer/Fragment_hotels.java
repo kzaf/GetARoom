@@ -25,10 +25,7 @@ public class Fragment_hotels extends Fragment {
     static TextView txt;
 	
 	@Override
-	public View onCreateView(
-			LayoutInflater inflater,
-			ViewGroup container,
-			Bundle savedInstanceState){
+	public View onCreateView( LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
 
 		View view = inflater.inflate(R.layout.fragment_hotels, container,false);
 		listView = (ListView) view.findViewById(R.id.list);
@@ -42,7 +39,7 @@ public class Fragment_hotels extends Fragment {
 		listView.setAdapter(adapter);
 
 		if(listView.getCount()==0){
-    		txt.setVisibility(View.VISIBLE); //show/hide the "add a new hotel" message
+    		txt.setVisibility(View.VISIBLE); //show/hide the "add a new hotel" label
     	}else{
     		txt.setVisibility(View.GONE);
     	}
