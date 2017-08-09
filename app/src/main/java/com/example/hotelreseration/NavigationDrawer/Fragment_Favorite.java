@@ -45,17 +45,16 @@ public class Fragment_Favorite extends Fragment {
 
         ((MainActivity) getActivity()).loadFavorites(dboFKey);
 
-
-        //energopoiw to click event otan epilegw ena item apo to listview
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,int position, long id) {
 
                 HashMap<String, String> hashMap = (HashMap<String, String>) listView.getItemAtPosition(position);
-                String hotelname = hashMap.get("hotelname");
+                String hotelname = hashMap.get("name");
                 Toast.makeText(getActivity(), "Hotel " + hotelname, Toast.LENGTH_LONG).show();
+
             }
         });
 
         return view;
-    }   
+    }
 }

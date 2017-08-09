@@ -65,6 +65,7 @@ import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_COORDINATE
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_FAVORITES;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_HOTELS;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_RESULT_HOTELS;
+import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_TRAVELER_MYBOOKINGS;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_MAKE_BOOKING;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_REGISTER_COORDINATES;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_REGISTER_FAVORITES;
@@ -1600,6 +1601,94 @@ public class MainActivity extends ActionBarActivity {
         AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
     }
 
+    void loadMyBookings(final String dboFKey){
+        // Tag used to cancel the request
+        String tag_string_req = "req_login";
+
+        pDialog.setMessage("Loading bookings ...");
+        showDialog();
+
+        StringRequest strReq = new StringRequest(Request.Method.POST, URL_LOAD_TRAVELER_MYBOOKINGS, new Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String response) {
+
+                hideDialog();
+
+                try {
+                    JSONObject jObj = new JSONObject(response);
+                    boolean error = jObj.getBoolean("error");
+                    // Check for error node in json
+                    if (!error) {
+                        if(Fragment_Booked.myBookingslistView.getCount()==0){
+
+                            Fragment_Booked.records.clear(); //clear the old list and load the new one
+
+                            JSONArray jhotel= jObj.getJSONArray("hotel");
+                            Log.d("hotel",jhotel.toString());
+
+                            for(int i=0; i<jhotel.length(); i++){
+                                HashMap<String,String> hotelhm = new HashMap<>();
+                                JSONObject hotel = jhotel.getJSONObject(i);
+                                final String resID = hotel.getString("reservationID");
+                                final String hoteln = hotel.getString("hotelname");
+                                final String checkn = hotel.getString("checkin");
+                                final String checkt = hotel.getString("checkout");
+                                final String dates = checkn + " to " + checkt;
+                                final String tid = hotel.getString("tidFK");
+
+                                hotelhm.put("resID",resID);
+                                hotelhm.put("hotelname",hoteln);
+                                hotelhm.put("checkin", checkn);
+                                hotelhm.put("checkout", checkt);
+                                hotelhm.put("dates", dates);
+                                hotelhm.put("tid", tid);
+
+                                Fragment_Booked.records.add(hotelhm);
+                            }
+                            Fragment_Booked.adapter.notifyDataSetChanged(); //Notify the adapter for the update
+                        }else{
+                            Toast.makeText(getApplicationContext(), "Your Bookings", Toast.LENGTH_SHORT).show();
+                        }
+                        Fragment_Booked.nobookings.setVisibility(GONE);
+
+                    } else {
+                        // Error in login. Get the error message
+                        String errorMsg = jObj.getString("error_msg");
+                        Toast.makeText(getApplicationContext(),
+                                errorMsg, Toast.LENGTH_LONG).show();
+                    }
+                } catch (JSONException e) {
+                    // JSON error
+                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e(TAG, "Login Error: " + error.getMessage());
+                Toast.makeText(getApplicationContext(),
+                        error.getMessage(), Toast.LENGTH_LONG).show();
+                hideDialog();
+            }
+        }) {
+
+            @Override
+            protected Map<String, String> getParams() {
+                // Posting parameters to login url
+                Map<String, String> params = new HashMap<>();
+                params.put("oidFK", dboFKey);
+
+                return params;
+            }
+        };
+        // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+    }
+
     private void loadHotels(final String dboFKey){
         // Tag used to cancel the request
         String tag_string_req = "req_login";
@@ -2188,7 +2277,7 @@ public class MainActivity extends ActionBarActivity {
         AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
     }
 
-    // Dialog
+    // Progress Dialog
     private void showDialog() {
         if (!pDialog.isShowing())
             pDialog.show();
