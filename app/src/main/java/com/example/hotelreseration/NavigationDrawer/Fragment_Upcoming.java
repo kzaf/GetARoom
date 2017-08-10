@@ -1,6 +1,7 @@
 package com.example.hotelreseration.NavigationDrawer;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import com.example.hotelreseration.R;
 import android.os.Bundle;
@@ -10,18 +11,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.TextView;
+
+import static com.example.hotelreseration.NavigationDrawer.MainActivity.dboFKey;
 
 public class Fragment_Upcoming extends Fragment {
 
-	ArrayList<String> Target = new ArrayList<>();
-    TextView txt;
-
-	public void a(){
-        Target.add("hi");
-        Target.add("hello");
-        Target.add("wrum");
-	}
+    static ArrayList<HashMap<String,String>> records = new ArrayList<>();
+	static ListView UpcomminglistView;
+    static SimpleAdapter adapter;
+    static TextView txt;
 
 	@Override
 	public View onCreateView(
@@ -30,18 +30,18 @@ public class Fragment_Upcoming extends Fragment {
             Bundle savedInstanceState){
 	  	    View view = inflater.inflate(R.layout.fragment_owner_upcoming, container,false);
 
-	    ListView listView = (ListView) view.findViewById(R.id.searchList);
+	    UpcomminglistView = (ListView) view.findViewById(R.id.upcomingResList);
 	    txt=(TextView) view.findViewById(R.id.nobookingtxt);
-	    
-	    
-	    ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity().getApplicationContext(),
-	    		R.layout.mytextview,R.id.tv, Target);
-	    adapter.setNotifyOnChange(true);
+
+        adapter = new SimpleAdapter(getActivity(), records, R.layout.mytextview, new String[] {"hotelname","dates"}, new int[] {R.id.tv,R.id.sub});
+        UpcomminglistView.setAdapter(adapter);// Assign adapter to ListView
 	    
 	    // Assign adapter to ListView
-	    listView.setAdapter(adapter);
+		UpcomminglistView.setAdapter(adapter);
+
+        ((MainActivity) getActivity()).loadOwnerReservations(dboFKey);
 	    
-	    if(listView.getCount()==0){
+	    if(UpcomminglistView.getCount()==0){
     		txt.setVisibility(View.VISIBLE);
     	}else{
     		txt.setVisibility(View.GONE);

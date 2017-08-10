@@ -33,8 +33,10 @@ public class Fragment_reservations extends Fragment {
         if(SelectUserActivity.flagOwner){
         	mTabHost.addTab(mTabHost.newTabSpec("fragmentb").setIndicator("Running"),
                     Fragment_Running.class, null);
-            mTabHost.addTab(mTabHost.newTabSpec("fragmentc").setIndicator("Upcoming"),
+            mTabHost.addTab(mTabHost.newTabSpec("fragmentd").setIndicator("Upcoming"),
                     Fragment_Upcoming.class, null);
+            mTabHost.addTab(mTabHost.newTabSpec("fragmentc").setIndicator("Past"),
+                    Fragment_Past.class, null);
 
         }else{
         	mTabHost.addTab(mTabHost.newTabSpec("fragmentb").setIndicator("Search"),

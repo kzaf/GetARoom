@@ -49,7 +49,7 @@ public class Fragment_Favorite extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view,int position, long id) {
 
                 HashMap<String, String> hashMap = (HashMap<String, String>) listView.getItemAtPosition(position);
-                String hotelname = hashMap.get("name");
+                String hotelname = hashMap.get("hotelname");
                 Toast.makeText(getActivity(), "Hotel " + hotelname, Toast.LENGTH_LONG).show();
 
             }

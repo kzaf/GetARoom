@@ -15,6 +15,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 
 import android.util.Log;
@@ -64,6 +65,7 @@ import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_BOOKING_CO
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_COORDINATES;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_FAVORITES;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_HOTELS;
+import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_OWNER_RESERVATIONS;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_RESULT_HOTELS;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_TRAVELER_MYBOOKINGS;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_MAKE_BOOKING;
@@ -1141,6 +1143,7 @@ public class MainActivity extends ActionBarActivity {
 
     @SuppressLint("InflateParams")
     @SuppressWarnings("deprecation")
+
     public void SetDate(final boolean flag){
 
         final AlertDialog alertDialog = new AlertDialog.Builder(context).create();
@@ -1164,13 +1167,13 @@ public class MainActivity extends ActionBarActivity {
                 year=datePicker.getYear();
 
                 if (flag){
-                    CheckIn.setText(new StringBuilder().append(day).append(" ").append("-").append(month).append("-").append(year));
+                    CheckIn.setText(new StringBuilder().append(day).append("/").append(month).append("/").append(year));
                 }
                 else{
 
                     String a = CheckIn.getText().toString();
 
-                    String[] partsa = a.split("-");
+                    String[] partsa = a.split("/");
                     String part1a = partsa[0];
                     String[] p = part1a.split(" ");
                     part1a = p[0];
@@ -1181,20 +1184,20 @@ public class MainActivity extends ActionBarActivity {
                     int p3a = Integer.parseInt(part3a);
 
                     if(p3a < year){
-                        CheckOut.setText(new StringBuilder().append(day).append(" ").
-                                append("-").append(month).append("-").append(year));
+                        CheckOut.setText(new StringBuilder().append(day).
+                                append("/").append(month).append("/").append(year));
                         flg[0] = true;
                     }else if(p3a == year)
                     {
                         if(p2a < month){
-                            CheckOut.setText(new StringBuilder().append(day).append(" ").
-                                    append("-").append(month).append("-").append(year));
+                            CheckOut.setText(new StringBuilder().append(day).
+                                    append("/").append(month).append("/").append(year));
                             flg[0] = true;
                         }else if(p2a == month)
                         {
                             if(p1a < day){
-                                CheckOut.setText(new StringBuilder().append(day).append(" ").
-                                        append("-").append(month).append("-").append(year));
+                                CheckOut.setText(new StringBuilder().append(day).
+                                        append("/").append(month).append("/").append(year));
                                 flg[0] = true;
                             }else{
                                 Toast.makeText(getApplicationContext(), "CheckIn date cannot be the same or bigger than CheckOut!", Toast.LENGTH_LONG).show();
@@ -1515,6 +1518,128 @@ public class MainActivity extends ActionBarActivity {
     }
 
     // Load Functions
+    void loadOwnerReservations(final String dboFKey){
+        // Tag used to cancel the request
+        String tag_string_req = "req_login";
+
+        pDialog.setMessage("Loading reservations ...");
+        showDialog();
+
+        StringRequest strReq = new StringRequest(Request.Method.POST, URL_LOAD_OWNER_RESERVATIONS, new Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String response) {
+                hideDialog();
+                try {
+                    JSONObject jObj = new JSONObject(response);
+                    boolean error = jObj.getBoolean("error");
+                    // Check for error node in json
+                    if (!error) {
+//                        if(Fragment_Running.RunninglistView.getCount()==0 &&
+//                                Fragment_Upcoming.UpcomminglistView.getCount()==0){
+
+                            Fragment_Running.records.clear(); //clear the old list and load the new one
+                            Fragment_Upcoming.records.clear();
+                            Fragment_Past.records.clear();
+
+                            JSONArray jhotel= jObj.getJSONArray("hotel");
+                            Log.d("hotel",jhotel.toString());
+
+                            for(int i=0; i<jhotel.length(); i++){
+                                HashMap<String,String> hotelhm = new HashMap<>();
+                                JSONObject hotel = jhotel.getJSONObject(i);
+                                final String resID = hotel.getString("reservationID");
+                                final String hoteln = hotel.getString("hotelname");
+                                final String checkn = hotel.getString("checkin");
+                                final String checkt = hotel.getString("checkout");
+                                final String dates = checkn + " - " + checkt;
+                                final String tid = hotel.getString("tidFK");
+
+                                String a = checkt;
+
+                                String[] partsa = a.split("/");
+                                String part1a = partsa[0];
+                                String[] p = part1a.split(" ");
+                                part1a = p[0];
+                                String part2a = partsa[1];
+                                String part3a = partsa[2];
+                                int p1a = Integer.parseInt(part1a);
+                                int p2a = Integer.parseInt(part2a);
+                                int p3a = Integer.parseInt(part3a);
+
+                                Calendar c = Calendar.getInstance();
+                                final int y = c.get(Calendar.YEAR);
+                                final int m = c.get(Calendar.MONTH) + 1;
+                                final int d = c.get(Calendar.DATE);
+
+                                hotelhm.put("resID",resID);
+                                hotelhm.put("hotelname",hoteln);
+                                hotelhm.put("checkin", checkn);
+                                hotelhm.put("checkout", checkt);
+                                hotelhm.put("dates", dates);
+                                hotelhm.put("tid", tid);
+
+                                if(p3a > y){
+                                    Fragment_Running.records.add(hotelhm);
+                                }else if(p3a == y){
+                                    if(p2a > m){
+                                        Fragment_Running.records.add(hotelhm);
+                                    }else if(p2a == m){
+                                        if(p1a > d){
+                                            Fragment_Running.records.add(hotelhm);
+                                        }else{
+                                            Fragment_Past.records.add(hotelhm);
+                                        }
+                                    }else{
+                                        Fragment_Past.records.add(hotelhm);
+                                    }
+                                }else{
+                                    Fragment_Past.records.add(hotelhm);
+                                }
+                            }
+//                            Fragment_Upcoming.adapter.notifyDataSetChanged(); //Notify the adapter for the update
+//                            Fragment_Running.adapter.notifyDataSetChanged();
+//                            Fragment_Past.adapter.notifyDataSetChanged();
+////                        }else{
+//                            Toast.makeText(getApplicationContext(), "Your Reservations", Toast.LENGTH_SHORT).show();
+//                        }
+                    } else {
+                        // Error in login. Get the error message
+                        String errorMsg = jObj.getString("error_msg");
+                        Toast.makeText(getApplicationContext(),
+                                errorMsg, Toast.LENGTH_LONG).show();
+                    }
+                } catch (JSONException e) {
+                    // JSON error
+                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e(TAG, "Login Error: " + error.getMessage());
+                Toast.makeText(getApplicationContext(),
+                        error.getMessage(), Toast.LENGTH_LONG).show();
+                hideDialog();
+            }
+        }) {
+
+            @Override
+            protected Map<String, String> getParams() {
+                // Posting parameters to login url
+                Map<String, String> params = new HashMap<>();
+                params.put("oidFK", dboFKey);
+
+                return params;
+            }
+        };
+        // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+    }
+
     void loadFavorites(final String dboFKey){
         // Tag used to cancel the request
         String tag_string_req = "req_login";
@@ -1526,8 +1651,6 @@ public class MainActivity extends ActionBarActivity {
 
             @Override
             public void onResponse(String response) {
-                //Log.d(TAG, "Login Response: " + response.toString());
-                //String resp = response.toString();
                 hideDialog();
 
                 try {
@@ -1535,33 +1658,33 @@ public class MainActivity extends ActionBarActivity {
                     boolean error = jObj.getBoolean("error");
                     // Check for error node in json
                     if (!error) {
-                        if(Fragment_Favorite.listView.getCount()==0){
+                        //if(Fragment_Favorite.listView.getCount()==0){
 
-                            hotels.records.clear(); //clear the old list and load the new one
+                        Fragment_Favorite.records.clear(); //clear the old list and load the new one
 
-                            JSONArray jhotel= jObj.getJSONArray("hotel");
-                            Log.d("hotel",jhotel.toString());
+                        JSONArray jhotel= jObj.getJSONArray("hotel");
+                        Log.d("hotel",jhotel.toString());
 
-                            for(int i=0; i<jhotel.length(); i++){
-                                HashMap<String,String> hotelhm = new HashMap<>();
-                                JSONObject hotel = jhotel.getJSONObject(i);
-                                final String fid = hotel.getString("fid");
-                                final String hname = hotel.getString("name");
-                                final String hcity = hotel.getString("city");
-                                final String userID = hotel.getString("userID");
+                        for(int i=0; i<jhotel.length(); i++){
+                            HashMap<String,String> hotelhm = new HashMap<>();
+                            JSONObject hotel = jhotel.getJSONObject(i);
+                            final String fid = hotel.getString("fid");
+                            final String hname = hotel.getString("name");
+                            final String hcity = hotel.getString("city");
+                            final String userID = hotel.getString("userID");
 
-                                hotelhm.put("fid",fid);
-                                hotelhm.put("hotelname",hname);
-                                hotelhm.put("hotelcity", hcity);
-                                hotelhm.put("userID", userID);
-                                hotelhm.put("tk", htk);
+                            hotelhm.put("fid",fid);
+                            hotelhm.put("hotelname",hname);
+                            hotelhm.put("hotelcity", hcity);
+                            hotelhm.put("userID", userID);
+                            hotelhm.put("tk", htk);
 
-                                Fragment_Favorite.records.add(hotelhm);
-                            }
-                            Fragment_Favorite.adapter.notifyDataSetChanged(); //Notify the adapter for the update
-                        }else{
-                            Toast.makeText(getApplicationContext(), "Your Favorite hotels", Toast.LENGTH_SHORT).show();
+                            Fragment_Favorite.records.add(hotelhm);
                         }
+                        Fragment_Favorite.adapter.notifyDataSetChanged(); //Notify the adapter for the update
+                       // }else{
+                       //     Toast.makeText(getApplicationContext(), "Your Favorite hotels", Toast.LENGTH_SHORT).show();
+                        //}
                         Fragment_Favorite.nofavoritesLabel.setVisibility(GONE);
 
                     } else {
@@ -1634,8 +1757,26 @@ public class MainActivity extends ActionBarActivity {
                                 final String hoteln = hotel.getString("hotelname");
                                 final String checkn = hotel.getString("checkin");
                                 final String checkt = hotel.getString("checkout");
-                                final String dates = checkn + " to " + checkt;
+                                final String dates = checkn + " - " + checkt;
                                 final String tid = hotel.getString("tidFK");
+
+
+                                String a = checkt;
+
+                                String[] partsa = a.split("/");
+                                String part1a = partsa[0];
+                                String[] p = part1a.split(" ");
+                                part1a = p[0];
+                                String part2a = partsa[1];
+                                String part3a = partsa[2];
+                                int p1a = Integer.parseInt(part1a);
+                                int p2a = Integer.parseInt(part2a);
+                                int p3a = Integer.parseInt(part3a);
+
+                                Calendar c = Calendar.getInstance();
+                                final int y = c.get(Calendar.YEAR);
+                                final int m = c.get(Calendar.MONTH) + 1;
+                                final int d = c.get(Calendar.DATE);
 
                                 hotelhm.put("resID",resID);
                                 hotelhm.put("hotelname",hoteln);
@@ -1644,7 +1785,31 @@ public class MainActivity extends ActionBarActivity {
                                 hotelhm.put("dates", dates);
                                 hotelhm.put("tid", tid);
 
-                                Fragment_Booked.records.add(hotelhm);
+                                if(p3a > y){
+                                    Fragment_Booked.records.add(hotelhm);
+                                }else if(p3a == y){
+                                    if(p2a > m){
+                                        Fragment_Booked.records.add(hotelhm);
+                                    }else if(p2a == m){
+                                        if(p1a > d){
+                                            Fragment_Booked.records.add(hotelhm);
+                                        }else{
+                                            //Save here a list with all the bookings so
+                                            //the user have the option to switch between
+                                            // all booking dates and the upcomming
+                                        }
+
+                                    }else{
+                                        //Save here a list with all the bookings so
+                                        //the user have the option to switch between
+                                        // all booking dates and the upcomming
+                                    }
+
+                                }else{
+                                    //Save here a list with all the bookings so
+                                    //the user have the option to switch between
+                                    // all booking dates and the upcomming
+                                }
                             }
                             Fragment_Booked.adapter.notifyDataSetChanged(); //Notify the adapter for the update
                         }else{

@@ -10,12 +10,12 @@
     tools:context="com.example.hotelreseration.NavigationDrawer.Fragment_hotels" >
 
     <ListView
-        android:id="@+id/searchList"
+        android:id="@+id/runningResList"
         android:layout_width="match_parent"
         android:layout_height="330dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        tools:ignore="RtlHardcoded" >
+        tools:ignore="RtlHardcoded">
     </ListView>
 
     <View
@@ -43,11 +43,11 @@
         android:id="@+id/onoma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/searchList"
-        android:layout_centerHorizontal="true"
         android:text="Running Reservations"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textStyle="bold"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:layout_above="@+id/runningResList"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
