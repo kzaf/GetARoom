@@ -35,14 +35,11 @@ public class Fragment_Running extends Fragment {
 		RunninglistView = (ListView) view.findViewById(R.id.runningResList);
 	    txt=(TextView) view.findViewById(R.id.nobookingtxt);
 
-		adapter = new SimpleAdapter(getActivity(), records, R.layout.mytextview, new String[] {"hotelname","dates"}, new int[] {R.id.tv,R.id.sub});
+		adapter = new SimpleAdapter(getActivity(), records, R.layout.mytextview, new String[] {"HotelandTravelertitle","dates"}, new int[] {R.id.tv,R.id.sub});
 		RunninglistView.setAdapter(adapter);// Assign adapter to ListView
 
-	    // Assign adapter to ListView
-		RunninglistView.setAdapter(adapter);
-
         ((MainActivity) getActivity()).loadOwnerReservations(dboFKey);
-	    
+
 	    if(RunninglistView.getCount()==0){
     		txt.setVisibility(View.VISIBLE);
     	}else{

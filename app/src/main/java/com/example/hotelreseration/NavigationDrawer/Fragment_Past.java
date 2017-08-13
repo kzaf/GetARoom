@@ -31,13 +31,11 @@ public class Fragment_Past extends Fragment {
         PastlistView = (ListView) view.findViewById(R.id.pastResList);
         txt=(TextView) view.findViewById(R.id.nopasttxt);
 
-        adapter = new SimpleAdapter(getActivity(), records, R.layout.mytextview, new String[] {"hotelname","dates"}, new int[] {R.id.tv,R.id.sub});
+        adapter = new SimpleAdapter(getActivity(), records, R.layout.mytextview, new String[] {"HotelandTravelertitle","dates"}, new int[] {R.id.tv,R.id.sub});
         PastlistView.setAdapter(adapter);// Assign adapter to ListView
 
-        // Assign adapter to ListView
-        PastlistView.setAdapter(adapter);
-
         ((MainActivity) getActivity()).loadOwnerReservations(dboFKey);
+        Fragment_Past.adapter.notifyDataSetChanged();
 
         if(PastlistView.getCount()==0){
             txt.setVisibility(View.VISIBLE);

@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="@string/no_reservation_done_yet_"
+        android:text="No past reservations"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#9f0007"
         tools:ignore="HardcodedText"/>
@@ -43,11 +43,11 @@
         android:id="@+id/pastRes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Running Reservations"
+        android:layout_above="@+id/pastResList"
+        android:layout_centerHorizontal="true"
+        android:text="Past Reservations"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textStyle="bold"
-        tools:ignore="HardcodedText"
-        android:layout_above="@+id/pastResList"
-        android:layout_centerHorizontal="true"/>
+        tools:ignore="HardcodedText"/>
 
 </RelativeLayout>

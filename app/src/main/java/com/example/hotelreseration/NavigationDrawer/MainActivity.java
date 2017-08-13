@@ -67,6 +67,7 @@ import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_FAVORITES;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_HOTELS;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_OWNER_RESERVATIONS;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_RESULT_HOTELS;
+import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_TRAVELER;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_LOAD_TRAVELER_MYBOOKINGS;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_MAKE_BOOKING;
 import static com.example.hotelreseration.DataBase.AppConfig.URL_REGISTER_COORDINATES;
@@ -125,6 +126,8 @@ public class MainActivity extends ActionBarActivity {
     public static boolean flagpinhotel = false;
     public String URL_DELETE, URL_UPDATE;
     public String hoteln;
+
+    public String travelerName;
 
     public static String hid, hn, hc, ha,
             htk, ht, hs, hoidFK, hw, hsp;
@@ -1518,6 +1521,70 @@ public class MainActivity extends ActionBarActivity {
     }
 
     // Load Functions
+    void findTravelerById(final String tID){
+        // Tag used to cancel the request
+        String tag_string_req = "req_login";
+
+        pDialog.setMessage("Loading reservations ...");
+        showDialog();
+
+        StringRequest strReq = new StringRequest(Request.Method.POST, URL_LOAD_TRAVELER, new Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String response) {
+                hideDialog();
+                try {
+                    JSONObject jObj = new JSONObject(response);
+                    boolean error = jObj.getBoolean("error");
+                    // Check for error node in json
+                    if (!error) {
+                        JSONArray juser= jObj.getJSONArray("traveler");
+                        Log.d("traveler",juser.toString());
+
+                        for(int i=0; i<juser.length(); i++){
+//                            HashMap<String,String> userhm = new HashMap<>();
+                            JSONObject user = juser.getJSONObject(i);
+                            final String name = user.getString("name");
+                            final String surname = user.getString("surname");
+                            travelerName = name + " " + surname;
+                        }
+                    } else {
+                        // Error in login. Get the error message
+                        String errorMsg = jObj.getString("error_msg");
+                        Toast.makeText(getApplicationContext(),
+                                errorMsg, Toast.LENGTH_LONG).show();
+                    }
+                } catch (JSONException e) {
+                    // JSON error
+                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e(TAG, "Login Error: " + error.getMessage());
+                Toast.makeText(getApplicationContext(),
+                        error.getMessage(), Toast.LENGTH_LONG).show();
+                hideDialog();
+            }
+        }) {
+
+            @Override
+            protected Map<String, String> getParams() {
+                // Posting parameters to login url
+                Map<String, String> params = new HashMap<>();
+                params.put("tid", tID);
+
+                return params;
+            }
+        };
+        // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+    }
+
     void loadOwnerReservations(final String dboFKey){
         // Tag used to cancel the request
         String tag_string_req = "req_login";
@@ -1535,74 +1602,70 @@ public class MainActivity extends ActionBarActivity {
                     boolean error = jObj.getBoolean("error");
                     // Check for error node in json
                     if (!error) {
-//                        if(Fragment_Running.RunninglistView.getCount()==0 &&
-//                                Fragment_Upcoming.UpcomminglistView.getCount()==0){
+                        Fragment_Running.records.clear(); //clear the old list and load the new one
+                        Fragment_Upcoming.records.clear();
+                        Fragment_Past.records.clear();
 
-                            Fragment_Running.records.clear(); //clear the old list and load the new one
-                            Fragment_Upcoming.records.clear();
-                            Fragment_Past.records.clear();
+                        JSONArray jhotel= jObj.getJSONArray("hotel");
+                        Log.d("hotel",jhotel.toString());
 
-                            JSONArray jhotel= jObj.getJSONArray("hotel");
-                            Log.d("hotel",jhotel.toString());
+                        for(int i=0; i<jhotel.length(); i++){
+                            HashMap<String,String> hotelhm = new HashMap<>();
+                            JSONObject hotel = jhotel.getJSONObject(i);
+                            final String resID = hotel.getString("reservationID");
+                            final String hoteln = hotel.getString("hotelname");
+                            final String checkn = hotel.getString("checkin");
+                            final String checkt = hotel.getString("checkout");
+                            final String dates = checkn + " - " + checkt;
+                            final String tid = hotel.getString("tidFK");
 
-                            for(int i=0; i<jhotel.length(); i++){
-                                HashMap<String,String> hotelhm = new HashMap<>();
-                                JSONObject hotel = jhotel.getJSONObject(i);
-                                final String resID = hotel.getString("reservationID");
-                                final String hoteln = hotel.getString("hotelname");
-                                final String checkn = hotel.getString("checkin");
-                                final String checkt = hotel.getString("checkout");
-                                final String dates = checkn + " - " + checkt;
-                                final String tid = hotel.getString("tidFK");
+                            findTravelerById(tid);
+                            final String title = hoteln + " - " + travelerName;
 
-                                String a = checkt;
+                            String a = checkt;
 
-                                String[] partsa = a.split("/");
-                                String part1a = partsa[0];
-                                String[] p = part1a.split(" ");
-                                part1a = p[0];
-                                String part2a = partsa[1];
-                                String part3a = partsa[2];
-                                int p1a = Integer.parseInt(part1a);
-                                int p2a = Integer.parseInt(part2a);
-                                int p3a = Integer.parseInt(part3a);
+                            String[] partsa = a.split("/");
+                            String part1a = partsa[0];
+                            String[] p = part1a.split(" ");
+                            part1a = p[0];
+                            String part2a = partsa[1];
+                            String part3a = partsa[2];
+                            int p1a = Integer.parseInt(part1a);
+                            int p2a = Integer.parseInt(part2a);
+                            int p3a = Integer.parseInt(part3a);
 
-                                Calendar c = Calendar.getInstance();
-                                final int y = c.get(Calendar.YEAR);
-                                final int m = c.get(Calendar.MONTH) + 1;
-                                final int d = c.get(Calendar.DATE);
+                            Calendar c = Calendar.getInstance();
+                            final int y = c.get(Calendar.YEAR);
+                            final int m = c.get(Calendar.MONTH) + 1;
+                            final int d = c.get(Calendar.DATE);
 
-                                hotelhm.put("resID",resID);
-                                hotelhm.put("hotelname",hoteln);
-                                hotelhm.put("checkin", checkn);
-                                hotelhm.put("checkout", checkt);
-                                hotelhm.put("dates", dates);
-                                hotelhm.put("tid", tid);
+                            hotelhm.put("resID",resID);
+                            hotelhm.put("hotelname",hoteln);
+                            hotelhm.put("checkin", checkn);
+                            hotelhm.put("checkout", checkt);
+                            hotelhm.put("dates", dates);
+                            hotelhm.put("HotelandTravelertitle", title);
+                            hotelhm.put("tid", tid);
 
-                                if(p3a > y){
+                            if(p3a > y){
+                                Fragment_Running.records.add(hotelhm);
+                            }else if(p3a == y){
+                                if(p2a > m){
                                     Fragment_Running.records.add(hotelhm);
-                                }else if(p3a == y){
-                                    if(p2a > m){
+                                }else if(p2a == m){
+                                    if(p1a > d){
                                         Fragment_Running.records.add(hotelhm);
-                                    }else if(p2a == m){
-                                        if(p1a > d){
-                                            Fragment_Running.records.add(hotelhm);
-                                        }else{
-                                            Fragment_Past.records.add(hotelhm);
-                                        }
                                     }else{
                                         Fragment_Past.records.add(hotelhm);
                                     }
                                 }else{
                                     Fragment_Past.records.add(hotelhm);
                                 }
+                            }else{
+                                Fragment_Past.records.add(hotelhm);
                             }
-//                            Fragment_Upcoming.adapter.notifyDataSetChanged(); //Notify the adapter for the update
-//                            Fragment_Running.adapter.notifyDataSetChanged();
-//                            Fragment_Past.adapter.notifyDataSetChanged();
-////                        }else{
-//                            Toast.makeText(getApplicationContext(), "Your Reservations", Toast.LENGTH_SHORT).show();
-//                        }
+                        }
+                        Fragment_Running.adapter.notifyDataSetChanged();
                     } else {
                         // Error in login. Get the error message
                         String errorMsg = jObj.getString("error_msg");

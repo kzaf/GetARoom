@@ -34,10 +34,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="@string/no_reservation_done_yet_"
+        android:text="No running reservations"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#9f0007"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"/>
 
     <TextView
         android:id="@+id/onoma"

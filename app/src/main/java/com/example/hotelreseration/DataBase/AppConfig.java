@@ -12,6 +12,7 @@ public class AppConfig {
     public static String URL_LOAD_FAVORITES = "http://ptyxiaki2016.eu.pn/loadfavorites.php";
     public static String URL_LOAD_OWNER_RESERVATIONS = "http://ptyxiaki2016.eu.pn/loadreservations.php";
     public static String URL_LOAD_TRAVELER_MYBOOKINGS = "http://ptyxiaki2016.eu.pn/loadmybookings.php";
+    public static String URL_LOAD_TRAVELER = "http://ptyxiaki2016.eu.pn/gettravelerbyid.php";
 
     // Server user register urls
     public static String URL_REGISTER_OWNER = "http://ptyxiaki2016.eu.pn/registerowner.php";

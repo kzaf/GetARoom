@@ -34,9 +34,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="No reservation done yet!"
+        android:text="No upcoming reservations"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#9f0007" />
+        android:textColor="#9f0007"/>
 
     <TextView
         android:id="@+id/onoma"
