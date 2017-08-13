@@ -1937,6 +1937,7 @@ public class MainActivity extends ActionBarActivity {
                     boolean error = jObj.getBoolean("error");
                     // Check for error node in json
                     if (!error) {
+
                         if(listView.getCount()==0 || flagaddnew){
 
                             hotels.records.clear(); //clear the old list and load the new one
