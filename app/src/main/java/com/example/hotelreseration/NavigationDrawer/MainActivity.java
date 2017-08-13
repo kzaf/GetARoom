@@ -1524,30 +1524,29 @@ public class MainActivity extends ActionBarActivity {
     void findTravelerById(final String tID){
         // Tag used to cancel the request
         String tag_string_req = "req_login";
-
-        pDialog.setMessage("Loading reservations ...");
+//        String tname;
+        pDialog.setMessage("Loading...");
         showDialog();
 
         StringRequest strReq = new StringRequest(Request.Method.POST, URL_LOAD_TRAVELER, new Response.Listener<String>() {
 
             @Override
             public void onResponse(String response) {
+                final String name;
+                final String surname;
+
                 hideDialog();
                 try {
                     JSONObject jObj = new JSONObject(response);
                     boolean error = jObj.getBoolean("error");
                     // Check for error node in json
                     if (!error) {
-                        JSONArray juser= jObj.getJSONArray("traveler");
-                        Log.d("traveler",juser.toString());
+                        JSONObject user = jObj.getJSONObject("user");
+                        name = user.getString("name");
+                        surname = user.getString("surname");
+                        travelerName = name + " " + surname;
+//                        tname = name + " " + surname;
 
-                        for(int i=0; i<juser.length(); i++){
-//                            HashMap<String,String> userhm = new HashMap<>();
-                            JSONObject user = juser.getJSONObject(i);
-                            final String name = user.getString("name");
-                            final String surname = user.getString("surname");
-                            travelerName = name + " " + surname;
-                        }
                     } else {
                         // Error in login. Get the error message
                         String errorMsg = jObj.getString("error_msg");
@@ -1559,8 +1558,8 @@ public class MainActivity extends ActionBarActivity {
                     e.printStackTrace();
                     Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 }
-
             }
+
         }, new Response.ErrorListener() {
 
             @Override
@@ -1583,6 +1582,8 @@ public class MainActivity extends ActionBarActivity {
         };
         // Adding request to request queue
         AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+
+//        return tname;
     }
 
     void loadOwnerReservations(final String dboFKey){
@@ -1618,13 +1619,25 @@ public class MainActivity extends ActionBarActivity {
                             final String checkt = hotel.getString("checkout");
                             final String dates = checkn + " - " + checkt;
                             final String tid = hotel.getString("tidFK");
+                            final String tname;
 
+//                            tname = findTravelerById(tid);
                             findTravelerById(tid);
                             final String title = hoteln + " - " + travelerName;
 
-                            String a = checkt;
+                            //b for check in
+                            String[] partsb = checkn.split("/");
+                            String part1b = partsb[0];
+                            String[] n = part1b.split(" ");
+                            part1b = n[0];
+                            String part2b = partsb[1];
+                            String part3b = partsb[2];
+                            int p1b = Integer.parseInt(part1b);
+                            int p2b = Integer.parseInt(part2b);
+                            int p3b = Integer.parseInt(part3b);
 
-                            String[] partsa = a.split("/");
+                            //a for check out
+                            String[] partsa = checkt.split("/");
                             String part1a = partsa[0];
                             String[] p = part1a.split(" ");
                             part1a = p[0];
@@ -1647,14 +1660,52 @@ public class MainActivity extends ActionBarActivity {
                             hotelhm.put("HotelandTravelertitle", title);
                             hotelhm.put("tid", tid);
 
+
+
                             if(p3a > y){
-                                Fragment_Running.records.add(hotelhm);
+                                if(p3b > y){
+                                    Fragment_Upcoming.records.add(hotelhm);
+                                }else if(p3b == y){
+                                    if(p2b > m){
+                                        Fragment_Upcoming.records.add(hotelhm);
+                                    }else if(p2b == m){
+                                        if(p1b > d){
+                                            Fragment_Upcoming.records.add(hotelhm);
+                                        }else{
+                                            Fragment_Running.records.add(hotelhm);
+                                        }
+                                    }
+                                }
                             }else if(p3a == y){
                                 if(p2a > m){
-                                    Fragment_Running.records.add(hotelhm);
+                                    if(p3b > y){
+                                        Fragment_Upcoming.records.add(hotelhm);
+                                    }else if(p3b == y){
+                                        if(p2b > m){
+                                            Fragment_Upcoming.records.add(hotelhm);
+                                        }else if(p2b == m){
+                                            if(p1b > d){
+                                                Fragment_Upcoming.records.add(hotelhm);
+                                            }else{
+                                                Fragment_Running.records.add(hotelhm);
+                                            }
+                                        }
+                                    }
                                 }else if(p2a == m){
                                     if(p1a > d){
-                                        Fragment_Running.records.add(hotelhm);
+                                        if(p3b > y){
+                                            Fragment_Upcoming.records.add(hotelhm);
+                                        }else if(p3b == y){
+                                            if(p2b > m){
+                                                Fragment_Upcoming.records.add(hotelhm);
+                                            }else if(p2b == m){
+                                                if(p1b > d){
+                                                    Fragment_Upcoming.records.add(hotelhm);
+                                                }else{
+                                                    Fragment_Running.records.add(hotelhm);
+                                                }
+                                            }
+                                        }
                                     }else{
                                         Fragment_Past.records.add(hotelhm);
                                     }
