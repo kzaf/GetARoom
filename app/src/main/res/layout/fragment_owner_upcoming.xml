@@ -46,6 +46,6 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textStyle="bold"
         android:layout_above="@+id/upcomingResList"
-        android:layout_alignStart="@+id/nobookingtxt"/>
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>

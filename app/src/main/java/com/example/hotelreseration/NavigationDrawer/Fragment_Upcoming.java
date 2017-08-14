@@ -33,7 +33,9 @@ public class Fragment_Upcoming extends Fragment {
 	    UpcomminglistView = (ListView) view.findViewById(R.id.upcomingResList);
 	    txt=(TextView) view.findViewById(R.id.nobookingtxt);
 
-        adapter = new SimpleAdapter(getActivity(), records, R.layout.mytextview, new String[] {"HotelandTravelertitle","dates"}, new int[] {R.id.tv,R.id.sub});
+        adapter = new SimpleAdapter(getActivity(), records, R.layout.mytextview, new String[] {"HotelandTravelertitle","dates"},
+				new int[] {R.id.tv,R.id.sub});
+
         UpcomminglistView.setAdapter(adapter);// Assign adapter to ListView
 
         ((MainActivity) getActivity()).loadOwnerReservations(dboFKey);

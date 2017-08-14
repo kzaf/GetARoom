@@ -127,7 +127,7 @@ public class MainActivity extends ActionBarActivity {
     public String URL_DELETE, URL_UPDATE;
     public String hoteln;
 
-    public String travelerName;
+    public String travelerName = "traveler_name";
 
     public static String hid, hn, hc, ha,
             htk, ht, hs, hoidFK, hw, hsp;
@@ -316,21 +316,16 @@ public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onPostCreate(Bundle savedInstanceState){
-
         // Call the super implementation and synchronize the drawer
         super.onPostCreate(savedInstanceState);
         drawerToggle.syncState();
-
     }
 
     @Override
     public void onConfigurationChanged(Configuration newConfig){
-
-        // Call the super implementation on this activity
-        // and the drawer toggle object
+        // Call the super implementation on this activity and the drawer toggle object
         super.onConfigurationChanged(newConfig);
         drawerToggle.onConfigurationChanged(newConfig);
-
     }
 
     @SuppressWarnings("deprecation")
@@ -411,12 +406,10 @@ public class MainActivity extends ActionBarActivity {
                 break;
             }
         }
-
         // Commit the transaction and close the drawer
         fragTran.commit();
         drawerList.setItemChecked(position, true);
         drawerLayout.closeDrawer(drawerList);
-
     }
 
     public void setTitle(CharSequence title){
@@ -492,10 +485,8 @@ public class MainActivity extends ActionBarActivity {
             {
                 public void onClick(DialogInterface dialog, int which)
                 {
-                    Toast.makeText(getApplicationContext(), "For more info contact us via mail",
-                            Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "For more info contact us via mail", Toast.LENGTH_SHORT).show();
                 }
-
             });
             // Showing Alert Message
             alertDialog.show();
@@ -511,10 +502,8 @@ public class MainActivity extends ActionBarActivity {
             {
                 public void onClick(DialogInterface dialog, int which)
                 {
-                    Toast.makeText(getApplicationContext(), "For more info contact us via mail",
-                            Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "For more info contact us via mail", Toast.LENGTH_SHORT).show();
                 }
-
             });
             // Showing Alert Message
             alertDialog.show();
@@ -532,10 +521,7 @@ public class MainActivity extends ActionBarActivity {
         alertDialog.setView(promptView);
         alertDialog.setButton("OK", new DialogInterface.OnClickListener()
         {
-            public void onClick(DialogInterface dialog, int which)
-            {
-            }
-
+            public void onClick(DialogInterface dialog, int which) {}
         });
         // Showing Alert Message
         alertDialog.show();
@@ -551,10 +537,7 @@ public class MainActivity extends ActionBarActivity {
         alertDialog.setView(promptView);
         alertDialog.setButton("OK", new DialogInterface.OnClickListener()
         {
-            public void onClick(DialogInterface dialog, int which)
-            {
-            }
-
+            public void onClick(DialogInterface dialog, int which) {}
         });
         // Showing Alert Message
         alertDialog.show();
@@ -573,7 +556,7 @@ public class MainActivity extends ActionBarActivity {
         {
             public void onClick(DialogInterface dialog, int which)
             {
-                //Edw orizw ta mail sta opoia tha steilei email o xrhsths se periptwsh pou ksexasei to password tou
+                //Here are the mail that the user will sent mail to, in case he forgot the pass
                 String subject="Report a problem";
                 String message=reportproblem.getText().toString();
                 {
@@ -583,7 +566,6 @@ public class MainActivity extends ActionBarActivity {
                     startActivity(Intent.createChooser(intent, "Choose an Email client :"));
                 }
             }
-
         });
         // Showing Alert Message
         alertDialog.show();
@@ -607,20 +589,16 @@ public class MainActivity extends ActionBarActivity {
                 }else{
                     URL_DELETE = AppConfig.URL_DELETE_TRAVELER;
                 }
-
                 db.deleteUsers();
                 deleteUser(dbmail);
                 startActivity(new Intent(MainActivity.this, SelectUserActivity.class));
-
             }
-
         });
         // Showing Alert Message
         alertDialog.show();
     }
 
     public static int getIndexOFValue(String value, ArrayList<HashMap<String, String>> listMap) { //Get the index out of a HashMap ArrayList, by key
-
         int i = 0;
         for (Map<String, String> map : listMap) {
             if (map.containsValue(value)) {
@@ -640,10 +618,6 @@ public class MainActivity extends ActionBarActivity {
         LayoutInflater layoutInflater = LayoutInflater.from(context);
         View promptView = layoutInflater.inflate(R.layout.traveler_hotel_registration, null);
         alertDialog.setView(promptView);
-
-//        ListView FavoritelistView = (ListView) promptView.findViewById(R.id.favoriteList);
-//        final SimpleAdapter Favoriteadapter;
-//        final ArrayList<HashMap<String,String>> Favoriterecords = new ArrayList<>();
 
         final int i = getIndexOFValue(hotelname, Fragment_Search.records); //Get the index of the ArryList with HashMap with the hotels
 
@@ -687,7 +661,6 @@ public class MainActivity extends ActionBarActivity {
             {
                 registerFavorites(hotelname, hotelCity, dboFKey);
             }
-
         });
         alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Make booking", new DialogInterface.OnClickListener()
         {
@@ -695,7 +668,6 @@ public class MainActivity extends ActionBarActivity {
             {
                 bookingAlert(hotelname, checkin, checkout);
             }
-
         });
         alertDialog.show();
     }
@@ -765,11 +737,9 @@ public class MainActivity extends ActionBarActivity {
 
                 Toast.makeText(getApplicationContext(), "You make your booking at " + hotelname, Toast.LENGTH_LONG).show();
                 Toast.makeText(getApplicationContext(), "Check in:" + checkin +", Check out:" + checkout, Toast.LENGTH_LONG).show();
-
             }
         });
         alertDialog.show();
-
     }
 
     public void EditHotels(){
@@ -847,7 +817,6 @@ public class MainActivity extends ActionBarActivity {
                     onomaxarth=(String) hotel3.getText();
                 }
             }
-
         });
         alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Change info", new DialogInterface.OnClickListener()
         {
@@ -873,7 +842,6 @@ public class MainActivity extends ActionBarActivity {
                     LayoutInflater layoutInflater = LayoutInflater.from(context);
                     View promptView = layoutInflater.inflate(R.layout.fragment_add_hotel, null);
                     alertDialog.setView(promptView);
-
 
                     hotelname= (EditText)promptView.findViewById(R.id.hotelname);
                     hotelcity= (EditText)promptView.findViewById(R.id.hotelcity);
@@ -972,7 +940,6 @@ public class MainActivity extends ActionBarActivity {
                                 finish();
                                 Toast.makeText(getApplicationContext(), "Please sign in again for the changes to take effect", Toast.LENGTH_LONG).show();
                             }
-
                         }
                     });
                     // Showing Alert Message
@@ -980,7 +947,6 @@ public class MainActivity extends ActionBarActivity {
 
                 }
             }
-
         });
         alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "Remove hotel", new DialogInterface.OnClickListener()
         {
@@ -1039,9 +1005,7 @@ public class MainActivity extends ActionBarActivity {
                                 fragTran.replace(R.id.content_frame, hotels);
                                 fragTran.commit();
                             }
-
                         }
-
                     });
                     // Showing Alert Message
                     alertDialog.show();
@@ -1138,7 +1102,6 @@ public class MainActivity extends ActionBarActivity {
                 finish();
                 Toast.makeText(getApplicationContext(), "Please login with the new credentials", Toast.LENGTH_LONG).show();
             }
-
         });
         // Showing Alert Message
         alertDialog.show();
@@ -1173,7 +1136,6 @@ public class MainActivity extends ActionBarActivity {
                     CheckIn.setText(new StringBuilder().append(day).append("/").append(month).append("/").append(year));
                 }
                 else{
-
                     String a = CheckIn.getText().toString();
 
                     String[] partsa = a.split("/");
@@ -1207,16 +1169,13 @@ public class MainActivity extends ActionBarActivity {
                                 flg[0] = false;
                                 CheckIn.setText("CHECK IN");
                                 CheckOut.setText("CHECK OUT");
-
                             }
-
                         }else{
                             Toast.makeText(getApplicationContext(), "CheckIn date cannot be the same or bigger than CheckOut!", Toast.LENGTH_LONG).show();
                             flg[0] = false;
                             CheckIn.setText("CHECK IN");
                             CheckOut.setText("CHECK OUT");
                         }
-
                     }else{
                         Toast.makeText(getApplicationContext(), "CheckIn date cannot be the same or bigger than CheckOut!", Toast.LENGTH_LONG).show();
                         flg[0] = false;
@@ -1224,16 +1183,13 @@ public class MainActivity extends ActionBarActivity {
                         CheckOut.setText("CHECK OUT");
                     }
                 }
-
             }
-
         });
         // Showing Alert Message
         alertDialog.show();
     }
 
     //-----------------------------------------------------------DB-Functions-------------------------------------------------------//
-
 
     // Register functions
     private void registerHotel(final String hotelname, final String city, final String address,
@@ -1305,9 +1261,7 @@ public class MainActivity extends ActionBarActivity {
 
                 return params;
             }
-
         };
-
         // Adding request to request queue
         AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
     }
@@ -1350,10 +1304,8 @@ public class MainActivity extends ActionBarActivity {
                     e.printStackTrace();
                 }
             }
-
         }, new Response.ErrorListener()
         {
-
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e(TAG, "Registration Error: " + error.getMessage());
@@ -1373,9 +1325,7 @@ public class MainActivity extends ActionBarActivity {
 
                 return params;
             }
-
         };
-
         // Adding request to request queue
         AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
     }
@@ -1391,7 +1341,6 @@ public class MainActivity extends ActionBarActivity {
 
         StringRequest strReq = new StringRequest(Request.Method.POST, URL_REGISTER_COORDINATES, new Response.Listener<String>()
         {
-
             @Override
             public void onResponse(String response)
             {
@@ -1421,7 +1370,6 @@ public class MainActivity extends ActionBarActivity {
 
         }, new Response.ErrorListener()
         {
-
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e(TAG, "Registration Error: " + error.getMessage());
@@ -1430,7 +1378,6 @@ public class MainActivity extends ActionBarActivity {
                 hideDialog();
             }
         }) {
-
             @Override
             protected Map<String, String> getParams() {
                 // Posting params to register url
@@ -1443,7 +1390,6 @@ public class MainActivity extends ActionBarActivity {
                 return params;
             }
         };
-
         // Adding request to request queue
         AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
     }
@@ -1459,7 +1405,6 @@ public class MainActivity extends ActionBarActivity {
 
         StringRequest strReq = new StringRequest(Request.Method.POST, URL_MAKE_BOOKING, new Response.Listener<String>()
         {
-
             @Override
             public void onResponse(String response)
             {
@@ -1486,10 +1431,8 @@ public class MainActivity extends ActionBarActivity {
                     e.printStackTrace();
                 }
             }
-
         }, new Response.ErrorListener()
         {
-
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e(TAG, "Registration Error: " + error.getMessage());
@@ -1497,7 +1440,6 @@ public class MainActivity extends ActionBarActivity {
                 hideDialog();
             }
         }) {
-
             @Override
             protected Map<String, String> getParams() {
                 // Posting params to register url
@@ -1513,18 +1455,19 @@ public class MainActivity extends ActionBarActivity {
 
                 return params;
             }
-
         };
-
         // Adding request to request queue
         AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
     }
 
     // Load Functions
-    void findTravelerById(final String tID){
+    public interface VolleyCallback{
+        void onSuccess(String result);
+    } //Because Volley is asyncronus, this interface helps Volley to return a parameter
+
+    void findTravelerById(final String tID, final VolleyCallback callback){
         // Tag used to cancel the request
         String tag_string_req = "req_login";
-//        String tname;
         pDialog.setMessage("Loading...");
         showDialog();
 
@@ -1534,6 +1477,7 @@ public class MainActivity extends ActionBarActivity {
             public void onResponse(String response) {
                 final String name;
                 final String surname;
+                final String tname;
 
                 hideDialog();
                 try {
@@ -1544,9 +1488,8 @@ public class MainActivity extends ActionBarActivity {
                         JSONObject user = jObj.getJSONObject("user");
                         name = user.getString("name");
                         surname = user.getString("surname");
-                        travelerName = name + " " + surname;
-//                        tname = name + " " + surname;
-
+                        tname = name + " " + surname;
+                        callback.onSuccess(tname);
                     } else {
                         // Error in login. Get the error message
                         String errorMsg = jObj.getString("error_msg");
@@ -1559,7 +1502,6 @@ public class MainActivity extends ActionBarActivity {
                     Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 }
             }
-
         }, new Response.ErrorListener() {
 
             @Override
@@ -1570,7 +1512,6 @@ public class MainActivity extends ActionBarActivity {
                 hideDialog();
             }
         }) {
-
             @Override
             protected Map<String, String> getParams() {
                 // Posting parameters to login url
@@ -1582,8 +1523,6 @@ public class MainActivity extends ActionBarActivity {
         };
         // Adding request to request queue
         AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
-
-//        return tname;
     }
 
     void loadOwnerReservations(final String dboFKey){
@@ -1603,15 +1542,15 @@ public class MainActivity extends ActionBarActivity {
                     boolean error = jObj.getBoolean("error");
                     // Check for error node in json
                     if (!error) {
-                        Fragment_Running.records.clear(); //clear the old list and load the new one
-                        Fragment_Upcoming.records.clear();
-                        Fragment_Past.records.clear();
-
                         JSONArray jhotel= jObj.getJSONArray("hotel");
                         Log.d("hotel",jhotel.toString());
 
                         for(int i=0; i<jhotel.length(); i++){
-                            HashMap<String,String> hotelhm = new HashMap<>();
+                            Fragment_Running.records.clear(); //clear the old list and load the new one
+                            Fragment_Upcoming.records.clear();
+                            Fragment_Past.records.clear();
+
+                            final HashMap<String,String> hotelhm = new HashMap<>();
                             JSONObject hotel = jhotel.getJSONObject(i);
                             final String resID = hotel.getString("reservationID");
                             final String hoteln = hotel.getString("hotelname");
@@ -1619,80 +1558,49 @@ public class MainActivity extends ActionBarActivity {
                             final String checkt = hotel.getString("checkout");
                             final String dates = checkn + " - " + checkt;
                             final String tid = hotel.getString("tidFK");
-                            final String tname;
 
-//                            tname = findTravelerById(tid);
-                            findTravelerById(tid);
-                            final String title = hoteln + " - " + travelerName;
+                            findTravelerById(tid,  new VolleyCallback() {
+                                @Override
+                                public void onSuccess(String result) {
 
-                            //b for check in
-                            String[] partsb = checkn.split("/");
-                            String part1b = partsb[0];
-                            String[] n = part1b.split(" ");
-                            part1b = n[0];
-                            String part2b = partsb[1];
-                            String part3b = partsb[2];
-                            int p1b = Integer.parseInt(part1b);
-                            int p2b = Integer.parseInt(part2b);
-                            int p3b = Integer.parseInt(part3b);
+                                    final String title = hoteln + " - " + result;
 
-                            //a for check out
-                            String[] partsa = checkt.split("/");
-                            String part1a = partsa[0];
-                            String[] p = part1a.split(" ");
-                            part1a = p[0];
-                            String part2a = partsa[1];
-                            String part3a = partsa[2];
-                            int p1a = Integer.parseInt(part1a);
-                            int p2a = Integer.parseInt(part2a);
-                            int p3a = Integer.parseInt(part3a);
+                                    //b for check in
+                                    String[] partsb = checkn.split("/");
+                                    String part1b = partsb[0];
+                                    String[] n = part1b.split(" ");
+                                    part1b = n[0];
+                                    String part2b = partsb[1];
+                                    String part3b = partsb[2];
+                                    int p1b = Integer.parseInt(part1b);
+                                    int p2b = Integer.parseInt(part2b);
+                                    int p3b = Integer.parseInt(part3b);
 
-                            Calendar c = Calendar.getInstance();
-                            final int y = c.get(Calendar.YEAR);
-                            final int m = c.get(Calendar.MONTH) + 1;
-                            final int d = c.get(Calendar.DATE);
+                                    //a for check out
+                                    String[] partsa = checkt.split("/");
+                                    String part1a = partsa[0];
+                                    String[] p = part1a.split(" ");
+                                    part1a = p[0];
+                                    String part2a = partsa[1];
+                                    String part3a = partsa[2];
+                                    int p1a = Integer.parseInt(part1a);
+                                    int p2a = Integer.parseInt(part2a);
+                                    int p3a = Integer.parseInt(part3a);
 
-                            hotelhm.put("resID",resID);
-                            hotelhm.put("hotelname",hoteln);
-                            hotelhm.put("checkin", checkn);
-                            hotelhm.put("checkout", checkt);
-                            hotelhm.put("dates", dates);
-                            hotelhm.put("HotelandTravelertitle", title);
-                            hotelhm.put("tid", tid);
+                                    Calendar c = Calendar.getInstance();
+                                    final int y = c.get(Calendar.YEAR);
+                                    final int m = c.get(Calendar.MONTH) + 1;
+                                    final int d = c.get(Calendar.DATE);
 
+                                    hotelhm.put("resID",resID);
+                                    hotelhm.put("hotelname",hoteln);
+                                    hotelhm.put("checkin", checkn);
+                                    hotelhm.put("checkout", checkt);
+                                    hotelhm.put("dates", dates);
+                                    hotelhm.put("HotelandTravelertitle", title);
+                                    hotelhm.put("tid", tid);
 
-
-                            if(p3a > y){
-                                if(p3b > y){
-                                    Fragment_Upcoming.records.add(hotelhm);
-                                }else if(p3b == y){
-                                    if(p2b > m){
-                                        Fragment_Upcoming.records.add(hotelhm);
-                                    }else if(p2b == m){
-                                        if(p1b > d){
-                                            Fragment_Upcoming.records.add(hotelhm);
-                                        }else{
-                                            Fragment_Running.records.add(hotelhm);
-                                        }
-                                    }
-                                }
-                            }else if(p3a == y){
-                                if(p2a > m){
-                                    if(p3b > y){
-                                        Fragment_Upcoming.records.add(hotelhm);
-                                    }else if(p3b == y){
-                                        if(p2b > m){
-                                            Fragment_Upcoming.records.add(hotelhm);
-                                        }else if(p2b == m){
-                                            if(p1b > d){
-                                                Fragment_Upcoming.records.add(hotelhm);
-                                            }else{
-                                                Fragment_Running.records.add(hotelhm);
-                                            }
-                                        }
-                                    }
-                                }else if(p2a == m){
-                                    if(p1a > d){
+                                    if(p3a > y){
                                         if(p3b > y){
                                             Fragment_Upcoming.records.add(hotelhm);
                                         }else if(p3b == y){
@@ -1703,20 +1611,54 @@ public class MainActivity extends ActionBarActivity {
                                                     Fragment_Upcoming.records.add(hotelhm);
                                                 }else{
                                                     Fragment_Running.records.add(hotelhm);
+                                                    Fragment_Running.adapter.notifyDataSetChanged();
                                                 }
                                             }
+                                        }
+                                    }else if(p3a == y){
+                                        if(p2a > m){
+                                            if(p3b > y){
+                                                Fragment_Upcoming.records.add(hotelhm);
+                                            }else if(p3b == y){
+                                                if(p2b > m){
+                                                    Fragment_Upcoming.records.add(hotelhm);
+                                                }else if(p2b == m){
+                                                    if(p1b > d){
+                                                        Fragment_Upcoming.records.add(hotelhm);
+                                                    }else{
+                                                        Fragment_Running.records.add(hotelhm);
+                                                        Fragment_Running.adapter.notifyDataSetChanged();
+                                                    }
+                                                }
+                                            }
+                                        }else if(p2a == m){
+                                            if(p1a > d){
+                                                if(p3b > y){
+                                                    Fragment_Upcoming.records.add(hotelhm);
+                                                }else if(p3b == y){
+                                                    if(p2b > m){
+                                                        Fragment_Upcoming.records.add(hotelhm);
+                                                    }else if(p2b == m){
+                                                        if(p1b > d){
+                                                            Fragment_Upcoming.records.add(hotelhm);
+                                                        }else{
+                                                            Fragment_Running.records.add(hotelhm);
+                                                            Fragment_Running.adapter.notifyDataSetChanged();
+                                                        }
+                                                    }
+                                                }
+                                            }else{
+                                                Fragment_Past.records.add(hotelhm);
+                                            }
+                                        }else{
+                                            Fragment_Past.records.add(hotelhm);
                                         }
                                     }else{
                                         Fragment_Past.records.add(hotelhm);
                                     }
-                                }else{
-                                    Fragment_Past.records.add(hotelhm);
                                 }
-                            }else{
-                                Fragment_Past.records.add(hotelhm);
-                            }
+                            });
                         }
-                        Fragment_Running.adapter.notifyDataSetChanged();
                     } else {
                         // Error in login. Get the error message
                         String errorMsg = jObj.getString("error_msg");
@@ -1728,10 +1670,8 @@ public class MainActivity extends ActionBarActivity {
                     e.printStackTrace();
                     Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 }
-
             }
         }, new Response.ErrorListener() {
-
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e(TAG, "Login Error: " + error.getMessage());
@@ -1740,7 +1680,6 @@ public class MainActivity extends ActionBarActivity {
                 hideDialog();
             }
         }) {
-
             @Override
             protected Map<String, String> getParams() {
                 // Posting parameters to login url
@@ -1796,11 +1735,8 @@ public class MainActivity extends ActionBarActivity {
                             Fragment_Favorite.records.add(hotelhm);
                         }
                         Fragment_Favorite.adapter.notifyDataSetChanged(); //Notify the adapter for the update
-                       // }else{
-                       //     Toast.makeText(getApplicationContext(), "Your Favorite hotels", Toast.LENGTH_SHORT).show();
-                        //}
-                        Fragment_Favorite.nofavoritesLabel.setVisibility(GONE);
 
+                        Fragment_Favorite.nofavoritesLabel.setVisibility(GONE);
                     } else {
                         // Error in login. Get the error message
                         String errorMsg = jObj.getString("error_msg");
@@ -1874,7 +1810,6 @@ public class MainActivity extends ActionBarActivity {
                                 final String dates = checkn + " - " + checkt;
                                 final String tid = hotel.getString("tidFK");
 
-
                                 String a = checkt;
 
                                 String[] partsa = a.split("/");
@@ -1942,10 +1877,8 @@ public class MainActivity extends ActionBarActivity {
                     e.printStackTrace();
                     Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 }
-
             }
         }, new Response.ErrorListener() {
-
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e(TAG, "Login Error: " + error.getMessage());
@@ -1954,7 +1887,6 @@ public class MainActivity extends ActionBarActivity {
                 hideDialog();
             }
         }) {
-
             @Override
             protected Map<String, String> getParams() {
                 // Posting parameters to login url
@@ -1979,8 +1911,7 @@ public class MainActivity extends ActionBarActivity {
 
             @Override
             public void onResponse(String response) {
-                //Log.d(TAG, "Login Response: " + response.toString());
-                //String resp = response.toString();
+
                 hideDialog();
 
                 try {
@@ -2027,7 +1958,6 @@ public class MainActivity extends ActionBarActivity {
                             Toast.makeText(getApplicationContext(), "To edit a hotel, click on it", Toast.LENGTH_SHORT).show();
                         }
                         Fragment_hotels.txt.setVisibility(GONE);
-
                     } else {
                         // Error in login. Get the error message
                         String errorMsg = jObj.getString("error_msg");
@@ -2039,10 +1969,8 @@ public class MainActivity extends ActionBarActivity {
                     e.printStackTrace();
                     Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 }
-
             }
         }, new Response.ErrorListener() {
-
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e(TAG, "Login Error: " + error.getMessage());
@@ -2051,7 +1979,6 @@ public class MainActivity extends ActionBarActivity {
                 hideDialog();
             }
         }) {
-
             @Override
             protected Map<String, String> getParams() {
                 // Posting parameters to login url
@@ -2108,10 +2035,8 @@ public class MainActivity extends ActionBarActivity {
                     e.printStackTrace();
                     Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 }
-
             }
         }, new Response.ErrorListener() {
-
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e(TAG, "Login Error: " + error.getMessage());
@@ -2120,7 +2045,6 @@ public class MainActivity extends ActionBarActivity {
                 hideDialog();
             }
         }) {
-
             @Override
             protected Map<String, String> getParams() {
                 // Posting parameters to login url
@@ -2161,8 +2085,6 @@ public class MainActivity extends ActionBarActivity {
                         JSONObject coord = jcoord.getJSONObject(0);
                         booking_lat = Double.parseDouble(coord.getString("latitude"));
                         booking_lon = Double.parseDouble(coord.getString("longitude"));
-                        //setCoords(booking_lat, booking_lon);
-
 
                     } else {
                         // Error in login. Get the error message
@@ -2178,10 +2100,8 @@ public class MainActivity extends ActionBarActivity {
                     e.printStackTrace();
                     Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 }
-
             }
         }, new Response.ErrorListener() {
-
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e(TAG, "Login Error: " + error.getMessage());
@@ -2190,7 +2110,6 @@ public class MainActivity extends ActionBarActivity {
                 hideDialog();
             }
         }) {
-
             @Override
             protected Map<String, String> getParams() {
                 // Posting parameters to login url
@@ -2225,11 +2144,8 @@ public class MainActivity extends ActionBarActivity {
                     boolean error = jObj.getBoolean("error");
                     // Check for error node in json
                     if (!error) {
-
-
                         Toast.makeText(getApplicationContext(), "Your account info has been updated!",
                                 Toast.LENGTH_SHORT).show();
-
                     } else {
                         // Error in login. Get the error message
                         String errorMsg = jObj.getString("error_msg");
@@ -2241,10 +2157,8 @@ public class MainActivity extends ActionBarActivity {
                     e.printStackTrace();
                     Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 }
-
             }
         }, new Response.ErrorListener() {
-
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e(TAG, "Login Error: " + error.getMessage());
@@ -2253,7 +2167,6 @@ public class MainActivity extends ActionBarActivity {
                 hideDialog();
             }
         }) {
-
             @Override
             protected Map<String, String> getParams() {
                 // Posting parameters to login url
@@ -2296,7 +2209,6 @@ public class MainActivity extends ActionBarActivity {
                     if (!error) {
                         Toast.makeText(getApplicationContext(), "Hotel "+ hoteln +" has been updated!",
                                 Toast.LENGTH_SHORT).show();
-
                     } else {
                         // Error in login. Get the error message
                         String errorMsg = jObj.getString("error_msg");
@@ -2308,10 +2220,8 @@ public class MainActivity extends ActionBarActivity {
                     e.printStackTrace();
                     Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 }
-
             }
         }, new Response.ErrorListener() {
-
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e(TAG, "Login Error: " + error.getMessage());
@@ -2320,7 +2230,6 @@ public class MainActivity extends ActionBarActivity {
                 hideDialog();
             }
         }) {
-
             @Override
             protected Map<String, String> getParams() {
                 // Posting parameters to login url
@@ -2365,7 +2274,6 @@ public class MainActivity extends ActionBarActivity {
                     if (!error) {
                         Toast.makeText(getApplicationContext(), toast,
                                 Toast.LENGTH_SHORT).show();
-
                     } else {
                         // Error in login. Get the error message
                         String errorMsg = jObj.getString("error_msg");
@@ -2377,10 +2285,8 @@ public class MainActivity extends ActionBarActivity {
                     e.printStackTrace();
                     Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 }
-
             }
         }, new Response.ErrorListener() {
-
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e(TAG, "Login Error: " + error.getMessage());
@@ -2389,7 +2295,6 @@ public class MainActivity extends ActionBarActivity {
                 hideDialog();
             }
         }) {
-
             @Override
             protected Map<String, String> getParams() {
                 // Posting parameters to login url
@@ -2422,11 +2327,8 @@ public class MainActivity extends ActionBarActivity {
                     boolean error = jObj.getBoolean("error");
                     // Check for error node in json
                     if (!error) {
-
-
                         Toast.makeText(getApplicationContext(), "Your account has been deleted!",
                                 Toast.LENGTH_SHORT).show();
-
                     } else {
                         // Error in login. Get the error message
                         String errorMsg = jObj.getString("error_msg");
@@ -2438,10 +2340,8 @@ public class MainActivity extends ActionBarActivity {
                     e.printStackTrace();
                     Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 }
-
             }
         }, new Response.ErrorListener() {
-
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e(TAG, "Login Error: " + error.getMessage());
@@ -2450,7 +2350,6 @@ public class MainActivity extends ActionBarActivity {
                 hideDialog();
             }
         }) {
-
             @Override
             protected Map<String, String> getParams() {
                 // Posting parameters to login url
@@ -2517,7 +2416,6 @@ public class MainActivity extends ActionBarActivity {
                             flagaddnew = false;
                         }
                         Fragment_Search.adapter.notifyDataSetChanged(); //Notify the adapter for the update
-
                     } else {
                         // Error in login. Get the error message
                         String errorMsg = jObj.getString("error_msg");
@@ -2529,10 +2427,8 @@ public class MainActivity extends ActionBarActivity {
                     e.printStackTrace();
                     Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 }
-
             }
         }, new Response.ErrorListener() {
-
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e(TAG, "Login Error: " + error.getMessage());
@@ -2541,7 +2437,6 @@ public class MainActivity extends ActionBarActivity {
                 hideDialog();
             }
         }) {
-
             @Override
             protected Map<String, String> getParams() {
                 // Posting parameters to login url
@@ -2574,10 +2469,8 @@ public class MainActivity extends ActionBarActivity {
 
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
             // When clicked, select open the appropriate fragment
             selectItem(position);
-
         }
     }
 }
