@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.hotelreseration"
-    android:versionCode="1"
+    package="com.hotelreservation.hotelreseration"
+    android:versionCode="3"
     android:versionName="1.0" >
     
 
     <permission
-        android:name="com.example.hotelreseration.permission.MAPS_RECEIVE"
+        android:name="com.hotelreservation.hotelreseration.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
 
     <uses-feature
         android:glEsVersion="0x00020000"
         android:required="true" />
 
+
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
+
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/getaroom"
         android:label="@string/welcome"
-        android:name=".DataBase.AppController"
+        android:name="com.hotelreservation.hotelreseration.DataBase.AppController"
         android:theme="@style/AppTheme">"
 
         <meta-data
@@ -33,17 +35,17 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".LoginActivity"
+            android:name="com.hotelreservation.hotelreseration.LoginActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".CreateAccountActivity"
+            android:name="com.hotelreservation.hotelreseration.CreateAccountActivity"
             android:label="@string/title_activity_activity_create_account"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".SelectUserActivity"
+            android:name="com.hotelreservation.hotelreseration.SelectUserActivity"
             android:label="@string/title_activity_select_user"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -53,13 +55,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ForgotPassActivity"
+            android:name="com.hotelreservation.hotelreseration.ForgotPassActivity"
             android:label="@string/title_activity_forgot_pass"
             android:screenOrientation="portrait">
         </activity>
         <activity
             android:windowSoftInputMode="adjustPan|stateHidden"
-            android:name=".NavigationDrawer.MainActivity"
+            android:name="com.hotelreservation.hotelreseration.NavigationDrawer.MainActivity"
             android:label="@string/title_activity_main"
             android:screenOrientation="portrait">
         </activity>

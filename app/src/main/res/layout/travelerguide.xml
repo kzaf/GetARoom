@@ -10,31 +10,30 @@
 	    android:gravity="center"
 	    android:background="@drawable/simpleb"
 	    android:orientation="vertical" >
-	
-	    <TextView
-	        android:id="@+id/textView8"
-	        android:layout_width="255dp"
-	        android:layout_height="wrap_content"
-	        android:layout_gravity="center_horizontal|center|top"
-	        android:text="Hello, new to our app? Here some things to get to know about the app better." />
-	
-	    <TextView
-	        android:id="@+id/edithoteltitle"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:gravity="center"
-	        android:text="As a traveler you can select a hotel to make a reservation. You can search best offers and you also can pay via credit card or by cash (depends on the hotel)." />
-	
-	    <TextView
-	        android:id="@+id/reportaproblem"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:gravity="center"
-	        android:text="Yoy can search hotels around you in the tab map. You can also pin your favourites on the map by long tap on the place you like." />
+
+		<TextView
+			android:id="@+id/textView14"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Hello, new to our app? Here some things to get to know about the app better"/>
+
+		<TextView
+			android:id="@+id/edithoteltitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="As a traveler you can select a hotel to make a reservation. You can search hotel in  specific city from the tab Search in the Manage Booking option."/>
+
+		<TextView
+			android:id="@+id/reportaproblem"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="Yoy can search hotels around you in the Map option from the menu."/>
 
 		<View
 			android:layout_width="match_parent"
-			android:layout_height="5dp"
+			android:layout_height="2dp"
 			android:background="@android:color/darker_gray"/>
 
 	    <TextView
@@ -71,24 +70,24 @@
 	        android:layout_height="wrap_content"
 	        android:gravity="center"
 	        android:text="Here you can see all the booked hotels along with the booking dates." />
-	
-	    <TextView
-	        android:id="@+id/textView12"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:text="Cancelled:"
-	        android:textAppearance="?android:attr/textAppearanceLarge" />
-	
-	    <TextView
-	        android:id="@+id/textView13"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:gravity="center"
-	        android:text="Here you can see all the cancelled reservations you have done." />
+
+		<TextView
+			android:id="@+id/textView12"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Search:"
+			android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+		<TextView
+			android:id="@+id/textView13"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="Here you can search for a hotel to make your booking."/>
 
 		<View
 			android:layout_width="match_parent"
-			android:layout_height="5dp"
+			android:layout_height="2dp"
 			android:background="@android:color/darker_gray"/>
 
 	    <TextView

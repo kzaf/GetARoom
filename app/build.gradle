@@ -7,7 +7,7 @@ android {
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
-        applicationId "com.example.hotelreseration"
+        applicationId "com.hotelreservation.hotelreseration"
         minSdkVersion 21
         targetSdkVersion 23
         multiDexEnabled true

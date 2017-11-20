@@ -1080,7 +1080,7 @@ int id EditText03 0x7f0d011f
 int id EditText05 0x7f0d0124
 int id EditText06 0x7f0d0129
 int id EmaileditText 0x7f0d00ba
-int id HYBRID 0x7f0d01b0
+int id HYBRID 0x7f0d01b1
 int id HotelInfoTitle 0x7f0d01a2
 int id ImageView01 0x7f0d0112
 int id ImageView02 0x7f0d0111
@@ -1092,8 +1092,8 @@ int id LetUsKnow 0x7f0d00b7
 int id LinearLayout1 0x7f0d00fc
 int id LinearLayout2 0x7f0d00a2
 int id LoginAs 0x7f0d00ab
-int id Logout 0x7f0d01b4
-int id NORMAL 0x7f0d01b3
+int id Logout 0x7f0d01b5
+int id NORMAL 0x7f0d01b4
 int id NameTextView 0x7f0d00b9
 int id OrtextView 0x7f0d00bf
 int id Owner 0x7f0d00c5
@@ -1101,12 +1101,12 @@ int id PasswordeditText 0x7f0d00bc
 int id PasswordtextView 0x7f0d00bb
 int id ReEnterPass 0x7f0d00b0
 int id RelativeLayout1 0x7f0d00eb
-int id SATELLITE 0x7f0d01b1
+int id SATELLITE 0x7f0d01b2
 int id SelectRole 0x7f0d00c4
 int id SignInbutton 0x7f0d00bd
 int id SignUp 0x7f0d00b3
 int id Space1 0x7f0d0103
-int id TERRAIN 0x7f0d01b2
+int id TERRAIN 0x7f0d01b3
 int id TextView01 0x7f0d012d
 int id TextView02 0x7f0d00a5
 int id TextView03 0x7f0d00a9
@@ -1137,7 +1137,7 @@ int id action_menu_presenter 0x7f0d0003
 int id action_mode_bar 0x7f0d0090
 int id action_mode_bar_stub 0x7f0d008f
 int id action_mode_close_button 0x7f0d0072
-int id action_settings 0x7f0d01af
+int id action_settings 0x7f0d01b0
 int id action_text 0x7f0d0184
 int id actions 0x7f0d0191
 int id activity_chooser_view_content 0x7f0d0073
@@ -1459,6 +1459,7 @@ int id textView10 0x7f0d012a
 int id textView11 0x7f0d0197
 int id textView12 0x7f0d0198
 int id textView13 0x7f0d0199
+int id textView14 0x7f0d01af
 int id textView17 0x7f0d013d
 int id textView2 0x7f0d0158
 int id textView3 0x7f0d013b

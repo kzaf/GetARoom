@@ -1,4 +1,4 @@
-#Tue Aug 15 00:05:19 EEST 2017
+#Mon Nov 13 23:27:58 CET 2017
 file.64=C\:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_f26573539e214f9ccc090eab314c2371bf88733a\\classes.dex
 file.63=C\:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_627d6221db61234162c65b34814191fd0e24397e\\classes.dex
 file.62=C\:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_ad1b54ecd6c1b057060d2cabbb2923a7f15d7785\\classes.dex

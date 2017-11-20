@@ -28,7 +28,7 @@
 
 		<View
 			android:layout_width="match_parent"
-			android:layout_height="5dp"
+			android:layout_height="2dp"
 			android:background="@android:color/darker_gray"/>
 
 	    <TextView
@@ -82,7 +82,7 @@
 
 		<View
 			android:layout_width="match_parent"
-			android:layout_height="5dp"
+			android:layout_height="2dp"
 			android:background="@android:color/darker_gray"/>
 
 	    <TextView
@@ -92,12 +92,12 @@
 	        android:textAppearance="?android:attr/textAppearanceMedium"
 	        android:textStyle="bold" />
 
-	    <TextView
-	        android:id="@+id/pickeddate"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:gravity="center"
-	        android:text="You can pin your hotel on the map simply by selecting your hotel on the list. Then long press on the map and the hotel pinned." />
+		<TextView
+			android:id="@+id/pickeddate"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="You can pin your hotel on the Map simply by selecting your hotel from the list in Settings. Select Pin On Map and then long press on the map and the hotel pinned."/>
 	
 	</LinearLayout>
 </ScrollView>

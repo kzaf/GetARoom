@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.hotelreseration.test">
+    package="com.hotelreservation.hotelreseration.test">
 
     <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="23" />
 
@@ -9,8 +9,8 @@
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.example.hotelreseration"
+                     android:targetPackage="com.hotelreservation.hotelreseration"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for com.example.hotelreseration"/>
+                     android:label="Tests for com.hotelreservation.hotelreseration"/>
 </manifest>
