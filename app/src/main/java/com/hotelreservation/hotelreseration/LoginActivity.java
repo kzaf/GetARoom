@@ -51,7 +51,7 @@ public class LoginActivity extends ActionBarActivity {
         AB.hide();
 
         //Get Text Values
-        final Button mButton= (Button)findViewById(R.id.SignInbutton);
+        final Button signInButton= (Button)findViewById(R.id.SignInbutton);
         final EditText Email= (EditText)findViewById(R.id.EmaileditText);
         final EditText Pass= (EditText)findViewById(R.id.PasswordeditText);
 
@@ -73,41 +73,10 @@ public class LoginActivity extends ActionBarActivity {
 //            finish();
 //        }
 
-        mButton.setOnClickListener(new View.OnClickListener()
+        signInButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View arg0)
             {
-//                        if (SelectUserActivity.flagOwner){//ginetai elegxos an exeis syndethei ws Owner wste to email na einai owner
-//                            if (Email.getText().toString().contains("owner") && Pass.getText().toString().contains("0000")){
-//                                startActivity(new Intent(LoginActivity.this, MainActivity.class));
-//                            }
-//                            else if (Email.getText().toString().contains("kzaf") && Pass.getText().toString().contains("251991")){
-//                                startActivity(new Intent(LoginActivity.this, MainActivity.class));
-//                                flagkzaf=true;
-//                            }
-//                            else
-//                                //Toast is the pop up message
-//                                Toast.makeText(getApplicationContext(), "Wrong Email or Password!",
-//                                        Toast.LENGTH_LONG).show();
-//
-//                        }
-//                        else
-//                        {//ginetai elegxos an exeis syndethei ws Traveler wste to email na einai traveler
-//                            if (Email.getText().toString().contains("traveler") && Pass.getText().toString().contains("0000")){
-//                                startActivity(new Intent(LoginActivity.this, MainActivity.class));
-//                            }
-//                            else if (Email.getText().toString().contains("kzaf") && Pass.getText().toString().contains("251991")) {
-//                                startActivity(new Intent(LoginActivity.this, MainActivity.class));
-//                                flagkzaf = true;
-//                            }
-//                            else
-//                                //Toast is the pop up message
-//                                Toast.makeText(getApplicationContext(), "Wrong Email or Password!",
-//                                        Toast.LENGTH_LONG).show();
-//                        }
-//                        /////////////////////////////////////////////////
-//
-//                        /////////////////////////////////////////////////
                 mail=Email.getText().toString().trim();
                 pass=Pass.getText().toString().trim();
 
@@ -129,13 +98,14 @@ public class LoginActivity extends ActionBarActivity {
             }
         });
 
+
         //me aytes tis entoles allazw thn grammatoseira enos Text View
-        TextView reg = (TextView) findViewById(R.id.LoginAs);
+        TextView LoginText = (TextView) findViewById(R.id.LoginAs);
         Typeface regface = Typeface.createFromAsset(getAssets(),"fonts/KaushanScript-Regular.ttf");
-        reg.setTypeface(regface);
+        LoginText.setTypeface(regface);
 
         //Edw orizw to TextView Login as "Owner h Traveler" analoga ti exw epileksei.
-        final TextView LoginText = (TextView)findViewById(R.id.LoginAs);
+        //final TextView LoginText = (TextView)findViewById(R.id.LoginAs);
         if (SelectUserActivity.flagOwner){
             LoginText.setText("Login as " +" "+"Owner");
         }
@@ -170,6 +140,7 @@ public class LoginActivity extends ActionBarActivity {
     public void changeForgotPass(View v){
         startActivity(new Intent(LoginActivity.this, ForgotPassActivity.class));
     }
+
 //------------------------------------------------------DB--------------------------------------------------------------//
     /**
      * function to verify login details in mysql db

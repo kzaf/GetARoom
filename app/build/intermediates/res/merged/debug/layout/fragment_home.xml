@@ -30,8 +30,8 @@
         android:layout_alignRight="@+id/user_label"
         android:layout_below="@+id/user_label"
         android:background="@android:color/darker_gray"
-        android:visibility="visible"
-        tools:ignore="RtlHardcoded" />
+        android:visibility="invisible"
+        tools:ignore="RtlHardcoded"/>
 
     <TextView
         android:id="@+id/onoma"

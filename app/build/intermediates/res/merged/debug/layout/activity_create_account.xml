@@ -117,14 +117,14 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#FFFFFF" />
 
-     <View
-         android:id="@+id/separator"
-         android:layout_width="wrap_content"
-         android:layout_height="1dp"
-         android:layout_above="@+id/linearLayout1"
-         android:layout_alignLeft="@+id/LoginAs"
-         android:layout_alignRight="@+id/LoginAs"
-         android:background="@android:color/darker_gray"
-         android:visibility="visible" />
+    <View
+        android:id="@+id/separator"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignLeft="@+id/LoginAs"
+        android:layout_alignRight="@+id/LoginAs"
+        android:background="@android:color/darker_gray"
+        android:visibility="invisible"/>
 
 </RelativeLayout>

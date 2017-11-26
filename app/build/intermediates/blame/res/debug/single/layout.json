@@ -208,6 +208,10 @@
         "source": "C:\\Users\\kazaf\\.android\\build-cache\\b302adeb90cb290b3eb829d2b1e2d936697a198c\\output\\res\\layout\\mr_controller_material_dialog_b.xml"
     },
     {
+        "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\layout\\info_select_user.xml",
+        "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\layout\\info_select_user.xml"
+    },
+    {
         "merged": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_hotels.xml",
         "source": "C:\\Users\\kazaf\\StudioProjects\\HotelReseration\\app\\src\\main\\res\\layout\\fragment_hotels.xml"
     },

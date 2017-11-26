@@ -1,13 +1,18 @@
 package com.hotelreservation.hotelreseration;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,15 +34,37 @@ public class SelectUserActivity extends ActionBarActivity {
 		SelectUserActivity.flagOwner=false;
 		LoginActivity.flagkzaf=false;
 
+		final Context context = this;
+
+		final Button ownerButton= (Button)findViewById(R.id.Owner);
+		final ImageButton iButton= (ImageButton)findViewById(R.id.infoButton);
+
 		// SQLite database handler
 		db = new SQLiteHandler(getApplicationContext());
         db.deleteUsers();
-		
-		//Orizw to label sto loginactivity na leei Log in as Owner otan epilegw Owner
-		//opote to startActivity event energopoieitai apo edw.
-		//An den epileksw Owner kai epileksw Traveler, to flagOwner den ginetai true, opote to startActivity
-		//energopoieitai kanonika apo th methodo 'changeToLoginScreen' pou vrisketai parakatw
-		final Button ownerButton= (Button)findViewById(R.id.Owner);
+
+		iButton.setOnClickListener(new View.OnClickListener()
+		{
+			public void onClick(View arg0)
+			{
+				AlertDialog alertDialog = new AlertDialog.Builder(context).create();
+				alertDialog.setTitle("Info");
+				alertDialog.setIcon(R.drawable.action_about);
+				LayoutInflater layoutInflater = LayoutInflater.from(context);
+				View promptView = layoutInflater.inflate(R.layout.info_select_user, null);
+				alertDialog.setView(promptView);
+				alertDialog.setButton("OK", new DialogInterface.OnClickListener()
+				{
+					public void onClick(DialogInterface dialog, int which)
+					{
+
+					}
+				});
+
+				alertDialog.show();
+			}
+		});
+
 		ownerButton.setOnClickListener(
 			     new View.OnClickListener()
 			     {

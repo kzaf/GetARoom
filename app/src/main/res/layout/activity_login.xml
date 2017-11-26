@@ -124,6 +124,6 @@
         android:layout_alignRight="@+id/LoginAs"
         android:layout_below="@+id/LoginAs"
         android:background="@android:color/darker_gray"
-        android:visibility="visible" />
+        android:visibility="invisible"/>
 
 </RelativeLayout>
