@@ -179,7 +179,7 @@ public class LoginActivity extends ActionBarActivity {
                         String password = user.getString("password");
                         String telephone = user.getString("telephone");
 
-                        // Inserting row in users table
+                        // Inserting row in users table (SQLlite)
                         db.addUser(id, name, surname, country, email, password, telephone);
 
                         // Launch main activity

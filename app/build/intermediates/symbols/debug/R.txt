@@ -1280,7 +1280,6 @@ int id icon_uri 0x7f0d002b
 int id icon_view 0x7f0d00e4
 int id ifRoom 0x7f0d0042
 int id image 0x7f0d0075
-int id imageView 0x7f0d0130
 int id imageView1 0x7f0d00a3
 int id imageView2 0x7f0d0139
 int id imageView3 0x7f0d0138
@@ -1314,6 +1313,7 @@ int id loading_indicator 0x7f0d00d2
 int id logo_only 0x7f0d0065
 int id map 0x7f0d00ff
 int id mapView2 0x7f0d01aa
+int id mapView3 0x7f0d0130
 int id match_global_nicknames 0x7f0d004d
 int id match_parent 0x7f0d005e
 int id media_actions 0x7f0d018c

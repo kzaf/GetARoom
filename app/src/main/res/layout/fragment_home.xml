@@ -86,7 +86,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         tools:ignore="HardcodedText,RtlHardcoded"
-        android:layout_above="@+id/imageView"
+        android:layout_above="@+id/mapView3"
         android:layout_toStartOf="@+id/TextView01"/>
 
     <DigitalClock
@@ -100,14 +100,12 @@
         android:layout_alignTop="@+id/DateTextView"
         android:layout_alignParentEnd="true" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignStart="@+id/DateTextView"
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView3"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="330dp"
+        android:layout_height="220dp"
         android:layout_below="@+id/View01"
-        android:visibility="invisible"
-        app:srcCompat="@drawable/blue"/>
+        android:layout_alignStart="@+id/DateTextView"/>
 
 </RelativeLayout>

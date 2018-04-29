@@ -190,9 +190,8 @@ public class CreateAccountActivity extends ActionBarActivity {
 						String email = user.getString("email");
                         String password = user.getString("password");
                         String telephone = user.getString("telephone");
-                        //int telephone = 123456;//Integer.parseInt(tel);
 
-						// Inserting row in users table
+						// Inserting row in users table (SQLlite)
 						db.addUser(id, name, surname, country, email, password, telephone);
 
 						Toast.makeText(getApplicationContext(), "User successfully registered. Try login now!", Toast.LENGTH_LONG).show();
@@ -219,12 +218,10 @@ public class CreateAccountActivity extends ActionBarActivity {
                 {
 					e.printStackTrace();
 				}
-
 			}
 
 		}, new Response.ErrorListener()
             {
-
                 @Override
                 public void onErrorResponse(VolleyError error) {
                     Log.e(TAG, "Registration Error: " + error.getMessage());

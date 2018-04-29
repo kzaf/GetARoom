@@ -76,25 +76,23 @@ import static com.hotelreservation.hotelreseration.DataBase.AppConfig.URL_REGIST
 import static com.hotelreservation.hotelreseration.DataBase.AppConfig.URL_UPDATE_HOTEL;
 import static com.hotelreservation.hotelreseration.NavigationDrawer.Fragment_hotels.listView;
 
-public class MainActivity extends ActionBarActivity {
-
+public class MainActivity extends ActionBarActivity
+{
     // Fields -----------------------------------------------------------------
 
     android.support.v4.app.FragmentTransaction fragTran;
     final Context context=this;
-    public static String onomaxarth="none"; //orizw mia metavlhth na krataei to onoma tou ksenodoxeiou gia na kanei pin sto xarth
+    //orizw mia metavlhth na krataei to onoma tou ksenodoxeiou gia na kanei pin sto xarth
+    public static String onomaxarth="none";
     public int backButtonCount=0;
 
-    public int day;
-    public int month;
-    public int year;
+    public int day, month, year;
 
     private DrawerLayout drawerLayout;
     private ListView drawerList;
     private ActionBarDrawerToggle drawerToggle;
-    private MenuListAdapter menuAdapter;
 
-    private int[] iconsOwner,iconsTraveler;
+    private int[] iconsOwner, iconsTraveler;
 
     private Fragment_home home;
     private Fragment_user user;
@@ -107,8 +105,7 @@ public class MainActivity extends ActionBarActivity {
     private SQLiteHandler db;
 
     //for the user
-    public static String dbname, dbsurname, dbcountry,
-            dbmail, dbtelephone, dboFKey;
+    public static String dbname, dbsurname, dbcountry, dbmail, dbtelephone, dboFKey;
 
     private ProgressDialog pDialog;
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -118,8 +115,7 @@ public class MainActivity extends ActionBarActivity {
     Spinner hotelstars;
     CheckBox hotelswimmingpool;
 
-    public String gethotelname, gethotelcity, gethoteladdress, gethotelpostalcode,
-            gethoteltelephone, gethotelwebsite, gethotelstars;
+    public String gethotelname, gethotelcity, gethoteladdress, gethotelpostalcode, gethoteltelephone, gethotelwebsite, gethotelstars;
     public boolean gethotelswimmingpool;
     public String sp = "false";
     public boolean flagaddnew = false;
@@ -127,17 +123,14 @@ public class MainActivity extends ActionBarActivity {
     public String URL_DELETE, URL_UPDATE;
     public String hoteln;
 
-    public String travelerName = "traveler_name";
+    public static String hid, hn, hc, ha, htk, ht, hs, hoidFK, hw, hsp;
 
-    public static String hid, hn, hc, ha,
-            htk, ht, hs, hoidFK, hw, hsp;
-
-    public double booking_lat;
-    public double booking_lon;
+    public double booking_lat, booking_lon;
 
     public String drawerSelection = "Home";
 
-    private final String[] titlesowner = new String[]{
+    private final String[] titlesowner = new String[]
+    {
             "Home",
             "Profile",
             "Manage Reservations",
@@ -146,7 +139,9 @@ public class MainActivity extends ActionBarActivity {
             "Settings",
             "Logout"
     };
-    private final String[] titlestraveler = new String[]{
+
+    private final String[] titlestraveler = new String[]
+    {
             "Home",
             "Profile",
             "Manage Booking",
@@ -158,12 +153,11 @@ public class MainActivity extends ActionBarActivity {
 
     // Lifecycle Callbacks ----------------------------------------------------
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-
+    protected void onCreate(Bundle savedInstanceState)
+    {
         // Base implemenation
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         // Instantiate the fragments
         home = new Fragment_home();
@@ -219,42 +213,44 @@ public class MainActivity extends ActionBarActivity {
 
         // Set a custom shadow over that overlays the main content
         // when the drawer opens
-        drawerLayout.setDrawerShadow(
-                R.drawable.drawer_shadow, GravityCompat.START);
+        drawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
 
         // Pass the string arrays to the MenuListAdapter, set the drawer
         // list adapter to it and set up its click listener
-        if (SelectUserActivity.flagOwner){
-            menuAdapter = new MenuListAdapter(MainActivity.this, titlesowner, iconsOwner);
-            drawerList.setAdapter(menuAdapter);
-            drawerList.setOnItemClickListener(new DrawerItemClickListener());
-        }else{
-            menuAdapter = new MenuListAdapter(MainActivity.this, titlestraveler, iconsTraveler);
-            drawerList.setAdapter(menuAdapter);
+        if (SelectUserActivity.flagOwner)
+        {
+            drawerList.setAdapter(new MenuListAdapter(MainActivity.this, titlesowner, iconsOwner));
             drawerList.setOnItemClickListener(new DrawerItemClickListener());
         }
-        //Set the name of the ActionBar on open
-        getSupportActionBar().setTitle(drawerSelection);// Set the drawer selection name on the ActionBar
+        else
+        {
+            drawerList.setAdapter(new MenuListAdapter(MainActivity.this, titlestraveler, iconsTraveler));
+            drawerList.setOnItemClickListener(new DrawerItemClickListener());
+        }
+        // Set the name of the ActionBar on open
+        // Set the drawer selection name on the ActionBar
+        getSupportActionBar().setTitle(drawerSelection);
 
         // Enable the action bar to have up navigation
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // Allow the the action bar to toggle the drawer
-        drawerToggle = new ActionBarDrawerToggle(
-                this,
-                drawerLayout,
-                R.string.navigation_drawer_open,
-                R.string.navigation_drawer_close){
-
-            public void onDrawerClosed(View view){
-                getSupportActionBar().setTitle(drawerSelection);// Set the drawer selection name on the ActionBar
+        drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
+        {
+            public void onDrawerClosed(View view)
+            {
+                // Set the drawer selection name on the ActionBar
+                getSupportActionBar().setTitle(drawerSelection);
                 super.onDrawerClosed(view);
             }
+
             @SuppressWarnings("deprecation")
-            public void onDrawerOpened(View view){
+            public void onDrawerOpened(View view)
+            {
                 backButtonCount=0;
-                getSupportActionBar().setTitle(drawerSelection);// Set the drawer selection name on the ActionBar
+                // Set the drawer selection name on the ActionBar
+                getSupportActionBar().setTitle(drawerSelection);
 
                 super.onDrawerOpened(view);
             }
@@ -262,15 +258,17 @@ public class MainActivity extends ActionBarActivity {
         drawerLayout.setDrawerListener(drawerToggle);
 
         // If this is the first time opening this activity,
-        // start with loading fragment #1
-        if (savedInstanceState == null){
+        // start with loading fragment #1 (or 0)
+        if (savedInstanceState == null)
+        {
             selectItem(0);
         }
     }
 
     // Methods ----------------------------------------------------------------
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main_screen, menu);
         return true;
@@ -278,16 +276,22 @@ public class MainActivity extends ActionBarActivity {
 
     @SuppressWarnings("deprecation")
     @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        switch (item.getItemId()) {
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        switch (item.getItemId())
+        {
             case android.R.id.home:
                 // If the drawer is open, close it; vice versa
-                if (drawerLayout.isDrawerOpen(drawerList)){
+                if (drawerLayout.isDrawerOpen(drawerList))
+                {
                     drawerLayout.closeDrawer(drawerList);
-                } else {
+                }
+                else
+                {
                     drawerLayout.openDrawer(drawerList);
                 }
                 return true;
+
             case R.id.Logout:
                 AlertDialog alertDialog = new AlertDialog.Builder(this).create();
                 alertDialog.setTitle("Logout");
@@ -308,35 +312,37 @@ public class MainActivity extends ActionBarActivity {
                 return super.onOptionsItemSelected(item);
         }
 
-
         // Finish by letting the super class do the rest
         return super.onOptionsItemSelected(item);
 
     }
 
     @Override
-    protected void onPostCreate(Bundle savedInstanceState){
+    protected void onPostCreate(Bundle savedInstanceState)
+    {
         // Call the super implementation and synchronize the drawer
         super.onPostCreate(savedInstanceState);
         drawerToggle.syncState();
     }
 
     @Override
-    public void onConfigurationChanged(Configuration newConfig){
+    public void onConfigurationChanged(Configuration newConfig)
+    {
         // Call the super implementation on this activity and the drawer toggle object
         super.onConfigurationChanged(newConfig);
         drawerToggle.onConfigurationChanged(newConfig);
     }
 
     @SuppressWarnings("deprecation")
-    private void selectItem(int position){
-
+    private void selectItem(int position)
+    {
         // Create a new fragment transaction and start it
         fragTran = getSupportFragmentManager().beginTransaction();
 
         // Locate the position selected replace the content view
         // with the fragment of the number selected
-        switch (position){
+        switch (position)
+        {
             case 0:{
                 fragTran.replace(R.id.content_frame, home);
                 drawerSelection = "Home";
@@ -377,7 +383,7 @@ public class MainActivity extends ActionBarActivity {
                 break;
             }
             case 6:{
-                //Petaw alert dialog gia to logout tou xrhsth
+                // Pop up alert dialog for the logout
                 AlertDialog alertDialog = new AlertDialog.Builder(this).create();
 
                 // Setting Dialog Title
@@ -401,7 +407,6 @@ public class MainActivity extends ActionBarActivity {
                         Toast.makeText(getApplicationContext(), "You Have Successfully Logged Out", Toast.LENGTH_LONG).show();
                     }
                 });
-                // Showing Alert Message
                 alertDialog.show();
                 break;
             }
@@ -419,12 +424,7 @@ public class MainActivity extends ActionBarActivity {
     @SuppressWarnings("deprecation")
     public void alerthotel()
     {
-        final AlertDialog alertDialog = new AlertDialog.Builder(context).create();
-        alertDialog.setTitle("Add new hotel");
-        alertDialog.setIcon(R.drawable.addhotel);
-        LayoutInflater layoutInflater = LayoutInflater.from(context);
-        View promptView = layoutInflater.inflate(R.layout.fragment_add_hotel, null);
-        alertDialog.setView(promptView);
+        View promptView = LayoutInflater.from(context).inflate(R.layout.fragment_add_hotel, null);
 
         hotelname= (EditText)promptView.findViewById(R.id.hotelname);
         hotelcity= (EditText)promptView.findViewById(R.id.hotelcity);
@@ -435,22 +435,27 @@ public class MainActivity extends ActionBarActivity {
         hotelstars = (Spinner)promptView.findViewById(R.id.hotelstars);
         hotelswimmingpool = (CheckBox)promptView.findViewById(R.id.hotelswimmingpool);
 
+        final AlertDialog alertDialog = new AlertDialog.Builder(context).create();
+        alertDialog.setTitle("Add new hotel");
+        alertDialog.setIcon(R.drawable.addhotel);
+        alertDialog.setView(promptView);
+
         alertDialog.setButton("OK", new DialogInterface.OnClickListener()
         {
             public void onClick(DialogInterface dialog, int which)
             {
                 if (hotelname.getText().toString().equals("")||
-                        hotelcity.getText().toString().equals("")||
-                        hoteladdress.getText().toString().equals("")||
-                        hotelpostalcode.getText().toString().equals("")||
-                        hoteltelephone.getText().toString().equals("")||
-                        hotelwebsite.getText().toString().equals("")){
-                    //Toast is the pop up message
-                    Toast.makeText(getApplicationContext(), "Please fill in all of the fields",
-                            Toast.LENGTH_LONG).show();
-
+                    hotelcity.getText().toString().equals("")||
+                    hoteladdress.getText().toString().equals("")||
+                    hotelpostalcode.getText().toString().equals("")||
+                    hoteltelephone.getText().toString().equals("")||
+                    hotelwebsite.getText().toString().equals(""))
+                {
+                    Toast.makeText(getApplicationContext(), "Please fill in all of the fields", Toast.LENGTH_LONG).show();
                 }
-                else{
+
+                else
+                {
                     gethotelname = hotelname.getText().toString().trim();
                     gethotelcity = hotelcity.getText().toString().trim();
                     gethoteladdress = hoteladdress.getText().toString().trim();
@@ -459,28 +464,28 @@ public class MainActivity extends ActionBarActivity {
                     gethotelwebsite= hotelwebsite.getText().toString().trim();
                     gethotelstars= hotelstars.getSelectedItem().toString();
                     gethotelswimmingpool = hotelswimmingpool.isChecked();
-                    if(gethotelswimmingpool){
+
+                    if(gethotelswimmingpool)
+                    {
                         sp = "true";
                     }
-                    registerHotel(gethotelname, gethotelcity, gethoteladdress, gethotelpostalcode,
-                            gethoteltelephone, gethotelstars, dboFKey, gethotelwebsite, sp);
+                    registerHotel(gethotelname, gethotelcity, gethoteladdress, gethotelpostalcode, gethoteltelephone, gethotelstars, dboFKey, gethotelwebsite, sp);
                     flagaddnew = true;
                 }
             }
         });
-        // Showing Alert Message
         alertDialog.show();
     }
 
     @SuppressWarnings("deprecation")
-    public void OwnerGuide(){
-        if (SelectUserActivity.flagOwner){
+    public void OwnerGuide()
+    {
+        if (SelectUserActivity.flagOwner)
+        {
             AlertDialog alertDialog = new AlertDialog.Builder(context).create();
             alertDialog.setTitle("Owner Guide");
             alertDialog.setIcon(R.drawable.guide);
-            LayoutInflater layoutInflater = LayoutInflater.from(context);
-            View promptView = layoutInflater.inflate(R.layout.ownerguide, null);
-            alertDialog.setView(promptView);
+            alertDialog.setView(LayoutInflater.from(context).inflate(R.layout.ownerguide, null));
             alertDialog.setButton("OK", new DialogInterface.OnClickListener()
             {
                 public void onClick(DialogInterface dialog, int which)
@@ -488,16 +493,15 @@ public class MainActivity extends ActionBarActivity {
                     Toast.makeText(getApplicationContext(), "For more info contact us via mail", Toast.LENGTH_SHORT).show();
                 }
             });
-            // Showing Alert Message
             alertDialog.show();
         }
-        else{
+
+        else
+        {
             AlertDialog alertDialog = new AlertDialog.Builder(context).create();
             alertDialog.setTitle("Traveler Guide");
             alertDialog.setIcon(R.drawable.guide);
-            LayoutInflater layoutInflater = LayoutInflater.from(context);
-            View promptView = layoutInflater.inflate(R.layout.travelerguide, null);
-            alertDialog.setView(promptView);
+            alertDialog.setView(LayoutInflater.from(context).inflate(R.layout.travelerguide, null));
             alertDialog.setButton("OK", new DialogInterface.OnClickListener()
             {
                 public void onClick(DialogInterface dialog, int which)
@@ -505,30 +509,28 @@ public class MainActivity extends ActionBarActivity {
                     Toast.makeText(getApplicationContext(), "For more info contact us via mail", Toast.LENGTH_SHORT).show();
                 }
             });
-            // Showing Alert Message
             alertDialog.show();
         }
 
     }
 
     @SuppressWarnings("deprecation")
-    public void AboutUs(){
+    public void AboutUs()
+    {
         AlertDialog alertDialog = new AlertDialog.Builder(context).create();
         alertDialog.setTitle("About Us");
         alertDialog.setIcon(R.drawable.aboutus);
-        LayoutInflater layoutInflater = LayoutInflater.from(context);
-        View promptView = layoutInflater.inflate(R.layout.aboutus, null);
-        alertDialog.setView(promptView);
+        alertDialog.setView(LayoutInflater.from(context).inflate(R.layout.aboutus, null));
         alertDialog.setButton("OK", new DialogInterface.OnClickListener()
         {
             public void onClick(DialogInterface dialog, int which) {}
         });
-        // Showing Alert Message
         alertDialog.show();
     }
 
     @SuppressWarnings("deprecation")
-    public void ContactUs(){
+    public void ContactUs()
+    {
         AlertDialog alertDialog = new AlertDialog.Builder(context).create();
         alertDialog.setTitle("Contact Us");
         alertDialog.setIcon(R.drawable.contactus);
@@ -545,40 +547,40 @@ public class MainActivity extends ActionBarActivity {
 
     @SuppressWarnings("deprecation")
     public void ReportProblem(){
+        View promptView = LayoutInflater.from(context).inflate(R.layout.reportproblem, null);
+        final EditText reportproblem= (EditText)promptView.findViewById(R.id.suite1);
+
         AlertDialog alertDialog = new AlertDialog.Builder(context).create();
         alertDialog.setTitle("Report A Problem");
         alertDialog.setIcon(R.drawable.reporthotel);
-        LayoutInflater layoutInflater = LayoutInflater.from(context);
-        View promptView = layoutInflater.inflate(R.layout.reportproblem, null);
         alertDialog.setView(promptView);
-        final EditText reportproblem= (EditText)promptView.findViewById(R.id.suite1);
+
         alertDialog.setButton("OK", new DialogInterface.OnClickListener()
         {
             public void onClick(DialogInterface dialog, int which)
             {
-                //Here are the mail that the user will sent mail to, in case he forgot the pass
-                String subject="Report a problem";
-                String message=reportproblem.getText().toString();
+                //The mail that the user will send mail to, in case he forgot the pass
                 {
                     Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto","kzaf@it.teithe.gr,ziskatas@it.teithe.gr", null));
-                    intent.putExtra(Intent.EXTRA_SUBJECT, subject);
-                    intent.putExtra(Intent.EXTRA_TEXT, message);
+                    intent.putExtra(Intent.EXTRA_SUBJECT, "Report a problem");
+                    intent.putExtra(Intent.EXTRA_TEXT, reportproblem.getText().toString());
                     startActivity(Intent.createChooser(intent, "Choose an Email client :"));
                 }
             }
         });
-        // Showing Alert Message
         alertDialog.show();
     }
 
     @SuppressWarnings("deprecation")
-    public void DeleteAccount(){
+    public void DeleteAccount()
+    {
+        View promptView = LayoutInflater.from(context).inflate(R.layout.deleteaccount, null);
+
         AlertDialog alertDialog = new AlertDialog.Builder(context).create();
         alertDialog.setTitle("Delete Account");
         alertDialog.setIcon(R.drawable.deletehotel);
-        LayoutInflater layoutInflater = LayoutInflater.from(context);
-        View promptView = layoutInflater.inflate(R.layout.deleteaccount, null);
         alertDialog.setView(promptView);
+
         alertDialog.setButton("OK", new DialogInterface.OnClickListener()
         {
             public void onClick(DialogInterface dialog, int which)
@@ -594,11 +596,12 @@ public class MainActivity extends ActionBarActivity {
                 startActivity(new Intent(MainActivity.this, SelectUserActivity.class));
             }
         });
-        // Showing Alert Message
         alertDialog.show();
     }
 
-    public static int getIndexOFValue(String value, ArrayList<HashMap<String, String>> listMap) { //Get the index out of a HashMap ArrayList, by key
+    //Get the index out of a HashMap ArrayList, by key
+    private static int getIndexOFValue(String value, ArrayList<HashMap<String, String>> listMap)
+    {
         int i = 0;
         for (Map<String, String> map : listMap) {
             if (map.containsValue(value)) {
@@ -609,30 +612,27 @@ public class MainActivity extends ActionBarActivity {
         return -1;
     }
 
-    public void hotelBooking(final String hotelname, final String hotelCity,
-                             final String checkin, final String checkout){
+    public void hotelBooking(final String hotelname, final String hotelCity, final String checkin, final String checkout)
+    {
         hotelcoords(hotelname);
+        View promptView = LayoutInflater.from(context).inflate(R.layout.traveler_hotel_registration, null);
+
         AlertDialog alertDialog = new AlertDialog.Builder(context).create();
         alertDialog.setTitle("Hotel Info");
         alertDialog.setIcon(R.drawable.action_hotels);
-        LayoutInflater layoutInflater = LayoutInflater.from(context);
-        View promptView = layoutInflater.inflate(R.layout.traveler_hotel_registration, null);
         alertDialog.setView(promptView);
-
-        final int i = getIndexOFValue(hotelname, Fragment_Search.records); //Get the index of the ArryList with HashMap with the hotels
 
         final TextView website= (TextView) promptView.findViewById(R.id.tvwebsite);
         final TextView address= (TextView) promptView.findViewById(R.id.tvaddress);
         final TextView telephone= (TextView) promptView.findViewById(R.id.tvtelephone);
         final RatingBar rb = (RatingBar) promptView.findViewById(R.id.ratingBar);
         final CheckBox spool = (CheckBox)promptView.findViewById(R.id.swimmingpoolCheckBox);
-        website.setText(Fragment_Search.records.get(i).get("website"));
-        address.setText(Fragment_Search.records.get(i).get("address"));
-        telephone.setText(Fragment_Search.records.get(i).get("telephone"));
-        final String starsNo = Fragment_Search.records.get(i).get("stars");
-        rb.setRating(Integer.parseInt(starsNo));
-        boolean a = Boolean.parseBoolean(Fragment_Search.records.get(i).get("swimmingpool"));
-        spool.setChecked(a);
+
+        website.setText(Fragment_Search.records.get(getIndexOFValue(hotelname, Fragment_Search.records)).get("website"));
+        address.setText(Fragment_Search.records.get(getIndexOFValue(hotelname, Fragment_Search.records)).get("address"));
+        telephone.setText(Fragment_Search.records.get(getIndexOFValue(hotelname, Fragment_Search.records)).get("telephone"));
+        rb.setRating(Integer.parseInt(Fragment_Search.records.get(getIndexOFValue(hotelname, Fragment_Search.records)).get("stars")));
+        spool.setChecked(Boolean.parseBoolean(Fragment_Search.records.get(getIndexOFValue(hotelname, Fragment_Search.records)).get("swimmingpool")));
 
         MapView mMapView = (MapView) promptView.findViewById(R.id.mapView2);
         MapsInitializer.initialize(this);
@@ -672,14 +672,13 @@ public class MainActivity extends ActionBarActivity {
         alertDialog.show();
     }
 
-    public void bookingAlert(final String hotelname, final String checkin,
-                             final String checkout){
+    public void bookingAlert(final String hotelname, final String checkin, final String checkout)
+    {
+        View promptView = LayoutInflater.from(context).inflate(R.layout.fragment_make_booking, null);
 
         AlertDialog alertDialog = new AlertDialog.Builder(context).create();
         alertDialog.setTitle("Make Booking");
         alertDialog.setIcon(R.drawable.action_hotels);
-        LayoutInflater layoutInflater = LayoutInflater.from(context);
-        View promptView = layoutInflater.inflate(R.layout.fragment_make_booking, null);
         alertDialog.setView(promptView);
 
         final TextView checkIn= (TextView) promptView.findViewById(R.id.tvCheckin);
@@ -694,15 +693,15 @@ public class MainActivity extends ActionBarActivity {
 
         checkIn.setText(checkin);
         checkOut.setText(checkout);
-        bookingtitle.setText("Your booking at "+hotelname);
+        bookingtitle.setText("Your booking at "+ hotelname);
 
         alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Make booking", new DialogInterface.OnClickListener()
         {
             public void onClick(DialogInterface dialog, int which)
             {
-                final int selectedRoomType =roomtype.getCheckedRadioButtonId();
                 String roomType = "Regular";
-                switch(selectedRoomType){
+                switch(roomtype.getCheckedRadioButtonId())
+                {
                     case R.id.radioRegular:
                         roomType = "Regular";
                         break;
@@ -714,9 +713,8 @@ public class MainActivity extends ActionBarActivity {
                         break;
                 }
 
-                final int selectedBedType = bedsNo.getCheckedRadioButtonId();
                 String bedType = "Single";
-                switch(selectedBedType){
+                switch(bedsNo.getCheckedRadioButtonId()){
                     case R.id.radioOne:
                         bedType = "Single";
                         break;
@@ -742,12 +740,13 @@ public class MainActivity extends ActionBarActivity {
         alertDialog.show();
     }
 
-    public void EditHotels(){
+    public void EditHotels()
+    {
+        View promptView = LayoutInflater.from(context).inflate(R.layout.edithotels, null);
+
         final AlertDialog alertDialog = new AlertDialog.Builder(context).create();
         alertDialog.setTitle("Edit Hotels");
         alertDialog.setIcon(R.drawable.reporthotel);
-        LayoutInflater layoutInflater = LayoutInflater.from(context);
-        View promptView = layoutInflater.inflate(R.layout.edithotels, null);
         alertDialog.setView(promptView);
 
         final CheckBox hotel1= (CheckBox)promptView.findViewById(R.id.checkHotel1);
@@ -755,65 +754,74 @@ public class MainActivity extends ActionBarActivity {
         final CheckBox hotel3= (CheckBox)promptView.findViewById(R.id.checkHotel3);
         final TextView edithoteltitle= (TextView)promptView.findViewById(R.id.edithoteltitle);
 
-        if (listView==null){
+        if (listView==null)
+        {
             edithoteltitle.setText("No hotels added yet! Please add one!");
             hotel1.setVisibility(GONE);
             hotel2.setVisibility(GONE);
             hotel3.setVisibility(GONE);
-        }else if (listView.getCount()==1){
+        }
+
+        else if (listView.getCount()==1)
+        {
             hotel1.setEnabled(true);
             hotel1.setChecked(true);
             hotels.adapter.notifyDataSetChanged();
             HashMap<String, String> hashMap = (HashMap<String, String>) listView.getItemAtPosition(0);
-            String aLongValue = hashMap.get("name");
-            hotel1.setText(aLongValue);
+            hotel1.setText(hashMap.get("name"));
             hotel2.setVisibility(GONE);
             hotel3.setVisibility(GONE);
-        }else if (listView.getCount()==2){
+        }
+
+        else if (listView.getCount()==2)
+        {
             hotel1.setEnabled(true);
             hotels.adapter.notifyDataSetChanged();
             HashMap<String, String> hashMap = (HashMap<String, String>) listView.getItemAtPosition(0);
-            String aLongValue = hashMap.get("name");
-            hotel1.setText(aLongValue);
+            hotel1.setText(hashMap.get("name"));
             hotel2.setEnabled(true);
             hotels.adapter.notifyDataSetChanged();
             HashMap<String, String> hashMap1 = (HashMap<String, String>) listView.getItemAtPosition(1);
-            String aLongValue1 = hashMap1.get("name");
-            hotel2.setText(aLongValue1);
+            hotel2.setText(hashMap1.get("name"));
             hotel3.setVisibility(GONE);
-        }else{
+        }
+
+        else
+        {
             hotel1.setEnabled(true);
             hotels.adapter.notifyDataSetChanged();
             HashMap<String, String> hashMap = (HashMap<String, String>) listView.getItemAtPosition(0);
-            String aLongValue = hashMap.get("name");
-            hotel1.setText(aLongValue);
+            hotel1.setText(hashMap.get("name"));
             hotel2.setEnabled(true);
             hotels.adapter.notifyDataSetChanged();
             HashMap<String, String> hashMap1 = (HashMap<String, String>) listView.getItemAtPosition(1);
-            String aLongValue1 = hashMap1.get("name");
-            hotel2.setText(aLongValue1);
+            hotel2.setText(hashMap1.get("name"));
             hotel3.setEnabled(true);
             hotels.adapter.notifyDataSetChanged();
             HashMap<String, String> hashMap2 = (HashMap<String, String>) listView.getItemAtPosition(2);
-            String aLongValue2 = hashMap2.get("name");
-            hotel3.setText(aLongValue2);
+            hotel3.setText(hashMap2.get("name"));
 
         }
+
         alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Pin on map", new DialogInterface.OnClickListener()
         {
             public void onClick(DialogInterface dialog, int which)
             {
-                Toast.makeText(getApplicationContext(), "Long press to pin!",
-                        Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Long press to pin!", Toast.LENGTH_LONG).show();
                 fragTran = getSupportFragmentManager().beginTransaction();
                 fragTran.replace(R.id.content_frame, maps);
                 fragTran.commit();
                 MainActivity.flagpinhotel = true;
-                if(hotel1.isChecked()){
+                if(hotel1.isChecked())
+                {
                     onomaxarth=(String) hotel1.getText();
-                }else if (hotel2.isChecked()){
+                }
+                else if (hotel2.isChecked())
+                {
                     onomaxarth=(String) hotel2.getText();
-                }else{
+                }
+                else
+                {
                     onomaxarth=(String) hotel3.getText();
                 }
             }
@@ -1109,19 +1117,19 @@ public class MainActivity extends ActionBarActivity {
 
     @SuppressLint("InflateParams")
     @SuppressWarnings("deprecation")
-
-    public void SetDate(final boolean flag){
-
+    public void SetDate(final boolean flag)
+    {
         final AlertDialog alertDialog = new AlertDialog.Builder(context).create();
         alertDialog.setTitle("Select Date");
         alertDialog.setIcon(R.drawable.action_reservations);
-        LayoutInflater layoutInflater = LayoutInflater.from(context);
-        View promptView = layoutInflater.inflate(R.layout.datepicker, null);
-        alertDialog.setView(promptView);
-        final DatePicker datePicker = (DatePicker) promptView.findViewById(R.id.datePicker1);
+        alertDialog.setView(LayoutInflater.from(context).inflate(R.layout.datepicker, null));
+
+        final DatePicker datePicker = (DatePicker) LayoutInflater.from(context).inflate(R.layout.datepicker, null).findViewById(R.id.datePicker1);
         datePicker.setMinDate(System.currentTimeMillis() - 1000); //prevent selecting older dates
+
         final Button CheckIn = (Button) findViewById(R.id.checkin);
         final Button CheckOut = (Button) findViewById(R.id.checkout);
+
         final boolean[] flg = {false};
 
         alertDialog.setButton("OK", new DialogInterface.OnClickListener()
@@ -1132,13 +1140,10 @@ public class MainActivity extends ActionBarActivity {
                 month=datePicker.getMonth() + 1;
                 year=datePicker.getYear();
 
-                if (flag){
-                    CheckIn.setText(new StringBuilder().append(day).append("/").append(month).append("/").append(year));
-                }
-                else{
-                    String a = CheckIn.getText().toString();
+                if (!flag) {
+                    String checkInDateText = CheckIn.getText().toString();
 
-                    String[] partsa = a.split("/");
+                    String[] partsa = checkInDateText.split("/");
                     String part1a = partsa[0];
                     String[] p = part1a.split(" ");
                     part1a = p[0];
@@ -1149,20 +1154,17 @@ public class MainActivity extends ActionBarActivity {
                     int p3a = Integer.parseInt(part3a);
 
                     if(p3a < year){
-                        CheckOut.setText(new StringBuilder().append(day).
-                                append("/").append(month).append("/").append(year));
+                        CheckOut.setText(new StringBuilder().append(day).append("/").append(month).append("/").append(year));
                         flg[0] = true;
                     }else if(p3a == year)
                     {
                         if(p2a < month){
-                            CheckOut.setText(new StringBuilder().append(day).
-                                    append("/").append(month).append("/").append(year));
+                            CheckOut.setText(new StringBuilder().append(day).append("/").append(month).append("/").append(year));
                             flg[0] = true;
                         }else if(p2a == month)
                         {
                             if(p1a < day){
-                                CheckOut.setText(new StringBuilder().append(day).
-                                        append("/").append(month).append("/").append(year));
+                                CheckOut.setText(new StringBuilder().append(day).append("/").append(month).append("/").append(year));
                                 flg[0] = true;
                             }else{
                                 Toast.makeText(getApplicationContext(), "CheckIn date cannot be the same or bigger than CheckOut!", Toast.LENGTH_LONG).show();
@@ -1182,10 +1184,11 @@ public class MainActivity extends ActionBarActivity {
                         CheckIn.setText("CHECK IN");
                         CheckOut.setText("CHECK OUT");
                     }
+                } else {
+                    CheckIn.setText(new StringBuilder().append(day).append("/").append(month).append("/").append(year));
                 }
             }
         });
-        // Showing Alert Message
         alertDialog.show();
     }
 
@@ -1460,10 +1463,11 @@ public class MainActivity extends ActionBarActivity {
         AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
     }
 
-    // Load Functions
-    public interface VolleyCallback{
+    //Because Volley is asyncronus, this interface helps Volley to return a parameter
+    public interface VolleyCallback
+    {
         void onSuccess(String result);
-    } //Because Volley is asyncronus, this interface helps Volley to return a parameter
+    }
 
     void findTravelerById(final String tID, final VolleyCallback callback){
         // Tag used to cancel the request
