@@ -18,19 +18,20 @@ import android.widget.Toast;
 
 import com.hotelreservation.hotelreseration.DataBase.SQLiteHandler;
 
-public class SelectUserActivity extends ActionBarActivity {
-
+public class SelectUserActivity extends ActionBarActivity
+{
 	private SQLiteHandler db;
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	protected void onCreate(Bundle savedInstanceState)
+    {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_select_user);
 		//disable the ActionBar
 		android.support.v7.app.ActionBar AB=getSupportActionBar();
-		AB.hide();
-		
-		//mhdenismos twn flag
+        if (AB != null) AB.hide();
+
+        //mhdenismos twn flag
 		SelectUserActivity.flagOwner=false;
 		LoginActivity.flagkzaf=false;
 
@@ -47,44 +48,37 @@ public class SelectUserActivity extends ActionBarActivity {
 		{
 			public void onClick(View arg0)
 			{
-				AlertDialog alertDialog = new AlertDialog.Builder(context).create();
+                View promptView = LayoutInflater.from(context).inflate(R.layout.info_select_user, null);
+
+                AlertDialog alertDialog = new AlertDialog.Builder(context).create();
 				alertDialog.setTitle("Info");
 				alertDialog.setIcon(R.drawable.action_about);
-				LayoutInflater layoutInflater = LayoutInflater.from(context);
-				View promptView = layoutInflater.inflate(R.layout.info_select_user, null);
 				alertDialog.setView(promptView);
 				alertDialog.setButton("OK", new DialogInterface.OnClickListener()
 				{
-					public void onClick(DialogInterface dialog, int which)
-					{
-
-					}
+					public void onClick(DialogInterface dialog, int which) { } // nothing..yet
 				});
 
 				alertDialog.show();
 			}
 		});
 
-		ownerButton.setOnClickListener(
-			     new View.OnClickListener()
-			     {
-			         public void onClick(View arg0)
-			         {
-			             flagOwner=true;
-			             startActivity(new Intent(SelectUserActivity.this, LoginActivity.class));
-			         }
-			     });
+		ownerButton.setOnClickListener( new View.OnClickListener()
+        {
+             public void onClick(View arg0)
+             {
+                 flagOwner=true;
+                 startActivity(new Intent(SelectUserActivity.this, LoginActivity.class));
+             }
+        });
+
 		//me aytes tis entoles allazw thn grammatoseira enos Text View
 		TextView sr = (TextView) findViewById(R.id.SelectRole);
-		Typeface srface = Typeface.createFromAsset(getAssets(),"fonts/black_jack.ttf");
-		sr.setTypeface(srface);
+		sr.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/black_jack.ttf"));
 
 		TextView welcome = (TextView) findViewById(R.id.Welcome);
-		Typeface welcomeface = Typeface.createFromAsset(getAssets(),"fonts/KaushanScript-Regular.ttf");
-		welcome.setTypeface(welcomeface);
-
-		//orizw to flag gia to listview me ta hotel na einai false
-	}
+		welcome.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/KaushanScript-Regular.ttf"));
+    }
 	
 	
 	/**
@@ -98,7 +92,7 @@ public class SelectUserActivity extends ActionBarActivity {
 	public void onBackPressed()
 	{
 	    if(backButtonCount >= 1)
-	    {	    	
+	    {
 	        Intent intent = new Intent(Intent.ACTION_MAIN);
 	        intent.addCategory(Intent.CATEGORY_HOME);
 	        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -112,23 +106,21 @@ public class SelectUserActivity extends ActionBarActivity {
 	}
 	
 	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
+	public boolean onCreateOptionsMenu(Menu menu)
+    {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.select_user, menu);
 		return true;
 	}
 
 	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
-	}
+	public boolean onOptionsItemSelected(MenuItem item)
+    {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        return item.getItemId() == R.id.action_settings || super.onOptionsItemSelected(item);
+    }
 
 	//change to: login activity
 	//ksanakanw to flagOwner = false se periptwsh pou epistrepsw sthn othonh epiloghs xrhsth ksana

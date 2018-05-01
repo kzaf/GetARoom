@@ -29,8 +29,8 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CreateAccountActivity extends ActionBarActivity {
-
+public class CreateAccountActivity extends ActionBarActivity
+{
 	private static final String TAG = CreateAccountActivity.class.getSimpleName();
 
     public String getname;
@@ -48,7 +48,8 @@ public class CreateAccountActivity extends ActionBarActivity {
 
 	//--------------------------------------------
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	protected void onCreate(Bundle savedInstanceState)
+    {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_create_account);
 		//disable the ActionBar
@@ -98,6 +99,7 @@ public class CreateAccountActivity extends ActionBarActivity {
                         Toast.makeText(getApplicationContext(), "Please fill in all of the fields",
                         Toast.LENGTH_LONG).show();
                  }
+
                  //elegxw an ta pedia tou password einai idia
                  else if(pass.getText().toString().equals(rpass.getText().toString()))
                  {
@@ -116,7 +118,8 @@ public class CreateAccountActivity extends ActionBarActivity {
                      //Make the registration
                      registerUser(getname, getsurname, getcountry, getemail, getpassword, gettel);
                  }
-                 else{
+                 else
+                 {
                     //Toast is the pop up message
                         Toast.makeText(getApplicationContext(), "Password does not match!",
                         Toast.LENGTH_LONG).show();
@@ -128,137 +131,119 @@ public class CreateAccountActivity extends ActionBarActivity {
         TextView reg = (TextView) findViewById(R.id.LoginAs);
         Typeface regface = Typeface.createFromAsset(getAssets(),"fonts/KaushanScript-Regular.ttf");
         reg.setTypeface(regface);
+
         //Set the text on the login form
         final TextView Register = (TextView)findViewById(R.id.LoginAs);
-        if (SelectUserActivity.flagOwner){
-            Register.setText("Register as " +" "+"Owner");
-        }
-        else{
-            Register.setText("Register as " +" "+"Traveler");
-        }
+        Register.setText(SelectUserActivity.flagOwner ? "Register as " + " " + "Owner" : "Register as " + " " + "Traveler");
 	}
 
 	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
+	public boolean onCreateOptionsMenu(Menu menu)
+    {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.activity_create_account, menu);
 		return true;
 	}
 
 	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
+	public boolean onOptionsItemSelected(MenuItem item)
+    {
 		// Handle action bar item clicks here. The action bar will
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-
-		return id == R.id.action_settings || super.onOptionsItemSelected(item);
+		return item.getItemId() == R.id.action_settings || super.onOptionsItemSelected(item);
 	}
 
 	//-----------------------------------------------------------DB--------------------------------------------------------//
 
-	private void registerUser(final String name, final String surname, final String country, final String email, final String password, final String telephone)
+	private void registerUser (final String name, final String surname, final String country, final String email, final String password, final String telephone)
     {
-        // Tag used to cancel the request
-		String tag_string_req = "req_register";
-
 		pDialog.setMessage("Registering ...");
 		showDialog();
 
-		StringRequest strReq = new StringRequest(Request.Method.POST, URL_REGISTER, new Response.Listener<String>()
+		StringRequest strReq = new StringRequest( Request.Method.POST, URL_REGISTER, new Response.Listener<String>()
         {
-
-			@Override
-			public void onResponse(String response)
+            @Override
+            public void onResponse(String response)
             {
-				Log.d(TAG, "Register Response: " + response.toString());
-				hideDialog();
+                Log.d(TAG, "Register Response: " + response);
+                hideDialog();
 
-				try
+                try
                 {
-					JSONObject jObj = new JSONObject(response);
-					boolean error = jObj.getBoolean("error");
-					if (!error)
-					{
-						// User successfully stored in MySQL
-						// Now store the user in sqlite
-						JSONObject user = jObj.getJSONObject("user");
+                    JSONObject jObj = new JSONObject(response);
+                    if (jObj.getBoolean("error"))
+                    {
+                        // Error occurred in registration. Get the error message
+                        String errorMsg = jObj.getString("error_msg");
+                        Toast.makeText(getApplicationContext(), errorMsg, Toast.LENGTH_LONG).show();
+                    }
+                    else
+                    {
+                        // User successfully stored in MySQL
+                        // Now store the user in sqlite
+                        JSONObject user = jObj.getJSONObject("user");
                         String id = user.getString("id");
-						String name = user.getString("name");
+                        String name = user.getString("name");
                         String surname = user.getString("surname");
                         String country = user.getString("country");
-						String email = user.getString("email");
+                        String email = user.getString("email");
                         String password = user.getString("password");
                         String telephone = user.getString("telephone");
 
-						// Inserting row in users table (SQLlite)
-						db.addUser(id, name, surname, country, email, password, telephone);
+                        // Inserting row in users table (SQLlite)
+                        db.addUser(id, name, surname, country, email, password, telephone);
 
-						Toast.makeText(getApplicationContext(), "User successfully registered. Try login now!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "User successfully registered. Try login now!", Toast.LENGTH_LONG).show();
 
-						// Launch login activity
-						Intent intent = new Intent(
-								CreateAccountActivity.this,
-								LoginActivity.class);
-						startActivity(intent);
-						finish();
-					}
-					else
-                    {
-
-						// Error occurred in registration. Get the error
-						// message
-						String errorMsg = jObj.getString("error_msg");
-						Toast.makeText(getApplicationContext(),
-								errorMsg, Toast.LENGTH_LONG).show();
+                        // Launch login activity
+                        startActivity(new Intent(CreateAccountActivity.this, LoginActivity.class));
+                        finish();
                     }
-
-				}
-				catch (JSONException e)
-                {
-					e.printStackTrace();
-				}
-			}
-
-		}, new Response.ErrorListener()
-            {
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    Log.e(TAG, "Registration Error: " + error.getMessage());
-                    Toast.makeText(getApplicationContext(),
-                            error.getMessage(), Toast.LENGTH_LONG).show();
-                    hideDialog();
                 }
-		    }) {
-
-			@Override
-			protected Map<String, String> getParams() {
-				// Posting params to register url
-				Map<String, String> params = new HashMap<>();
-				params.put("name", name);
+                catch (JSONException e)
+                {
+                    e.printStackTrace();
+                }
+            }
+        },
+        new Response.ErrorListener()
+        {
+            @Override
+            public void onErrorResponse(VolleyError error)
+            {
+                Log.e(TAG, "Registration Error: " + error.getMessage());
+                Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_LONG).show();
+                hideDialog();
+            }
+        })
+        {
+            @Override
+            protected Map<String, String> getParams()
+            {
+                // Posting params to register url
+                Map<String, String> params = new HashMap<>();
+                params.put("name", name);
                 params.put("surname", surname);
                 params.put("country", country);
-				params.put("email", email);
-				params.put("password", password);
+                params.put("email", email);
+                params.put("password", password);
                 params.put("telephone", String.valueOf(telephone));
 
-				return params;
-			}
-
-		};
-
+                return params;
+            }
+        };
 		// Adding request to request queue
-		AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+		AppController.getInstance().addToRequestQueue(strReq, "req_register");
 	}
 
-	private void showDialog() {
-		if (!pDialog.isShowing())
-			pDialog.show();
+	private void showDialog()
+    {
+		if (!pDialog.isShowing()) pDialog.show();
 	}
 
-	private void hideDialog() {
-		if (pDialog.isShowing())
-			pDialog.dismiss();
+	private void hideDialog()
+    {
+		if (pDialog.isShowing()) pDialog.dismiss();
 	}
-
 }

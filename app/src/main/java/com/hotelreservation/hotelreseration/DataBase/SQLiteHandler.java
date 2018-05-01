@@ -9,8 +9,8 @@ import android.util.Log;
 
 import java.util.HashMap;
 
-public class SQLiteHandler extends SQLiteOpenHelper {
-
+public class SQLiteHandler extends SQLiteOpenHelper
+{
     private static final String TAG = SQLiteHandler.class.getSimpleName();
 
     // All Static variables
@@ -33,17 +33,21 @@ public class SQLiteHandler extends SQLiteOpenHelper {
     private static final String KEY_PASSWORD = "password";
     private static final String KEY_TELEPHONE = "telephone";
 
-    public SQLiteHandler(Context context) {
+    public SQLiteHandler(Context context)
+    {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
     // Creating Tables
     @Override
-    public void onCreate(SQLiteDatabase db) {
-        String CREATE_LOGIN_TABLE = "CREATE TABLE " + TABLE_USER + "(" + KEY_ID + " INTEGER PRIMARY KEY,"  + KEY_UID + " TEXT,"
+    public void onCreate(SQLiteDatabase db)
+    {
+        String CREATE_LOGIN_TABLE = "CREATE TABLE " + TABLE_USER
+                + "(" + KEY_ID + " INTEGER PRIMARY KEY,"  + KEY_UID + " TEXT,"
                 + KEY_NAME + " TEXT," + KEY_SURNAME + " TEXT," + KEY_COUNTRY + " TEXT,"
                 + KEY_EMAIL + " TEXT," + KEY_PASSWORD + " TEXT,"
                 + KEY_TELEPHONE + " TEXT" + ")";
+
         db.execSQL(CREATE_LOGIN_TABLE);
 
         Log.d(TAG, "Database tables created");
@@ -56,7 +60,8 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 
     // Upgrading database
     @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
+    {
         // Drop older table if existed
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_USER);
 
@@ -67,7 +72,8 @@ public class SQLiteHandler extends SQLiteOpenHelper {
     /**
      * Storing user details in database
      * */
-    public void addUser(String id, String name, String surname, String country, String email, String password, String telephone) {
+    public void addUser(String id, String name, String surname, String country, String email, String password, String telephone)
+    {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
@@ -89,17 +95,16 @@ public class SQLiteHandler extends SQLiteOpenHelper {
     /**
      * Getting user data from database
      * */
-    public HashMap<String, String> getUserDetails() {
+    public HashMap<String, String> getUserDetails()
+    {
         HashMap<String, String> user = new HashMap<>();
-        String selectQuery = "SELECT * FROM " + TABLE_USER;
-        //String[] selectedArgs = {"name","surname", "country", "email", "password"};
-
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery(selectQuery, null);
+        Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_USER, null);
 
         // Move to first row
         cursor.moveToFirst();
-        if (cursor.getCount() > 0) {
+        if (cursor.getCount() > 0)
+        {
             user.put("id", cursor.getString(1));
             user.put("name", cursor.getString(2));
             user.put("surname", cursor.getString(3));
@@ -130,7 +135,8 @@ public class SQLiteHandler extends SQLiteOpenHelper {
     /**
      * Re crate database Delete all tables and create them again
      * */
-    public void deleteUsers() {
+    public void deleteUsers()
+    {
         SQLiteDatabase db = this.getWritableDatabase();
         // Delete All Rows
         db.delete(TABLE_USER, null, null);
@@ -138,5 +144,4 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 
         Log.d(TAG, "Deleted all user info from sqlite");
     }
-
 }

@@ -1,6 +1,7 @@
 package com.hotelreservation.hotelreseration.DataBase;
 
-public class AppConfig {
+public class AppConfig
+{
     // Server user load and login urls
     public static String URL_LOGIN_OWNER = "http://getaroomphp.eu5.net/loginowner.php"; //    https://self-produced-assig.000webhostapp.com/loginowner.php
     public static String URL_LOGIN_TRAVELER = "http://getaroomphp.eu5.net/logintraveler.php";

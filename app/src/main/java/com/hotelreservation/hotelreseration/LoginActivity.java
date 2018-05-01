@@ -31,10 +31,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class LoginActivity extends ActionBarActivity {
-
-    public static String mail;
-    public static String pass;
+public class LoginActivity extends ActionBarActivity
+{
+    public static String mail, pass;
     public static boolean flagkzaf=false;
     private static final String TAG = CreateAccountActivity.class.getSimpleName();
     private ProgressDialog pDialog;
@@ -43,12 +42,13 @@ public class LoginActivity extends ActionBarActivity {
     public String URL_LOGIN;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         //disable the ActionBar
         android.support.v7.app.ActionBar AB=getSupportActionBar();
-        AB.hide();
+        if (AB != null) AB.hide();
 
         //Get Text Values
         final Button signInButton= (Button)findViewById(R.id.SignInbutton);
@@ -77,21 +77,18 @@ public class LoginActivity extends ActionBarActivity {
         {
             public void onClick(View arg0)
             {
-                mail=Email.getText().toString().trim();
-                pass=Pass.getText().toString().trim();
+                mail = Email.getText().toString().trim();
+                pass = Pass.getText().toString().trim();
 
                 // Check for empty data in the form
                 if (Email.length() != 0 && Pass.length() != 0)
                 {
-                    if (SelectUserActivity.flagOwner)
-                    {
-                        URL_LOGIN = AppConfig.URL_LOGIN_OWNER;
-                    }else{
-                        URL_LOGIN = AppConfig.URL_LOGIN_TRAVELER;
-                    }
+                    URL_LOGIN = SelectUserActivity.flagOwner ? AppConfig.URL_LOGIN_OWNER : AppConfig.URL_LOGIN_TRAVELER;
                     // login user
                     checkLogin(mail, pass);
-                }else{
+                }
+                else
+                {
                     // Prompt user to enter credentials
                     Toast.makeText(getApplicationContext(), "Please enter the credentials!", Toast.LENGTH_LONG).show();
                 }
@@ -101,43 +98,38 @@ public class LoginActivity extends ActionBarActivity {
 
         //me aytes tis entoles allazw thn grammatoseira enos Text View
         TextView LoginText = (TextView) findViewById(R.id.LoginAs);
-        Typeface regface = Typeface.createFromAsset(getAssets(),"fonts/KaushanScript-Regular.ttf");
-        LoginText.setTypeface(regface);
+        LoginText.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/KaushanScript-Regular.ttf"));
 
         //Edw orizw to TextView Login as "Owner h Traveler" analoga ti exw epileksei.
-        //final TextView LoginText = (TextView)findViewById(R.id.LoginAs);
-        if (SelectUserActivity.flagOwner){
-            LoginText.setText("Login as " +" "+"Owner");
-        }
-        else{
-            LoginText.setText("Login as " +" "+"Traveler");
-        }
+        LoginText.setText(SelectUserActivity.flagOwner ? "Login as " + " " + "Owner" : "Login as " + " " + "Traveler");
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.login, menu);
         return true;
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        return id == R.id.action_settings || super.onOptionsItemSelected(item);
+        return item.getItemId() == R.id.action_settings || super.onOptionsItemSelected(item);
     }
 
     //change to: create account activity
-    public void changeToCreateAccount(View v){
+    public void changeToCreateAccount(View v)
+    {
         startActivity(new Intent(LoginActivity.this, CreateAccountActivity.class));
     }
 
     //change to: forgot pass activity
-    public void changeForgotPass(View v){
+    public void changeForgotPass(View v)
+    {
         startActivity(new Intent(LoginActivity.this, ForgotPassActivity.class));
     }
 
@@ -145,26 +137,32 @@ public class LoginActivity extends ActionBarActivity {
     /**
      * function to verify login details in mysql db
      * */
-    private void checkLogin(final String email, final String password) {
-        // Tag used to cancel the request
-        String tag_string_req = "req_login";
-
+    private void checkLogin(final String email, final String password)
+    {
         pDialog.setMessage("Logging in ...");
         showDialog();
 
-        StringRequest strReq = new StringRequest(Request.Method.POST, URL_LOGIN, new Response.Listener<String>() {
-
+        StringRequest strReq = new StringRequest(Request.Method.POST, URL_LOGIN, new Response.Listener<String>()
+        {
             @Override
-            public void onResponse(String response) {
-                Log.d(TAG, "Login Response: " + response.toString());
+            public void onResponse(String response)
+            {
+                Log.d(TAG, "Login Response: " + response);
                 hideDialog();
 
-                try {
+                try
+                {
                     JSONObject jObj = new JSONObject(response);
-                    boolean error = jObj.getBoolean("error");
 
                     // Check for error node in json
-                    if (!error) {
+                    if (jObj.getBoolean("error"))
+                    {
+                        // Error in login. Get the error message
+                        String errorMsg = jObj.getString("error_msg");
+                        Toast.makeText(getApplicationContext(), errorMsg, Toast.LENGTH_LONG).show();
+                    }
+                    else
+                    {
                         // user successfully logged in
                         // Create login session
                         session.setLogin(true);
@@ -183,36 +181,33 @@ public class LoginActivity extends ActionBarActivity {
                         db.addUser(id, name, surname, country, email, password, telephone);
 
                         // Launch main activity
-                        Intent intent = new Intent(LoginActivity.this,
-                                MainActivity.class);
-                        startActivity(intent);
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
                         finish();
-                    } else {
-                        // Error in login. Get the error message
-                        String errorMsg = jObj.getString("error_msg");
-                        Toast.makeText(getApplicationContext(),
-                                errorMsg, Toast.LENGTH_LONG).show();
                     }
-                } catch (JSONException e) {
+                }
+                catch (JSONException e)
+                {
                     // JSON error
                     e.printStackTrace();
                     Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 }
 
             }
-        }, new Response.ErrorListener() {
+        }, new Response.ErrorListener()
+            {
 
+                @Override
+                public void onErrorResponse(VolleyError error)
+                {
+                    Log.e(TAG, "Login Error: " + error.getMessage());
+                    Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_LONG).show();
+                    hideDialog();
+                }
+            })
+        {
             @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.e(TAG, "Login Error: " + error.getMessage());
-                Toast.makeText(getApplicationContext(),
-                        error.getMessage(), Toast.LENGTH_LONG).show();
-                hideDialog();
-            }
-        }) {
-
-            @Override
-            protected Map<String, String> getParams() {
+            protected Map<String, String> getParams()
+            {
                 // Posting parameters to login url
                 Map<String, String> params = new HashMap<>();
                 params.put("email", email);
@@ -220,20 +215,19 @@ public class LoginActivity extends ActionBarActivity {
 
                 return params;
             }
-
         };
 
         // Adding request to request queue
-        AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+        AppController.getInstance().addToRequestQueue(strReq, "req_login");
     }
 
-    private void showDialog() {
-        if (!pDialog.isShowing())
-            pDialog.show();
+    private void showDialog()
+    {
+        if (!pDialog.isShowing()) pDialog.show();
     }
 
-    private void hideDialog() {
-        if (pDialog.isShowing())
-            pDialog.dismiss();
+    private void hideDialog()
+    {
+        if (pDialog.isShowing()) pDialog.dismiss();
     }
 }
