@@ -16,7 +16,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.hotelreservation.hotelreseration.R;
 
-public class Fragment_hotels extends Fragment {
+public class Fragment_hotels extends Fragment
+{
 
 	static ListView listView;
 	SimpleAdapter adapter;
@@ -25,53 +26,47 @@ public class Fragment_hotels extends Fragment {
     static TextView txt;
 	
 	@Override
-	public View onCreateView( LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-
+	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
 		View view = inflater.inflate(R.layout.fragment_hotels, container,false);
 		listView = (ListView) view.findViewById(R.id.list);
 		txt=(TextView) view.findViewById(R.id.nobookingtxt);
 		MainActivity.flagpinhotel = false;
 
-		adapter = new SimpleAdapter(getActivity(), records, R.layout.mytextview,
-                new String[] {"name","city"}, new int[] {R.id.tv,R.id.sub});
+		adapter = new SimpleAdapter(getActivity(), records, R.layout.mytextview, new String[] {"name","city"}, new int[] {R.id.tv,R.id.sub});
 
 	    // Assign adapter to ListView
 		listView.setAdapter(adapter);
 
-		if(listView.getCount()==0){
-    		txt.setVisibility(View.VISIBLE); //show/hide the "add a new hotel" label
-    	}else{
-    		txt.setVisibility(View.GONE);
-    	}
+        //show/hide the "add a new hotel" label
+        txt.setVisibility(listView.getCount() == 0 ? View.VISIBLE : View.GONE);
 		
 		// BUTTON
 	    Button btnAddHotel = (Button) view.findViewById(R.id.addbutton);
-	    btnAddHotel.setOnClickListener(new View.OnClickListener() {
-	    public void onClick(View v) {
+	    btnAddHotel.setOnClickListener(new View.OnClickListener()
+        {
+	    public void onClick(View v)
+        {
 	    	txt.setVisibility(View.GONE);
-            switch (v.getId()) {
-            case R.id.addbutton:
-            	if (listView.getCount()<=2){
-            		((MainActivity) getActivity()).alerthotel();
-            	}
-            	else{
-            		Toast.makeText(getActivity(),"You can add up to 3 hotels! Please read the info",Toast.LENGTH_LONG).show();
-            	}
-            	
-            break;
+            if (v.getId() == R.id.addbutton) {
+                if (listView.getCount() <= 2) {
+                    ((MainActivity) getActivity()).alerthotel();
+                } else {
+                    Toast.makeText(getActivity(), "You can add up to 3 hotels! Please read the info", Toast.LENGTH_LONG).show();
+                }
             }
         }  
 	    });
 	    //energopoiw to click event otan epilegw ena item apo to listview
-	    listView.setOnItemClickListener(new OnItemClickListener() {
-	    	  public void onItemClick(AdapterView<?> parent, View view,int position, long id) {
-
+	    listView.setOnItemClickListener(new OnItemClickListener()
+        {
+              public void onItemClick(AdapterView<?> parent, View view,int position, long id)
+              {
                   HashMap<String, String> hashMap = (HashMap<String, String>) listView.getItemAtPosition(position);
                   String hotelname = hashMap.get("name");
                   Toast.makeText(getActivity(), "You can edit hotel " + hotelname + " in settings.", Toast.LENGTH_LONG).show();
-
-	    	  }
-	    	});
+              }
+	    });
 	    
 	    return view;  
 	}	

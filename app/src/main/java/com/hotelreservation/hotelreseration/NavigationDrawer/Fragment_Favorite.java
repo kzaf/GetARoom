@@ -17,7 +17,8 @@ import java.util.HashMap;
 
 import static com.hotelreservation.hotelreseration.NavigationDrawer.MainActivity.dboFKey;
 
-public class Fragment_Favorite extends Fragment {
+public class Fragment_Favorite extends Fragment
+{
 
     static ListView listView;
     static SimpleAdapter adapter;
@@ -32,26 +33,21 @@ public class Fragment_Favorite extends Fragment {
 
         listView = (ListView) view.findViewById(R.id.favoriteList);
         nofavoritesLabel=(TextView) view.findViewById(R.id.nofavoriteslabel);
-        if(listView.getCount()==0){
-            nofavoritesLabel.setVisibility(View.VISIBLE); //show/hide the "no favorites yet" label
-        }else{
-            nofavoritesLabel.setVisibility(View.GONE);
-        }
+        //show/hide the "no favorites yet" label
+        nofavoritesLabel.setVisibility(listView.getCount() == 0 ? View.VISIBLE : View.GONE);
 
-        adapter = new SimpleAdapter(getActivity(), records, R.layout.mytextview,
-                new String[] {"hotelname","hotelcity"}, new int[] {R.id.tv,R.id.sub});
+        adapter = new SimpleAdapter(getActivity(), records, R.layout.mytextview, new String[] {"hotelname","hotelcity"}, new int[] {R.id.tv,R.id.sub});
         // Assign adapter to ListView
         listView.setAdapter(adapter);
 
         ((MainActivity) getActivity()).loadFavorites(dboFKey);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            public void onItemClick(AdapterView<?> parent, View view,int position, long id) {
-
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
+            public void onItemClick(AdapterView<?> parent, View view,int position, long id)
+            {
                 HashMap<String, String> hashMap = (HashMap<String, String>) listView.getItemAtPosition(position);
-                String hotelname = hashMap.get("hotelname");
-                Toast.makeText(getActivity(), "Hotel " + hotelname, Toast.LENGTH_LONG).show();
-
+                Toast.makeText(getActivity(), "Hotel " + hashMap.get("hotelname"), Toast.LENGTH_LONG).show();
             }
         });
 

@@ -9,44 +9,49 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class Fragment_info extends Fragment {
-    
-    public View onCreateView(
-            LayoutInflater inflater, 
-            ViewGroup container, 
-            Bundle savedInstanceState){
+public class Fragment_info extends Fragment
+{
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
         View rootView = inflater.inflate(R.layout.fragment_info, container, false);
         
         final TextView OwnerGuide = (TextView)rootView.findViewById(R.id.guide);
-        if (SelectUserActivity.flagOwner){
-	    			OwnerGuide.setText("Owner Guide");
-        }else{      	
-        	    	OwnerGuide.setText("Traveler Guide");
-        }
-        //OwnerGuide = (TextView)rootView.findViewById(R.id.guide);
-        OwnerGuide.setOnClickListener(new View.OnClickListener() {
-    	    public void onClick(View v) {
+        OwnerGuide.setText(SelectUserActivity.flagOwner ? "Owner Guide" : "Traveler Guide");
+        OwnerGuide.setOnClickListener(new View.OnClickListener()
+        {
+    	    public void onClick(View v)
+            {
                 ((MainActivity) getActivity()).OwnerGuide();            
             }  
-    	    });
+        });
+
         final TextView AboutUs = (TextView)rootView.findViewById(R.id.changeinfo);
-        AboutUs.setOnClickListener(new View.OnClickListener() {
-    	    public void onClick(View v) {   	
+        AboutUs.setOnClickListener(new View.OnClickListener()
+        {
+    	    public void onClick(View v)
+            {
                 ((MainActivity) getActivity()).AboutUs();            
             }  
-    	    });
+        });
+
         final TextView ContactUs = (TextView)rootView.findViewById(R.id.contactus);
-        ContactUs.setOnClickListener(new View.OnClickListener() {
-    	    public void onClick(View v) {   	
+        ContactUs.setOnClickListener(new View.OnClickListener()
+        {
+    	    public void onClick(View v)
+            {
                 ((MainActivity) getActivity()).ContactUs();            
             }  
-    	    });
+        });
+
         final TextView ReportProblem = (TextView)rootView.findViewById(R.id.reportaproblem);
-        ReportProblem.setOnClickListener(new View.OnClickListener() {
-    	    public void onClick(View v) {   	
+        ReportProblem.setOnClickListener(new View.OnClickListener()
+        {
+    	    public void onClick(View v)
+            {
                 ((MainActivity) getActivity()).ReportProblem();            
             }  
-    	    });
+        });
+
         return rootView;
     }   
 }

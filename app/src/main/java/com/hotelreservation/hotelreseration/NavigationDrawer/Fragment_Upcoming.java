@@ -15,7 +15,8 @@ import android.widget.TextView;
 
 import static com.hotelreservation.hotelreseration.NavigationDrawer.MainActivity.dboFKey;
 
-public class Fragment_Upcoming extends Fragment {
+public class Fragment_Upcoming extends Fragment
+{
 
     static ArrayList<HashMap<String,String>> records = new ArrayList<>();
 	static ListView UpcomminglistView;
@@ -23,28 +24,21 @@ public class Fragment_Upcoming extends Fragment {
     static TextView txt;
 
 	@Override
-	public View onCreateView(
-            LayoutInflater inflater, 
-            ViewGroup container, 
-            Bundle savedInstanceState){
-	  	    View view = inflater.inflate(R.layout.fragment_owner_upcoming, container,false);
+	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+	{
+		View view = inflater.inflate(R.layout.fragment_owner_upcoming, container,false);
 
 	    UpcomminglistView = (ListView) view.findViewById(R.id.upcomingResList);
 	    txt=(TextView) view.findViewById(R.id.nobookingtxt);
 
-        adapter = new SimpleAdapter(getActivity(), records, R.layout.mytextview, new String[] {"HotelandTravelertitle","dates"},
-				new int[] {R.id.tv,R.id.sub});
+        adapter = new SimpleAdapter(getActivity(), records, R.layout.mytextview, new String[] {"HotelandTravelertitle","dates"}, new int[] {R.id.tv,R.id.sub});
 
         UpcomminglistView.setAdapter(adapter);// Assign adapter to ListView
 
         ((MainActivity) getActivity()).loadOwnerReservations(dboFKey);
         Fragment_Upcoming.adapter.notifyDataSetChanged(); //Notify the adapter for the update
-	    
-	    if(UpcomminglistView.getCount()==0){
-    		txt.setVisibility(View.VISIBLE);
-    	}else{
-    		txt.setVisibility(View.GONE);
-    	}
+
+        txt.setVisibility(UpcomminglistView.getCount() == 0 ? View.VISIBLE : View.GONE);
 	    
 	    return view;
 	}

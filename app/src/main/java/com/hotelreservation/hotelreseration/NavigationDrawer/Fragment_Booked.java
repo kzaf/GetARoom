@@ -15,19 +15,18 @@ import android.widget.TextView;
 
 import static com.hotelreservation.hotelreseration.NavigationDrawer.MainActivity.dboFKey;
 
-public class Fragment_Booked extends Fragment {
+public class Fragment_Booked extends Fragment
+{
     static ListView myBookingslistView;
     static SimpleAdapter adapter;
-    static ArrayList<HashMap<String,String>> records = new ArrayList<>(); //Dhmiourgw HashMap gia na mporw na valw polla String na fainontai se kathe stoixeio ths listas
+	static ArrayList<HashMap<String,String>> records = new ArrayList<>(); //Dhmiourgw HashMap gia na mporw na valw polla String na fainontai se kathe stoixeio ths listas
 
     static TextView nobookings;
 
 	@Override
-	public View onCreateView(
-            LayoutInflater inflater, 
-            ViewGroup container, 
-            Bundle savedInstanceState){
-	  	    View view = inflater.inflate(R.layout.fragment_traveler_booked, container,false);
+	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
+        View view = inflater.inflate(R.layout.fragment_traveler_booked, container,false);
 
 		nobookings=(TextView) view.findViewById(R.id.nobookingtxt);
 
@@ -37,11 +36,7 @@ public class Fragment_Booked extends Fragment {
 
         ((MainActivity) getActivity()).loadMyBookings(dboFKey);
 
-	    if(myBookingslistView.getCount()==0){
-    		nobookings.setVisibility(View.VISIBLE);
-    	}else{
-    		nobookings.setVisibility(View.GONE);
-    	}
+        nobookings.setVisibility(myBookingslistView.getCount() == 0 ? View.VISIBLE : View.GONE);
 	    
 	    return view;
 	}

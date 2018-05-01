@@ -17,20 +17,19 @@ import android.widget.ImageView;
 import com.hotelreservation.hotelreseration.LoginActivity;
 import com.hotelreservation.hotelreseration.R;
 
-public class Fragment_user extends Fragment {
+public class Fragment_user extends Fragment
+{
 	
 	private Uri mSelectedImageUri;
 	
-	 private static final int SELECT_PICTURE = 1;
-	 private String selectedImagePath=null;
-	 private ImageView img;
+    private static final int SELECT_PICTURE = 1;
+    private String selectedImagePath=null;
+    private ImageView img;
 	 
 	
     @Override
-    public View onCreateView(
-            LayoutInflater inflater,
-            ViewGroup container,
-            Bundle savedInstanceState){
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
     	View rootView = inflater.inflate(R.layout.fragment_user, container, false);
     	
     	EditText ChangeName=(EditText)rootView.findViewById(R.id.ChangeName);
@@ -44,33 +43,40 @@ public class Fragment_user extends Fragment {
         ChangeTelephone.setText(new StringBuilder().append(MainActivity.dbtelephone));
         ChangeMail.setText(new StringBuilder().append(MainActivity.dbmail));
         ChangeCountry.setText(new StringBuilder().append(MainActivity.dbcountry));
-    	
-    	if(LoginActivity.flagkzaf){
-    		ChangeName.setText(new StringBuilder().append("Konstantinos"));
-    		ChangeSurname.setText(new StringBuilder().append("Zafeiropoulos"));
-    		ChangeTelephone.setText(new StringBuilder().append("+30 6984794915"));
-    		ChangeMail.setText(new StringBuilder().append("kzaf@it.teithe.gr"));
-    		ChangeCountry.setText(new StringBuilder().append("Greece"));
-    	}
 
-    		//Apo edw kai katw einai gia tin eikona pou tha epilegei o xrhsths na emfanizetai
+        if (LoginActivity.flagkzaf)
+        {
+            ChangeName.setText(new StringBuilder().append("Konstantinos"));
+            ChangeSurname.setText(new StringBuilder().append("Zafeiropoulos"));
+            ChangeTelephone.setText(new StringBuilder().append("+30 6984794915"));
+            ChangeMail.setText(new StringBuilder().append("kzaf@it.teithe.gr"));
+            ChangeCountry.setText(new StringBuilder().append("Greece"));
+        }
+        //Apo edw kai katw einai gia tin eikona pou tha epilegei o xrhsths na emfanizetai
     		img = (ImageView)rootView.findViewById(R.id.userImage);
-    		if (mSelectedImageUri != null) {
+    		if (mSelectedImageUri != null)
+    		{
     		    img.setImageURI(mSelectedImageUri);
     		}
-                img.setOnClickListener(new OnClickListener() {
-                    public void onClick(View arg0) {
+                img.setOnClickListener(new OnClickListener()
+                {
+                    public void onClick(View arg0)
+                    {
                         Intent intent = new Intent();
                         intent.setType("image/*");
                         intent.setAction(Intent.ACTION_GET_CONTENT);
-                        startActivityForResult(Intent.createChooser(intent,"Select Picture"), SELECT_PICTURE);
+                        startActivityForResult(Intent.createChooser(intent, "Select Picture"), SELECT_PICTURE);
                     }
                 });     
         return rootView;
     }
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (resultCode == MainActivity.RESULT_OK) {
-            if (requestCode == SELECT_PICTURE) {
+
+    public void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        if (resultCode == MainActivity.RESULT_OK)
+        {
+            if (requestCode == SELECT_PICTURE)
+            {
             	mSelectedImageUri = data.getData();
                 selectedImagePath = getPath(mSelectedImageUri);
                 System.out.println("Image Path : " + selectedImagePath);
@@ -81,32 +87,28 @@ public class Fragment_user extends Fragment {
  
     public String getPath(Uri uri) 
     {
-        String[] projection = { MediaStore.Images.Media.DATA };
-        Cursor cursor = getActivity().getContentResolver().query(uri, projection, null, null, null);
+        Cursor cursor = getActivity().getContentResolver().query(uri, new String[]{MediaStore.Images.Media.DATA}, null, null, null);
         if (cursor == null) return null;
-        int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
         cursor.moveToFirst();
-        String s=cursor.getString(column_index);
+        String s=cursor.getString(cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA));
         cursor.close();
         return s;
     }
     
     @Override
-	public void onSaveInstanceState(Bundle outState) {        
+	public void onSaveInstanceState(Bundle outState)
+    {
         super.onSaveInstanceState(outState);
         // Save the image bitmap into outState
-        Bitmap bitmap = ((BitmapDrawable)img.getDrawable()).getBitmap();
-        outState.putParcelable("bitmap", bitmap);
+        outState.putParcelable("bitmap", ((BitmapDrawable)img.getDrawable()).getBitmap());
     }
     
     @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
+    public void onActivityCreated(Bundle savedInstanceState)
+    {
         super.onActivityCreated(savedInstanceState);
         // Read the bitmap from the savedInstanceState and set it to the ImageView
-        if (savedInstanceState != null){
-	        Bitmap bitmap = (Bitmap) savedInstanceState.getParcelable("bitmap");
-	        img.setImageBitmap(bitmap);
-         }  
+        if (savedInstanceState != null) img.setImageBitmap((Bitmap) savedInstanceState.getParcelable("bitmap"));
     }
 
 }

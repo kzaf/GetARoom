@@ -30,8 +30,8 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class Fragment_maps extends android.support.v4.app.Fragment implements OnMapLongClickListener, OnMapClickListener, OnMapReadyCallback {
-
+public class Fragment_maps extends android.support.v4.app.Fragment implements OnMapLongClickListener, OnMapClickListener, OnMapReadyCallback
+{
     MapView mMapView;
     private static GoogleMap googleMap;
 
@@ -40,7 +40,8 @@ public class Fragment_maps extends android.support.v4.app.Fragment implements On
     String longitude;
 
     @Override
-    public void onMapReady(GoogleMap googleMap) {
+    public void onMapReady(GoogleMap googleMap)
+    {
 
         this.googleMap = googleMap;
 
@@ -92,50 +93,46 @@ public class Fragment_maps extends android.support.v4.app.Fragment implements On
         googleMap.addMarker(LeykosPyrgos);
     }
 
-    public void onLocationChanged(Location location) {
-        double currentLatitude = location.getLatitude();
-        double currentLongitude = location.getLongitude();
-        LatLng latLng = new LatLng(currentLatitude, currentLongitude);
+    public void onLocationChanged(Location location)
+    {
+        LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
     }
 
     // Check for permission to access Location
-    private boolean checkPermission() {
+    private boolean checkPermission()
+    {
         // Ask for permission if it wasn't granted yet
-        return (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION)
-                == PackageManager.PERMISSION_GRANTED );
+        return (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED );
     }
+
     // Asks for permission
-    private void askPermission() {
-        ActivityCompat.requestPermissions(
-                getActivity(),
-                new String[] { Manifest.permission.ACCESS_FINE_LOCATION },
-                1
-        );
+    private void askPermission()
+    {
+        ActivityCompat.requestPermissions(getActivity(), new String[] { Manifest.permission.ACCESS_FINE_LOCATION }, 1);
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults)
+    {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        switch ( requestCode ) {
-            case 1: {
-                if ( grantResults.length > 0
-                        && grantResults[0] == PackageManager.PERMISSION_GRANTED ){
-                    // Permission granted
-                    if(checkPermission())
-                        googleMap.setMyLocationEnabled(true);
+        if (requestCode == 1)
+        {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
+            {
+                // Permission granted
+                if (checkPermission()) googleMap.setMyLocationEnabled(true);
 
-                } else {
-                    // Permission denied
-
-                }
-                break;
+            }
+            else
+            {
+                // Permission denied
             }
         }
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
         // inflate and return the layout 
         View v = inflater.inflate(R.layout.fragment_maps, container, false);
         mMapView = (MapView) v.findViewById(R.id.map);
@@ -145,9 +142,12 @@ public class Fragment_maps extends android.support.v4.app.Fragment implements On
 
         mMapView.onResume();// needed to get the map to display immediately 
 
-        try {
+        try
+        {
             MapsInitializer.initialize(getActivity().getApplicationContext());
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             e.printStackTrace();
         }
 
@@ -157,16 +157,20 @@ public class Fragment_maps extends android.support.v4.app.Fragment implements On
         // Perform any camera updates here
         return v;
     }
+
     @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
+    {
     	inflater.inflate(R.menu.fragment_maps, menu);
         super.onCreateOptionsMenu(menu, inflater);
     }
     
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
         Log.d("onOptionsItemSelected","yes");
-        switch (item.getItemId()) {
+        switch (item.getItemId())
+        {
         case R.id.HYBRID:
         	googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
             return true;
@@ -179,34 +183,35 @@ public class Fragment_maps extends android.support.v4.app.Fragment implements On
         case R.id.NORMAL:
         	googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
             return true;
-
         default:
             return super.onOptionsItemSelected(item);
         }
     }
 
     @Override
-    public void onMapClick(LatLng point) {
+    public void onMapClick(LatLng point)
+    {
 		Toast.makeText(getActivity(),point.toString(),Toast.LENGTH_SHORT).show();
 		googleMap.animateCamera(CameraUpdateFactory.newLatLng(point));
     }
     
     @Override 
-    public void onMapLongClick(LatLng point) {
-    	 if (SelectUserActivity.flagOwner){
-             if(MainActivity.flagpinhotel){
-                 googleMap.addMarker(new MarkerOptions()
-                         .position(point)
-                         .title(MainActivity.onomaxarth)
-                         .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+    public void onMapLongClick(LatLng point)
+    {
+    	 if (SelectUserActivity.flagOwner)
+    	 {
+             if (!MainActivity.flagpinhotel)
+             {
+                 Toast.makeText(getActivity(),"You have already pinned your hotel",Toast.LENGTH_SHORT).show();
+             }
+             else
+             {
+                 googleMap.addMarker(new MarkerOptions().position(point).title(MainActivity.onomaxarth).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
                  Toast.makeText(getActivity(),"Hotel pinned at: "+point.toString(),Toast.LENGTH_SHORT).show();
 
                  latlong = point.toString();
                  getcoords(latlong);
-             }else{
-                 Toast.makeText(getActivity(),"You have already pinned your hotel",Toast.LENGTH_SHORT).show();
              }
-
 
          }else{
      		Toast.makeText(getActivity(),point.toString(),Toast.LENGTH_SHORT).show();
@@ -237,9 +242,9 @@ public class Fragment_maps extends android.support.v4.app.Fragment implements On
         mMapView.onLowMemory(); 
     }
 
-    public void getcoords(String latlong){
-        String CurrentString = latlong;
-        String[] separated = CurrentString.split(":");
+    public void getcoords(String latlong)
+    {
+        String[] separated = latlong.split(":");
         separated[0] = separated[0].trim();
         separated[1] = separated[1].trim();
 
@@ -256,12 +261,9 @@ public class Fragment_maps extends android.support.v4.app.Fragment implements On
         activity.registerCoordinates(MainActivity.onomaxarth,MainActivity.hoidFK,latitude,longitude);
     }
 
-    public static void addMarkers(String lat, String lon, String name){
-        double latn = Double.parseDouble(lat);
-        double lonn = Double.parseDouble(lon);
-
-        MarkerOptions hotelposition = new MarkerOptions().position(new LatLng(latn, lonn)).title(name);
-        hotelposition.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
-        googleMap.addMarker(hotelposition);
+    public static void addMarkers(String lat, String lon, String name)
+    {
+        MarkerOptions hotelposition = new MarkerOptions().position(new LatLng(Double.parseDouble(lat), Double.parseDouble(lon))).title(name);
+        googleMap.addMarker(hotelposition.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
     }
 }

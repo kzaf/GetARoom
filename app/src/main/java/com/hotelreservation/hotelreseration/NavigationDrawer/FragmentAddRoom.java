@@ -7,14 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.hotelreservation.hotelreseration.R;
 
-public class FragmentAddRoom extends Fragment {
-
-    public View onCreateView(
-            LayoutInflater inflater, 
-            ViewGroup container, 
-            Bundle savedInstanceState){
-        View rootView = inflater.inflate(R.layout.fragment_make_booking, container, false);
-        
-        return rootView;
+public class FragmentAddRoom extends Fragment
+{
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
+        return inflater.inflate(R.layout.fragment_make_booking, container, false);
     }
 }
