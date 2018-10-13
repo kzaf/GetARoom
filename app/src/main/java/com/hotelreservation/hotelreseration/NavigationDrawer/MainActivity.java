@@ -11,13 +11,13 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -76,7 +76,7 @@ import static com.hotelreservation.hotelreseration.DataBase.AppConfig.URL_REGIST
 import static com.hotelreservation.hotelreseration.DataBase.AppConfig.URL_UPDATE_HOTEL;
 import static com.hotelreservation.hotelreseration.NavigationDrawer.Fragment_hotels.listView;
 
-public class MainActivity extends ActionBarActivity
+public class MainActivity extends AppCompatActivity
 {
     // Fields -----------------------------------------------------------------
 

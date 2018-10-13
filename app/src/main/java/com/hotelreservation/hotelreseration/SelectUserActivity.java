@@ -6,7 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 import com.hotelreservation.hotelreseration.DataBase.SQLiteHandler;
 
-public class SelectUserActivity extends ActionBarActivity
+public class SelectUserActivity extends AppCompatActivity
 {
 	private SQLiteHandler db;
 
