@@ -12,7 +12,7 @@ Android application for hotel and motel booking and management
 ## Technologies
 Project is created with:
 * Java
-* Andropid Studio
+* Android Studio
 
 ## Setup
-Application available in PlayStore 
+Application available in PlayStore https://play.google.com/store/apps/details?id=com.hotelreservation.hotelreseration
