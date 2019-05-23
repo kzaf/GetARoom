@@ -5,6 +5,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [Screenshots](#screenshots)
 
 ## General info
 Android application for hotel and motel booking and management
