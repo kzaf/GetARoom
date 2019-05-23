@@ -15,4 +15,4 @@ Project is created with:
 * Android Studio
 
 ## Setup
-Application available in PlayStore https://play.google.com/store/apps/details?id=com.hotelreservation.hotelreseration
+Application available in [PlayStore.](https://play.google.com/store/apps/details?id=com.hotelreservation.hotelreseration)
